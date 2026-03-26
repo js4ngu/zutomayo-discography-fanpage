@@ -7,8 +7,6 @@ const tooltip = document.getElementById("tooltip");
 const zoomOutButton = document.getElementById("zoomOutButton");
 const zoomInButton = document.getElementById("zoomInButton");
 const fitViewButton = document.getElementById("fitViewButton");
-const resetViewButton = document.getElementById("resetViewButton");
-const clearFocusButton = document.getElementById("clearFocusButton");
 const closeFocusDrawerButton = document.getElementById("closeFocusDrawerButton");
 const detailTitle = document.getElementById("detailTitle");
 const detailSubtitle = document.getElementById("detailSubtitle");
@@ -20,15 +18,26 @@ const WIDTH = 2420;
 const ZOOM_MIN = 0.22;
 const ZOOM_MAX = 3.1;
 const VIEW_MARGIN = { top: 150, right: 72, bottom: 110, left: 72 };
-const SINGLE_CARD = { width: 236, height: 78, x: 130 };
-const ALBUM_CARD = {
-  mini: { x: 962, width: 396 },
-  full: { x: 1754, width: 544 },
-};
 const LANE_PANELS = {
   single: { x: 68, width: 338, labelX: 236, accent: "#d8ff5f" },
   mini: { x: 540, width: 932, labelX: 1006, accent: "#8cf2ce" },
   full: { x: 1560, width: 796, labelX: 1958, accent: "#ff8a47" },
+};
+const ALBUM_TRACK_START_Y = 156;
+const SINGLE_CARD = {
+  width: Math.min(236, LANE_PANELS.single.width - 52),
+  height: 78,
+  x: LANE_PANELS.single.x + 24,
+};
+const ALBUM_CARD = {
+  mini: {
+    width: Math.min(420, LANE_PANELS.mini.width - 60),
+    x: LANE_PANELS.mini.x + (LANE_PANELS.mini.width - Math.min(420, LANE_PANELS.mini.width - 60)) / 2,
+  },
+  full: {
+    width: Math.min(560, LANE_PANELS.full.width - 60),
+    x: LANE_PANELS.full.x + (LANE_PANELS.full.width - Math.min(560, LANE_PANELS.full.width - 60)) / 2,
+  },
 };
 
 const parsedAlbums = data.albums.map((album) => ({
@@ -101,6 +110,22 @@ function wrapLabel(text, maxUnits) {
   return lines.slice(0, 3);
 }
 
+function truncateLabel(text, maxUnits) {
+  let units = 0;
+  let output = "";
+
+  for (const char of text) {
+    const weight = isWideChar(char) ? 1 : 0.55;
+    if (units + weight > maxUnits) {
+      return `${output.trimEnd()}…`;
+    }
+    output += char;
+    units += weight;
+  }
+
+  return output;
+}
+
 function packNodes(items, minGap, minY, maxY) {
   if (!items.length) {
     return;
@@ -154,7 +179,7 @@ for (const album of parsedAlbums) {
     return { title, order, lines, blockHeight };
   });
 
-  let cursorY = 126;
+  let cursorY = ALBUM_TRACK_START_Y;
   wrappedTracks.forEach((track) => {
     track.offsetY = cursorY;
     cursorY += track.blockHeight;
@@ -205,6 +230,7 @@ const singleNodes = parsedSingles.map((single, order) => ({
   x: SINGLE_CARD.x,
   width: SINGLE_CARD.width,
   height: SINGLE_CARD.height,
+  shortLabel: truncateLabel(single.title, 13.2),
   baseY: yScale(single.parsedDate),
   y: yScale(single.parsedDate),
 }));
@@ -291,6 +317,7 @@ function edgePath(edge) {
 
 const state = {
   activeId: null,
+  activeContext: null,
   hoverNodeId: null,
 };
 
@@ -430,7 +457,7 @@ const albumSelection = albumLayer
   })
   .on("click", (event, album) => {
     event.stopPropagation();
-    setActive(album.id);
+    setActive(album.id, { kind: "album", albumId: album.id });
   });
 
 albumSelection
@@ -519,7 +546,7 @@ const trackGroupSelection = albumSelection
   })
   .on("click", (event, track) => {
     event.stopPropagation();
-    setActive(track.songId);
+    setActive(track.songId, { kind: "track", albumId: track.albumId });
   });
 
 trackGroupSelection
@@ -567,7 +594,11 @@ const singleSelection = singleLayer
   })
   .on("click", (event, single) => {
     event.stopPropagation();
-    setActive(single.id);
+    setActive(single.id, { kind: "single", singleId: single.id });
+  })
+  .on("dblclick", (event, single) => {
+    event.stopPropagation();
+    setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
   });
 
 singleSelection
@@ -603,7 +634,9 @@ singleSelection
   .attr("class", "single-title")
   .attr("x", 80)
   .attr("y", 33)
-  .text((single) => single.title);
+  .text((single) => single.shortLabel);
+
+singleSelection.append("title").text((single) => single.title);
 
 singleSelection
   .append("text")
@@ -761,9 +794,22 @@ function renderDetail(nodeId) {
   if (songById.has(nodeId)) {
     const song = songById.get(nodeId);
     const firstAlbum = albumById.get(song.firstAlbumId);
+    const contextAlbumId = state.activeContext?.albumId;
+    const contextSingleId = state.activeContext?.singleId;
+    let artworkUrl = albumById.get(song.albumMembership[0].albumId).artworkUrl;
+
+    if (
+      contextAlbumId &&
+      song.albumMembership.some((membership) => membership.albumId === contextAlbumId)
+    ) {
+      artworkUrl = albumById.get(contextAlbumId).artworkUrl;
+    } else if (contextSingleId && singleById.has(contextSingleId)) {
+      artworkUrl = singleById.get(contextSingleId).artworkUrl;
+    }
+
     detailTitle.textContent = song.title;
     detailSubtitle.textContent = "song node";
-    setArtwork(albumById.get(song.albumMembership[0].albumId).artworkUrl, `${song.title} artwork`);
+    setArtwork(artworkUrl, `${song.title} artwork`);
     detailList.replaceChildren(
       ...detailRow("First Release", song.releaseDate),
       ...detailRow("First Album", htmlEscape(firstAlbum.title)),
@@ -796,8 +842,9 @@ function renderDetail(nodeId) {
   );
 }
 
-function setActive(nodeId) {
+function setActive(nodeId, context = null) {
   state.activeId = nodeId;
+  state.activeContext = context;
   renderState();
 }
 
@@ -844,17 +891,17 @@ function getReadingTransform() {
   return d3.zoomIdentity.translate(tx, ty).scale(scale);
 }
 
-function getOverviewTransform() {
+function getWidthFitTransform() {
   const rect = stage.getBoundingClientRect();
   const scale = Math.max(
     ZOOM_MIN,
     Math.min(
       ZOOM_MAX,
-      Math.min((rect.width - 36) / WIDTH, (rect.height - 36) / HEIGHT),
+      (rect.width - 24) / WIDTH,
     ),
   );
   const tx = (rect.width - WIDTH * scale) / 2;
-  const ty = (rect.height - HEIGHT * scale) / 2;
+  const ty = 14;
   return d3.zoomIdentity.translate(tx, ty).scale(scale);
 }
 
@@ -867,8 +914,8 @@ const zoom = d3
   .zoom()
   .scaleExtent([ZOOM_MIN, ZOOM_MAX])
   .translateExtent([
-    [-WIDTH * 1.2, -HEIGHT * 1.2],
-    [WIDTH * 2.2, HEIGHT * 2.2],
+    [-48, -48],
+    [WIDTH + 48, HEIGHT + 48],
   ])
   .filter((event) => {
     if (event.type === "dblclick") {
@@ -896,19 +943,15 @@ function applyReadingView() {
   svg.transition().duration(360).call(zoom.transform, getReadingTransform());
 }
 
-function applyOverview() {
-  svg.transition().duration(360).call(zoom.transform, getOverviewTransform());
+function applyWidthFit() {
+  svg.transition().duration(300).call(zoom.transform, getWidthFitTransform());
 }
 
 applyReadingView();
 
 zoomOutButton.addEventListener("click", () => applyZoomStep(-1));
 zoomInButton.addEventListener("click", () => applyZoomStep(1));
-fitViewButton.addEventListener("click", applyOverview);
-
-resetViewButton.addEventListener("click", applyReadingView);
-
-clearFocusButton.addEventListener("click", () => setActive(null));
+fitViewButton.addEventListener("click", applyWidthFit);
 closeFocusDrawerButton.addEventListener("click", () => setActive(null));
 
 window.addEventListener("resize", () => {

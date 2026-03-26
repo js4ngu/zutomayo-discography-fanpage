@@ -118,14 +118,18 @@ body {
   left: 10px;
   right: 10px;
   z-index: 30;
+}
+
+.top-card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 16px;
-  padding: 10px 12px;
-  border: 1px solid rgba(188, 124, 255, 0.28);
-  border-radius: 16px;
-  background: rgba(10, 3, 22, 0.68);
+  gap: 12px;
+  border: 1px solid rgba(188, 124, 255, 0.32);
+  border-radius: 999px;
+  padding: 7px 10px 7px 12px;
+  background: rgba(10, 3, 22, 0.7);
   backdrop-filter: blur(8px);
 }
 
@@ -140,22 +144,17 @@ body {
   text-transform: uppercase;
 }
 
-.panel-title {
-  margin: 4px 0 0;
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: clamp(1.14rem, 2.2vw, 1.84rem);
-  letter-spacing: 0.1em;
-  color: #fdf2ff;
-  text-shadow:
-    0 0 12px rgba(188, 122, 255, 0.62),
-    0 0 24px rgba(94, 242, 255, 0.35);
+.top-card .panel-kicker {
+  margin: 0;
+  font-size: 0.74rem;
+  line-height: 1;
 }
 
 .panel-actions,
 .detail-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 8px;
 }
 
 .panel-actions button,
@@ -166,8 +165,9 @@ body {
   background: rgba(177, 91, 255, 0.13);
   color: var(--text);
   font: inherit;
-  font-size: 0.88rem;
-  padding: 10px 15px;
+  font-size: 0.8rem;
+  padding: 6px 11px;
+  line-height: 1;
   transition:
     background 140ms ease,
     border-color 140ms ease,
@@ -431,27 +431,24 @@ code {
 }
 
 .lane-panel {
-  fill: rgba(146, 69, 240, 0.09);
-  stroke: rgba(186, 116, 255, 0.32);
-  stroke-width: 1.35;
+  fill: transparent;
+  stroke: rgba(204, 186, 225, 0.22);
+  stroke-width: 1.1;
   pointer-events: none;
 }
 
 .lane-label {
-  fill: rgba(247, 230, 255, 0.84);
+  fill: rgba(229, 220, 240, 0.84);
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: 30px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   pointer-events: none;
-  text-shadow:
-    0 0 12px rgba(182, 122, 255, 0.42),
-    0 0 20px rgba(94, 242, 255, 0.18);
 }
 
 .lane-sublabel {
-  fill: rgba(201, 168, 230, 0.76);
+  fill: rgba(198, 186, 212, 0.72);
   font-size: 13px;
   letter-spacing: 0.05em;
   pointer-events: none;
@@ -661,22 +658,28 @@ code {
   }
 
   .panel-bar {
-    flex-direction: column;
-    align-items: flex-start;
     top: 8px;
     left: 8px;
     right: 8px;
-    padding: 8px 10px;
+  }
+
+  .top-card {
+    border-radius: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
   }
 
   .panel-actions {
     width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
-  .graph-stage {
-    height: 100vh;
-    min-height: 100vh;
+  .panel-actions button {
+    font-size: 0.76rem;
+    padding: 6px 10px;
   }
 
   .focus-bar {
