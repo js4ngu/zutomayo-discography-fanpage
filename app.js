@@ -93,6 +93,55 @@ const yearTicks = d3.timeYear.every(1).range(
   d3.timeYear.offset(d3.timeYear.ceil(domainEnd), 1),
 );
 
+const fallbackArtworkCache = new Map();
+
+function getFallbackArtworkUrl(label = "ZTMY") {
+  const key = (label || "ZTMY").slice(0, 24);
+  if (fallbackArtworkCache.has(key)) {
+    return fallbackArtworkCache.get(key);
+  }
+
+  const safeLabel = String(key)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#52e7ff'/>
+      <stop offset='48%' stop-color='#8f47de'/>
+      <stop offset='100%' stop-color='#ff6ddf'/>
+    </linearGradient>
+  </defs>
+  <rect width='300' height='300' fill='#120726'/>
+  <rect x='18' y='18' width='264' height='264' rx='36' fill='url(#g)' opacity='0.34'/>
+  <circle cx='150' cy='150' r='72' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2'/>
+  <text x='150' y='164' text-anchor='middle' fill='#f7efff' font-family='Arial, sans-serif' font-size='28' font-weight='700'>${safeLabel}</text>
+</svg>`;
+
+  const url = `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  fallbackArtworkCache.set(key, url);
+  return url;
+}
+
+function resolveSingleArtworkUrl(single) {
+  if (single.artworkUrl) {
+    return single.artworkUrl;
+  }
+
+  const song = songById.get(single.targetSongId);
+  const firstAlbumId = song?.firstAlbumId ?? song?.albumMembership?.[0]?.albumId;
+  const firstAlbumArtwork = firstAlbumId ? albumById.get(firstAlbumId)?.artworkUrl : null;
+  if (firstAlbumArtwork) {
+    return firstAlbumArtwork;
+  }
+
+  return getFallbackArtworkUrl(single.title?.slice(0, 6) || "ZTMY");
+}
+
+const singleArtworkById = new Map(parsedSingles.map((single) => [single.id, resolveSingleArtworkUrl(single)]));
+
 function isWideChar(char) {
   return char.charCodeAt(0) > 255;
 }
@@ -265,6 +314,7 @@ const singleNodes = parsedSingles.map((single, order) => ({
   x: SINGLE_CARD.x,
   width: SINGLE_CARD.width,
   height: SINGLE_CARD.height,
+  artworkUrl: singleArtworkById.get(single.id),
   shortLabel: truncateLabelByPixel(single.title, SINGLE_TITLE_MAX_WIDTH),
   baseY: yScale(single.parsedDate),
   y: yScale(single.parsedDate),
@@ -835,12 +885,16 @@ function makeExternalLinkButton(label, url) {
   return link;
 }
 
-function buildSearchQuery(title) {
-  return `${title} ${data.meta.artistJa} ${data.meta.artist}`;
+function buildSearchQuery(title, options = {}) {
+  const parts = [`"${title}"`, data.meta.artistJa, data.meta.artist];
+  if (options.albumTitle) {
+    parts.push(options.albumTitle);
+  }
+  return parts.join(" ");
 }
 
-function getPlatformLinks(title) {
-  const query = encodeURIComponent(buildSearchQuery(title));
+function getPlatformLinks(title, options = {}) {
+  const query = encodeURIComponent(buildSearchQuery(title, options));
   return [
     { label: "YouTube", url: `https://www.youtube.com/results?search_query=${query}` },
     { label: "YT Music", url: `https://music.youtube.com/search?q=${query}` },
@@ -865,7 +919,7 @@ function renderDetail(nodeId) {
     const song = songById.get(single.targetSongId);
     detailTitle.textContent = single.title;
     setDetailSubtitle("");
-    setArtwork(single.artworkUrl, `${single.title} artwork`);
+    setArtwork(singleArtworkById.get(single.id), `${single.title} artwork`);
     detailList.replaceChildren(
       ...detailRow("Release", single.releaseDate),
       ...detailRow("Source", htmlEscape(single.collectionName)),
@@ -885,6 +939,10 @@ function renderDetail(nodeId) {
     const firstAlbum = albumById.get(song.firstAlbumId);
     const contextAlbumId = state.activeContext?.albumId;
     const contextSingleId = state.activeContext?.singleId;
+    const contextMembership = contextAlbumId
+      ? song.albumMembership.find((membership) => membership.albumId === contextAlbumId)
+      : null;
+    const contextDisplayTitle = contextMembership?.displayTitle ?? song.title;
     let artworkUrl = albumById.get(song.albumMembership[0].albumId).artworkUrl;
 
     if (
@@ -893,10 +951,10 @@ function renderDetail(nodeId) {
     ) {
       artworkUrl = albumById.get(contextAlbumId).artworkUrl;
     } else if (contextSingleId && singleById.has(contextSingleId)) {
-      artworkUrl = singleById.get(contextSingleId).artworkUrl;
+      artworkUrl = singleArtworkById.get(contextSingleId);
     }
 
-    detailTitle.textContent = song.title;
+    detailTitle.textContent = contextDisplayTitle;
     setDetailSubtitle("");
     setArtwork(artworkUrl, `${song.title} artwork`);
     detailList.replaceChildren(
@@ -908,7 +966,9 @@ function renderDetail(nodeId) {
     detailLinks.replaceChildren(
       ...song.singleIds.map((singleId) => makeJumpButton(singleById.get(singleId).title, singleId)),
       ...song.albumMembership.map((membership) => makeJumpButton(membership.albumTitle, membership.albumId)),
-      ...getPlatformLinks(song.title).map((item) => makeExternalLinkButton(item.label, item.url)),
+      ...getPlatformLinks(contextDisplayTitle, { albumTitle: contextMembership?.albumTitle }).map((item) =>
+        makeExternalLinkButton(item.label, item.url),
+      ),
     );
     return;
   }
