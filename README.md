@@ -1,11 +1,10 @@
 # ZUTOMAYO Discography Fanpage
 
-이 프로젝트는 **AI 딸깎(프롬프트 기반)으로 만든 결과물**입니다.  
-핵심 목적은 **AI Agent Driven Development(AADD) 실습**입니다.
+이 프로젝트는 **AI 딸깎으로 만든 결과물**입니다. 리드미도 codex가 적어줌.  
+핵심 목적은 **AI Agent Driven Development 실습**입니다.
 
 ## 프로젝트 소개
-
-즈토마요(ZUTOMAYO) 디스코그래피를 `Single → Mini Album → Full Album` 흐름으로 시각화한 인터랙티브 웹앱입니다.
+ZUTOMAYO 디스코그래피를 `Single → Mini Album → Full Album` 흐름으로 시각화한 인터랙티브 웹앱입니다.
 
 - 그래프 노드/엣지 인터랙션
 - 줌/팬 기반 탐색

@@ -4,31 +4,41 @@ const svg = d3.select("#graph");
 const stage = document.querySelector(".graph-stage");
 const infoFooter = document.querySelector(".info-footer");
 const tooltip = document.getElementById("tooltip");
-const zoomOutButton = document.getElementById("zoomOutButton");
-const zoomInButton = document.getElementById("zoomInButton");
-const fitViewButton = document.getElementById("fitViewButton");
 const closeFocusDrawerButton = document.getElementById("closeFocusDrawerButton");
 const detailTitle = document.getElementById("detailTitle");
 const detailSubtitle = document.getElementById("detailSubtitle");
 const detailArtwork = document.getElementById("detailArtwork");
 const detailList = document.getElementById("detailList");
 const detailLinks = document.getElementById("detailLinks");
+const supportsHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+const SINGLE_DOUBLE_TAP_MS = 420;
 
 const WIDTH = 2420;
-const ZOOM_MIN = 0.22;
-const ZOOM_MAX = 3.1;
 const VIEW_MARGIN = { top: 150, right: 72, bottom: 110, left: 72 };
 const LANE_PANELS = {
   single: { x: 68, width: 338, labelX: 236, accent: "#d8ff5f" },
   mini: { x: 540, width: 932, labelX: 1006, accent: "#8cf2ce" },
   full: { x: 1560, width: 796, labelX: 1958, accent: "#ff8a47" },
 };
+const LANE_FIT_PADDING = 12;
+const lanePanelValues = Object.values(LANE_PANELS);
+const LANE_AREA_MIN_X = Math.min(...lanePanelValues.map((lane) => lane.x));
+const LANE_AREA_MAX_X = Math.max(...lanePanelValues.map((lane) => lane.x + lane.width));
+const FIT_VIEWBOX_LEFT = Math.max(0, LANE_AREA_MIN_X - LANE_FIT_PADDING);
+const FIT_VIEWBOX_RIGHT = Math.min(WIDTH, LANE_AREA_MAX_X + LANE_FIT_PADDING);
+const FIT_VIEWBOX_WIDTH = FIT_VIEWBOX_RIGHT - FIT_VIEWBOX_LEFT;
 const ALBUM_TRACK_START_Y = 156;
 const SINGLE_CARD = {
   width: Math.min(236, LANE_PANELS.single.width - 52),
   height: 78,
   x: LANE_PANELS.single.x + 24,
 };
+const SINGLE_TITLE_MAX_WIDTH = SINGLE_CARD.width - 92;
+const singleLabelMeasureCanvas = document.createElement("canvas");
+const singleLabelMeasureContext = singleLabelMeasureCanvas.getContext("2d");
+if (singleLabelMeasureContext) {
+  singleLabelMeasureContext.font = '700 14px "Zen Kaku Gothic New", sans-serif';
+}
 const ALBUM_CARD = {
   mini: {
     width: Math.min(420, LANE_PANELS.mini.width - 60),
@@ -110,17 +120,22 @@ function wrapLabel(text, maxUnits) {
   return lines.slice(0, 3);
 }
 
-function truncateLabel(text, maxUnits) {
-  let units = 0;
+function truncateLabelByPixel(text, maxWidth) {
+  if (!singleLabelMeasureContext || singleLabelMeasureContext.measureText(text).width <= maxWidth) {
+    return text;
+  }
+
+  const ellipsis = "…";
+  const ellipsisWidth = singleLabelMeasureContext.measureText(ellipsis).width;
   let output = "";
 
   for (const char of text) {
-    const weight = isWideChar(char) ? 1 : 0.55;
-    if (units + weight > maxUnits) {
-      return `${output.trimEnd()}…`;
+    const candidate = `${output}${char}`;
+    const candidateWidth = singleLabelMeasureContext.measureText(candidate).width;
+    if (candidateWidth + ellipsisWidth > maxWidth) {
+      return `${output.trimEnd()}${ellipsis}`;
     }
-    output += char;
-    units += weight;
+    output = candidate;
   }
 
   return output;
@@ -157,13 +172,31 @@ function packNodes(items, minGap, minY, maxY) {
   }
 }
 
-function packAlbums(albums, minGap, minY) {
+function packAlbums(albums, minGap, minY, maxY = Number.POSITIVE_INFINITY) {
   const sorted = [...albums].sort((a, b) => (a.baseCenterY - b.baseCenterY) || (a.order - b.order));
   let cursor = minY;
   for (const album of sorted) {
     const targetTop = album.baseCenterY - album.height / 2;
     album.y = Math.max(targetTop, cursor);
     cursor = album.y + album.height + minGap;
+  }
+
+  const occupiedBottom = cursor - minGap;
+  if (occupiedBottom > maxY) {
+    let backCursor = maxY;
+    for (let index = sorted.length - 1; index >= 0; index -= 1) {
+      const album = sorted[index];
+      album.y = Math.min(album.y, backCursor - album.height);
+      backCursor = album.y - minGap;
+    }
+
+    cursor = minY;
+    for (const album of sorted) {
+      if (album.y < cursor) {
+        album.y = cursor;
+      }
+      cursor = album.y + album.height + minGap;
+    }
   }
 }
 
@@ -206,11 +239,13 @@ packAlbums(
   albumNodes.filter((album) => album.kind === "mini"),
   96,
   VIEW_MARGIN.top + 22,
+  HEIGHT - VIEW_MARGIN.bottom - 24,
 );
 packAlbums(
   albumNodes.filter((album) => album.kind === "full"),
   104,
   VIEW_MARGIN.top + 22,
+  HEIGHT - VIEW_MARGIN.bottom - 24,
 );
 
 for (const album of albumNodes) {
@@ -230,7 +265,7 @@ const singleNodes = parsedSingles.map((single, order) => ({
   x: SINGLE_CARD.x,
   width: SINGLE_CARD.width,
   height: SINGLE_CARD.height,
-  shortLabel: truncateLabel(single.title, 13.2),
+  shortLabel: truncateLabelByPixel(single.title, SINGLE_TITLE_MAX_WIDTH),
   baseY: yScale(single.parsedDate),
   y: yScale(single.parsedDate),
 }));
@@ -304,7 +339,7 @@ for (const song of parsedSongs) {
 }
 
 svg
-  .attr("viewBox", `0 0 ${WIDTH} ${HEIGHT}`)
+  .attr("viewBox", `${FIT_VIEWBOX_LEFT} 0 ${FIT_VIEWBOX_WIDTH} ${HEIGHT}`)
   .attr("preserveAspectRatio", "xMinYMin meet")
   .attr("width", WIDTH)
   .attr("height", HEIGHT);
@@ -319,6 +354,7 @@ const state = {
   activeId: null,
   activeContext: null,
   hoverNodeId: null,
+  lastSingleTap: null,
 };
 
 const defs = svg.append("defs");
@@ -374,7 +410,10 @@ backgroundLayer
   .attr("width", WIDTH)
   .attr("height", HEIGHT)
   .attr("fill", "transparent")
-  .on("click", () => setActive(null));
+  .on("click", () => {
+    state.lastSingleTap = null;
+    setActive(null);
+  });
 
 backgroundLayer
   .selectAll(".lane-panel")
@@ -410,9 +449,9 @@ backgroundLayer
 backgroundLayer
   .selectAll(".lane-label")
   .data([
-    { key: "single", title: "Single", subtitle: "발매 이벤트" },
-    { key: "mini", title: "Mini Album", subtitle: "초기 수록 / 확장" },
-    { key: "full", title: "Full Album", subtitle: "정규 수록 / 정착" },
+    { key: "single", title: "Single" },
+    { key: "mini", title: "Mini Album" },
+    { key: "full", title: "Full Album" },
   ])
   .join("g")
   .attr("transform", (lane) => `translate(${LANE_PANELS[lane.key].labelX}, 110)`)
@@ -422,13 +461,6 @@ backgroundLayer
       .attr("class", "lane-label")
       .attr("text-anchor", "middle")
       .text((lane) => lane.title);
-
-    group
-      .append("text")
-      .attr("class", "lane-sublabel")
-      .attr("text-anchor", "middle")
-      .attr("y", 24)
-      .text((lane) => lane.subtitle);
   });
 
 const edgeSelection = edgeLayer
@@ -457,6 +489,7 @@ const albumSelection = albumLayer
   })
   .on("click", (event, album) => {
     event.stopPropagation();
+    state.lastSingleTap = null;
     setActive(album.id, { kind: "album", albumId: album.id });
   });
 
@@ -546,6 +579,7 @@ const trackGroupSelection = albumSelection
   })
   .on("click", (event, track) => {
     event.stopPropagation();
+    state.lastSingleTap = null;
     setActive(track.songId, { kind: "track", albumId: track.albumId });
   });
 
@@ -594,10 +628,24 @@ const singleSelection = singleLayer
   })
   .on("click", (event, single) => {
     event.stopPropagation();
+    const now = Date.now();
+    const isDoubleTap =
+      state.lastSingleTap &&
+      state.lastSingleTap.id === single.id &&
+      now - state.lastSingleTap.time < SINGLE_DOUBLE_TAP_MS;
+
+    if (isDoubleTap) {
+      state.lastSingleTap = null;
+      setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
+      return;
+    }
+
+    state.lastSingleTap = { id: single.id, time: now };
     setActive(single.id, { kind: "single", singleId: single.id });
   })
   .on("dblclick", (event, single) => {
     event.stopPropagation();
+    state.lastSingleTap = null;
     setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
   });
 
@@ -658,14 +706,17 @@ function albumTooltip(album) {
 
 function songTooltip(song, displayTitle = null) {
   const name = displayTitle ?? song.title;
-  return `<strong>${htmlEscape(name)}</strong>Song node<br>first release ${song.releaseDate}<br>${song.albumMembership.length} album link(s)`;
+  return `<strong>${htmlEscape(name)}</strong>first release ${song.releaseDate}<br>${song.albumMembership.length} album link(s)`;
 }
 
 function singleTooltip(single) {
-  return `<strong>${htmlEscape(single.title)}</strong>Single event<br>${single.releaseDate}<br>${htmlEscape(single.collectionName)}`;
+  return `<strong>${htmlEscape(single.title)}</strong>${single.releaseDate}<br>${htmlEscape(single.collectionName)}`;
 }
 
 function moveTooltip(event) {
+  if (!supportsHover) {
+    return;
+  }
   const rect = stage.getBoundingClientRect();
   const x = Math.min(event.clientX - rect.left + 18, rect.width - tooltip.offsetWidth - 14);
   const y = Math.min(event.clientY - rect.top + 18, rect.height - tooltip.offsetHeight - 14);
@@ -674,12 +725,18 @@ function moveTooltip(event) {
 }
 
 function showTooltip(event, html) {
+  if (!supportsHover) {
+    return;
+  }
   tooltip.hidden = false;
   tooltip.innerHTML = html;
   moveTooltip(event);
 }
 
 function hideTooltip() {
+  if (!supportsHover) {
+    return;
+  }
   tooltip.hidden = true;
 }
 
@@ -736,9 +793,15 @@ function detailRow(label, value) {
   return [dt, dd];
 }
 
+function setDetailSubtitle(value) {
+  const text = value ?? "";
+  detailSubtitle.textContent = text;
+  detailSubtitle.hidden = !text;
+}
+
 function renderDefaultDetail() {
   detailTitle.textContent = data.meta.title;
-  detailSubtitle.textContent = "노드 또는 앨범 내부 트랙을 클릭하면 연결된 싱글, 곡, 앨범 경로를 강조합니다.";
+  setDetailSubtitle("노드 또는 앨범 내부 트랙을 클릭하면 연결된 싱글, 곡, 앨범 경로를 강조합니다.");
   detailArtwork.className = "detail-artwork detail-artwork-empty";
   detailArtwork.textContent = "ZUTOMAYO";
   detailList.replaceChildren(
@@ -750,6 +813,7 @@ function renderDefaultDetail() {
   detailLinks.replaceChildren(
     makeJumpButton("Latest Album", parsedAlbums.at(-1).id),
     makeJumpButton("First Single", parsedSingles[0].id),
+    ...getPlatformLinks(data.meta.artistJa).map((item) => makeExternalLinkButton(item.label, item.url)),
   );
 }
 
@@ -759,6 +823,30 @@ function makeJumpButton(label, targetId) {
   button.textContent = label;
   button.addEventListener("click", () => setActive(targetId));
   return button;
+}
+
+function makeExternalLinkButton(label, url) {
+  const link = document.createElement("a");
+  link.className = "external-link";
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = label;
+  return link;
+}
+
+function buildSearchQuery(title) {
+  return `${title} ${data.meta.artistJa} ${data.meta.artist}`;
+}
+
+function getPlatformLinks(title) {
+  const query = encodeURIComponent(buildSearchQuery(title));
+  return [
+    { label: "YouTube", url: `https://www.youtube.com/results?search_query=${query}` },
+    { label: "YT Music", url: `https://music.youtube.com/search?q=${query}` },
+    { label: "Apple Music", url: `https://music.apple.com/jp/search?term=${query}` },
+    { label: "Spotify", url: `https://open.spotify.com/search/${query}` },
+  ];
 }
 
 function setArtwork(url, alt) {
@@ -776,7 +864,7 @@ function renderDetail(nodeId) {
     const single = singleById.get(nodeId);
     const song = songById.get(single.targetSongId);
     detailTitle.textContent = single.title;
-    detailSubtitle.textContent = "single release event";
+    setDetailSubtitle("");
     setArtwork(single.artworkUrl, `${single.title} artwork`);
     detailList.replaceChildren(
       ...detailRow("Release", single.releaseDate),
@@ -787,6 +875,7 @@ function renderDetail(nodeId) {
     detailLinks.replaceChildren(
       makeJumpButton("Open Song", song.id),
       ...song.albumMembership.map((membership) => makeJumpButton(membership.albumTitle, membership.albumId)),
+      ...getPlatformLinks(single.title).map((item) => makeExternalLinkButton(item.label, item.url)),
     );
     return;
   }
@@ -808,7 +897,7 @@ function renderDetail(nodeId) {
     }
 
     detailTitle.textContent = song.title;
-    detailSubtitle.textContent = "song node";
+    setDetailSubtitle("");
     setArtwork(artworkUrl, `${song.title} artwork`);
     detailList.replaceChildren(
       ...detailRow("First Release", song.releaseDate),
@@ -819,6 +908,7 @@ function renderDetail(nodeId) {
     detailLinks.replaceChildren(
       ...song.singleIds.map((singleId) => makeJumpButton(singleById.get(singleId).title, singleId)),
       ...song.albumMembership.map((membership) => makeJumpButton(membership.albumTitle, membership.albumId)),
+      ...getPlatformLinks(song.title).map((item) => makeExternalLinkButton(item.label, item.url)),
     );
     return;
   }
@@ -829,7 +919,7 @@ function renderDetail(nodeId) {
   );
   const connectedSingles = connectedSongs.flatMap((song) => song.singleIds);
   detailTitle.textContent = album.title;
-  detailSubtitle.textContent = album.kind === "mini" ? "mini album" : "full album";
+  setDetailSubtitle(album.kind === "mini" ? "mini album" : "full album");
   setArtwork(album.artworkUrl, `${album.title} artwork`);
   detailList.replaceChildren(
     ...detailRow("Release", album.releaseDate),
@@ -838,7 +928,7 @@ function renderDetail(nodeId) {
     ...detailRow("Linked Singles", `${connectedSingles.length}`),
   );
   detailLinks.replaceChildren(
-    ...connectedSongs.slice(0, 6).map((song) => makeJumpButton(song.title, song.id)),
+    ...getPlatformLinks(album.title).map((item) => makeExternalLinkButton(item.label, item.url)),
   );
 }
 
@@ -849,7 +939,9 @@ function setActive(nodeId, context = null) {
 }
 
 function renderFocusDrawer() {
-  const shouldOpen = Boolean(state.activeId && songById.has(state.activeId));
+  const shouldOpen = Boolean(
+    state.activeId && (songById.has(state.activeId) || albumById.has(state.activeId)),
+  );
   infoFooter.classList.toggle("is-open", shouldOpen);
 }
 
@@ -882,78 +974,4 @@ function renderState() {
 
 renderDefaultDetail();
 renderState();
-
-function getReadingTransform() {
-  const rect = stage.getBoundingClientRect();
-  const scale = Math.max(ZOOM_MIN, Math.min(ZOOM_MAX, (rect.width - 42) / WIDTH));
-  const tx = (rect.width - WIDTH * scale) / 2;
-  const ty = 14;
-  return d3.zoomIdentity.translate(tx, ty).scale(scale);
-}
-
-function getWidthFitTransform() {
-  const rect = stage.getBoundingClientRect();
-  const scale = Math.max(
-    ZOOM_MIN,
-    Math.min(
-      ZOOM_MAX,
-      (rect.width - 24) / WIDTH,
-    ),
-  );
-  const tx = (rect.width - WIDTH * scale) / 2;
-  const ty = 14;
-  return d3.zoomIdentity.translate(tx, ty).scale(scale);
-}
-
-function applyZoomStep(direction) {
-  const factor = direction > 0 ? 1.2 : 0.84;
-  svg.transition().duration(180).call(zoom.scaleBy, factor);
-}
-
-const zoom = d3
-  .zoom()
-  .scaleExtent([ZOOM_MIN, ZOOM_MAX])
-  .translateExtent([
-    [-48, -48],
-    [WIDTH + 48, HEIGHT + 48],
-  ])
-  .filter((event) => {
-    if (event.type === "dblclick") {
-      return false;
-    }
-    if (event.type === "mousedown") {
-      return event.button === 0;
-    }
-    return true;
-  })
-  .wheelDelta((event) => -event.deltaY * 0.0016)
-  .on("zoom", (event) => {
-    viewport.attr("transform", event.transform);
-  })
-  .on("start end", (event) => {
-    const isPanning = event.type === "start";
-    svg.classed("is-panning", isPanning);
-    stage.classList.toggle("is-panning", isPanning);
-  });
-
-svg.call(zoom);
-svg.on("dblclick.zoom", null);
-
-function applyReadingView() {
-  svg.transition().duration(360).call(zoom.transform, getReadingTransform());
-}
-
-function applyWidthFit() {
-  svg.transition().duration(300).call(zoom.transform, getWidthFitTransform());
-}
-
-applyReadingView();
-
-zoomOutButton.addEventListener("click", () => applyZoomStep(-1));
-zoomInButton.addEventListener("click", () => applyZoomStep(1));
-fitViewButton.addEventListener("click", applyWidthFit);
 closeFocusDrawerButton.addEventListener("click", () => setActive(null));
-
-window.addEventListener("resize", () => {
-  applyReadingView();
-});
