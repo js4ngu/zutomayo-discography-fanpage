@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZUTOMAYO Discography Graph</title>
+    <meta
+      name="description"
+      content="ZUTOMAYO discography interactive graph built from singles, mini albums, and full albums."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="crt" aria-hidden="true"></div>
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb orb-b" aria-hidden="true"></div>
+
+    <main class="layout">
+      <section class="graph-panel">
+        <div class="panel-bar">
+          <div class="panel-title-wrap">
+            <p class="panel-kicker">ZUTOMAYO DISCOGRAPHY MAP</p>
+            <h1 class="panel-title">GRAPH VIEW</h1>
+          </div>
+
+          <div class="panel-actions">
+            <button id="zoomOutButton" type="button">-</button>
+            <button id="zoomInButton" type="button">+</button>
+            <button id="fitViewButton" type="button">Fit</button>
+            <button id="resetViewButton" type="button">Reset View</button>
+            <button id="clearFocusButton" type="button">Clear Focus</button>
+          </div>
+        </div>
+
+        <div class="graph-stage">
+          <svg id="graph" aria-label="ZUTOMAYO discography graph"></svg>
+          <div id="tooltip" class="tooltip" hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="info-footer">
+      <div class="detail-card focus-bar" id="detailCard">
+        <p class="detail-kicker">Focus</p>
+        <button id="closeFocusDrawerButton" class="focus-close" type="button" aria-label="Close Focus">
+          Close
+        </button>
+        <h2 id="detailTitle">ZUTOMAYO Discography Graph</h2>
+        <p id="detailSubtitle" class="detail-subtitle">
+          노드나 앨범 트랙을 클릭하면 관련 경로가 강조됩니다.
+        </p>
+        <div id="detailArtwork" class="detail-artwork detail-artwork-empty"></div>
+        <dl class="detail-list" id="detailList"></dl>
+        <div class="detail-links" id="detailLinks"></div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="./data/discography.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

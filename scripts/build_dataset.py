@@ -1,0 +1,478 @@
+#!/usr/bin/env python3
+
+from __future__ import annotations
+
+import json
+import re
+import time
+import unicodedata
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
+
+
+ROOT = Path(__file__).resolve().parents[1]
+UML_PATH = ROOT / "data" / "data.uml"
+OUTPUT_PATH = ROOT / "data" / "discography.js"
+CACHE_PATH = ROOT / "data" / "itunes_cache.json"
+
+ARTIST_NAME = "ずっと真夜中でいいのに。"
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"
+
+WORK_ALIASES = {
+    "Dear. Mr「F」": "Dear Mr F",
+    "クズリ念 (Live in Studio_ 温蔵庫)": "クズリ念",
+    "クズリ念 (Live in Studio_温蔵庫)": "クズリ念",
+    "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
+}
+
+SEARCH_TITLE_OVERRIDES = {
+    "形藻土": "KEISOUDO",
+    "正しい偽りからの起床": "Tadashii Itsuwarikarano Kishou",
+    "今は今で誓いは笑みで": "Imawa Imade Chikaiwa Emide",
+    "朗らかな皮膚とて不服": "Hogarakana Hifutote Fufuku",
+    "潜潜話": "Hisohiso Banashi",
+    "ぐされ": "Gusare",
+    "沈香学": "沈香学",
+    "Dear. Mr「F」": "Dear Mr F",
+    "クズリ念 (Live in Studio_ 温蔵庫)": "クズリ念",
+    "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
+}
+
+SINGLE_SEARCH_OVERRIDES = {
+    "形": "形",
+    "クズリ念": "クズリ念",
+    "よもすがら": "よもすがら",
+}
+
+SINGLE_COLLECTION_OVERRIDES = {
+    "秒針を噛む": "Byoushinwo Kamu - Single",
+    "脳裏上のクラッカー": "Nouriueno Cracker - Single",
+    "眩しいDNAだけ": "Mabushii DNA Dake - Single",
+    "正義": "Seigi - Single",
+    "お勉強しといてよ": "Obenkyou Shitoiteyo - Single",
+    "暗く黒く": "Darken - Single",
+    "勘ぐれい": "Hunch Gray - Single",
+    "あいつら全員同窓会": "Inside Joke - Single",
+    "ばかじゃないのに": "Stay Foolish - Single",
+    "猫リセット": "Neko Reset - Single",
+    "ミラーチューン": "Mirror Tune - Single",
+    "消えてしまいそうです": "Blush - Single",
+    "夏枯れ": "Summer Slack - Single",
+    "残機": "Time Left - Single",
+    "綺羅キラー": "Kira Killer (feat. Mori Calliope) - Single",
+    "不法侵入": "INTRUSION - Single",
+    "微熱魔": "Warmthaholic - Single",
+    "メディアノーチェ": "Medianoche - Single",
+    "形": "Pain Give Form - Single",
+    "嘘じゃない": "Truth In Lies - Single",
+    "シェードの埃は延長": "SHADE - Single",
+    "海馬成長痛": "Hippocampal Pain - Single",
+}
+
+SINGLE_ART_FALLBACK_ALBUMS = {
+    "勘冴えて悔しいわ": "今は今で誓いは笑みで",
+    "こんなこと騒動": "潜潜話",
+    "ハゼ馳せる果てるまで": "潜潜話",
+    "蹴っ飛ばした毛布": "潜潜話",
+    "過眠": "朗らかな皮膚とて不服",
+    "低血ボルト": "朗らかな皮膚とて不服",
+    "TAIDADA": "虚仮の一念海馬に託す",
+    "花一匁": "沈香学",
+    "よもすがら": "形藻土",
+}
+
+ALBUM_KIND_TEXT = {
+    "mini": "Mini Album",
+    "full": "Full Album",
+}
+
+
+def slugify(value: str) -> str:
+    normalized = unicodedata.normalize("NFKC", value)
+    normalized = normalized.lower()
+    normalized = re.sub(r"[^\w]+", "-", normalized, flags=re.UNICODE)
+    normalized = normalized.strip("-")
+    return normalized or "item"
+
+
+def iso_to_date(value: str) -> str:
+    return value[:10]
+
+
+def upscale_art(url: str | None, size: int = 900) -> str | None:
+    if not url:
+        return None
+    return re.sub(r"/\d+x\d+bb\.", f"/{size}x{size}bb.", url)
+
+
+class AppleSearch:
+    def __init__(self, cache_path: Path) -> None:
+        self.cache_path = cache_path
+        if cache_path.exists():
+            self.cache: dict[str, Any] = json.loads(cache_path.read_text())
+        else:
+            self.cache = {}
+
+    def save(self) -> None:
+        self.cache_path.write_text(
+            json.dumps(self.cache, ensure_ascii=False, indent=2) + "\n"
+        )
+
+    def search(self, term: str, entity: str, limit: int = 12) -> list[dict[str, Any]]:
+        key = json.dumps({"term": term, "entity": entity, "limit": limit}, ensure_ascii=False)
+        if key in self.cache:
+            return self.cache[key]
+
+        params = {
+            "term": term,
+            "entity": entity,
+            "limit": str(limit),
+            "country": "JP",
+        }
+        url = f"https://itunes.apple.com/search?{urlencode(params)}"
+
+        last_error: Exception | None = None
+        for attempt in range(5):
+            try:
+                request = Request(url, headers={"User-Agent": USER_AGENT})
+                with urlopen(request, timeout=20) as response:
+                    payload = json.loads(response.read().decode("utf-8"))
+                results = payload.get("results", [])
+                self.cache[key] = results
+                self.save()
+                time.sleep(0.35)
+                return results
+            except Exception as error:  # noqa: BLE001
+                last_error = error
+                time.sleep(1.2 * (attempt + 1))
+
+        raise RuntimeError(f"Apple search failed for {term} / {entity}: {last_error}")
+
+
+@dataclass
+class AlbumDef:
+    id: str
+    title: str
+    kind: str
+    order: int
+    tracks: list[str]
+
+
+def parse_uml(path: Path) -> tuple[list[AlbumDef], list[str], dict[str, str]]:
+    text = path.read_text()
+    lines = text.splitlines()
+
+    albums: list[AlbumDef] = []
+    singles: list[str] = []
+    release_targets: dict[str, str] = {}
+
+    current_album: AlbumDef | None = None
+    album_order = 0
+
+    for raw in lines:
+        line = raw.strip()
+
+        package_match = re.match(r'package "(.+?)\\n(.+?)" \{', line)
+        if package_match:
+            header = package_match.group(1)
+            title = package_match.group(2)
+            kind = "mini" if "MINI" in header else "full"
+            album_order += 1
+            current_album = AlbumDef(
+                id=f"album-{slugify(title)}",
+                title=title,
+                kind=kind,
+                order=album_order,
+                tracks=[],
+            )
+            albums.append(current_album)
+            continue
+
+        if line == "}":
+            current_album = None
+            continue
+
+        class_match = re.match(r'class "(.+?)"', line)
+        if class_match:
+            name = class_match.group(1)
+            if name.endswith("(S)"):
+                singles.append(name[:-3])
+            elif current_album is not None:
+                current_album.tracks.append(name)
+            continue
+
+        edge_match = re.match(r'"(.+?)" --> "(.+?)"', line)
+        if edge_match and edge_match.group(1).endswith("(S)"):
+            release_targets[edge_match.group(1)[:-3]] = edge_match.group(2)
+
+    return albums, singles, release_targets
+
+
+def choose_album_result(results: list[dict[str, Any]], title: str) -> dict[str, Any]:
+    filtered = [item for item in results if item.get("artistName") == ARTIST_NAME]
+    if not filtered:
+        raise RuntimeError(f"No album results for {title}")
+
+    def score(item: dict[str, Any]) -> tuple[int, str]:
+        name = item.get("collectionName", "")
+        score_value = 0
+        title_text = SEARCH_TITLE_OVERRIDES.get(title, title)
+        if name == title_text:
+            score_value += 6
+        elif name.startswith(title_text):
+            score_value += 5
+        elif title_text in name:
+            score_value += 4
+        if item.get("primaryGenreName") in {"ロック", "J-Pop"}:
+            score_value += 1
+        return (score_value, item.get("releaseDate", "9999"))
+
+    filtered.sort(key=score, reverse=True)
+    return filtered[0]
+
+
+def choose_single_result(
+    title: str,
+    album_results: list[dict[str, Any]],
+    song_results: list[dict[str, Any]],
+    fallback_album: dict[str, dict[str, Any]],
+) -> tuple[dict[str, Any], str]:
+    artist_album_results = [item for item in album_results if item.get("artistName") == ARTIST_NAME]
+    artist_song_results = [item for item in song_results if item.get("artistName") == ARTIST_NAME]
+
+    def album_score(item: dict[str, Any]) -> tuple[int, str]:
+        name = item.get("collectionName", "")
+        score_value = 0
+        title_text = SINGLE_SEARCH_OVERRIDES.get(title, title)
+        collection_override = SINGLE_COLLECTION_OVERRIDES.get(title)
+        title_match = (
+            name == title_text
+            or name.startswith(title_text)
+            or title_text in name
+            or (collection_override is not None and name == collection_override)
+        )
+        if name.endswith(" - Single"):
+            score_value += 6 if title_match else 0
+        elif name.endswith(" - EP"):
+            score_value += 4 if title_match else 0
+        if title_match:
+            score_value += 2
+        return (score_value, item.get("releaseDate", "9999"))
+
+    preferred_albums = [item for item in artist_album_results if album_score(item)[0] >= 4]
+    if preferred_albums:
+        preferred_albums.sort(key=album_score, reverse=True)
+        return preferred_albums[0], "album"
+
+    exact_tracks = [item for item in artist_song_results if item.get("trackName") == title]
+    if exact_tracks:
+        def song_score(item: dict[str, Any]) -> tuple[int, str]:
+            score_value = 0
+            collection_name = item.get("collectionName", "")
+            if collection_name.endswith(" - Single"):
+                score_value += 4
+            elif collection_name.endswith(" - EP"):
+                score_value += 2
+            return (score_value, item.get("releaseDate", "9999"))
+
+        exact_tracks.sort(key=song_score, reverse=True)
+        return exact_tracks[0], "song"
+
+    fallback_title = SINGLE_ART_FALLBACK_ALBUMS.get(title)
+    if fallback_title:
+        return fallback_album[fallback_title], "album-fallback"
+
+    raise LookupError(f"No single metadata for {title}")
+
+
+def choose_track_result(title: str, song_results: list[dict[str, Any]]) -> dict[str, Any]:
+    exact_tracks = [
+        item
+        for item in song_results
+        if item.get("artistName") == ARTIST_NAME and item.get("trackName") == title
+    ]
+    if not exact_tracks:
+        raise LookupError(f"No exact song metadata for {title}")
+
+    def song_score(item: dict[str, Any]) -> tuple[int, str]:
+        score_value = 0
+        collection_name = item.get("collectionName", "")
+        if collection_name.endswith(" - Single"):
+            score_value += 4
+        elif collection_name.endswith(" - EP"):
+            score_value += 2
+        return (score_value, item.get("releaseDate", "9999"))
+
+    exact_tracks.sort(key=song_score, reverse=True)
+    return exact_tracks[0]
+
+
+def build_dataset() -> dict[str, Any]:
+    albums_raw, single_titles, release_targets = parse_uml(UML_PATH)
+    search = AppleSearch(CACHE_PATH)
+
+    albums_by_title: dict[str, dict[str, Any]] = {}
+    for album_def in albums_raw:
+        query = f'{SEARCH_TITLE_OVERRIDES.get(album_def.title, album_def.title)} {ARTIST_NAME}'
+        results = search.search(query, "album")
+        picked = choose_album_result(results, album_def.title)
+        albums_by_title[album_def.title] = {
+            "id": album_def.id,
+            "type": "album",
+            "kind": album_def.kind,
+            "title": album_def.title,
+            "label": album_def.title,
+            "releaseDate": iso_to_date(picked["releaseDate"]),
+            "artworkUrl": upscale_art(picked.get("artworkUrl100")),
+            "collectionName": picked.get("collectionName"),
+            "order": album_def.order,
+            "trackTitles": album_def.tracks,
+        }
+
+    song_membership: dict[str, list[dict[str, Any]]] = {}
+    canonical_labels: dict[str, str] = {}
+
+    for album_def in albums_raw:
+        album = albums_by_title[album_def.title]
+        for index, track_title in enumerate(album_def.tracks):
+            canonical = WORK_ALIASES.get(track_title, track_title)
+            canonical_labels.setdefault(canonical, canonical)
+            song_membership.setdefault(canonical, []).append(
+                {
+                    "albumId": album["id"],
+                    "albumTitle": album["title"],
+                    "displayTitle": track_title,
+                    "order": index,
+                    "kind": album["kind"],
+                    "albumReleaseDate": album["releaseDate"],
+                }
+            )
+
+    songs: list[dict[str, Any]] = []
+    for canonical_title, memberships in song_membership.items():
+        memberships.sort(key=lambda item: (item["albumReleaseDate"], item["order"]))
+        first_membership = memberships[0]
+        song_id = f"song-{slugify(canonical_title)}"
+        songs.append(
+            {
+                "id": song_id,
+                "type": "song",
+                "title": canonical_title,
+                "label": canonical_labels[canonical_title],
+                "firstAlbumId": first_membership["albumId"],
+                "firstAlbumTitle": first_membership["albumTitle"],
+                "albumMembership": memberships,
+                "releaseDate": first_membership["albumReleaseDate"],
+                "singleIds": [],
+            }
+        )
+
+    songs_by_title = {song["title"]: song for song in songs}
+
+    singles: list[dict[str, Any]] = []
+    for index, single_title in enumerate(single_titles):
+        release_target = release_targets.get(single_title, single_title)
+        target_title = WORK_ALIASES.get(release_target, release_target)
+        album_results = search.search(f"{single_title} {ARTIST_NAME}", "album")
+        try:
+            picked, source_kind = choose_single_result(
+                single_title,
+                album_results,
+                [],
+                albums_by_title,
+            )
+        except LookupError:
+            song_results = search.search(f"{single_title} {ARTIST_NAME}", "song")
+            picked, source_kind = choose_single_result(
+                single_title,
+                album_results,
+                song_results,
+                albums_by_title,
+            )
+        if source_kind == "album-fallback":
+            try:
+                song_results = search.search(f"{single_title} {ARTIST_NAME}", "song")
+                track_pick = choose_track_result(single_title, song_results)
+                picked = {**picked, "releaseDate": track_pick["releaseDate"]}
+            except LookupError:
+                pass
+
+        single_id = f"single-{slugify(single_title)}"
+        singles.append(
+            {
+                "id": single_id,
+                "type": "single",
+                "title": single_title,
+                "label": single_title,
+                "releaseDate": iso_to_date(picked["releaseDate"]),
+                "artworkUrl": upscale_art(picked.get("artworkUrl100")),
+                "collectionName": picked.get("collectionName", ""),
+                "metadataSource": source_kind,
+                "targetSongId": songs_by_title[target_title]["id"],
+                "order": index,
+            }
+        )
+        songs_by_title[target_title]["singleIds"].append(single_id)
+        song_date = songs_by_title[target_title]["releaseDate"]
+        songs_by_title[target_title]["releaseDate"] = min(song_date, iso_to_date(picked["releaseDate"]))
+
+    albums = list(albums_by_title.values())
+    albums.sort(key=lambda item: item["releaseDate"])
+    songs.sort(key=lambda item: (item["releaseDate"], item["title"]))
+    singles.sort(key=lambda item: (item["releaseDate"], item["order"]))
+
+    edges: list[dict[str, str]] = []
+    for single in singles:
+        edges.append(
+            {
+                "id": f"edge-{single['id']}-to-{single['targetSongId']}",
+                "source": single["id"],
+                "target": single["targetSongId"],
+                "type": "release",
+            }
+        )
+
+    for song in songs:
+        for membership in song["albumMembership"]:
+            edges.append(
+                {
+                    "id": f"edge-{song['id']}-to-{membership['albumId']}",
+                    "source": song["id"],
+                    "target": membership["albumId"],
+                    "type": "included",
+                }
+            )
+
+    return {
+        "meta": {
+            "artist": "ZUTOMAYO",
+            "artistJa": ARTIST_NAME,
+            "title": "ZUTOMAYO Discography Graph",
+            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "sourceFiles": [str(UML_PATH.relative_to(ROOT))],
+            "metadataSource": "Apple Music / iTunes Search API",
+        },
+        "albums": albums,
+        "songs": songs,
+        "singles": singles,
+        "edges": edges,
+    }
+
+
+def main() -> None:
+    dataset = build_dataset()
+    payload = "window.ZUTOMAYO_GRAPH_DATA = " + json.dumps(
+        dataset,
+        ensure_ascii=False,
+        indent=2,
+    ) + ";\n"
+    OUTPUT_PATH.write_text(payload)
+    print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}")
+
+
+if __name__ == "__main__":
+    main()
