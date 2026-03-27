@@ -108,7 +108,7 @@ SINGLE_ART_FALLBACK_ALBUMS = {
 ALBUM_KIND_TEXT = {
     "mini": "Mini Album",
     "full": "Full Album",
-    "tour": "Tour Audio",
+    "tour": "Blu-ray / Live Session",
 }
 
 MANUAL_ALBUM_METADATA = {
@@ -116,7 +116,72 @@ MANUAL_ALBUM_METADATA = {
         "releaseDate": "2021-03-05",
         "collectionName": "THE FIRST TAKE",
         "artworkSingleTitle": "秒針を噛む - From THE FIRST TAKE",
-    }
+    },
+    "NIWA TO NIRA": {
+        "releaseDate": "2021-02-10",
+        "collectionName": "NIWA TO NIRA",
+        "artworkSingleTitle": "秒針を噛む",
+    },
+    "YAKI YAKI YANKEE TOUR CLEANING LABO": {
+        "releaseDate": "2021-12-15",
+        "collectionName": "YAKI YAKI YANKEE TOUR CLEANING LABO",
+        "artworkSingleTitle": "MILABO",
+    },
+    "CLEANING LABO": {
+        "releaseDate": "2022-05-25",
+        "collectionName": "CLEANING LABO",
+        "artworkSingleTitle": "お勉強しといてよ",
+    },
+    "MTV Unplugged - ZUTOMAYO": {
+        "releaseDate": "2022-10-28",
+        "collectionName": "MTV Unplugged - ZUTOMAYO",
+        "artworkSingleTitle": "ばかじゃないのに",
+    },
+    'ZUTOMAYO FACTORY day1 "memory_limit =1"': {
+        "releaseDate": "2023-05-03",
+        "collectionName": 'ZUTOMAYO FACTORY day1 "memory_limit =1"',
+        "artworkSingleTitle": "ミラーチューン",
+    },
+    'ZUTOMAYO FACTORY day2 "ob_start"': {
+        "releaseDate": "2023-05-04",
+        "collectionName": 'ZUTOMAYO FACTORY day2 "ob_start"',
+        "artworkSingleTitle": "ミラーチューン",
+    },
+    "ROAD GAME #Techno Poor": {
+        "releaseDate": "2023-10-25",
+        "collectionName": "ROAD GAME #Techno Poor",
+        "artworkSingleTitle": "残機",
+    },
+    "원소도로정담 투어 [도로망고]": {
+        "releaseDate": "2024-02-21",
+        "collectionName": "원소도로정담 투어 [도로망고]",
+        "artworkSingleTitle": "不法侵入",
+    },
+    "본격 중화다방·사랑의 페가수스 Blu-ray": {
+        "releaseDate": "2024-09-11",
+        "collectionName": "본격 중화다방·사랑의 페가수스 Blu-ray",
+        "artworkSingleTitle": "花一匁",
+    },
+    "원시 5년 순회공연 [다방·사랑의 페가수스]": {
+        "releaseDate": "2024-10-09",
+        "collectionName": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+        "artworkSingleTitle": "花一匁",
+    },
+    "아키하이킹 투어 2 Blu-ray": {
+        "releaseDate": "2025-05-21",
+        "collectionName": "아키하이킹 투어 2 Blu-ray",
+        "artworkSingleTitle": "形",
+    },
+    "아키하이킹 투어 2 Live": {
+        "releaseDate": "2025-09-03",
+        "collectionName": "아키하이킹 투어 2 Live",
+        "artworkSingleTitle": "TAIDADA",
+    },
+    "코즈믹도로정담 투어 [코즈단]": {
+        "releaseDate": "2026-02-18",
+        "collectionName": "코즈믹도로정담 투어 [코즈단]",
+        "artworkSingleTitle": "Blues in the Closet",
+    },
 }
 
 LIVE_SUFFIX_PATTERNS = [
@@ -228,7 +293,7 @@ def parse_uml(path: Path) -> tuple[list[AlbumDef], list[str], dict[str, str]]:
         package_match = re.match(r'package "(.+?)\\n(.+?)" \{', line)
         if package_match:
             header = package_match.group(1)
-            title = package_match.group(2)
+            title = package_match.group(2).replace('\\"', '"')
             if "MINI" in header:
                 kind = "mini"
             elif "TOUR" in header:
@@ -377,12 +442,22 @@ def build_manual_album_metadata(
 
     if artwork_source_title:
         album_results = search.search(f"{artwork_source_title} {ARTIST_NAME}", "album")
-        picked, _ = choose_single_result(
-            artwork_source_title,
-            album_results,
-            [],
-            albums_by_title,
-        )
+        song_results: list[dict[str, Any]] = []
+        try:
+            picked, _ = choose_single_result(
+                artwork_source_title,
+                album_results,
+                song_results,
+                albums_by_title,
+            )
+        except LookupError:
+            song_results = search.search(f"{artwork_source_title} {ARTIST_NAME}", "song")
+            picked, _ = choose_single_result(
+                artwork_source_title,
+                album_results,
+                song_results,
+                albums_by_title,
+            )
         artwork_url = upscale_art(picked.get("artworkUrl100"))
 
     return {
@@ -568,7 +643,7 @@ def build_dataset() -> dict[str, Any]:
             "title": "ZUTOMAYO Discography Graph",
             "generatedAt": datetime.now(timezone.utc).isoformat(),
             "sourceFiles": [str(UML_PATH.relative_to(ROOT))],
-            "metadataSource": "Apple Music / iTunes Search API",
+            "metadataSource": "Apple Music / iTunes Search API + manual Blu-ray / Live session lists",
         },
         "albums": albums,
         "songs": songs,

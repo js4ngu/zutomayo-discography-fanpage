@@ -23,17 +23,17 @@ const LANE_LABELS = {
   single: "Single",
   mini: "Mini Album",
   full: "Full Album",
-  tour: "Tour Audio",
+  tour: "Blu-ray / Live",
 };
 const ALBUM_KIND_LABELS = {
   mini: "MINI ALBUM",
   full: "FULL ALBUM",
-  tour: "TOUR AUDIO",
+  tour: "LIVE SESSION",
 };
 const ALBUM_KIND_DETAIL_LABELS = {
   mini: "mini album",
   full: "full album",
-  tour: "tour audio",
+  tour: "live session",
 };
 const LANE_GAP = 44;
 const LANE_FIT_PADDING = 12;
@@ -674,13 +674,13 @@ function renderDefaultDetail() {
     ...detailRow("Singles", String(parsedSingles.length)),
     ...detailRow("Songs", String(parsedSongs.length)),
     ...detailRow("Studio", String(parsedAlbums.filter((album) => album.kind !== "tour").length)),
-    ...detailRow("Tours", String(parsedAlbums.filter((album) => album.kind === "tour").length)),
+    ...detailRow("Live Sessions", String(parsedAlbums.filter((album) => album.kind === "tour").length)),
     ...detailRow("Timespan", `${parsedSingles[0].releaseDate} → ${parsedAlbums.at(-1).releaseDate}`),
   );
   detailLinks.replaceChildren(
     makeJumpButton("Latest Album", parsedAlbums.at(-1).id),
     makeJumpButton("First Single", parsedSingles[0].id),
-    ...(firstTourAlbum ? [makeJumpButton("Tour Audio", firstTourAlbum.id)] : []),
+    ...(firstTourAlbum ? [makeJumpButton("First Live Session", firstTourAlbum.id)] : []),
     ...getPlatformLinks(data.meta.artistJa).map((item) => makeExternalLinkButton(item.label, item.url)),
   );
 }
