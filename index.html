@@ -8,6 +8,7 @@
       name="description"
       content="ZUTOMAYO discography interactive graph built from singles, studio records, and Blu-ray/live sessions."
     />
+    <link rel="icon" type="image/x-icon" href="./asset/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +27,7 @@
       <section class="graph-panel">
         <div class="panel-bar">
           <div class="top-card">
-            <p class="panel-kicker">ZUTOMAYO DISCOGRAPHY MAP</p>
+            <img class="panel-logo" src="./asset/logo.svg" alt="ZUTOMAYO Discography Map" />
             <div class="panel-actions" aria-label="Graph shortcuts">
               <div class="filter-menu">
                 <button type="button" class="filter-trigger">Filter</button>
@@ -44,14 +45,14 @@
                     <span>Full</span>
                   </label>
                   <label class="filter-option">
-                    <input type="checkbox" data-filter-kind="tour" checked />
+                    <input type="checkbox" data-filter-kind="tour" />
                     <span>Blu-ray / Live</span>
                   </label>
                 </div>
               </div>
             </div>
             <p class="card-hover-tip" aria-hidden="true">
-              Hover the filter to choose which lanes stay visible. Hidden lanes are removed and the remaining layout expands automatically.
+              Blu-ray / Live is off by default for smoother browsing. Hidden lanes are removed and the remaining layout expands automatically.
             </p>
           </div>
         </div>

@@ -180,11 +180,12 @@ body {
   text-transform: uppercase;
 }
 
-.top-card .panel-kicker {
-  margin: 0;
-  font-size: 0.78rem;
-  line-height: 1;
-  white-space: nowrap;
+.panel-logo {
+  display: block;
+  width: clamp(148px, 22vw, 242px);
+  height: auto;
+  flex: 0 0 auto;
+  filter: drop-shadow(0 0 18px rgba(104, 246, 255, 0.16));
 }
 
 .card-hover-tip {
