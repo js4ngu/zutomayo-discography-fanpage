@@ -1032,6 +1032,14 @@ function shouldRenderAlbumTrackList(album, expandedAlbumIds) {
   return album.kind !== "tour" || expandedAlbumIds.has(album.id);
 }
 
+function getFocusedSongId() {
+  return state.activeId && songById.has(state.activeId) ? state.activeId : null;
+}
+
+function isLiveEdge(edge) {
+  return Boolean(edge.albumIdTo && albumById.get(edge.albumIdTo)?.kind === "tour");
+}
+
 function getVisibleGraphSlice() {
   const windowTop = Math.max(0, stage.scrollTop - VIEWPORT_OVERSCAN);
   const windowBottom = stage.scrollTop + stage.clientHeight + VIEWPORT_OVERSCAN;
@@ -1047,10 +1055,18 @@ function getVisibleGraphSlice() {
     const bottom = Math.max(edge.points.y1, edge.points.y2);
     return bottom >= windowTop && top <= windowBottom;
   });
-  const reducedEdges =
-    state.activeId || state.hoverNodeId
-      ? visibleEdges
-      : visibleEdges.filter((edge) => edge.type === "release");
+  const focusedSongId = getFocusedSongId();
+  const reducedEdges = visibleEdges.filter((edge) => {
+    if (isLiveEdge(edge)) {
+      return focusedSongId ? edge.songId === focusedSongId : false;
+    }
+
+    if (state.activeId || state.hoverNodeId) {
+      return true;
+    }
+
+    return edge.type === "release";
+  });
 
   return {
     visibleAlbums,
