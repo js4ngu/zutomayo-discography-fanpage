@@ -37,6 +37,9 @@ WORK_ALIASES = {
     "暗く黒く(Crack Clock)": "暗く黒く",
     "乏しいDNAだけ(愚)": "眩しいDNAだけ",
     "居眠り遠征隊(即興)": "居眠り遠征隊",
+    "繰り返す収穫(即興)": "繰り返す収穫",
+    "勘ぐれい(ヤンキーver.)": "勘ぐれい",
+    "脳裏上のクラッカー (セッション紹介)": "脳裏上のクラッカー",
 }
 
 SEARCH_TITLE_OVERRIDES = {
@@ -182,6 +185,11 @@ MANUAL_ALBUM_METADATA = {
         "releaseDate": "2026-02-18",
         "collectionName": "코즈믹도로정담 투어 [코즈단]",
         "artworkSingleTitle": "Blues in the Closet",
+    },
+    "OMOTE EXPO 2025「名巧は愚なるが如し」": {
+        "releaseDate": "2025-09-02",
+        "collectionName": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+        "artworkSingleTitle": "TAIDADA",
     },
 }
 

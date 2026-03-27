@@ -3,7 +3,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
     "artist": "ZUTOMAYO",
     "artistJa": "ずっと真夜中でいいのに。",
     "title": "ZUTOMAYO Discography Graph",
-    "generatedAt": "2026-03-27T13:14:15.119565+00:00",
+    "generatedAt": "2026-03-27T13:45:32.756993+00:00",
     "sourceFiles": [
       "data/data.uml"
     ],
@@ -174,7 +174,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "JK BOMBER",
         "こんなこと騒動",
         "勘冴えて悔しいわ",
-        "低血ボルト",
         "マイノリティ脈絡",
         "勘ぐれい",
         "マリンブルーの庭園",
@@ -186,7 +185,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "眩しいDNAだけ",
         "秒針を噛む",
         "正義",
-        "脳裏上のクラッカー",
+        "脳裏上のクラッカー (セッション紹介)",
         "暗く黒く",
         "正しくなれない",
         "お勉強しといてよ"
@@ -554,14 +553,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "虚仮にしてくれ",
         "嘘じゃない",
         "秒針を噛む",
-        "消えてしまいそうです",
+        "消えてしまいそうです(1970s)",
         "ミラーチューン",
         "勘ぐれい",
         "馴れ合いサーブ",
         "残機",
         "形",
         "上辺の私自身なんだよ",
-        "居眠り遠征隊",
+        "クズリ念(肯定)",
+        "居眠り遠征隊(即興)",
         "微熱魔",
         "胸の煙",
         "海馬成長痛",
@@ -569,10 +569,38 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "シェードの埃は延長",
         "お勉強しといてよ",
         "TAIDADA",
-        "暗く黒く",
-        "クリームで会いにいけますか (Disco Re-Edit)",
+        "暗く黒く(Crack Clock)",
+        "クリームで会いにいけますか",
         "あいつら全員同窓会",
-        "眩しいDNAだけ"
+        "乏しいDNAだけ(愚)"
+      ]
+    },
+    {
+      "id": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "album",
+      "kind": "tour",
+      "title": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+      "label": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+      "releaseDate": "2025-09-02",
+      "artworkUrl": null,
+      "collectionName": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+      "order": 26,
+      "trackTitles": [
+        "消えてしまいそうです",
+        "クズリ念(肯定)",
+        "MILABO",
+        "眩しいDNAだけ",
+        "ミラーチューン",
+        "クリームで会いにいけますか",
+        "夏枯れ",
+        "秒針を噛む",
+        "海馬成長痛",
+        "残機",
+        "シェードの埃は延長",
+        "お勉強しといてよ",
+        "TAIDADA",
+        "暗く黒く(Crack Clock)",
+        "正義"
       ]
     },
     {
@@ -595,7 +623,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "秒針を噛む",
         "ばかじゃないのに",
         "クズリ念",
-        "繰り返す収穫",
+        "繰り返す収穫(即興)",
         "海馬成長痛",
         "彷徨い酔い温度",
         "お勉強しといてよ",
@@ -606,7 +634,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "虚仮にしてくれ",
         "嘘じゃない",
         "正義",
-        "勘ぐれい"
+        "勘ぐれい(ヤンキーver.)"
       ]
     },
     {
@@ -746,7 +774,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "秒針を噛む",
-          "order": 13,
+          "order": 12,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -823,6 +851,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-05-21"
         },
         {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "秒針を噛む",
+          "order": 7,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
+        },
+        {
           "albumId": "album-아키하이킹-투어-2-live",
           "albumTitle": "아키하이킹 투어 2 Live",
           "displayTitle": "秒針を噛む",
@@ -871,8 +907,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
-          "displayTitle": "脳裏上のクラッカー",
-          "order": 15,
+          "displayTitle": "脳裏上のクラッカー (セッション紹介)",
+          "order": 14,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1020,7 +1056,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "サターン",
-          "order": 9,
+          "order": 8,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1140,7 +1176,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "성계와 밤",
-          "order": 7,
+          "order": 6,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1192,7 +1228,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "眩しいDNAだけ",
-          "order": 12,
+          "order": 11,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1223,10 +1259,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
-          "displayTitle": "眩しいDNAだけ",
-          "order": 21,
+          "displayTitle": "乏しいDNAだけ(愚)",
+          "order": 22,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "眩しいDNAだけ",
+          "order": 3,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -1278,7 +1322,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "正義",
-          "order": 14,
+          "order": 13,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1329,6 +1373,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 24,
           "kind": "tour",
           "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "正義",
+          "order": 14,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-아키하이킹-투어-2-live",
@@ -1486,7 +1538,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "マイノリティ脈絡",
-          "order": 4,
+          "order": 3,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1614,7 +1666,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "Dear. Mr「F」",
-          "order": 11,
+          "order": 10,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -1849,8 +1901,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
-          "displayTitle": "居眠り遠征隊",
-          "order": 10,
+          "displayTitle": "居眠り遠征隊(即興)",
+          "order": 11,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
@@ -1938,7 +1990,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "お勉強しといてよ",
-          "order": 18,
+          "order": 17,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2002,9 +2054,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "お勉強しといてよ",
-          "order": 16,
+          "order": 17,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "お勉強しといてよ",
+          "order": 11,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-아키하이킹-투어-2-live",
@@ -2064,7 +2124,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "MILABO",
-          "order": 10,
+          "order": 9,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2112,9 +2172,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "MILABO",
-          "order": 14,
+          "order": 15,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "MILABO",
+          "order": 2,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -2161,14 +2229,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 11,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
-        },
-        {
-          "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
-          "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
-          "displayTitle": "低血ボルト",
-          "order": 3,
-          "kind": "tour",
-          "albumReleaseDate": "2021-12-15"
         },
         {
           "albumId": "album-zutomayo-factory-day2-ob_start",
@@ -2220,7 +2280,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "Ham",
-          "order": 8,
+          "order": 7,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2348,7 +2408,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "マリンブルーの庭園",
-          "order": 6,
+          "order": 5,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2424,7 +2484,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "暗く黒く",
-          "order": 16,
+          "order": 15,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2471,10 +2531,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
-          "displayTitle": "暗く黒く",
-          "order": 18,
+          "displayTitle": "暗く黒く(Crack Clock)",
+          "order": 19,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "暗く黒く(Crack Clock)",
+          "order": 13,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -2510,7 +2578,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "勘ぐれい",
-          "order": 5,
+          "order": 4,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2541,7 +2609,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-live",
           "albumTitle": "아키하이킹 투어 2 Live",
-          "displayTitle": "勘ぐれい",
+          "displayTitle": "勘ぐれい(ヤンキーver.)",
           "order": 20,
           "kind": "tour",
           "albumReleaseDate": "2025-09-03"
@@ -2580,7 +2648,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
           "displayTitle": "正しくなれない",
-          "order": 17,
+          "order": 16,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
         },
@@ -2875,7 +2943,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-live",
           "albumTitle": "아키하이킹 투어 2 Live",
-          "displayTitle": "繰り返す収穫",
+          "displayTitle": "繰り返す収穫(即興)",
           "order": 9,
           "kind": "tour",
           "albumReleaseDate": "2025-09-03"
@@ -2920,7 +2988,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "胸の煙",
-          "order": 12,
+          "order": 13,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
@@ -3056,7 +3124,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "あいつら全員同窓会",
-          "order": 20,
+          "order": 21,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
@@ -3421,6 +3489,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-05-21"
         },
         {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "ミラーチューン",
+          "order": 4,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
+        },
+        {
           "albumId": "album-아키하이킹-투어-2-live",
           "albumTitle": "아키하이킹 투어 2 Live",
           "displayTitle": "ミラーチューン",
@@ -3477,10 +3553,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
-          "displayTitle": "消えてしまいそうです",
+          "displayTitle": "消えてしまいそうです(1970s)",
           "order": 3,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "消えてしまいそうです",
+          "order": 0,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -3511,6 +3595,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 6,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "夏枯れ",
+          "order": 6,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         }
       ],
       "releaseDate": "2022-09-15",
@@ -3573,6 +3665,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 7,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "残機",
+          "order": 9,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-아키하이킹-투어-2-live",
@@ -4062,9 +4162,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "海馬成長痛",
-          "order": 13,
+          "order": 14,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "海馬成長痛",
+          "order": 8,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-아키하이킹-투어-2-live",
@@ -4236,9 +4344,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "TAIDADA",
-          "order": 17,
+          "order": 18,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "TAIDADA",
+          "order": 12,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-아키하이킹-투어-2-live",
@@ -4293,6 +4409,22 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 2,
           "kind": "mini",
           "albumReleaseDate": "2024-10-23"
+        },
+        {
+          "albumId": "album-아키하이킹-투어-2-blu-ray",
+          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "displayTitle": "クズリ念(肯定)",
+          "order": 10,
+          "kind": "tour",
+          "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "クズリ念(肯定)",
+          "order": 1,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-아키하이킹-투어-2-live",
@@ -4388,9 +4520,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "シェードの埃は延長",
-          "order": 15,
+          "order": 16,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "シェードの埃は延長",
+          "order": 10,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -4426,7 +4566,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
           "displayTitle": "微熱魔",
-          "order": 11,
+          "order": 12,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
@@ -4471,10 +4611,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-아키하이킹-투어-2-blu-ray",
           "albumTitle": "아키하이킹 투어 2 Blu-ray",
-          "displayTitle": "クリームで会いにいけますか (Disco Re-Edit)",
-          "order": 19,
+          "displayTitle": "クリームで会いにいけますか",
+          "order": 20,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
+        },
+        {
+          "albumId": "album-omote-expo-2025-名巧は愚なるが如し",
+          "albumTitle": "OMOTE EXPO 2025「名巧は愚なるが如し」",
+          "displayTitle": "クリームで会いにいけますか",
+          "order": 5,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-02"
         },
         {
           "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -5568,6 +5716,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-秒針を噛む-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-秒針を噛む",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-秒針を噛む-to-album-아키하이킹-투어-2-live",
       "source": "song-秒針を噛む",
       "target": "album-아키하이킹-투어-2-live",
@@ -5814,6 +5968,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-眩しいdnaだけ-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-眩しいdnaだけ",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-眩しいdnaだけ-to-album-永遠深夜万博-名巧は愚なるが如し",
       "source": "song-眩しいdnaだけ",
       "target": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -5877,6 +6037,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-正義-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "source": "song-正義",
       "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-正義-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-正義",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -6276,6 +6442,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-お勉強しといてよ-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-お勉強しといてよ",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-お勉強しといてよ-to-album-아키하이킹-투어-2-live",
       "source": "song-お勉強しといてよ",
       "target": "album-아키하이킹-투어-2-live",
@@ -6348,6 +6520,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-milabo-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-milabo",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-milabo-to-album-永遠深夜万博-名巧は愚なるが如し",
       "source": "song-milabo",
       "target": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -6369,12 +6547,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-低血ボルト-to-album-ぐされ",
       "source": "song-低血ボルト",
       "target": "album-ぐされ",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-低血ボルト-to-album-yaki-yaki-yankee-tour-cleaning-labo",
-      "source": "song-低血ボルト",
-      "target": "album-yaki-yaki-yankee-tour-cleaning-labo",
       "type": "included"
     },
     {
@@ -6567,6 +6739,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-暗く黒く-to-album-아키하이킹-투어-2-blu-ray",
       "source": "song-暗く黒く",
       "target": "album-아키하이킹-투어-2-blu-ray",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-暗く黒く-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-暗く黒く",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -7092,6 +7270,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-ミラーチューン-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-ミラーチューン",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-ミラーチューン-to-album-아키하이킹-투어-2-live",
       "source": "song-ミラーチューン",
       "target": "album-아키하이킹-투어-2-live",
@@ -7128,6 +7312,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-消えてしまいそうです-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-消えてしまいそうです",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-消えてしまいそうです-to-album-永遠深夜万博-名巧は愚なるが如し",
       "source": "song-消えてしまいそうです",
       "target": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -7137,6 +7327,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-夏枯れ-to-album-沈香学",
       "source": "song-夏枯れ",
       "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-夏枯れ-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-夏枯れ",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -7173,6 +7369,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-残機-to-album-아키하이킹-투어-2-blu-ray",
       "source": "song-残機",
       "target": "album-아키하이킹-투어-2-blu-ray",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-残機-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-残機",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -7428,6 +7630,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-海馬成長痛-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-海馬成長痛",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-海馬成長痛-to-album-아키하이킹-투어-2-live",
       "source": "song-海馬成長痛",
       "target": "album-아키하이킹-투어-2-live",
@@ -7494,6 +7702,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-taidada-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-taidada",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-taidada-to-album-아키하이킹-투어-2-live",
       "source": "song-taidada",
       "target": "album-아키하이킹-투어-2-live",
@@ -7521,6 +7735,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-クズリ念-to-album-虚仮の一念海馬に託す",
       "source": "song-クズリ念",
       "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-クズリ念-to-album-아키하이킹-투어-2-blu-ray",
+      "source": "song-クズリ念",
+      "target": "album-아키하이킹-투어-2-blu-ray",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-クズリ念-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-クズリ念",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -7578,6 +7804,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-シェードの埃は延長-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-シェードの埃は延長",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-シェードの埃は延長-to-album-永遠深夜万博-名巧は愚なるが如し",
       "source": "song-シェードの埃は延長",
       "target": "album-永遠深夜万博-名巧は愚なるが如し",
@@ -7617,6 +7849,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-クリームで会いにいけますか-to-album-아키하이킹-투어-2-blu-ray",
       "source": "song-クリームで会いにいけますか",
       "target": "album-아키하이킹-투어-2-blu-ray",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-クリームで会いにいけますか-to-album-omote-expo-2025-名巧は愚なるが如し",
+      "source": "song-クリームで会いにいけますか",
+      "target": "album-omote-expo-2025-名巧は愚なるが如し",
       "type": "included"
     },
     {
