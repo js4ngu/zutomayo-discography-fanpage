@@ -27,8 +27,31 @@
         <div class="panel-bar">
           <div class="top-card">
             <p class="panel-kicker">ZUTOMAYO DISCOGRAPHY MAP</p>
+            <div class="panel-actions" aria-label="Graph shortcuts">
+              <div class="filter-menu">
+                <button type="button" class="filter-trigger">Filter</button>
+                <div class="filter-popover" role="group" aria-label="Discography filters">
+                  <label class="filter-option">
+                    <input type="checkbox" data-filter-kind="single" checked />
+                    <span>Single</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" data-filter-kind="mini" checked />
+                    <span>Mini</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" data-filter-kind="full" checked />
+                    <span>Full</span>
+                  </label>
+                  <label class="filter-option">
+                    <input type="checkbox" data-filter-kind="tour" checked />
+                    <span>Tour</span>
+                  </label>
+                </div>
+              </div>
+            </div>
             <p class="card-hover-tip" aria-hidden="true">
-              Click track text or single card. Double-tap single on mobile to open song focus.
+              Hover the filter to choose which lanes stay visible. Hidden lanes are removed and the remaining layout expands automatically.
             </p>
           </div>
         </div>
@@ -56,6 +79,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="./site-config.js"></script>
+    <script src="./analytics.js"></script>
     <script src="./data/discography.js"></script>
     <script src="./app.js"></script>
   </body>

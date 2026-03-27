@@ -3,93 +3,131 @@ left to right direction
 skinparam packageStyle rectangle
 
 ' =========================
-' MINI ALBUM 1
+' Studio Albums / EPs
 ' =========================
 package "1st MINI\n正しい偽りからの起床" {
   class "秒針を噛む"
   class "ヒューマノイド"
-  class "脳裏上のクラッカー"
   class "サターン"
   class "雲丹と栗"
-  class "正しい偽りからの起床"
+  class "脳裏上のクラッカー"
+  class "君がいて水になる"
 }
 
-' =========================
-' MINI ALBUM 2
-' =========================
 package "2nd MINI\n今は今で誓いは笑みで" {
   class "勘冴えて悔しいわ"
-  class "眩しいDNAだけ"
   class "正義"
-  class "Dear Mr F"
-  class "こんなこと騒動"
-  class "ハゼ馳せる果てるまで"
-  class "蹴っ飛ばした毛布"
-  class "奥底に眠るルーツ"
+  class "またね幻"
+  class "マイノリティ脈絡"
+  class "彷徨い酔い温度"
+  class "眩しいDNAだけ"
 }
 
-' =========================
-' MINI ALBUM 3
-' =========================
-package "3rd MINI\n朗らかな皮膚とて不服" {
-  class "過眠"
-  class "低血ボルト"
-  class "勘ぐれい"
-  class "暗く黒く"
-  class "お勉強しといてよ"
-  class "MILABO"
-  class "ばかじゃないのに"
-}
-
-' =========================
-' FULL ALBUMS
-' =========================
 package "1st FULL\n潜潜話" {
-  class "秒針を噛む"
-  class "ヒューマノイド"
   class "脳裏上のクラッカー"
   class "勘冴えて悔しいわ"
-  class "眩しいDNAだけ"
-  class "正義"
-  class "こんなこと騒動"
+  class "居眠り遠征隊"
   class "ハゼ馳せる果てるまで"
   class "蹴っ飛ばした毛布"
   class "Dear. Mr「F」"
+  class "こんなこと騒動"
+  class "眩しいDNAだけ"
+  class "ヒューマノイド"
   class "グラスとラムレーズン"
-  class "居眠り遠征隊"
+  class "正義"
   class "優しくLAST SMILE"
+  class "秒針を噛む"
+}
+
+package "3rd MINI\n朗らかな皮膚とて不服" {
+  class "低血ボルト"
+  class "お勉強しといてよ"
+  class "Ham"
+  class "JK BOMBER"
+  class "マリンブルーの庭園"
+  class "MILABO"
 }
 
 package "2nd FULL\nぐされ" {
+  class "胸の煙"
   class "正しくなれない"
   class "お勉強しといてよ"
   class "勘ぐれい"
-  class "暗く黒く"
-  class "MILABO"
-  class "低血ボルト"
-  class "過眠"
-  class "胸の煙"
   class "はゔぁ"
   class "機械油"
+  class "暗く黒く"
+  class "MILABO"
   class "ろんりねす"
   class "繰り返す収穫"
+  class "過眠"
+  class "低血ボルト"
   class "奥底に眠るルーツ"
+  class "暗く黒く (Twin Piano Live ver.)"
+}
+
+package "4th MINI\n伸び仕草懲りて暇乞い" {
+  class "違う曲にしようよ"
+  class "袖のキルト"
+  class "あいつら全員同窓会"
+  class "猫リセット"
+  class "夜中のキスミ"
+  class "ばかじゃないのに"
 }
 
 package "3rd FULL\n沈香学" {
-  class "あいつら全員同窓会"
-  class "ばかじゃないのに"
-  class "猫リセット"
-  class "袖のキルト"
-  class "ミラーチューン"
-  class "消えてしまいそうです"
-  class "夏枯れ"
-  class "残機"
-  class "綺羅キラー"
-  class "不法侵入"
   class "花一匁"
+  class "残機"
+  class "猫リセット"
+  class "綺羅キラー (feat. Mori Calliope)"
   class "馴れ合いサーブ"
+  class "あいつら全員同窓会"
+  class "夏枯れ"
+  class "袖のキルト"
+  class "不法侵入"
+  class "ばかじゃないのに"
+  class "消えてしまいそうです"
+  class "ミラーチューン"
   class "上辺の私自身なんだよ"
+}
+
+package "1st TOUR\n本格中華喫茶・愛のペガサス ~羅武の香辛龍~" {
+  class "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "こんなこと騒動 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "低血ボルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "消えてしまいそうです (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "花一匁 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "脳裏上のクラッカー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "違う曲にしようよ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "Ham (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "Blues in the Closet (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "ハゼ馳せる果てるまで(抗いハゼフライ定食) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]"
+  class "~80光年の旅~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "マリンブルーの庭園 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "君がいて水になる (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "NEO炒飯 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "機械油 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "幻の五香粉 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "~土星を経由して~ (Short ver. / 本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "~夜のピークタイム~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "マイノリティ脈絡 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "秒針を噛む (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "残機 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "綺羅キラー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "あいつら全員同窓会 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "正義 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "ミラーチューン (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "嘘じゃない (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
+  class "暗く黒く(強) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]"
+}
+
+package "5th MINI\n虚仮の一念海馬に託す" {
+  class "虚仮にしてくれ"
+  class "TAIDADA"
+  class "クズリ念"
+  class "海馬成長痛"
+  class "嘘じゃない"
+  class "Blues in the Closet"
 }
 
 package "4th FULL\n形藻土" {
@@ -108,13 +146,40 @@ package "4th FULL\n形藻土" {
   class "海馬成長痛"
   class "アンチモン"
   class "よもすがら"
-  class "クズリ念 (Live in Studio_ 温蔵庫)"
+  class "クズリ念 (Live in Studio_温蔵庫)"
   class "嘘じゃない"
   class "lowmotion algae"
 }
 
+package "2nd TOUR\n永遠深夜万博「名巧は愚なるが如し」" {
+  class "虚仮にしてくれ (Live)"
+  class "～開会起立～ (Live)"
+  class "嘘じゃない (Live)"
+  class "秒針を噛む (Live)"
+  class "消えてしまいそうです(1970s) [Live]"
+  class "ミラーチューン (Live)"
+  class "勘ぐれい (Live)"
+  class "馴れ合いサーブ (Live)"
+  class "残機 (Live)"
+  class "形 (Live)"
+  class "上辺の私自身なんだよ (Live)"
+  class "クズリ念(肯定) [Live]"
+  class "居眠り遠征隊(即興) [Live]"
+  class "微熱魔 (Live)"
+  class "胸の煙 (Live)"
+  class "海馬成長痛 (Live)"
+  class "MILABO (Live)"
+  class "シェードの埃は延長 (Live)"
+  class "お勉強しといてよ (Live)"
+  class "TAIDADA (Live)"
+  class "暗く黒く(Crack Clock) [Live]"
+  class "クリームで会いにいけますか (Live)"
+  class "あいつら全員同窓会 (Live)"
+  class "乏しいDNAだけ(愚) [Live]"
+}
+
 ' =========================
-' Singles
+' Singles / prerelease tracks
 ' =========================
 class "秒針を噛む(S)"
 class "ヒューマノイド(S)"
@@ -123,9 +188,6 @@ class "脳裏上のクラッカー(S)"
 class "勘冴えて悔しいわ(S)"
 class "眩しいDNAだけ(S)"
 class "正義(S)"
-class "こんなこと騒動(S)"
-class "ハゼ馳せる果てるまで(S)"
-class "蹴っ飛ばした毛布(S)"
 
 class "お勉強しといてよ(S)"
 class "MILABO(S)"
@@ -133,6 +195,9 @@ class "低血ボルト(S)"
 class "暗く黒く(S)"
 class "勘ぐれい(S)"
 class "過眠(S)"
+class "正しくなれない(S)"
+class "秒針を噛む - From THE FIRST TAKE(S)"
+class "正しくなれない - From THE FIRST TAKE(S)"
 
 class "あいつら全員同窓会(S)"
 class "ばかじゃないのに(S)"
@@ -146,67 +211,63 @@ class "綺羅キラー(S)"
 class "不法侵入(S)"
 class "花一匁(S)"
 
+class "嘘じゃない(S)"
+class "Blues in the Closet(S)"
+class "海馬成長痛(S)"
 class "TAIDADA(S)"
 class "クズリ念(S)"
+class "シェードの埃は延長(S)"
 class "微熱魔(S)"
 class "クリームで会いにいけますか(S)"
-class "シェードの埃は延長(S)"
 class "形(S)"
-class "海馬成長痛(S)"
-class "嘘じゃない(S)"
 class "メディアノーチェ(S)"
 class "よもすがら(S)"
+class "有心論(S)"
 
 ' =========================
-' FLOW: Single → Mini → Full
+' Single -> song targets
 ' =========================
-
 "秒針を噛む(S)" --> "秒針を噛む"
-"秒針を噛む" --> "秒針を噛む"
-
 "ヒューマノイド(S)" --> "ヒューマノイド"
-"ヒューマノイド" --> "ヒューマノイド"
-
 "脳裏上のクラッカー(S)" --> "脳裏上のクラッカー"
-"脳裏上のクラッカー" --> "脳裏上のクラッカー"
 
 "勘冴えて悔しいわ(S)" --> "勘冴えて悔しいわ"
-"勘冴えて悔しいわ" --> "勘冴えて悔しいわ"
-
 "眩しいDNAだけ(S)" --> "眩しいDNAだけ"
-"眩しいDNAだけ" --> "眩しいDNAだけ"
-
 "正義(S)" --> "正義"
-"正義" --> "正義"
 
-"こんなこと騒動(S)" --> "こんなこと騒動"
-"こんなこと騒動" --> "こんなこと騒動"
+"お勉強しといてよ(S)" --> "お勉強しといてよ"
+"MILABO(S)" --> "MILABO"
+"低血ボルト(S)" --> "低血ボルト"
+"暗く黒く(S)" --> "暗く黒く"
+"勘ぐれい(S)" --> "勘ぐれい"
+"過眠(S)" --> "過眠"
+"正しくなれない(S)" --> "正しくなれない"
+"秒針を噛む - From THE FIRST TAKE(S)" --> "秒針を噛む - From THE FIRST TAKE"
+"正しくなれない - From THE FIRST TAKE(S)" --> "正しくなれない - From THE FIRST TAKE"
 
-"ハゼ馳せる果てるまで(S)" --> "ハゼ馳せる果てるまで"
-"ハゼ馳せる果てるまで" --> "ハゼ馳せる果てるまで"
+"あいつら全員同窓会(S)" --> "あいつら全員同窓会"
+"ばかじゃないのに(S)" --> "ばかじゃないのに"
+"猫リセット(S)" --> "猫リセット"
+"袖のキルト(S)" --> "袖のキルト"
+"ミラーチューン(S)" --> "ミラーチューン"
+"消えてしまいそうです(S)" --> "消えてしまいそうです"
+"夏枯れ(S)" --> "夏枯れ"
+"残機(S)" --> "残機"
+"綺羅キラー(S)" --> "綺羅キラー (feat. Mori Calliope)"
+"不法侵入(S)" --> "不法侵入"
+"花一匁(S)" --> "花一匁"
 
-"蹴っ飛ばした毛布(S)" --> "蹴っ飛ばした毛布"
-"蹴っ飛ばした毛布" --> "蹴っ飛ばした毛布"
-
-' mini -> full (구조 강조)
-"過眠" --> "過眠"
-"低血ボルト" --> "低血ボルト"
-"勘ぐれい" --> "勘ぐれい"
-"暗く黒く" --> "暗く黒く"
-"お勉強しといてよ" --> "お勉強しといてよ"
-"MILABO" --> "MILABO"
-"ばかじゃないのに" --> "ばかじゃないのに"
-
-' 形藻土
+"嘘じゃない(S)" --> "嘘じゃない"
+"Blues in the Closet(S)" --> "Blues in the Closet"
+"海馬成長痛(S)" --> "海馬成長痛"
 "TAIDADA(S)" --> "TAIDADA"
-"クズリ念(S)" --> "クズリ念 (Live in Studio_ 温蔵庫)"
+"クズリ念(S)" --> "クズリ念"
+"シェードの埃は延長(S)" --> "シェードの埃は延長"
 "微熱魔(S)" --> "微熱魔"
 "クリームで会いにいけますか(S)" --> "クリームで会いにいけますか (Disco Re-Edit)"
-"シェードの埃は延長(S)" --> "シェードの埃は延長"
 "形(S)" --> "形"
-"海馬成長痛(S)" --> "海馬成長痛"
-"嘘じゃない(S)" --> "嘘じゃない"
 "メディアノーチェ(S)" --> "メディアノーチェ"
 "よもすがら(S)" --> "よもすがら"
+"有心論(S)" --> "有心論"
 
 @enduml

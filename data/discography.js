@@ -3,7 +3,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
     "artist": "ZUTOMAYO",
     "artistJa": "ずっと真夜中でいいのに。",
     "title": "ZUTOMAYO Discography Graph",
-    "generatedAt": "2026-03-26T15:47:42.278149+00:00",
+    "generatedAt": "2026-03-27T11:58:13.463559+00:00",
     "sourceFiles": [
       "data/data.uml"
     ],
@@ -23,10 +23,10 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "trackTitles": [
         "秒針を噛む",
         "ヒューマノイド",
-        "脳裏上のクラッカー",
         "サターン",
         "雲丹と栗",
-        "正しい偽りからの起床"
+        "脳裏上のクラッカー",
+        "君がいて水になる"
       ]
     },
     {
@@ -41,13 +41,11 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "order": 2,
       "trackTitles": [
         "勘冴えて悔しいわ",
-        "眩しいDNAだけ",
         "正義",
-        "Dear Mr F",
-        "こんなこと騒動",
-        "ハゼ馳せる果てるまで",
-        "蹴っ飛ばした毛布",
-        "奥底に眠るルーツ"
+        "またね幻",
+        "マイノリティ脈絡",
+        "彷徨い酔い温度",
+        "眩しいDNAだけ"
       ]
     },
     {
@@ -59,21 +57,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2019-10-30",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b7/fe/4c/b7fe4cb4-fb88-578c-d58d-f650043ff298/19UMGIM82675.rgb.jpg/900x900bb.jpg",
       "collectionName": "Hisohiso Banashi",
-      "order": 4,
+      "order": 3,
       "trackTitles": [
-        "秒針を噛む",
-        "ヒューマノイド",
         "脳裏上のクラッカー",
         "勘冴えて悔しいわ",
-        "眩しいDNAだけ",
-        "正義",
-        "こんなこと騒動",
+        "居眠り遠征隊",
         "ハゼ馳せる果てるまで",
         "蹴っ飛ばした毛布",
         "Dear. Mr「F」",
+        "こんなこと騒動",
+        "眩しいDNAだけ",
+        "ヒューマノイド",
         "グラスとラムレーズン",
-        "居眠り遠征隊",
-        "優しくLAST SMILE"
+        "正義",
+        "優しくLAST SMILE",
+        "秒針を噛む"
       ]
     },
     {
@@ -85,15 +83,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2020-08-05",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/84/fc/8684fcc1-debe-ee04-18c8-99a111b96038/20UMGIM52165.rgb.jpg/900x900bb.jpg",
       "collectionName": "Hogarakana Hifutote Fufuku - EP",
-      "order": 3,
+      "order": 4,
       "trackTitles": [
-        "過眠",
         "低血ボルト",
-        "勘ぐれい",
-        "暗く黒く",
         "お勉強しといてよ",
-        "MILABO",
-        "ばかじゃないのに"
+        "Ham",
+        "JK BOMBER",
+        "マリンブルーの庭園",
+        "MILABO"
       ]
     },
     {
@@ -107,19 +104,39 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Gusare",
       "order": 5,
       "trackTitles": [
+        "胸の煙",
         "正しくなれない",
         "お勉強しといてよ",
         "勘ぐれい",
-        "暗く黒く",
-        "MILABO",
-        "低血ボルト",
-        "過眠",
-        "胸の煙",
         "はゔぁ",
         "機械油",
+        "暗く黒く",
+        "MILABO",
         "ろんりねす",
         "繰り返す収穫",
-        "奥底に眠るルーツ"
+        "過眠",
+        "低血ボルト",
+        "奥底に眠るルーツ",
+        "暗く黒く (Twin Piano Live ver.)"
+      ]
+    },
+    {
+      "id": "album-伸び仕草懲りて暇乞い",
+      "type": "album",
+      "kind": "mini",
+      "title": "伸び仕草懲りて暇乞い",
+      "label": "伸び仕草懲りて暇乞い",
+      "releaseDate": "2022-02-16",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/7e/5b/9f7e5b57-dac7-e0a5-14af-2566bf017fc6/22UMGIM03998.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Nobi Shigusa Korite Itomagoi - EP",
+      "order": 6,
+      "trackTitles": [
+        "違う曲にしようよ",
+        "袖のキルト",
+        "あいつら全員同窓会",
+        "猫リセット",
+        "夜中のキスミ",
+        "ばかじゃないのに"
       ]
     },
     {
@@ -131,21 +148,118 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2023-06-07",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
       "collectionName": "沈香学",
-      "order": 6,
+      "order": 7,
       "trackTitles": [
-        "あいつら全員同窓会",
-        "ばかじゃないのに",
-        "猫リセット",
-        "袖のキルト",
-        "ミラーチューン",
-        "消えてしまいそうです",
-        "夏枯れ",
-        "残機",
-        "綺羅キラー",
-        "不法侵入",
         "花一匁",
+        "残機",
+        "猫リセット",
+        "綺羅キラー (feat. Mori Calliope)",
         "馴れ合いサーブ",
+        "あいつら全員同窓会",
+        "夏枯れ",
+        "袖のキルト",
+        "不法侵入",
+        "ばかじゃないのに",
+        "消えてしまいそうです",
+        "ミラーチューン",
         "上辺の私自身なんだよ"
+      ]
+    },
+    {
+      "id": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "album",
+      "kind": "tour",
+      "title": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "label": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "releaseDate": "2024-09-25",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/0e/4c/680e4cc3-00ff-5373-ef07-752b40a2c3c0/24UMGIM95338.rgb.jpg/900x900bb.jpg",
+      "collectionName": "AUTHENTIC CHINESE KISSA \"Ai no Pegasus\" -SPICY DRAGON OF LOVE-",
+      "order": 8,
+      "trackTitles": [
+        "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "こんなこと騒動 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "低血ボルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "消えてしまいそうです (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "花一匁 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "脳裏上のクラッカー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "違う曲にしようよ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "Ham (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "Blues in the Closet (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "ハゼ馳せる果てるまで(抗いハゼフライ定食) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]",
+        "~80光年の旅~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "マリンブルーの庭園 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "君がいて水になる (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "NEO炒飯 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "機械油 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "幻の五香粉 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "~土星を経由して~ (Short ver. / 本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "~夜のピークタイム~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "マイノリティ脈絡 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "秒針を噛む (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "残機 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "綺羅キラー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "あいつら全員同窓会 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "正義 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "ミラーチューン (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "嘘じゃない (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+        "暗く黒く(強) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]"
+      ]
+    },
+    {
+      "id": "album-虚仮の一念海馬に託す",
+      "type": "album",
+      "kind": "mini",
+      "title": "虚仮の一念海馬に託す",
+      "label": "虚仮の一念海馬に託す",
+      "releaseDate": "2024-10-23",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Koke no ichinen Kaiba ni takusu - EP",
+      "order": 9,
+      "trackTitles": [
+        "虚仮にしてくれ",
+        "TAIDADA",
+        "クズリ念",
+        "海馬成長痛",
+        "嘘じゃない",
+        "Blues in the Closet"
+      ]
+    },
+    {
+      "id": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "album",
+      "kind": "tour",
+      "title": "永遠深夜万博「名巧は愚なるが如し」",
+      "label": "永遠深夜万博「名巧は愚なるが如し」",
+      "releaseDate": "2025-09-24",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fd/1c/6f/fd1c6f49-741c-61ea-585c-367162b9746f/25UM1IM24272.rgb.jpg/900x900bb.jpg",
+      "collectionName": "MIDNIGHT FOREVER EXPO ‘MEIKŌ WA GUNARUGA GOTOSHI’ (Live)",
+      "order": 11,
+      "trackTitles": [
+        "虚仮にしてくれ (Live)",
+        "～開会起立～ (Live)",
+        "嘘じゃない (Live)",
+        "秒針を噛む (Live)",
+        "消えてしまいそうです(1970s) [Live]",
+        "ミラーチューン (Live)",
+        "勘ぐれい (Live)",
+        "馴れ合いサーブ (Live)",
+        "残機 (Live)",
+        "形 (Live)",
+        "上辺の私自身なんだよ (Live)",
+        "クズリ念(肯定) [Live]",
+        "居眠り遠征隊(即興) [Live]",
+        "微熱魔 (Live)",
+        "胸の煙 (Live)",
+        "海馬成長痛 (Live)",
+        "MILABO (Live)",
+        "シェードの埃は延長 (Live)",
+        "お勉強しといてよ (Live)",
+        "TAIDADA (Live)",
+        "暗く黒く(Crack Clock) [Live]",
+        "クリームで会いにいけますか (Live)",
+        "あいつら全員同窓会 (Live)",
+        "乏しいDNAだけ(愚) [Live]"
       ]
     },
     {
@@ -157,7 +271,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2026-03-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/2a/19/ad2a1985-1499-5d04-b11d-8cdf6dd6e599/26UMGIM24458.rgb.jpg/900x900bb.jpg",
       "collectionName": "KEISOUDO",
-      "order": 7,
+      "order": 10,
       "trackTitles": [
         "地球存在しない説",
         "間人間",
@@ -174,7 +288,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "海馬成長痛",
         "アンチモン",
         "よもすがら",
-        "クズリ念 (Live in Studio_ 温蔵庫)",
+        "クズリ念 (Live in Studio_温蔵庫)",
         "嘘じゃない",
         "lowmotion algae"
       ]
@@ -201,9 +315,25 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "秒針を噛む",
-          "order": 0,
+          "order": 12,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "秒針を噛む (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 20,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "秒針を噛む (Live)",
+          "order": 3,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2018-08-30",
@@ -223,7 +353,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-正しい偽りからの起床",
           "albumTitle": "正しい偽りからの起床",
           "displayTitle": "脳裏上のクラッカー",
-          "order": 2,
+          "order": 4,
           "kind": "mini",
           "albumReleaseDate": "2018-11-14"
         },
@@ -231,9 +361,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "脳裏上のクラッカー",
-          "order": 2,
+          "order": 0,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "脳裏上のクラッカー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 6,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2018-10-02",
@@ -261,7 +399,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "ヒューマノイド",
-          "order": 1,
+          "order": 8,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
         }
@@ -283,7 +421,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-正しい偽りからの起床",
           "albumTitle": "正しい偽りからの起床",
           "displayTitle": "サターン",
-          "order": 3,
+          "order": 2,
           "kind": "mini",
           "albumReleaseDate": "2018-11-14"
         }
@@ -292,20 +430,28 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "singleIds": []
     },
     {
-      "id": "song-正しい偽りからの起床",
+      "id": "song-君がいて水になる",
       "type": "song",
-      "title": "正しい偽りからの起床",
-      "label": "正しい偽りからの起床",
+      "title": "君がいて水になる",
+      "label": "君がいて水になる",
       "firstAlbumId": "album-正しい偽りからの起床",
       "firstAlbumTitle": "正しい偽りからの起床",
       "albumMembership": [
         {
           "albumId": "album-正しい偽りからの起床",
           "albumTitle": "正しい偽りからの起床",
-          "displayTitle": "正しい偽りからの起床",
+          "displayTitle": "君がいて水になる",
           "order": 5,
           "kind": "mini",
           "albumReleaseDate": "2018-11-14"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "君がいて水になる (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 13,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2018-11-14",
@@ -323,7 +469,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-正しい偽りからの起床",
           "albumTitle": "正しい偽りからの起床",
           "displayTitle": "雲丹と栗",
-          "order": 4,
+          "order": 3,
           "kind": "mini",
           "albumReleaseDate": "2018-11-14"
         }
@@ -343,7 +489,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-今は今で誓いは笑みで",
           "albumTitle": "今は今で誓いは笑みで",
           "displayTitle": "眩しいDNAだけ",
-          "order": 1,
+          "order": 5,
           "kind": "mini",
           "albumReleaseDate": "2019-06-12"
         },
@@ -351,9 +497,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "眩しいDNAだけ",
-          "order": 4,
+          "order": 7,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "乏しいDNAだけ(愚) [Live]",
+          "order": 23,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2019-02-27",
@@ -373,7 +527,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-今は今で誓いは笑みで",
           "albumTitle": "今は今で誓いは笑みで",
           "displayTitle": "正義",
-          "order": 2,
+          "order": 1,
           "kind": "mini",
           "albumReleaseDate": "2019-06-12"
         },
@@ -381,9 +535,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "正義",
-          "order": 5,
+          "order": 10,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "正義 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 24,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2019-05-22",
@@ -411,7 +573,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "勘冴えて悔しいわ",
-          "order": 3,
+          "order": 1,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
         }
@@ -422,31 +584,99 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "song-dear-mr-f",
+      "id": "song-またね幻",
       "type": "song",
-      "title": "Dear Mr F",
-      "label": "Dear Mr F",
+      "title": "またね幻",
+      "label": "またね幻",
       "firstAlbumId": "album-今は今で誓いは笑みで",
       "firstAlbumTitle": "今は今で誓いは笑みで",
       "albumMembership": [
         {
           "albumId": "album-今は今で誓いは笑みで",
           "albumTitle": "今は今で誓いは笑みで",
-          "displayTitle": "Dear Mr F",
+          "displayTitle": "またね幻",
+          "order": 2,
+          "kind": "mini",
+          "albumReleaseDate": "2019-06-12"
+        },
+        {
+          "albumId": "album-形藻土",
+          "albumTitle": "形藻土",
+          "displayTitle": "またね幻 (Live in Studio_80光年先の君へ)",
+          "order": 7,
+          "kind": "full",
+          "albumReleaseDate": "2026-03-25"
+        }
+      ],
+      "releaseDate": "2019-06-12",
+      "singleIds": []
+    },
+    {
+      "id": "song-マイノリティ脈絡",
+      "type": "song",
+      "title": "マイノリティ脈絡",
+      "label": "マイノリティ脈絡",
+      "firstAlbumId": "album-今は今で誓いは笑みで",
+      "firstAlbumTitle": "今は今で誓いは笑みで",
+      "albumMembership": [
+        {
+          "albumId": "album-今は今で誓いは笑みで",
+          "albumTitle": "今は今で誓いは笑みで",
+          "displayTitle": "マイノリティ脈絡",
           "order": 3,
           "kind": "mini",
           "albumReleaseDate": "2019-06-12"
         },
         {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "マイノリティ脈絡 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 19,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2019-06-12",
+      "singleIds": []
+    },
+    {
+      "id": "song-彷徨い酔い温度",
+      "type": "song",
+      "title": "彷徨い酔い温度",
+      "label": "彷徨い酔い温度",
+      "firstAlbumId": "album-今は今で誓いは笑みで",
+      "firstAlbumTitle": "今は今で誓いは笑みで",
+      "albumMembership": [
+        {
+          "albumId": "album-今は今で誓いは笑みで",
+          "albumTitle": "今は今で誓いは笑みで",
+          "displayTitle": "彷徨い酔い温度",
+          "order": 4,
+          "kind": "mini",
+          "albumReleaseDate": "2019-06-12"
+        }
+      ],
+      "releaseDate": "2019-06-12",
+      "singleIds": []
+    },
+    {
+      "id": "song-dear-mr-f",
+      "type": "song",
+      "title": "Dear Mr F",
+      "label": "Dear Mr F",
+      "firstAlbumId": "album-潜潜話",
+      "firstAlbumTitle": "潜潜話",
+      "albumMembership": [
+        {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "Dear. Mr「F」",
-          "order": 9,
+          "order": 5,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
         }
       ],
-      "releaseDate": "2019-06-12",
+      "releaseDate": "2019-10-30",
       "singleIds": []
     },
     {
@@ -454,17 +684,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "こんなこと騒動",
       "label": "こんなこと騒動",
-      "firstAlbumId": "album-今は今で誓いは笑みで",
-      "firstAlbumTitle": "今は今で誓いは笑みで",
+      "firstAlbumId": "album-潜潜話",
+      "firstAlbumTitle": "潜潜話",
       "albumMembership": [
-        {
-          "albumId": "album-今は今で誓いは笑みで",
-          "albumTitle": "今は今で誓いは笑みで",
-          "displayTitle": "こんなこと騒動",
-          "order": 4,
-          "kind": "mini",
-          "albumReleaseDate": "2019-06-12"
-        },
         {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
@@ -472,100 +694,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 6,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
-        }
-      ],
-      "releaseDate": "2019-06-12",
-      "singleIds": [
-        "single-こんなこと騒動"
-      ]
-    },
-    {
-      "id": "song-ハゼ馳せる果てるまで",
-      "type": "song",
-      "title": "ハゼ馳せる果てるまで",
-      "label": "ハゼ馳せる果てるまで",
-      "firstAlbumId": "album-今は今で誓いは笑みで",
-      "firstAlbumTitle": "今は今で誓いは笑みで",
-      "albumMembership": [
-        {
-          "albumId": "album-今は今で誓いは笑みで",
-          "albumTitle": "今は今で誓いは笑みで",
-          "displayTitle": "ハゼ馳せる果てるまで",
-          "order": 5,
-          "kind": "mini",
-          "albumReleaseDate": "2019-06-12"
         },
         {
-          "albumId": "album-潜潜話",
-          "albumTitle": "潜潜話",
-          "displayTitle": "ハゼ馳せる果てるまで",
-          "order": 7,
-          "kind": "full",
-          "albumReleaseDate": "2019-10-30"
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "こんなこと騒動 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 2,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
-      "releaseDate": "2019-06-12",
-      "singleIds": [
-        "single-ハゼ馳せる果てるまで"
-      ]
-    },
-    {
-      "id": "song-奥底に眠るルーツ",
-      "type": "song",
-      "title": "奥底に眠るルーツ",
-      "label": "奥底に眠るルーツ",
-      "firstAlbumId": "album-今は今で誓いは笑みで",
-      "firstAlbumTitle": "今は今で誓いは笑みで",
-      "albumMembership": [
-        {
-          "albumId": "album-今は今で誓いは笑みで",
-          "albumTitle": "今は今で誓いは笑みで",
-          "displayTitle": "奥底に眠るルーツ",
-          "order": 7,
-          "kind": "mini",
-          "albumReleaseDate": "2019-06-12"
-        },
-        {
-          "albumId": "album-ぐされ",
-          "albumTitle": "ぐされ",
-          "displayTitle": "奥底に眠るルーツ",
-          "order": 12,
-          "kind": "full",
-          "albumReleaseDate": "2021-02-10"
-        }
-      ],
-      "releaseDate": "2019-06-12",
+      "releaseDate": "2019-10-30",
       "singleIds": []
-    },
-    {
-      "id": "song-蹴っ飛ばした毛布",
-      "type": "song",
-      "title": "蹴っ飛ばした毛布",
-      "label": "蹴っ飛ばした毛布",
-      "firstAlbumId": "album-今は今で誓いは笑みで",
-      "firstAlbumTitle": "今は今で誓いは笑みで",
-      "albumMembership": [
-        {
-          "albumId": "album-今は今で誓いは笑みで",
-          "albumTitle": "今は今で誓いは笑みで",
-          "displayTitle": "蹴っ飛ばした毛布",
-          "order": 6,
-          "kind": "mini",
-          "albumReleaseDate": "2019-06-12"
-        },
-        {
-          "albumId": "album-潜潜話",
-          "albumTitle": "潜潜話",
-          "displayTitle": "蹴っ飛ばした毛布",
-          "order": 8,
-          "kind": "full",
-          "albumReleaseDate": "2019-10-30"
-        }
-      ],
-      "releaseDate": "2019-06-12",
-      "singleIds": [
-        "single-蹴っ飛ばした毛布"
-      ]
     },
     {
       "id": "song-グラスとラムレーズン",
@@ -579,9 +719,37 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "グラスとラムレーズン",
-          "order": 10,
+          "order": 9,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
+        }
+      ],
+      "releaseDate": "2019-10-30",
+      "singleIds": []
+    },
+    {
+      "id": "song-ハゼ馳せる果てるまで",
+      "type": "song",
+      "title": "ハゼ馳せる果てるまで",
+      "label": "ハゼ馳せる果てるまで",
+      "firstAlbumId": "album-潜潜話",
+      "firstAlbumTitle": "潜潜話",
+      "albumMembership": [
+        {
+          "albumId": "album-潜潜話",
+          "albumTitle": "潜潜話",
+          "displayTitle": "ハゼ馳せる果てるまで",
+          "order": 3,
+          "kind": "full",
+          "albumReleaseDate": "2019-10-30"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "ハゼ馳せる果てるまで(抗いハゼフライ定食) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]",
+          "order": 10,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2019-10-30",
@@ -599,7 +767,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "優しくLAST SMILE",
-          "order": 12,
+          "order": 11,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
         }
@@ -619,7 +787,35 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-潜潜話",
           "albumTitle": "潜潜話",
           "displayTitle": "居眠り遠征隊",
-          "order": 11,
+          "order": 2,
+          "kind": "full",
+          "albumReleaseDate": "2019-10-30"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "居眠り遠征隊(即興) [Live]",
+          "order": 12,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        }
+      ],
+      "releaseDate": "2019-10-30",
+      "singleIds": []
+    },
+    {
+      "id": "song-蹴っ飛ばした毛布",
+      "type": "song",
+      "title": "蹴っ飛ばした毛布",
+      "label": "蹴っ飛ばした毛布",
+      "firstAlbumId": "album-潜潜話",
+      "firstAlbumTitle": "潜潜話",
+      "albumMembership": [
+        {
+          "albumId": "album-潜潜話",
+          "albumTitle": "潜潜話",
+          "displayTitle": "蹴っ飛ばした毛布",
+          "order": 4,
           "kind": "full",
           "albumReleaseDate": "2019-10-30"
         }
@@ -639,7 +835,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-朗らかな皮膚とて不服",
           "albumTitle": "朗らかな皮膚とて不服",
           "displayTitle": "お勉強しといてよ",
-          "order": 4,
+          "order": 1,
           "kind": "mini",
           "albumReleaseDate": "2020-08-05"
         },
@@ -647,9 +843,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "お勉強しといてよ",
-          "order": 1,
+          "order": 2,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "お勉強しといてよ (Live)",
+          "order": 18,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2020-05-15",
@@ -677,9 +881,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "MILABO",
-          "order": 4,
+          "order": 7,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "MILABO (Live)",
+          "order": 16,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2020-07-13",
@@ -699,7 +911,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-朗らかな皮膚とて不服",
           "albumTitle": "朗らかな皮膚とて不服",
           "displayTitle": "低血ボルト",
-          "order": 1,
+          "order": 0,
           "kind": "mini",
           "albumReleaseDate": "2020-08-05"
         },
@@ -707,9 +919,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "低血ボルト",
-          "order": 5,
+          "order": 11,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "低血ボルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 3,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2020-07-23",
@@ -718,33 +938,117 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "song-ばかじゃないのに",
+      "id": "song-ham",
       "type": "song",
-      "title": "ばかじゃないのに",
-      "label": "ばかじゃないのに",
+      "title": "Ham",
+      "label": "Ham",
       "firstAlbumId": "album-朗らかな皮膚とて不服",
       "firstAlbumTitle": "朗らかな皮膚とて不服",
       "albumMembership": [
         {
           "albumId": "album-朗らかな皮膚とて不服",
           "albumTitle": "朗らかな皮膚とて不服",
-          "displayTitle": "ばかじゃないのに",
-          "order": 6,
+          "displayTitle": "Ham",
+          "order": 2,
           "kind": "mini",
           "albumReleaseDate": "2020-08-05"
         },
         {
-          "albumId": "album-沈香学",
-          "albumTitle": "沈香学",
-          "displayTitle": "ばかじゃないのに",
-          "order": 1,
-          "kind": "full",
-          "albumReleaseDate": "2023-06-07"
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "Ham (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 8,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2020-08-05",
+      "singleIds": []
+    },
+    {
+      "id": "song-jk-bomber",
+      "type": "song",
+      "title": "JK BOMBER",
+      "label": "JK BOMBER",
+      "firstAlbumId": "album-朗らかな皮膚とて不服",
+      "firstAlbumTitle": "朗らかな皮膚とて不服",
+      "albumMembership": [
+        {
+          "albumId": "album-朗らかな皮膚とて不服",
+          "albumTitle": "朗らかな皮膚とて不服",
+          "displayTitle": "JK BOMBER",
+          "order": 3,
+          "kind": "mini",
+          "albumReleaseDate": "2020-08-05"
+        }
+      ],
+      "releaseDate": "2020-08-05",
+      "singleIds": []
+    },
+    {
+      "id": "song-マリンブルーの庭園",
+      "type": "song",
+      "title": "マリンブルーの庭園",
+      "label": "マリンブルーの庭園",
+      "firstAlbumId": "album-朗らかな皮膚とて不服",
+      "firstAlbumTitle": "朗らかな皮膚とて不服",
+      "albumMembership": [
+        {
+          "albumId": "album-朗らかな皮膚とて不服",
+          "albumTitle": "朗らかな皮膚とて不服",
+          "displayTitle": "マリンブルーの庭園",
+          "order": 4,
+          "kind": "mini",
+          "albumReleaseDate": "2020-08-05"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "マリンブルーの庭園 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 12,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2020-08-05",
+      "singleIds": []
+    },
+    {
+      "id": "song-暗く黒く",
+      "type": "song",
+      "title": "暗く黒く",
+      "label": "暗く黒く",
+      "firstAlbumId": "album-ぐされ",
+      "firstAlbumTitle": "ぐされ",
+      "albumMembership": [
+        {
+          "albumId": "album-ぐされ",
+          "albumTitle": "ぐされ",
+          "displayTitle": "暗く黒く",
+          "order": 6,
+          "kind": "full",
+          "albumReleaseDate": "2021-02-10"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "暗く黒く(強) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]",
+          "order": 27,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "暗く黒く(Crack Clock) [Live]",
+          "order": 20,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        }
+      ],
+      "releaseDate": "2020-11-03",
       "singleIds": [
-        "single-ばかじゃないのに"
+        "single-暗く黒く"
       ]
     },
     {
@@ -752,59 +1056,51 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "勘ぐれい",
       "label": "勘ぐれい",
-      "firstAlbumId": "album-朗らかな皮膚とて不服",
-      "firstAlbumTitle": "朗らかな皮膚とて不服",
+      "firstAlbumId": "album-ぐされ",
+      "firstAlbumTitle": "ぐされ",
       "albumMembership": [
-        {
-          "albumId": "album-朗らかな皮膚とて不服",
-          "albumTitle": "朗らかな皮膚とて不服",
-          "displayTitle": "勘ぐれい",
-          "order": 2,
-          "kind": "mini",
-          "albumReleaseDate": "2020-08-05"
-        },
         {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "勘ぐれい",
-          "order": 2,
+          "order": 3,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "勘ぐれい (Live)",
+          "order": 6,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
-      "releaseDate": "2020-08-05",
+      "releaseDate": "2020-11-27",
       "singleIds": [
         "single-勘ぐれい"
       ]
     },
     {
-      "id": "song-暗く黒く",
+      "id": "song-正しくなれない",
       "type": "song",
-      "title": "暗く黒く",
-      "label": "暗く黒く",
-      "firstAlbumId": "album-朗らかな皮膚とて不服",
-      "firstAlbumTitle": "朗らかな皮膚とて不服",
+      "title": "正しくなれない",
+      "label": "正しくなれない",
+      "firstAlbumId": "album-ぐされ",
+      "firstAlbumTitle": "ぐされ",
       "albumMembership": [
-        {
-          "albumId": "album-朗らかな皮膚とて不服",
-          "albumTitle": "朗らかな皮膚とて不服",
-          "displayTitle": "暗く黒く",
-          "order": 3,
-          "kind": "mini",
-          "albumReleaseDate": "2020-08-05"
-        },
         {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
-          "displayTitle": "暗く黒く",
-          "order": 3,
+          "displayTitle": "正しくなれない",
+          "order": 1,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
         }
       ],
-      "releaseDate": "2020-08-05",
+      "releaseDate": "2020-12-17",
       "singleIds": [
-        "single-暗く黒く"
+        "single-正しくなれない"
       ]
     },
     {
@@ -812,27 +1108,19 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "過眠",
       "label": "過眠",
-      "firstAlbumId": "album-朗らかな皮膚とて不服",
-      "firstAlbumTitle": "朗らかな皮膚とて不服",
+      "firstAlbumId": "album-ぐされ",
+      "firstAlbumTitle": "ぐされ",
       "albumMembership": [
-        {
-          "albumId": "album-朗らかな皮膚とて不服",
-          "albumTitle": "朗らかな皮膚とて不服",
-          "displayTitle": "過眠",
-          "order": 0,
-          "kind": "mini",
-          "albumReleaseDate": "2020-08-05"
-        },
         {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "過眠",
-          "order": 6,
+          "order": 10,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
         }
       ],
-      "releaseDate": "2020-08-05",
+      "releaseDate": "2021-01-23",
       "singleIds": [
         "single-過眠"
       ]
@@ -849,7 +1137,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "はゔぁ",
-          "order": 8,
+          "order": 4,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
         }
@@ -869,7 +1157,47 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "ろんりねす",
-          "order": 10,
+          "order": 8,
+          "kind": "full",
+          "albumReleaseDate": "2021-02-10"
+        }
+      ],
+      "releaseDate": "2021-02-10",
+      "singleIds": []
+    },
+    {
+      "id": "song-奥底に眠るルーツ",
+      "type": "song",
+      "title": "奥底に眠るルーツ",
+      "label": "奥底に眠るルーツ",
+      "firstAlbumId": "album-ぐされ",
+      "firstAlbumTitle": "ぐされ",
+      "albumMembership": [
+        {
+          "albumId": "album-ぐされ",
+          "albumTitle": "ぐされ",
+          "displayTitle": "奥底に眠るルーツ",
+          "order": 12,
+          "kind": "full",
+          "albumReleaseDate": "2021-02-10"
+        }
+      ],
+      "releaseDate": "2021-02-10",
+      "singleIds": []
+    },
+    {
+      "id": "song-暗く黒く-twin-piano-live-ver",
+      "type": "song",
+      "title": "暗く黒く (Twin Piano Live ver.)",
+      "label": "暗く黒く (Twin Piano Live ver.)",
+      "firstAlbumId": "album-ぐされ",
+      "firstAlbumTitle": "ぐされ",
+      "albumMembership": [
+        {
+          "albumId": "album-ぐされ",
+          "albumTitle": "ぐされ",
+          "displayTitle": "暗く黒く (Twin Piano Live ver.)",
+          "order": 13,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
         }
@@ -889,29 +1217,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "機械油",
-          "order": 9,
+          "order": 5,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
-        }
-      ],
-      "releaseDate": "2021-02-10",
-      "singleIds": []
-    },
-    {
-      "id": "song-正しくなれない",
-      "type": "song",
-      "title": "正しくなれない",
-      "label": "正しくなれない",
-      "firstAlbumId": "album-ぐされ",
-      "firstAlbumTitle": "ぐされ",
-      "albumMembership": [
+        },
         {
-          "albumId": "album-ぐされ",
-          "albumTitle": "ぐされ",
-          "displayTitle": "正しくなれない",
-          "order": 0,
-          "kind": "full",
-          "albumReleaseDate": "2021-02-10"
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "機械油 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 15,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2021-02-10",
@@ -929,7 +1245,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "繰り返す収穫",
-          "order": 11,
+          "order": 9,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
         }
@@ -949,29 +1265,87 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-ぐされ",
           "albumTitle": "ぐされ",
           "displayTitle": "胸の煙",
-          "order": 7,
+          "order": 0,
           "kind": "full",
           "albumReleaseDate": "2021-02-10"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "胸の煙 (Live)",
+          "order": 14,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2021-02-10",
       "singleIds": []
     },
     {
+      "id": "song-秒針を噛む-from-the-first-take",
+      "type": "song",
+      "title": "秒針を噛む - From THE FIRST TAKE",
+      "label": "秒針を噛む - From THE FIRST TAKE",
+      "firstAlbumId": null,
+      "firstAlbumTitle": null,
+      "albumMembership": [],
+      "releaseDate": "2021-03-05",
+      "singleIds": [
+        "single-秒針を噛む-from-the-first-take"
+      ]
+    },
+    {
+      "id": "song-正しくなれない-from-the-first-take",
+      "type": "song",
+      "title": "正しくなれない - From THE FIRST TAKE",
+      "label": "正しくなれない - From THE FIRST TAKE",
+      "firstAlbumId": null,
+      "firstAlbumTitle": null,
+      "albumMembership": [],
+      "releaseDate": "2021-03-17",
+      "singleIds": [
+        "single-正しくなれない-from-the-first-take"
+      ]
+    },
+    {
       "id": "song-あいつら全員同窓会",
       "type": "song",
       "title": "あいつら全員同窓会",
       "label": "あいつら全員同窓会",
-      "firstAlbumId": "album-沈香学",
-      "firstAlbumTitle": "沈香学",
+      "firstAlbumId": "album-伸び仕草懲りて暇乞い",
+      "firstAlbumTitle": "伸び仕草懲りて暇乞い",
       "albumMembership": [
+        {
+          "albumId": "album-伸び仕草懲りて暇乞い",
+          "albumTitle": "伸び仕草懲りて暇乞い",
+          "displayTitle": "あいつら全員同窓会",
+          "order": 2,
+          "kind": "mini",
+          "albumReleaseDate": "2022-02-16"
+        },
         {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "あいつら全員同窓会",
-          "order": 0,
+          "order": 5,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "あいつら全員同窓会 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 23,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "あいつら全員同窓会 (Live)",
+          "order": 22,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2021-06-18",
@@ -980,13 +1354,51 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
+      "id": "song-ばかじゃないのに",
+      "type": "song",
+      "title": "ばかじゃないのに",
+      "label": "ばかじゃないのに",
+      "firstAlbumId": "album-伸び仕草懲りて暇乞い",
+      "firstAlbumTitle": "伸び仕草懲りて暇乞い",
+      "albumMembership": [
+        {
+          "albumId": "album-伸び仕草懲りて暇乞い",
+          "albumTitle": "伸び仕草懲りて暇乞い",
+          "displayTitle": "ばかじゃないのに",
+          "order": 5,
+          "kind": "mini",
+          "albumReleaseDate": "2022-02-16"
+        },
+        {
+          "albumId": "album-沈香学",
+          "albumTitle": "沈香学",
+          "displayTitle": "ばかじゃないのに",
+          "order": 9,
+          "kind": "full",
+          "albumReleaseDate": "2023-06-07"
+        }
+      ],
+      "releaseDate": "2021-07-04",
+      "singleIds": [
+        "single-ばかじゃないのに"
+      ]
+    },
+    {
       "id": "song-猫リセット",
       "type": "song",
       "title": "猫リセット",
       "label": "猫リセット",
-      "firstAlbumId": "album-沈香学",
-      "firstAlbumTitle": "沈香学",
+      "firstAlbumId": "album-伸び仕草懲りて暇乞い",
+      "firstAlbumTitle": "伸び仕草懲りて暇乞い",
       "albumMembership": [
+        {
+          "albumId": "album-伸び仕草懲りて暇乞い",
+          "albumTitle": "伸び仕草懲りて暇乞い",
+          "displayTitle": "猫リセット",
+          "order": 3,
+          "kind": "mini",
+          "albumReleaseDate": "2022-02-16"
+        },
         {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
@@ -1006,22 +1418,86 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "袖のキルト",
       "label": "袖のキルト",
-      "firstAlbumId": "album-沈香学",
-      "firstAlbumTitle": "沈香学",
+      "firstAlbumId": "album-伸び仕草懲りて暇乞い",
+      "firstAlbumTitle": "伸び仕草懲りて暇乞い",
       "albumMembership": [
+        {
+          "albumId": "album-伸び仕草懲りて暇乞い",
+          "albumTitle": "伸び仕草懲りて暇乞い",
+          "displayTitle": "袖のキルト",
+          "order": 1,
+          "kind": "mini",
+          "albumReleaseDate": "2022-02-16"
+        },
         {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "袖のキルト",
-          "order": 3,
+          "order": 7,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 1,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2022-02-12",
       "singleIds": [
         "single-袖のキルト"
       ]
+    },
+    {
+      "id": "song-夜中のキスミ",
+      "type": "song",
+      "title": "夜中のキスミ",
+      "label": "夜中のキスミ",
+      "firstAlbumId": "album-伸び仕草懲りて暇乞い",
+      "firstAlbumTitle": "伸び仕草懲りて暇乞い",
+      "albumMembership": [
+        {
+          "albumId": "album-伸び仕草懲りて暇乞い",
+          "albumTitle": "伸び仕草懲りて暇乞い",
+          "displayTitle": "夜中のキスミ",
+          "order": 4,
+          "kind": "mini",
+          "albumReleaseDate": "2022-02-16"
+        }
+      ],
+      "releaseDate": "2022-02-16",
+      "singleIds": []
+    },
+    {
+      "id": "song-違う曲にしようよ",
+      "type": "song",
+      "title": "違う曲にしようよ",
+      "label": "違う曲にしようよ",
+      "firstAlbumId": "album-伸び仕草懲りて暇乞い",
+      "firstAlbumTitle": "伸び仕草懲りて暇乞い",
+      "albumMembership": [
+        {
+          "albumId": "album-伸び仕草懲りて暇乞い",
+          "albumTitle": "伸び仕草懲りて暇乞い",
+          "displayTitle": "違う曲にしようよ",
+          "order": 0,
+          "kind": "mini",
+          "albumReleaseDate": "2022-02-16"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "違う曲にしようよ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 7,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2022-02-16",
+      "singleIds": []
     },
     {
       "id": "song-ミラーチューン",
@@ -1035,9 +1511,25 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "ミラーチューン",
-          "order": 4,
+          "order": 11,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "ミラーチューン (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 25,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "ミラーチューン (Live)",
+          "order": 5,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2022-04-07",
@@ -1057,9 +1549,25 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "消えてしまいそうです",
-          "order": 5,
+          "order": 10,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "消えてしまいそうです (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 4,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "消えてしまいそうです(1970s) [Live]",
+          "order": 4,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2022-09-08",
@@ -1101,9 +1609,25 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "残機",
-          "order": 7,
+          "order": 1,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "残機 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 21,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "残機 (Live)",
+          "order": 8,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2022-10-19",
@@ -1122,10 +1646,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
-          "displayTitle": "綺羅キラー",
-          "order": 8,
+          "displayTitle": "綺羅キラー (feat. Mori Calliope)",
+          "order": 3,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "綺羅キラー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 22,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2022-12-15",
@@ -1145,7 +1677,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "不法侵入",
-          "order": 9,
+          "order": 8,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
         }
@@ -1167,9 +1699,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "花一匁",
-          "order": 10,
+          "order": 0,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "花一匁 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 5,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
         }
       ],
       "releaseDate": "2023-06-06",
@@ -1192,6 +1732,14 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 12,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "上辺の私自身なんだよ (Live)",
+          "order": 10,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2023-06-07",
@@ -1209,9 +1757,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
           "displayTitle": "馴れ合いサーブ",
-          "order": 11,
+          "order": 4,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "馴れ合いサーブ (Live)",
+          "order": 7,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
         }
       ],
       "releaseDate": "2023-06-07",
@@ -1222,9 +1778,33 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "嘘じゃない",
       "label": "嘘じゃない",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
       "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "嘘じゃない (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 26,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-虚仮の一念海馬に託す",
+          "albumTitle": "虚仮の一念海馬に託す",
+          "displayTitle": "嘘じゃない",
+          "order": 4,
+          "kind": "mini",
+          "albumReleaseDate": "2024-10-23"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "嘘じゃない (Live)",
+          "order": 2,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1240,13 +1820,59 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
+      "id": "song-blues-in-the-closet",
+      "type": "song",
+      "title": "Blues in the Closet",
+      "label": "Blues in the Closet",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "Blues in the Closet (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 9,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        },
+        {
+          "albumId": "album-虚仮の一念海馬に託す",
+          "albumTitle": "虚仮の一念海馬に託す",
+          "displayTitle": "Blues in the Closet",
+          "order": 5,
+          "kind": "mini",
+          "albumReleaseDate": "2024-10-23"
+        }
+      ],
+      "releaseDate": "2024-06-06",
+      "singleIds": [
+        "single-blues-in-the-closet"
+      ]
+    },
+    {
       "id": "song-海馬成長痛",
       "type": "song",
       "title": "海馬成長痛",
       "label": "海馬成長痛",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-虚仮の一念海馬に託す",
+      "firstAlbumTitle": "虚仮の一念海馬に託す",
       "albumMembership": [
+        {
+          "albumId": "album-虚仮の一念海馬に託す",
+          "albumTitle": "虚仮の一念海馬に託す",
+          "displayTitle": "海馬成長痛",
+          "order": 3,
+          "kind": "mini",
+          "albumReleaseDate": "2024-10-23"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "海馬成長痛 (Live)",
+          "order": 15,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1262,13 +1888,149 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
+      "id": "song-neo炒飯",
+      "type": "song",
+      "title": "NEO炒飯",
+      "label": "NEO炒飯",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "NEO炒飯 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 14,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2024-09-25",
+      "singleIds": []
+    },
+    {
+      "id": "song-open-本格中華始めました",
+      "type": "song",
+      "title": "Open ~本格中華始めました~",
+      "label": "Open ~本格中華始めました~",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 0,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2024-09-25",
+      "singleIds": []
+    },
+    {
+      "id": "song-80光年の旅",
+      "type": "song",
+      "title": "~80光年の旅~",
+      "label": "~80光年の旅~",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "~80光年の旅~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 11,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2024-09-25",
+      "singleIds": []
+    },
+    {
+      "id": "song-土星を経由して",
+      "type": "song",
+      "title": "~土星を経由して~",
+      "label": "~土星を経由して~",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "~土星を経由して~ (Short ver. / 本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 17,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2024-09-25",
+      "singleIds": []
+    },
+    {
+      "id": "song-夜のピークタイム",
+      "type": "song",
+      "title": "~夜のピークタイム~",
+      "label": "~夜のピークタイム~",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "~夜のピークタイム~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 18,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2024-09-25",
+      "singleIds": []
+    },
+    {
+      "id": "song-幻の五香粉",
+      "type": "song",
+      "title": "幻の五香粉",
+      "label": "幻の五香粉",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+      "albumMembership": [
+        {
+          "albumId": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+          "albumTitle": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
+          "displayTitle": "幻の五香粉 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
+          "order": 16,
+          "kind": "tour",
+          "albumReleaseDate": "2024-09-25"
+        }
+      ],
+      "releaseDate": "2024-09-25",
+      "singleIds": []
+    },
+    {
       "id": "song-taidada",
       "type": "song",
       "title": "TAIDADA",
       "label": "TAIDADA",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-虚仮の一念海馬に託す",
+      "firstAlbumTitle": "虚仮の一念海馬に託す",
       "albumMembership": [
+        {
+          "albumId": "album-虚仮の一念海馬に託す",
+          "albumTitle": "虚仮の一念海馬に託す",
+          "displayTitle": "TAIDADA",
+          "order": 1,
+          "kind": "mini",
+          "albumReleaseDate": "2024-10-23"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "TAIDADA (Live)",
+          "order": 19,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1288,13 +2050,29 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "クズリ念",
       "label": "クズリ念",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-虚仮の一念海馬に託す",
+      "firstAlbumTitle": "虚仮の一念海馬に託す",
       "albumMembership": [
+        {
+          "albumId": "album-虚仮の一念海馬に託す",
+          "albumTitle": "虚仮の一念海馬に託す",
+          "displayTitle": "クズリ念",
+          "order": 2,
+          "kind": "mini",
+          "albumReleaseDate": "2024-10-23"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "クズリ念(肯定) [Live]",
+          "order": 11,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
-          "displayTitle": "クズリ念 (Live in Studio_ 温蔵庫)",
+          "displayTitle": "クズリ念 (Live in Studio_温蔵庫)",
           "order": 15,
           "kind": "full",
           "albumReleaseDate": "2026-03-25"
@@ -1306,13 +2084,49 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
+      "id": "song-虚仮にしてくれ",
+      "type": "song",
+      "title": "虚仮にしてくれ",
+      "label": "虚仮にしてくれ",
+      "firstAlbumId": "album-虚仮の一念海馬に託す",
+      "firstAlbumTitle": "虚仮の一念海馬に託す",
+      "albumMembership": [
+        {
+          "albumId": "album-虚仮の一念海馬に託す",
+          "albumTitle": "虚仮の一念海馬に託す",
+          "displayTitle": "虚仮にしてくれ",
+          "order": 0,
+          "kind": "mini",
+          "albumReleaseDate": "2024-10-23"
+        },
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "虚仮にしてくれ (Live)",
+          "order": 0,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        }
+      ],
+      "releaseDate": "2024-10-23",
+      "singleIds": []
+    },
+    {
       "id": "song-シェードの埃は延長",
       "type": "song",
       "title": "シェードの埃は延長",
       "label": "シェードの埃は延長",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-永遠深夜万博-名巧は愚なるが如し",
+      "firstAlbumTitle": "永遠深夜万博「名巧は愚なるが如し」",
       "albumMembership": [
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "シェードの埃は延長 (Live)",
+          "order": 17,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1332,9 +2146,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "微熱魔",
       "label": "微熱魔",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-永遠深夜万博-名巧は愚なるが如し",
+      "firstAlbumTitle": "永遠深夜万博「名巧は愚なるが如し」",
       "albumMembership": [
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "微熱魔 (Live)",
+          "order": 13,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1354,9 +2176,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "クリームで会いにいけますか",
       "label": "クリームで会いにいけますか",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-永遠深夜万博-名巧は愚なるが如し",
+      "firstAlbumTitle": "永遠深夜万博「名巧は愚なるが如し」",
       "albumMembership": [
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "クリームで会いにいけますか (Live)",
+          "order": 21,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1376,9 +2206,17 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "形",
       "label": "形",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
+      "firstAlbumId": "album-永遠深夜万博-名巧は愚なるが如し",
+      "firstAlbumTitle": "永遠深夜万博「名巧は愚なるが如し」",
       "albumMembership": [
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "形 (Live)",
+          "order": 9,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        },
         {
           "albumId": "album-形藻土",
           "albumTitle": "形藻土",
@@ -1391,6 +2229,39 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2025-06-12",
       "singleIds": [
         "single-形"
+      ]
+    },
+    {
+      "id": "song-開会起立",
+      "type": "song",
+      "title": "～開会起立～",
+      "label": "～開会起立～",
+      "firstAlbumId": "album-永遠深夜万博-名巧は愚なるが如し",
+      "firstAlbumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+      "albumMembership": [
+        {
+          "albumId": "album-永遠深夜万博-名巧は愚なるが如し",
+          "albumTitle": "永遠深夜万博「名巧は愚なるが如し」",
+          "displayTitle": "～開会起立～ (Live)",
+          "order": 1,
+          "kind": "tour",
+          "albumReleaseDate": "2025-09-24"
+        }
+      ],
+      "releaseDate": "2025-09-24",
+      "singleIds": []
+    },
+    {
+      "id": "song-有心論",
+      "type": "song",
+      "title": "有心論",
+      "label": "有心論",
+      "firstAlbumId": null,
+      "firstAlbumTitle": null,
+      "albumMembership": [],
+      "releaseDate": "2025-11-19",
+      "singleIds": [
+        "single-有心論"
       ]
     },
     {
@@ -1470,26 +2341,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumTitle": "形藻土",
           "displayTitle": "ultra魂",
           "order": 10,
-          "kind": "full",
-          "albumReleaseDate": "2026-03-25"
-        }
-      ],
-      "releaseDate": "2026-03-25",
-      "singleIds": []
-    },
-    {
-      "id": "song-またね幻-live-in-studio_80光年先の君へ",
-      "type": "song",
-      "title": "またね幻 (Live in Studio_80光年先の君へ)",
-      "label": "またね幻 (Live in Studio_80光年先の君へ)",
-      "firstAlbumId": "album-形藻土",
-      "firstAlbumTitle": "形藻土",
-      "albumMembership": [
-        {
-          "albumId": "album-形藻土",
-          "albumTitle": "形藻土",
-          "displayTitle": "またね幻 (Live in Studio_80光年先の君へ)",
-          "order": 7,
           "kind": "full",
           "albumReleaseDate": "2026-03-25"
         }
@@ -1672,42 +2523,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "order": 3
     },
     {
-      "id": "single-蹴っ飛ばした毛布",
-      "type": "single",
-      "title": "蹴っ飛ばした毛布",
-      "label": "蹴っ飛ばした毛布",
-      "releaseDate": "2019-10-02",
-      "artworkUrl": null,
-      "collectionName": "Hisohiso Banashi",
-      "metadataSource": "album-fallback",
-      "targetSongId": "song-蹴っ飛ばした毛布",
-      "order": 8
-    },
-    {
-      "id": "single-こんなこと騒動",
-      "type": "single",
-      "title": "こんなこと騒動",
-      "label": "こんなこと騒動",
-      "releaseDate": "2019-10-09",
-      "artworkUrl": null,
-      "collectionName": "Hisohiso Banashi",
-      "metadataSource": "album-fallback",
-      "targetSongId": "song-こんなこと騒動",
-      "order": 6
-    },
-    {
-      "id": "single-ハゼ馳せる果てるまで",
-      "type": "single",
-      "title": "ハゼ馳せる果てるまで",
-      "label": "ハゼ馳せる果てるまで",
-      "releaseDate": "2019-10-18",
-      "artworkUrl": null,
-      "collectionName": "Hisohiso Banashi",
-      "metadataSource": "album-fallback",
-      "targetSongId": "song-ハゼ馳せる果てるまで",
-      "order": 7
-    },
-    {
       "id": "single-お勉強しといてよ",
       "type": "single",
       "title": "お勉強しといてよ",
@@ -1717,7 +2532,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Obenkyou Shitoiteyo - Single",
       "metadataSource": "album",
       "targetSongId": "song-お勉強しといてよ",
-      "order": 9
+      "order": 6
     },
     {
       "id": "single-milabo",
@@ -1729,7 +2544,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "朗らかな皮膚とて不服 - EP",
       "metadataSource": "song",
       "targetSongId": "song-milabo",
-      "order": 10
+      "order": 7
     },
     {
       "id": "single-低血ボルト",
@@ -1741,7 +2556,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Hogarakana Hifutote Fufuku - EP",
       "metadataSource": "album-fallback",
       "targetSongId": "song-低血ボルト",
-      "order": 11
+      "order": 8
     },
     {
       "id": "single-暗く黒く",
@@ -1753,7 +2568,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Darken - Single",
       "metadataSource": "album",
       "targetSongId": "song-暗く黒く",
-      "order": 12
+      "order": 9
     },
     {
       "id": "single-勘ぐれい",
@@ -1765,7 +2580,19 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Hunch Gray - Single",
       "metadataSource": "album",
       "targetSongId": "song-勘ぐれい",
-      "order": 13
+      "order": 10
+    },
+    {
+      "id": "single-正しくなれない",
+      "type": "single",
+      "title": "正しくなれない",
+      "label": "正しくなれない",
+      "releaseDate": "2020-12-17",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/fa/22/7e/fa227e7a-a1dd-5631-be96-e7e896daaa18/20UM1IM11050.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Can't Be Right - Single",
+      "metadataSource": "album",
+      "targetSongId": "song-正しくなれない",
+      "order": 12
     },
     {
       "id": "single-過眠",
@@ -1777,6 +2604,30 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Hogarakana Hifutote Fufuku - EP",
       "metadataSource": "album-fallback",
       "targetSongId": "song-過眠",
+      "order": 11
+    },
+    {
+      "id": "single-秒針を噛む-from-the-first-take",
+      "type": "single",
+      "title": "秒針を噛む - From THE FIRST TAKE",
+      "label": "秒針を噛む - From THE FIRST TAKE",
+      "releaseDate": "2021-03-05",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/66/ed/b766ed18-1e4d-442c-64f9-01d46e8cd2d0/21UMGIM15294.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Byoushinwo Kamu (From The First Take) - Single",
+      "metadataSource": "album",
+      "targetSongId": "song-秒針を噛む-from-the-first-take",
+      "order": 13
+    },
+    {
+      "id": "single-正しくなれない-from-the-first-take",
+      "type": "single",
+      "title": "正しくなれない - From THE FIRST TAKE",
+      "label": "正しくなれない - From THE FIRST TAKE",
+      "releaseDate": "2021-03-17",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3e/db/0d/3edb0dcb-ffc3-0321-395c-fbd1cda4afb6/21UMGIM15296.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Can't Be Right (From The First Take) - Single",
+      "metadataSource": "album",
+      "targetSongId": "song-正しくなれない-from-the-first-take",
       "order": 14
     },
     {
@@ -1921,7 +2772,19 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Truth In Lies - Single",
       "metadataSource": "album",
       "targetSongId": "song-嘘じゃない",
-      "order": 33
+      "order": 26
+    },
+    {
+      "id": "single-blues-in-the-closet",
+      "type": "single",
+      "title": "Blues in the Closet",
+      "label": "Blues in the Closet",
+      "releaseDate": "2024-06-06",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/2d/e3/222de3d6-7738-239c-7bb3-6b492d321c6e/24UMGIM42946.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Blues in the Closet - Single",
+      "metadataSource": "album",
+      "targetSongId": "song-blues-in-the-closet",
+      "order": 27
     },
     {
       "id": "single-海馬成長痛",
@@ -1933,7 +2796,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Hippocampal Pain - Single",
       "metadataSource": "album",
       "targetSongId": "song-海馬成長痛",
-      "order": 32
+      "order": 28
     },
     {
       "id": "single-taidada",
@@ -1941,11 +2804,11 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "title": "TAIDADA",
       "label": "TAIDADA",
       "releaseDate": "2024-10-05",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
-      "collectionName": "虚仮の一念海馬に託す - EP",
-      "metadataSource": "song",
+      "artworkUrl": null,
+      "collectionName": "Koke no ichinen Kaiba ni takusu - EP",
+      "metadataSource": "album-fallback",
       "targetSongId": "song-taidada",
-      "order": 26
+      "order": 29
     },
     {
       "id": "single-クズリ念",
@@ -1957,7 +2820,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "虚仮の一念海馬に託す - EP",
       "metadataSource": "song",
       "targetSongId": "song-クズリ念",
-      "order": 27
+      "order": 30
     },
     {
       "id": "single-シェードの埃は延長",
@@ -1969,7 +2832,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "SHADE - Single",
       "metadataSource": "album",
       "targetSongId": "song-シェードの埃は延長",
-      "order": 30
+      "order": 31
     },
     {
       "id": "single-微熱魔",
@@ -1981,7 +2844,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Warmthaholic - Single",
       "metadataSource": "album",
       "targetSongId": "song-微熱魔",
-      "order": 28
+      "order": 32
     },
     {
       "id": "single-クリームで会いにいけますか",
@@ -1993,7 +2856,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "クリームで会いにいけますか - Single",
       "metadataSource": "song",
       "targetSongId": "song-クリームで会いにいけますか",
-      "order": 29
+      "order": 33
     },
     {
       "id": "single-形",
@@ -2005,7 +2868,19 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Pain Give Form - Single",
       "metadataSource": "album",
       "targetSongId": "song-形",
-      "order": 31
+      "order": 34
+    },
+    {
+      "id": "single-有心論",
+      "type": "single",
+      "title": "有心論",
+      "label": "有心論",
+      "releaseDate": "2025-11-19",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/1b/8b/051b8b98-80ce-ddd3-5e4d-c9279656b531/25UM1IM76053.rgb.jpg/900x900bb.jpg",
+      "collectionName": "Yushinron - Single",
+      "metadataSource": "album",
+      "targetSongId": "song-有心論",
+      "order": 37
     },
     {
       "id": "single-メディアノーチェ",
@@ -2017,7 +2892,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "Medianoche - Single",
       "metadataSource": "album",
       "targetSongId": "song-メディアノーチェ",
-      "order": 34
+      "order": 35
     },
     {
       "id": "single-よもすがら",
@@ -2029,7 +2904,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "collectionName": "KEISOUDO",
       "metadataSource": "album-fallback",
       "targetSongId": "song-よもすがら",
-      "order": 35
+      "order": 36
     }
   ],
   "edges": [
@@ -2070,24 +2945,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "release"
     },
     {
-      "id": "edge-single-蹴っ飛ばした毛布-to-song-蹴っ飛ばした毛布",
-      "source": "single-蹴っ飛ばした毛布",
-      "target": "song-蹴っ飛ばした毛布",
-      "type": "release"
-    },
-    {
-      "id": "edge-single-こんなこと騒動-to-song-こんなこと騒動",
-      "source": "single-こんなこと騒動",
-      "target": "song-こんなこと騒動",
-      "type": "release"
-    },
-    {
-      "id": "edge-single-ハゼ馳せる果てるまで-to-song-ハゼ馳せる果てるまで",
-      "source": "single-ハゼ馳せる果てるまで",
-      "target": "song-ハゼ馳せる果てるまで",
-      "type": "release"
-    },
-    {
       "id": "edge-single-お勉強しといてよ-to-song-お勉強しといてよ",
       "source": "single-お勉強しといてよ",
       "target": "song-お勉強しといてよ",
@@ -2118,9 +2975,27 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "release"
     },
     {
+      "id": "edge-single-正しくなれない-to-song-正しくなれない",
+      "source": "single-正しくなれない",
+      "target": "song-正しくなれない",
+      "type": "release"
+    },
+    {
       "id": "edge-single-過眠-to-song-過眠",
       "source": "single-過眠",
       "target": "song-過眠",
+      "type": "release"
+    },
+    {
+      "id": "edge-single-秒針を噛む-from-the-first-take-to-song-秒針を噛む-from-the-first-take",
+      "source": "single-秒針を噛む-from-the-first-take",
+      "target": "song-秒針を噛む-from-the-first-take",
+      "type": "release"
+    },
+    {
+      "id": "edge-single-正しくなれない-from-the-first-take-to-song-正しくなれない-from-the-first-take",
+      "source": "single-正しくなれない-from-the-first-take",
+      "target": "song-正しくなれない-from-the-first-take",
       "type": "release"
     },
     {
@@ -2196,6 +3071,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "release"
     },
     {
+      "id": "edge-single-blues-in-the-closet-to-song-blues-in-the-closet",
+      "source": "single-blues-in-the-closet",
+      "target": "song-blues-in-the-closet",
+      "type": "release"
+    },
+    {
       "id": "edge-single-海馬成長痛-to-song-海馬成長痛",
       "source": "single-海馬成長痛",
       "target": "song-海馬成長痛",
@@ -2238,6 +3119,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "release"
     },
     {
+      "id": "edge-single-有心論-to-song-有心論",
+      "source": "single-有心論",
+      "target": "song-有心論",
+      "type": "release"
+    },
+    {
       "id": "edge-single-メディアノーチェ-to-song-メディアノーチェ",
       "source": "single-メディアノーチェ",
       "target": "song-メディアノーチェ",
@@ -2262,6 +3149,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-秒針を噛む-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-秒針を噛む",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-秒針を噛む-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-秒針を噛む",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-脳裏上のクラッカー-to-album-正しい偽りからの起床",
       "source": "song-脳裏上のクラッカー",
       "target": "album-正しい偽りからの起床",
@@ -2271,6 +3170,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-脳裏上のクラッカー-to-album-潜潜話",
       "source": "song-脳裏上のクラッカー",
       "target": "album-潜潜話",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-脳裏上のクラッカー-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-脳裏上のクラッカー",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2292,9 +3197,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-正しい偽りからの起床-to-album-正しい偽りからの起床",
-      "source": "song-正しい偽りからの起床",
+      "id": "edge-song-君がいて水になる-to-album-正しい偽りからの起床",
+      "source": "song-君がいて水になる",
       "target": "album-正しい偽りからの起床",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-君がいて水になる-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-君がいて水になる",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2316,6 +3227,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-眩しいdnaだけ-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-眩しいdnaだけ",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-正義-to-album-今は今で誓いは笑みで",
       "source": "song-正義",
       "target": "album-今は今で誓いは笑みで",
@@ -2325,6 +3242,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-正義-to-album-潜潜話",
       "source": "song-正義",
       "target": "album-潜潜話",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-正義-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-正義",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2340,8 +3263,32 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-dear-mr-f-to-album-今は今で誓いは笑みで",
-      "source": "song-dear-mr-f",
+      "id": "edge-song-またね幻-to-album-今は今で誓いは笑みで",
+      "source": "song-またね幻",
+      "target": "album-今は今で誓いは笑みで",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-またね幻-to-album-形藻土",
+      "source": "song-またね幻",
+      "target": "album-形藻土",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-マイノリティ脈絡-to-album-今は今で誓いは笑みで",
+      "source": "song-マイノリティ脈絡",
+      "target": "album-今は今で誓いは笑みで",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-マイノリティ脈絡-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-マイノリティ脈絡",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-彷徨い酔い温度-to-album-今は今で誓いは笑みで",
+      "source": "song-彷徨い酔い温度",
       "target": "album-今は今で誓いは笑みで",
       "type": "included"
     },
@@ -2352,21 +3299,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-こんなこと騒動-to-album-今は今で誓いは笑みで",
-      "source": "song-こんなこと騒動",
-      "target": "album-今は今で誓いは笑みで",
-      "type": "included"
-    },
-    {
       "id": "edge-song-こんなこと騒動-to-album-潜潜話",
       "source": "song-こんなこと騒動",
       "target": "album-潜潜話",
       "type": "included"
     },
     {
-      "id": "edge-song-ハゼ馳せる果てるまで-to-album-今は今で誓いは笑みで",
-      "source": "song-ハゼ馳せる果てるまで",
-      "target": "album-今は今で誓いは笑みで",
+      "id": "edge-song-こんなこと騒動-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-こんなこと騒動",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-グラスとラムレーズン-to-album-潜潜話",
+      "source": "song-グラスとラムレーズン",
+      "target": "album-潜潜話",
       "type": "included"
     },
     {
@@ -2376,33 +3323,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-奥底に眠るルーツ-to-album-今は今で誓いは笑みで",
-      "source": "song-奥底に眠るルーツ",
-      "target": "album-今は今で誓いは笑みで",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-奥底に眠るルーツ-to-album-ぐされ",
-      "source": "song-奥底に眠るルーツ",
-      "target": "album-ぐされ",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-蹴っ飛ばした毛布-to-album-今は今で誓いは笑みで",
-      "source": "song-蹴っ飛ばした毛布",
-      "target": "album-今は今で誓いは笑みで",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-蹴っ飛ばした毛布-to-album-潜潜話",
-      "source": "song-蹴っ飛ばした毛布",
-      "target": "album-潜潜話",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-グラスとラムレーズン-to-album-潜潜話",
-      "source": "song-グラスとラムレーズン",
-      "target": "album-潜潜話",
+      "id": "edge-song-ハゼ馳せる果てるまで-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-ハゼ馳せる果てるまで",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2414,6 +3337,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
     {
       "id": "edge-song-居眠り遠征隊-to-album-潜潜話",
       "source": "song-居眠り遠征隊",
+      "target": "album-潜潜話",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-居眠り遠征隊-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-居眠り遠征隊",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-蹴っ飛ばした毛布-to-album-潜潜話",
+      "source": "song-蹴っ飛ばした毛布",
       "target": "album-潜潜話",
       "type": "included"
     },
@@ -2430,6 +3365,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-お勉強しといてよ-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-お勉強しといてよ",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-milabo-to-album-朗らかな皮膚とて不服",
       "source": "song-milabo",
       "target": "album-朗らかな皮膚とて不服",
@@ -2439,6 +3380,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-milabo-to-album-ぐされ",
       "source": "song-milabo",
       "target": "album-ぐされ",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-milabo-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-milabo",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2454,33 +3401,39 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ばかじゃないのに-to-album-朗らかな皮膚とて不服",
-      "source": "song-ばかじゃないのに",
+      "id": "edge-song-低血ボルト-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-低血ボルト",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-ham-to-album-朗らかな皮膚とて不服",
+      "source": "song-ham",
       "target": "album-朗らかな皮膚とて不服",
       "type": "included"
     },
     {
-      "id": "edge-song-ばかじゃないのに-to-album-沈香学",
-      "source": "song-ばかじゃないのに",
-      "target": "album-沈香学",
+      "id": "edge-song-ham-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-ham",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
-      "id": "edge-song-勘ぐれい-to-album-朗らかな皮膚とて不服",
-      "source": "song-勘ぐれい",
+      "id": "edge-song-jk-bomber-to-album-朗らかな皮膚とて不服",
+      "source": "song-jk-bomber",
       "target": "album-朗らかな皮膚とて不服",
       "type": "included"
     },
     {
-      "id": "edge-song-勘ぐれい-to-album-ぐされ",
-      "source": "song-勘ぐれい",
-      "target": "album-ぐされ",
+      "id": "edge-song-マリンブルーの庭園-to-album-朗らかな皮膚とて不服",
+      "source": "song-マリンブルーの庭園",
+      "target": "album-朗らかな皮膚とて不服",
       "type": "included"
     },
     {
-      "id": "edge-song-暗く黒く-to-album-朗らかな皮膚とて不服",
-      "source": "song-暗く黒く",
-      "target": "album-朗らかな皮膚とて不服",
+      "id": "edge-song-マリンブルーの庭園-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-マリンブルーの庭園",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2490,9 +3443,33 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-過眠-to-album-朗らかな皮膚とて不服",
-      "source": "song-過眠",
-      "target": "album-朗らかな皮膚とて不服",
+      "id": "edge-song-暗く黒く-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-暗く黒く",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-暗く黒く-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-暗く黒く",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-勘ぐれい-to-album-ぐされ",
+      "source": "song-勘ぐれい",
+      "target": "album-ぐされ",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-勘ぐれい-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-勘ぐれい",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-正しくなれない-to-album-ぐされ",
+      "source": "song-正しくなれない",
+      "target": "album-ぐされ",
       "type": "included"
     },
     {
@@ -2514,15 +3491,27 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-奥底に眠るルーツ-to-album-ぐされ",
+      "source": "song-奥底に眠るルーツ",
+      "target": "album-ぐされ",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-暗く黒く-twin-piano-live-ver-to-album-ぐされ",
+      "source": "song-暗く黒く-twin-piano-live-ver",
+      "target": "album-ぐされ",
+      "type": "included"
+    },
+    {
       "id": "edge-song-機械油-to-album-ぐされ",
       "source": "song-機械油",
       "target": "album-ぐされ",
       "type": "included"
     },
     {
-      "id": "edge-song-正しくなれない-to-album-ぐされ",
-      "source": "song-正しくなれない",
-      "target": "album-ぐされ",
+      "id": "edge-song-機械油-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-機械油",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2538,9 +3527,51 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-胸の煙-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-胸の煙",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-あいつら全員同窓会-to-album-伸び仕草懲りて暇乞い",
+      "source": "song-あいつら全員同窓会",
+      "target": "album-伸び仕草懲りて暇乞い",
+      "type": "included"
+    },
+    {
       "id": "edge-song-あいつら全員同窓会-to-album-沈香学",
       "source": "song-あいつら全員同窓会",
       "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-あいつら全員同窓会-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-あいつら全員同窓会",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-あいつら全員同窓会-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-あいつら全員同窓会",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-ばかじゃないのに-to-album-伸び仕草懲りて暇乞い",
+      "source": "song-ばかじゃないのに",
+      "target": "album-伸び仕草懲りて暇乞い",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-ばかじゃないのに-to-album-沈香学",
+      "source": "song-ばかじゃないのに",
+      "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-猫リセット-to-album-伸び仕草懲りて暇乞い",
+      "source": "song-猫リセット",
+      "target": "album-伸び仕草懲りて暇乞い",
       "type": "included"
     },
     {
@@ -2550,9 +3581,39 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-袖のキルト-to-album-伸び仕草懲りて暇乞い",
+      "source": "song-袖のキルト",
+      "target": "album-伸び仕草懲りて暇乞い",
+      "type": "included"
+    },
+    {
       "id": "edge-song-袖のキルト-to-album-沈香学",
       "source": "song-袖のキルト",
       "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-袖のキルト-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-袖のキルト",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-夜中のキスミ-to-album-伸び仕草懲りて暇乞い",
+      "source": "song-夜中のキスミ",
+      "target": "album-伸び仕草懲りて暇乞い",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-違う曲にしようよ-to-album-伸び仕草懲りて暇乞い",
+      "source": "song-違う曲にしようよ",
+      "target": "album-伸び仕草懲りて暇乞い",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-違う曲にしようよ-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-違う曲にしようよ",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2562,9 +3623,33 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-ミラーチューン-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-ミラーチューン",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-ミラーチューン-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-ミラーチューン",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-消えてしまいそうです-to-album-沈香学",
       "source": "song-消えてしまいそうです",
       "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-消えてしまいそうです-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-消えてしまいそうです",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-消えてしまいそうです-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-消えてしまいそうです",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2580,9 +3665,27 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-残機-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-残機",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-残機-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-残機",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-綺羅キラー-to-album-沈香学",
       "source": "song-綺羅キラー",
       "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-綺羅キラー-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-綺羅キラー",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "type": "included"
     },
     {
@@ -2598,9 +3701,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-花一匁-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-花一匁",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
       "id": "edge-song-上辺の私自身なんだよ-to-album-沈香学",
       "source": "song-上辺の私自身なんだよ",
       "target": "album-沈香学",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-上辺の私自身なんだよ-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-上辺の私自身なんだよ",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2610,9 +3725,57 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-馴れ合いサーブ-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-馴れ合いサーブ",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-嘘じゃない-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-嘘じゃない",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-嘘じゃない-to-album-虚仮の一念海馬に託す",
+      "source": "song-嘘じゃない",
+      "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-嘘じゃない-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-嘘じゃない",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-嘘じゃない-to-album-形藻土",
       "source": "song-嘘じゃない",
       "target": "album-形藻土",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-blues-in-the-closet-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-blues-in-the-closet",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-blues-in-the-closet-to-album-虚仮の一念海馬に託す",
+      "source": "song-blues-in-the-closet",
+      "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-海馬成長痛-to-album-虚仮の一念海馬に託す",
+      "source": "song-海馬成長痛",
+      "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-海馬成長痛-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-海馬成長痛",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2622,9 +3785,69 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-neo炒飯-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-neo炒飯",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-open-本格中華始めました-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-open-本格中華始めました",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-80光年の旅-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-80光年の旅",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-土星を経由して-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-土星を経由して",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-夜のピークタイム-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-夜のピークタイム",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-幻の五香粉-to-album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "source": "song-幻の五香粉",
+      "target": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-taidada-to-album-虚仮の一念海馬に託す",
+      "source": "song-taidada",
+      "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-taidada-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-taidada",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-taidada-to-album-形藻土",
       "source": "song-taidada",
       "target": "album-形藻土",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-クズリ念-to-album-虚仮の一念海馬に託す",
+      "source": "song-クズリ念",
+      "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-クズリ念-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-クズリ念",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2634,9 +3857,33 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-虚仮にしてくれ-to-album-虚仮の一念海馬に託す",
+      "source": "song-虚仮にしてくれ",
+      "target": "album-虚仮の一念海馬に託す",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-虚仮にしてくれ-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-虚仮にしてくれ",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-シェードの埃は延長-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-シェードの埃は延長",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-シェードの埃は延長-to-album-形藻土",
       "source": "song-シェードの埃は延長",
       "target": "album-形藻土",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-微熱魔-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-微熱魔",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2646,15 +3893,33 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-クリームで会いにいけますか-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-クリームで会いにいけますか",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-クリームで会いにいけますか-to-album-形藻土",
       "source": "song-クリームで会いにいけますか",
       "target": "album-形藻土",
       "type": "included"
     },
     {
+      "id": "edge-song-形-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-形",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
       "id": "edge-song-形-to-album-形藻土",
       "source": "song-形",
       "target": "album-形藻土",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-開会起立-to-album-永遠深夜万博-名巧は愚なるが如し",
+      "source": "song-開会起立",
+      "target": "album-永遠深夜万博-名巧は愚なるが如し",
       "type": "included"
     },
     {
@@ -2678,12 +3943,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
     {
       "id": "edge-song-ultra魂-to-album-形藻土",
       "source": "song-ultra魂",
-      "target": "album-形藻土",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-またね幻-live-in-studio_80光年先の君へ-to-album-形藻土",
-      "source": "song-またね幻-live-in-studio_80光年先の君へ",
       "target": "album-形藻土",
       "type": "included"
     },

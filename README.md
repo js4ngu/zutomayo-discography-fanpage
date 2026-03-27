@@ -28,6 +28,15 @@ python3 -m http.server 4173
 
 브라우저에서 `http://127.0.0.1:4173` 접속.
 
+## 접속 통계
+
+GA4를 붙일 수 있게 기본 코드가 들어 있습니다.
+
+- 설정 파일: `site-config.js`
+- 측정 ID: `window.APP_CONFIG.gaMeasurementId = "G-XXXXXXXXXX"`
+
+측정 ID를 넣지 않으면 분석 스크립트는 로드되지 않습니다.
+
 ## 데이터
 
 - 관계 원본: `data/data.uml`
@@ -39,4 +48,3 @@ python3 -m http.server 4173
 GitHub Pages로 배포:
 
 - https://js4ngu.github.io/zutomayo-discography-fanpage/
-

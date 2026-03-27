@@ -24,9 +24,18 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 
 WORK_ALIASES = {
     "Dear. Mr「F」": "Dear Mr F",
+    "綺羅キラー (feat. Mori Calliope)": "綺羅キラー",
+    "またね幻 (Live in Studio_80光年先の君へ)": "またね幻",
+    "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
     "クズリ念 (Live in Studio_ 温蔵庫)": "クズリ念",
     "クズリ念 (Live in Studio_温蔵庫)": "クズリ念",
-    "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
+    "ハゼ馳せる果てるまで(抗いハゼフライ定食)": "ハゼ馳せる果てるまで",
+    "暗く黒く(強)": "暗く黒く",
+    "消えてしまいそうです(1970s)": "消えてしまいそうです",
+    "クズリ念(肯定)": "クズリ念",
+    "暗く黒く(Crack Clock)": "暗く黒く",
+    "乏しいDNAだけ(愚)": "眩しいDNAだけ",
+    "居眠り遠征隊(即興)": "居眠り遠征隊",
 }
 
 SEARCH_TITLE_OVERRIDES = {
@@ -34,9 +43,13 @@ SEARCH_TITLE_OVERRIDES = {
     "正しい偽りからの起床": "Tadashii Itsuwarikarano Kishou",
     "今は今で誓いは笑みで": "Imawa Imade Chikaiwa Emide",
     "朗らかな皮膚とて不服": "Hogarakana Hifutote Fufuku",
+    "伸び仕草懲りて暇乞い": "Nobi Shigusa Korite Itomagoi",
+    "虚仮の一念海馬に託す": "Koke no ichinen Kaiba ni takusu",
     "潜潜話": "Hisohiso Banashi",
     "ぐされ": "Gusare",
     "沈香学": "沈香学",
+    "本格中華喫茶・愛のペガサス ~羅武の香辛龍~": 'AUTHENTIC CHINESE KISSA "Ai no Pegasus" -SPICY DRAGON OF LOVE-',
+    "永遠深夜万博「名巧は愚なるが如し」": "MIDNIGHT FOREVER EXPO ‘MEIKŌ WA GUNARUGA GOTOSHI’ (Live)",
     "Dear. Mr「F」": "Dear Mr F",
     "クズリ念 (Live in Studio_ 温蔵庫)": "クズリ念",
     "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
@@ -50,12 +63,15 @@ SINGLE_SEARCH_OVERRIDES = {
 
 SINGLE_COLLECTION_OVERRIDES = {
     "秒針を噛む": "Byoushinwo Kamu - Single",
+    "秒針を噛む - From THE FIRST TAKE": "Byoushinwo Kamu (From The First Take) - Single",
     "脳裏上のクラッカー": "Nouriueno Cracker - Single",
     "眩しいDNAだけ": "Mabushii DNA Dake - Single",
     "正義": "Seigi - Single",
     "お勉強しといてよ": "Obenkyou Shitoiteyo - Single",
     "暗く黒く": "Darken - Single",
     "勘ぐれい": "Hunch Gray - Single",
+    "正しくなれない": "Can't Be Right - Single",
+    "正しくなれない - From THE FIRST TAKE": "Can't Be Right (From The First Take) - Single",
     "あいつら全員同窓会": "Inside Joke - Single",
     "ばかじゃないのに": "Stay Foolish - Single",
     "猫リセット": "Neko Reset - Single",
@@ -65,10 +81,12 @@ SINGLE_COLLECTION_OVERRIDES = {
     "残機": "Time Left - Single",
     "綺羅キラー": "Kira Killer (feat. Mori Calliope) - Single",
     "不法侵入": "INTRUSION - Single",
+    "Blues in the Closet": "Blues in the Closet - Single",
     "微熱魔": "Warmthaholic - Single",
     "メディアノーチェ": "Medianoche - Single",
     "形": "Pain Give Form - Single",
     "嘘じゃない": "Truth In Lies - Single",
+    "有心論": "Yushinron - Single",
     "シェードの埃は延長": "SHADE - Single",
     "海馬成長痛": "Hippocampal Pain - Single",
 }
@@ -80,7 +98,9 @@ SINGLE_ART_FALLBACK_ALBUMS = {
     "蹴っ飛ばした毛布": "潜潜話",
     "過眠": "朗らかな皮膚とて不服",
     "低血ボルト": "朗らかな皮膚とて不服",
+    "正しくなれない": "ぐされ",
     "TAIDADA": "虚仮の一念海馬に託す",
+    "Blues in the Closet": "虚仮の一念海馬に託す",
     "花一匁": "沈香学",
     "よもすがら": "形藻土",
 }
@@ -88,7 +108,15 @@ SINGLE_ART_FALLBACK_ALBUMS = {
 ALBUM_KIND_TEXT = {
     "mini": "Mini Album",
     "full": "Full Album",
+    "tour": "Tour Audio",
 }
+
+LIVE_SUFFIX_PATTERNS = [
+    re.compile(r" \((?:Live|Live in Studio_.+?)\)$"),
+    re.compile(r" \(.+? / LIVE\)$"),
+    re.compile(r" \[.+? / LIVE\]$"),
+    re.compile(r" \[Live\]$"),
+]
 
 
 def slugify(value: str) -> str:
@@ -107,6 +135,19 @@ def upscale_art(url: str | None, size: int = 900) -> str | None:
     if not url:
         return None
     return re.sub(r"/\d+x\d+bb\.", f"/{size}x{size}bb.", url)
+
+
+def canonicalize_work_title(value: str) -> str:
+    title = value.strip()
+
+    if title in WORK_ALIASES:
+        return WORK_ALIASES[title]
+
+    normalized = title
+    for pattern in LIVE_SUFFIX_PATTERNS:
+        normalized = pattern.sub("", normalized)
+
+    return WORK_ALIASES.get(normalized, normalized)
 
 
 class AppleSearch:
@@ -180,7 +221,12 @@ def parse_uml(path: Path) -> tuple[list[AlbumDef], list[str], dict[str, str]]:
         if package_match:
             header = package_match.group(1)
             title = package_match.group(2)
-            kind = "mini" if "MINI" in header else "full"
+            if "MINI" in header:
+                kind = "mini"
+            elif "TOUR" in header:
+                kind = "tour"
+            else:
+                kind = "full"
             album_order += 1
             current_album = AlbumDef(
                 id=f"album-{slugify(title)}",
@@ -339,7 +385,7 @@ def build_dataset() -> dict[str, Any]:
     for album_def in albums_raw:
         album = albums_by_title[album_def.title]
         for index, track_title in enumerate(album_def.tracks):
-            canonical = WORK_ALIASES.get(track_title, track_title)
+            canonical = canonicalize_work_title(track_title)
             canonical_labels.setdefault(canonical, canonical)
             song_membership.setdefault(canonical, []).append(
                 {
@@ -376,13 +422,14 @@ def build_dataset() -> dict[str, Any]:
     singles: list[dict[str, Any]] = []
     for index, single_title in enumerate(single_titles):
         release_target = release_targets.get(single_title, single_title)
-        target_title = WORK_ALIASES.get(release_target, release_target)
+        target_title = canonicalize_work_title(release_target)
         album_results = search.search(f"{single_title} {ARTIST_NAME}", "album")
+        song_results: list[dict[str, Any]] = []
         try:
             picked, source_kind = choose_single_result(
                 single_title,
                 album_results,
-                [],
+                song_results,
                 albums_by_title,
             )
         except LookupError:
@@ -400,6 +447,22 @@ def build_dataset() -> dict[str, Any]:
                 picked = {**picked, "releaseDate": track_pick["releaseDate"]}
             except LookupError:
                 pass
+
+        if target_title not in songs_by_title:
+            songs.append(
+                {
+                    "id": f"song-{slugify(target_title)}",
+                    "type": "song",
+                    "title": target_title,
+                    "label": release_target,
+                    "firstAlbumId": None,
+                    "firstAlbumTitle": None,
+                    "albumMembership": [],
+                    "releaseDate": iso_to_date(picked["releaseDate"]),
+                    "singleIds": [],
+                }
+            )
+            songs_by_title[target_title] = songs[-1]
 
         single_id = f"single-{slugify(single_title)}"
         singles.append(

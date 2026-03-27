@@ -125,6 +125,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 10px;
   min-height: 46px;
   border: 1px solid rgba(191, 126, 255, 0.42);
@@ -237,6 +238,73 @@ body {
   display: flex;
   flex-wrap: nowrap;
   gap: 8px;
+}
+
+.panel-actions {
+  margin-left: auto;
+}
+
+.filter-menu {
+  position: relative;
+  z-index: 2;
+}
+
+.filter-trigger {
+  position: relative;
+  z-index: 1;
+}
+
+.filter-popover {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 168px;
+  padding: 10px;
+  border: 1px solid rgba(173, 106, 255, 0.5);
+  border-radius: 16px;
+  background:
+    linear-gradient(180deg, rgba(18, 8, 36, 0.96), rgba(10, 4, 21, 0.94)),
+    rgba(11, 4, 22, 0.92);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.38),
+    0 0 18px rgba(148, 76, 230, 0.22);
+  display: grid;
+  gap: 6px;
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.filter-menu:hover .filter-popover,
+.filter-menu:focus-within .filter-popover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 8px;
+  border-radius: 12px;
+  color: rgba(236, 223, 248, 0.94);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 140ms ease;
+}
+
+.filter-option:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.filter-option input {
+  width: 15px;
+  height: 15px;
+  accent-color: #68f6ff;
 }
 
 .panel-actions button,
@@ -801,7 +869,7 @@ code {
   .top-card .panel-kicker {
     font-size: 0.67rem;
     letter-spacing: 0.12em;
-    max-width: calc(100vw - 150px);
+    max-width: calc(100vw - 176px);
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -816,10 +884,15 @@ code {
     gap: 4px;
   }
 
+  .filter-popover {
+    right: 0;
+    min-width: 156px;
+  }
+
   .panel-actions button {
     min-height: 32px;
     font-size: 0.74rem;
-    padding: 7px 11px;
+    padding: 7px 10px;
   }
 
   .tooltip {
