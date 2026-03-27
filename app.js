@@ -450,12 +450,23 @@ function buildGraphData() {
 
   const edgeData = [];
   const edgeIdsBySong = new Map(parsedSongs.map((song) => [song.id, []]));
+  const singleNodeBySongId = new Map();
+
+  if (state.filters.single) {
+    for (const single of singleNodes) {
+      if (!singleNodeBySongId.has(single.targetSongId)) {
+        singleNodeBySongId.set(single.targetSongId, single);
+      }
+    }
+  }
 
   if (state.filters.single) {
     for (const single of singleNodes) {
       const song = songById.get(single.targetSongId);
       const visibleMemberships = visibleMembershipsBySong.get(song.id) ?? [];
-      const firstMembership = visibleMemberships[0];
+      const studioMemberships = visibleMemberships.filter((membership) => membership.kind !== "tour");
+      const liveMemberships = visibleMemberships.filter((membership) => membership.kind === "tour");
+      const firstMembership = studioMemberships[0] ?? (liveMemberships.length === 0 ? visibleMemberships[0] : null);
       if (!firstMembership) {
         continue;
       }
@@ -494,34 +505,97 @@ function buildGraphData() {
       continue;
     }
 
-    const firstMembership = visibleMemberships[0];
-    const firstAnchor = membershipAnchorByKey.get(`${song.id}::${firstMembership.albumId}`);
-    if (!firstAnchor) {
+    const studioMemberships = visibleMemberships.filter((membership) => membership.kind !== "tour");
+    const liveMemberships = visibleMemberships.filter((membership) => membership.kind === "tour");
+
+    if (studioMemberships.length >= 2) {
+      const firstStudioMembership = studioMemberships[0];
+      const firstStudioAnchor = membershipAnchorByKey.get(`${song.id}::${firstStudioMembership.albumId}`);
+      if (firstStudioAnchor) {
+        studioMemberships.slice(1).forEach((membership) => {
+          const anchor = membershipAnchorByKey.get(`${song.id}::${membership.albumId}`);
+          if (!anchor) {
+            return;
+          }
+
+          const edge = {
+            id: `edge-included-${song.id}-${membership.albumId}`,
+            type: "included",
+            songId: song.id,
+            singleId: null,
+            albumIdFrom: firstStudioMembership.albumId,
+            albumIdTo: membership.albumId,
+            points: {
+              x1: firstStudioAnchor.x + 24,
+              y1: firstStudioAnchor.y,
+              x2: anchor.x,
+              y2: anchor.y,
+            },
+          };
+          edgeData.push(edge);
+          edgeIdsBySong.get(song.id)?.push(edge.id);
+        });
+      }
+    }
+
+    if (liveMemberships.length === 0) {
       continue;
     }
 
-    visibleMemberships.slice(1).forEach((membership) => {
-      const anchor = membershipAnchorByKey.get(`${song.id}::${membership.albumId}`);
-      if (!anchor) {
+    const preferredStudioMembership =
+      studioMemberships.find((membership) => membership.kind === "full") ??
+      studioMemberships.find((membership) => membership.kind === "mini") ??
+      null;
+
+    const preferredStudioAnchor = preferredStudioMembership
+      ? membershipAnchorByKey.get(`${song.id}::${preferredStudioMembership.albumId}`)
+      : null;
+    const sourceSingle = singleNodeBySongId.get(song.id) ?? null;
+
+    liveMemberships.forEach((membership) => {
+      const liveAnchor = membershipAnchorByKey.get(`${song.id}::${membership.albumId}`);
+      if (!liveAnchor) {
         return;
       }
 
-      const edge = {
-        id: `edge-included-${song.id}-${membership.albumId}`,
-        type: "included",
-        songId: song.id,
-        singleId: null,
-        albumIdFrom: firstMembership.albumId,
-        albumIdTo: membership.albumId,
-        points: {
-          x1: firstAnchor.x + 24,
-          y1: firstAnchor.y,
-          x2: anchor.x,
-          y2: anchor.y,
-        },
-      };
-      edgeData.push(edge);
-      edgeIdsBySong.get(song.id)?.push(edge.id);
+      if (preferredStudioMembership && preferredStudioAnchor) {
+        const edge = {
+          id: `edge-live-${song.id}-${preferredStudioMembership.albumId}-${membership.albumId}`,
+          type: "included",
+          songId: song.id,
+          singleId: null,
+          albumIdFrom: preferredStudioMembership.albumId,
+          albumIdTo: membership.albumId,
+          points: {
+            x1: preferredStudioAnchor.x + 24,
+            y1: preferredStudioAnchor.y,
+            x2: liveAnchor.x,
+            y2: liveAnchor.y,
+          },
+        };
+        edgeData.push(edge);
+        edgeIdsBySong.get(song.id)?.push(edge.id);
+        return;
+      }
+
+      if (sourceSingle) {
+        const edge = {
+          id: `edge-live-single-${sourceSingle.id}-${membership.albumId}`,
+          type: "release",
+          songId: song.id,
+          singleId: sourceSingle.id,
+          albumIdFrom: null,
+          albumIdTo: membership.albumId,
+          points: {
+            x1: sourceSingle.x + sourceSingle.width,
+            y1: sourceSingle.y,
+            x2: liveAnchor.x,
+            y2: liveAnchor.y,
+          },
+        };
+        edgeData.push(edge);
+        edgeIdsBySong.get(song.id)?.push(edge.id);
+      }
     });
   }
 
