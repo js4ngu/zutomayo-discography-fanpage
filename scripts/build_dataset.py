@@ -111,6 +111,14 @@ ALBUM_KIND_TEXT = {
     "tour": "Tour Audio",
 }
 
+MANUAL_ALBUM_METADATA = {
+    "THE FIRST TAKE": {
+        "releaseDate": "2021-03-05",
+        "collectionName": "THE FIRST TAKE",
+        "artworkSingleTitle": "秒針を噛む - From THE FIRST TAKE",
+    }
+}
+
 LIVE_SUFFIX_PATTERNS = [
     re.compile(r" \((?:Live|Live in Studio_.+?)\)$"),
     re.compile(r" \(.+? / LIVE\)$"),
@@ -357,12 +365,55 @@ def choose_track_result(title: str, song_results: list[dict[str, Any]]) -> dict[
     return exact_tracks[0]
 
 
+def build_manual_album_metadata(
+    title: str,
+    album_def: AlbumDef,
+    search: AppleSearch,
+    albums_by_title: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    manual = MANUAL_ALBUM_METADATA[title]
+    artwork_url = None
+    artwork_source_title = manual.get("artworkSingleTitle")
+
+    if artwork_source_title:
+        album_results = search.search(f"{artwork_source_title} {ARTIST_NAME}", "album")
+        picked, _ = choose_single_result(
+            artwork_source_title,
+            album_results,
+            [],
+            albums_by_title,
+        )
+        artwork_url = upscale_art(picked.get("artworkUrl100"))
+
+    return {
+        "id": album_def.id,
+        "type": "album",
+        "kind": album_def.kind,
+        "title": album_def.title,
+        "label": album_def.title,
+        "releaseDate": manual["releaseDate"],
+        "artworkUrl": artwork_url,
+        "collectionName": manual["collectionName"],
+        "order": album_def.order,
+        "trackTitles": album_def.tracks,
+    }
+
+
 def build_dataset() -> dict[str, Any]:
     albums_raw, single_titles, release_targets = parse_uml(UML_PATH)
     search = AppleSearch(CACHE_PATH)
 
     albums_by_title: dict[str, dict[str, Any]] = {}
     for album_def in albums_raw:
+        if album_def.title in MANUAL_ALBUM_METADATA:
+            albums_by_title[album_def.title] = build_manual_album_metadata(
+                album_def.title,
+                album_def,
+                search,
+                albums_by_title,
+            )
+            continue
+
         query = f'{SEARCH_TITLE_OVERRIDES.get(album_def.title, album_def.title)} {ARTIST_NAME}'
         results = search.search(query, "album")
         picked = choose_album_result(results, album_def.title)

@@ -3,7 +3,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
     "artist": "ZUTOMAYO",
     "artistJa": "ずっと真夜中でいいのに。",
     "title": "ZUTOMAYO Discography Graph",
-    "generatedAt": "2026-03-27T11:58:13.463559+00:00",
+    "generatedAt": "2026-03-27T12:02:54.856299+00:00",
     "sourceFiles": [
       "data/data.uml"
     ],
@@ -121,6 +121,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
+      "id": "album-the-first-take",
+      "type": "album",
+      "kind": "tour",
+      "title": "THE FIRST TAKE",
+      "label": "THE FIRST TAKE",
+      "releaseDate": "2021-03-05",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/66/ed/b766ed18-1e4d-442c-64f9-01d46e8cd2d0/21UMGIM15294.rgb.jpg/900x900bb.jpg",
+      "collectionName": "THE FIRST TAKE",
+      "order": 6,
+      "trackTitles": [
+        "秒針を噛む - From THE FIRST TAKE",
+        "正しくなれない - From THE FIRST TAKE"
+      ]
+    },
+    {
       "id": "album-伸び仕草懲りて暇乞い",
       "type": "album",
       "kind": "mini",
@@ -129,7 +144,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2022-02-16",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/7e/5b/9f7e5b57-dac7-e0a5-14af-2566bf017fc6/22UMGIM03998.rgb.jpg/900x900bb.jpg",
       "collectionName": "Nobi Shigusa Korite Itomagoi - EP",
-      "order": 6,
+      "order": 7,
       "trackTitles": [
         "違う曲にしようよ",
         "袖のキルト",
@@ -148,7 +163,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2023-06-07",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
       "collectionName": "沈香学",
-      "order": 7,
+      "order": 8,
       "trackTitles": [
         "花一匁",
         "残機",
@@ -174,7 +189,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2024-09-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/0e/4c/680e4cc3-00ff-5373-ef07-752b40a2c3c0/24UMGIM95338.rgb.jpg/900x900bb.jpg",
       "collectionName": "AUTHENTIC CHINESE KISSA \"Ai no Pegasus\" -SPICY DRAGON OF LOVE-",
-      "order": 8,
+      "order": 9,
       "trackTitles": [
         "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
         "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
@@ -215,7 +230,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2024-10-23",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
       "collectionName": "Koke no ichinen Kaiba ni takusu - EP",
-      "order": 9,
+      "order": 10,
       "trackTitles": [
         "虚仮にしてくれ",
         "TAIDADA",
@@ -234,7 +249,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2025-09-24",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fd/1c/6f/fd1c6f49-741c-61ea-585c-367162b9746f/25UM1IM24272.rgb.jpg/900x900bb.jpg",
       "collectionName": "MIDNIGHT FOREVER EXPO ‘MEIKŌ WA GUNARUGA GOTOSHI’ (Live)",
-      "order": 11,
+      "order": 12,
       "trackTitles": [
         "虚仮にしてくれ (Live)",
         "～開会起立～ (Live)",
@@ -271,7 +286,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2026-03-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/2a/19/ad2a1985-1499-5d04-b11d-8cdf6dd6e599/26UMGIM24458.rgb.jpg/900x900bb.jpg",
       "collectionName": "KEISOUDO",
-      "order": 10,
+      "order": 11,
       "trackTitles": [
         "地球存在しない説",
         "間人間",
@@ -1282,29 +1297,47 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "singleIds": []
     },
     {
-      "id": "song-秒針を噛む-from-the-first-take",
-      "type": "song",
-      "title": "秒針を噛む - From THE FIRST TAKE",
-      "label": "秒針を噛む - From THE FIRST TAKE",
-      "firstAlbumId": null,
-      "firstAlbumTitle": null,
-      "albumMembership": [],
-      "releaseDate": "2021-03-05",
-      "singleIds": [
-        "single-秒針を噛む-from-the-first-take"
-      ]
-    },
-    {
       "id": "song-正しくなれない-from-the-first-take",
       "type": "song",
       "title": "正しくなれない - From THE FIRST TAKE",
       "label": "正しくなれない - From THE FIRST TAKE",
-      "firstAlbumId": null,
-      "firstAlbumTitle": null,
-      "albumMembership": [],
-      "releaseDate": "2021-03-17",
+      "firstAlbumId": "album-the-first-take",
+      "firstAlbumTitle": "THE FIRST TAKE",
+      "albumMembership": [
+        {
+          "albumId": "album-the-first-take",
+          "albumTitle": "THE FIRST TAKE",
+          "displayTitle": "正しくなれない - From THE FIRST TAKE",
+          "order": 1,
+          "kind": "tour",
+          "albumReleaseDate": "2021-03-05"
+        }
+      ],
+      "releaseDate": "2021-03-05",
       "singleIds": [
         "single-正しくなれない-from-the-first-take"
+      ]
+    },
+    {
+      "id": "song-秒針を噛む-from-the-first-take",
+      "type": "song",
+      "title": "秒針を噛む - From THE FIRST TAKE",
+      "label": "秒針を噛む - From THE FIRST TAKE",
+      "firstAlbumId": "album-the-first-take",
+      "firstAlbumTitle": "THE FIRST TAKE",
+      "albumMembership": [
+        {
+          "albumId": "album-the-first-take",
+          "albumTitle": "THE FIRST TAKE",
+          "displayTitle": "秒針を噛む - From THE FIRST TAKE",
+          "order": 0,
+          "kind": "tour",
+          "albumReleaseDate": "2021-03-05"
+        }
+      ],
+      "releaseDate": "2021-03-05",
+      "singleIds": [
+        "single-秒針を噛む-from-the-first-take"
       ]
     },
     {
@@ -3530,6 +3563,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-胸の煙-to-album-永遠深夜万博-名巧は愚なるが如し",
       "source": "song-胸の煙",
       "target": "album-永遠深夜万博-名巧は愚なるが如し",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-正しくなれない-from-the-first-take-to-album-the-first-take",
+      "source": "song-正しくなれない-from-the-first-take",
+      "target": "album-the-first-take",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-秒針を噛む-from-the-first-take-to-album-the-first-take",
+      "source": "song-秒針を噛む-from-the-first-take",
+      "target": "album-the-first-take",
       "type": "included"
     },
     {
