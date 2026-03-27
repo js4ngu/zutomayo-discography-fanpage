@@ -879,6 +879,7 @@ function setActive(nodeId, context = null) {
   state.activeId = nodeId;
   state.activeContext = context;
   renderState();
+  scheduleViewportRender();
 }
 
 function renderFocusDrawer() {
@@ -923,6 +924,40 @@ function getGraphCacheKey() {
   return LANE_ORDER.map((key) => `${key}:${state.filters[key] ? 1 : 0}`).join("|");
 }
 
+function getExpandedAlbumIds() {
+  const expandedAlbumIds = new Set();
+
+  if (!state.activeId) {
+    return expandedAlbumIds;
+  }
+
+  if (albumById.has(state.activeId)) {
+    expandedAlbumIds.add(state.activeId);
+    return expandedAlbumIds;
+  }
+
+  if (songById.has(state.activeId)) {
+    getVisibleMemberships(state.activeId).forEach((membership) => {
+      expandedAlbumIds.add(membership.albumId);
+    });
+    return expandedAlbumIds;
+  }
+
+  if (singleById.has(state.activeId)) {
+    const single = singleById.get(state.activeId);
+    const song = songById.get(single.targetSongId);
+    getVisibleMemberships(song.id).forEach((membership) => {
+      expandedAlbumIds.add(membership.albumId);
+    });
+  }
+
+  return expandedAlbumIds;
+}
+
+function shouldRenderAlbumTrackList(album, expandedAlbumIds) {
+  return album.kind !== "tour" || expandedAlbumIds.has(album.id);
+}
+
 function getVisibleGraphSlice() {
   const windowTop = Math.max(0, stage.scrollTop - VIEWPORT_OVERSCAN);
   const windowBottom = stage.scrollTop + stage.clientHeight + VIEWPORT_OVERSCAN;
@@ -938,12 +973,16 @@ function getVisibleGraphSlice() {
     const bottom = Math.max(edge.points.y1, edge.points.y2);
     return bottom >= windowTop && top <= windowBottom;
   });
+  const reducedEdges =
+    state.activeId || state.hoverNodeId
+      ? visibleEdges
+      : visibleEdges.filter((edge) => edge.type === "release");
 
   return {
     visibleAlbums,
     visibleAlbumIds,
     visibleSingles,
-    visibleEdges,
+    visibleEdges: reducedEdges,
   };
 }
 
@@ -953,6 +992,7 @@ function renderVisibleGraph() {
   }
 
   const { visibleAlbums, visibleSingles, visibleEdges } = getVisibleGraphSlice();
+  const expandedAlbumIds = getExpandedAlbumIds();
 
   clipDefsLayer.selectAll("*").remove();
   for (const album of visibleAlbums) {
@@ -1075,12 +1115,21 @@ function renderVisibleGraph() {
     .attr("y", (album) => album.height - 16)
     .text((album) => `${album.trackTitles.length} tracks`);
 
+  albumSelection
+    .selectAll(".album-track-note")
+    .data((album) => (album.kind === "tour" && !expandedAlbumIds.has(album.id) ? [album] : []))
+    .join("text")
+    .attr("class", "album-track-note")
+    .attr("x", 24)
+    .attr("y", 148)
+    .text("Click to expand full set list");
+
   trackGroupSelection = albumSelection
     .select(".track-proxies")
     .selectAll(".track-proxy")
     .data(
       (album) =>
-        album.trackLayouts
+        (shouldRenderAlbumTrackList(album, expandedAlbumIds) ? album.trackLayouts : [])
           .map((track) => ({
             ...track,
             albumId: album.id,

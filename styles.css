@@ -709,6 +709,7 @@ code {
 
 .node-title,
 .album-track-text,
+.album-track-note,
 .album-type,
 .album-date,
 .single-date,
@@ -740,6 +741,7 @@ code {
 .single-date,
 .album-date,
 .album-type,
+.album-track-note,
 .album-track-text,
 .track-count {
   fill: rgba(234, 215, 255, 0.78);
@@ -748,6 +750,7 @@ code {
 .single-date,
 .album-date,
 .album-type,
+.album-track-note,
 .track-count {
   font-size: 12px;
 }
