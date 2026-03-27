@@ -3,7 +3,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
     "artist": "ZUTOMAYO",
     "artistJa": "ずっと真夜中でいいのに。",
     "title": "ZUTOMAYO Discography Graph",
-    "generatedAt": "2026-03-27T12:39:16.503302+00:00",
+    "generatedAt": "2026-03-27T13:14:15.119565+00:00",
     "sourceFiles": [
       "data/data.uml"
     ],
@@ -1135,6 +1135,22 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 3,
           "kind": "mini",
           "albumReleaseDate": "2018-11-14"
+        },
+        {
+          "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
+          "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
+          "displayTitle": "성계와 밤",
+          "order": 7,
+          "kind": "tour",
+          "albumReleaseDate": "2021-12-15"
+        },
+        {
+          "albumId": "album-road-game-techno-poor",
+          "albumTitle": "ROAD GAME #Techno Poor",
+          "displayTitle": "성계와 밤",
+          "order": 8,
+          "kind": "tour",
+          "albumReleaseDate": "2023-10-25"
         }
       ],
       "releaseDate": "2018-11-14",
@@ -3173,34 +3189,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "singleIds": [
         "single-猫リセット"
       ]
-    },
-    {
-      "id": "song-성계와-밤",
-      "type": "song",
-      "title": "성계와 밤",
-      "label": "성계와 밤",
-      "firstAlbumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
-      "firstAlbumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
-      "albumMembership": [
-        {
-          "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
-          "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
-          "displayTitle": "성계와 밤",
-          "order": 7,
-          "kind": "tour",
-          "albumReleaseDate": "2021-12-15"
-        },
-        {
-          "albumId": "album-road-game-techno-poor",
-          "albumTitle": "ROAD GAME #Techno Poor",
-          "displayTitle": "성계와 밤",
-          "order": 8,
-          "kind": "tour",
-          "albumReleaseDate": "2023-10-25"
-        }
-      ],
-      "releaseDate": "2021-12-15",
-      "singleIds": []
     },
     {
       "id": "song-袖のキルト",
@@ -5766,6 +5754,18 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
+      "id": "edge-song-雲丹と栗-to-album-yaki-yaki-yankee-tour-cleaning-labo",
+      "source": "song-雲丹と栗",
+      "target": "album-yaki-yaki-yankee-tour-cleaning-labo",
+      "type": "included"
+    },
+    {
+      "id": "edge-song-雲丹と栗-to-album-road-game-techno-poor",
+      "source": "song-雲丹と栗",
+      "target": "album-road-game-techno-poor",
+      "type": "included"
+    },
+    {
       "id": "edge-song-眩しいdnaだけ-to-album-今は今で誓いは笑みで",
       "source": "song-眩しいdnaだけ",
       "target": "album-今は今で誓いは笑みで",
@@ -6951,18 +6951,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-猫リセット-to-album-코즈믹도로정담-투어-코즈단",
       "source": "song-猫リセット",
       "target": "album-코즈믹도로정담-투어-코즈단",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-성계와-밤-to-album-yaki-yaki-yankee-tour-cleaning-labo",
-      "source": "song-성계와-밤",
-      "target": "album-yaki-yaki-yankee-tour-cleaning-labo",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-성계와-밤-to-album-road-game-techno-poor",
-      "source": "song-성계와-밤",
-      "target": "album-road-game-techno-poor",
       "type": "included"
     },
     {

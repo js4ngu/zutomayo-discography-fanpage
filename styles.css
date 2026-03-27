@@ -533,7 +533,7 @@ body {
     transform 320ms cubic-bezier(0.2, 0.8, 0.2, 1),
     opacity 220ms ease;
   pointer-events: auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .focus-close {
@@ -592,11 +592,14 @@ body {
 
 .focus-bar .detail-links {
   grid-area: links;
-  justify-content: flex-end;
-  align-self: center;
-  max-height: 132px;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  max-height: 144px;
   overflow: auto;
   padding-left: 4px;
+  padding-right: 18px;
 }
 
 .focus-bar .detail-links button,
@@ -604,6 +607,7 @@ body {
   padding: 8px 12px;
   font-size: 0.82rem;
   white-space: nowrap;
+  max-width: 100%;
 }
 
 code {
@@ -709,7 +713,6 @@ code {
 
 .node-title,
 .album-track-text,
-.album-track-note,
 .album-type,
 .album-date,
 .single-date,
@@ -746,7 +749,6 @@ code {
 .single-date,
 .album-date,
 .album-type,
-.album-track-note,
 .album-track-text,
 .track-count {
   fill: rgba(234, 215, 255, 0.78);
@@ -755,7 +757,6 @@ code {
 .single-date,
 .album-date,
 .album-type,
-.album-track-note,
 .track-count {
   font-size: 12px;
 }

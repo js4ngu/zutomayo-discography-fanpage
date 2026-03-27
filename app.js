@@ -1004,40 +1004,6 @@ function getGraphCacheKey() {
   return LANE_ORDER.map((key) => `${key}:${state.filters[key] ? 1 : 0}`).join("|");
 }
 
-function getExpandedAlbumIds() {
-  const expandedAlbumIds = new Set();
-
-  if (!state.activeId) {
-    return expandedAlbumIds;
-  }
-
-  if (albumById.has(state.activeId)) {
-    expandedAlbumIds.add(state.activeId);
-    return expandedAlbumIds;
-  }
-
-  if (songById.has(state.activeId)) {
-    getVisibleMemberships(state.activeId).forEach((membership) => {
-      expandedAlbumIds.add(membership.albumId);
-    });
-    return expandedAlbumIds;
-  }
-
-  if (singleById.has(state.activeId)) {
-    const single = singleById.get(state.activeId);
-    const song = songById.get(single.targetSongId);
-    getVisibleMemberships(song.id).forEach((membership) => {
-      expandedAlbumIds.add(membership.albumId);
-    });
-  }
-
-  return expandedAlbumIds;
-}
-
-function shouldRenderAlbumTrackList(album, expandedAlbumIds) {
-  return album.kind !== "tour" || expandedAlbumIds.has(album.id);
-}
-
 function getFocusedSongId() {
   return state.activeId && songById.has(state.activeId) ? state.activeId : null;
 }
@@ -1088,7 +1054,6 @@ function renderVisibleGraph() {
   }
 
   const { visibleAlbums, visibleSingles, visibleEdges } = getVisibleGraphSlice();
-  const expandedAlbumIds = getExpandedAlbumIds();
 
   clipDefsLayer.selectAll("*").remove();
   for (const album of visibleAlbums) {
@@ -1221,21 +1186,12 @@ function renderVisibleGraph() {
     .attr("y", (album) => album.height - 16)
     .text((album) => `${album.trackTitles.length} tracks`);
 
-  albumSelection
-    .selectAll(".album-track-note")
-    .data((album) => (album.kind === "tour" && !expandedAlbumIds.has(album.id) ? [album] : []))
-    .join("text")
-    .attr("class", "album-track-note")
-    .attr("x", 24)
-    .attr("y", 148)
-    .text("Click to expand full set list");
-
   trackGroupSelection = albumSelection
     .select(".track-proxies")
     .selectAll(".track-proxy")
     .data(
       (album) =>
-        (shouldRenderAlbumTrackList(album, expandedAlbumIds) ? album.trackLayouts : [])
+        album.trackLayouts
           .map((track) => ({
             ...track,
             albumId: album.id,

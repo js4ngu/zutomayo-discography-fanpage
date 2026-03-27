@@ -24,6 +24,7 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
 
 WORK_ALIASES = {
     "Dear. Mr「F」": "Dear Mr F",
+    "성계와 밤": "雲丹と栗",
     "綺羅キラー (feat. Mori Calliope)": "綺羅キラー",
     "またね幻 (Live in Studio_80光年先の君へ)": "またね幻",
     "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
