@@ -975,6 +975,7 @@ function renderState() {
   if (viewport) {
     viewport.classed("graph-dimmed", hasActive);
   }
+  syncRenderedEdges();
   if (singleSelection) {
     singleSelection
       .classed("is-active", (single) => relations.nodeIds.has(single.id))
@@ -1020,6 +1021,44 @@ function getRenderedEdges() {
 
     return focusedSongId ? edge.songId === focusedSongId : false;
   });
+}
+
+function syncRenderedEdges() {
+  if (!edgeLayer || !graph) {
+    return;
+  }
+
+  edgeSelection = edgeLayer
+    .selectAll(".edge")
+    .data(getRenderedEdges(), (edge) => edge.id)
+    .join("path")
+    .attr("class", (edge) => `edge edge-${edge.type}`)
+    .attr("d", edgePath);
+}
+
+function getYearLabelY(date) {
+  const baseY = yScale(date) - 10;
+  if (!graph) {
+    return baseY;
+  }
+
+  let lowerBound = baseY;
+  let upperBound = Number.POSITIVE_INFINITY;
+
+  for (const single of graph.singleNodes) {
+    const singleTop = single.y - single.height / 2;
+    const singleBottom = single.y + single.height / 2;
+
+    if (single.parsedDate < date && singleBottom + 8 > lowerBound) {
+      lowerBound = singleBottom + 8;
+    }
+
+    if (single.parsedDate >= date && singleTop - 8 < upperBound && singleTop >= baseY) {
+      upperBound = singleTop - 8;
+    }
+  }
+
+  return Number.isFinite(upperBound) ? Math.min(lowerBound, upperBound) : lowerBound;
 }
 
 function renderGraph() {
@@ -1122,7 +1161,7 @@ function renderGraph() {
     .join("text")
     .attr("class", "year-label")
     .attr("x", graph.fitViewBoxLeft + 12)
-    .attr("y", (date) => yScale(date) - 10)
+    .attr("y", (date) => getYearLabelY(date))
     .text((date) => date.getFullYear());
 
   backgroundLayer
@@ -1138,12 +1177,7 @@ function renderGraph() {
         .text((lane) => lane.title);
     });
 
-  edgeSelection = edgeLayer
-    .selectAll(".edge")
-    .data(getRenderedEdges(), (edge) => edge.id)
-    .join("path")
-    .attr("class", (edge) => `edge edge-${edge.type}`)
-    .attr("d", edgePath);
+  syncRenderedEdges();
 
   albumSelection = albumLayer
     .selectAll(".node-album")
