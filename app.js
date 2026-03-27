@@ -18,6 +18,7 @@ const trackAnalyticsEvent =
 const SINGLE_DOUBLE_TAP_MS = 420;
 const WIDTH = 2420;
 const VIEW_MARGIN = { top: 150, right: 72, bottom: 110, left: 72 };
+const VIEWPORT_OVERSCAN = 420;
 const LANE_ORDER = ["single", "mini", "full", "tour"];
 const LANE_LABELS = {
   single: "Single",
@@ -109,6 +110,15 @@ let edgeSelection = null;
 let albumSelection = null;
 let trackGroupSelection = null;
 let singleSelection = null;
+let defsLayer = null;
+let clipDefsLayer = null;
+let backgroundLayer = null;
+let edgeLayer = null;
+let albumLayer = null;
+let singleLayer = null;
+let pendingViewportRender = 0;
+
+const graphCache = new Map();
 
 const fallbackArtworkCache = new Map();
 const singleLabelMeasureCanvas = document.createElement("canvas");
@@ -439,6 +449,7 @@ function buildGraphData() {
   }
 
   const edgeData = [];
+  const edgeIdsBySong = new Map(parsedSongs.map((song) => [song.id, []]));
 
   if (state.filters.single) {
     for (const single of singleNodes) {
@@ -454,7 +465,7 @@ function buildGraphData() {
         continue;
       }
 
-      edgeData.push({
+      const edge = {
         id: `edge-release-${single.id}-${song.id}`,
         type: "release",
         songId: song.id,
@@ -467,12 +478,18 @@ function buildGraphData() {
           x2: firstAnchor.x,
           y2: firstAnchor.y,
         },
-      });
+      };
+      edgeData.push(edge);
+      edgeIdsBySong.get(song.id)?.push(edge.id);
     }
   }
 
+  const songIdsByAlbumId = new Map(albumNodes.map((album) => [album.id, []]));
   for (const song of parsedSongs) {
     const visibleMemberships = visibleMembershipsBySong.get(song.id) ?? [];
+    visibleMemberships.forEach((membership) => {
+      songIdsByAlbumId.get(membership.albumId)?.push(song.id);
+    });
     if (visibleMemberships.length < 2) {
       continue;
     }
@@ -489,7 +506,7 @@ function buildGraphData() {
         return;
       }
 
-      edgeData.push({
+      const edge = {
         id: `edge-included-${song.id}-${membership.albumId}`,
         type: "included",
         songId: song.id,
@@ -502,7 +519,9 @@ function buildGraphData() {
           x2: anchor.x,
           y2: anchor.y,
         },
-      });
+      };
+      edgeData.push(edge);
+      edgeIdsBySong.get(song.id)?.push(edge.id);
     });
   }
 
@@ -517,8 +536,10 @@ function buildGraphData() {
     albumNodes,
     singleNodes,
     edgeData,
+    edgeIdsBySong,
     visibleAlbumIds,
     visibleMembershipsBySong,
+    songIdsByAlbumId,
   };
 }
 
@@ -606,7 +627,7 @@ function getRelations(nodeId) {
     const memberships = getVisibleMemberships(song.id);
     return {
       nodeIds: new Set([single.id, song.id, ...memberships.map((membership) => membership.albumId)]),
-      edgeIds: new Set(graph.edgeData.filter((edge) => edge.songId === song.id).map((edge) => edge.id)),
+      edgeIds: new Set(graph.edgeIdsBySong.get(song.id) ?? []),
       trackKeys: new Set(memberships.map((membership) => `${membership.albumId}::${membership.order}`)),
     };
   }
@@ -620,15 +641,14 @@ function getRelations(nodeId) {
         ...(state.filters.single ? song.singleIds : []),
         ...memberships.map((membership) => membership.albumId),
       ]),
-      edgeIds: new Set(graph.edgeData.filter((edge) => edge.songId === song.id).map((edge) => edge.id)),
+      edgeIds: new Set(graph.edgeIdsBySong.get(song.id) ?? []),
       trackKeys: new Set(memberships.map((membership) => `${membership.albumId}::${membership.order}`)),
     };
   }
 
   const album = albumById.get(nodeId);
-  const songs = parsedSongs.filter((song) =>
-    (graph.visibleMembershipsBySong.get(song.id) ?? []).some((membership) => membership.albumId === album.id),
-  );
+  const songIds = graph.songIdsByAlbumId.get(album.id) ?? [];
+  const songs = songIds.map((songId) => songById.get(songId));
   return {
     nodeIds: new Set([
       album.id,
@@ -899,31 +919,44 @@ function renderState() {
   renderFocusDrawer();
 }
 
-function renderGraph() {
-  graph = buildGraphData();
+function getGraphCacheKey() {
+  return LANE_ORDER.map((key) => `${key}:${state.filters[key] ? 1 : 0}`).join("|");
+}
 
-  svg.selectAll("*").remove();
-  svg
-    .attr("viewBox", `${graph.fitViewBoxLeft} 0 ${graph.fitViewBoxWidth} ${HEIGHT}`)
-    .attr("preserveAspectRatio", "xMinYMin meet")
-    .attr("width", WIDTH)
-    .attr("height", HEIGHT);
+function getVisibleGraphSlice() {
+  const windowTop = Math.max(0, stage.scrollTop - VIEWPORT_OVERSCAN);
+  const windowBottom = stage.scrollTop + stage.clientHeight + VIEWPORT_OVERSCAN;
+  const visibleAlbums = graph.albumNodes.filter(
+    (album) => album.y + album.height >= windowTop && album.y <= windowBottom,
+  );
+  const visibleAlbumIds = new Set(visibleAlbums.map((album) => album.id));
+  const visibleSingles = graph.singleNodes.filter(
+    (single) => single.y + single.height / 2 >= windowTop && single.y - single.height / 2 <= windowBottom,
+  );
+  const visibleEdges = graph.edgeData.filter((edge) => {
+    const top = Math.min(edge.points.y1, edge.points.y2);
+    const bottom = Math.max(edge.points.y1, edge.points.y2);
+    return bottom >= windowTop && top <= windowBottom;
+  });
 
-  const defs = svg.append("defs");
-  const sheenGradient = defs
-    .append("linearGradient")
-    .attr("id", "albumSheenGradient")
-    .attr("x1", "0%")
-    .attr("x2", "100%")
-    .attr("y1", "0%")
-    .attr("y2", "100%");
+  return {
+    visibleAlbums,
+    visibleAlbumIds,
+    visibleSingles,
+    visibleEdges,
+  };
+}
 
-  sheenGradient.append("stop").attr("offset", "0%").attr("stop-color", "rgba(255,255,255,0.16)");
-  sheenGradient.append("stop").attr("offset", "58%").attr("stop-color", "rgba(255,255,255,0)");
-  sheenGradient.append("stop").attr("offset", "100%").attr("stop-color", "rgba(255,255,255,0.08)");
+function renderVisibleGraph() {
+  if (!graph || !clipDefsLayer || !backgroundLayer || !edgeLayer || !albumLayer || !singleLayer) {
+    return;
+  }
 
-  for (const album of graph.albumNodes) {
-    defs
+  const { visibleAlbums, visibleSingles, visibleEdges } = getVisibleGraphSlice();
+
+  clipDefsLayer.selectAll("*").remove();
+  for (const album of visibleAlbums) {
+    clipDefsLayer
       .append("clipPath")
       .attr("id", `album-clip-${album.id}`)
       .append("rect")
@@ -935,8 +968,8 @@ function renderGraph() {
       .attr("ry", 24);
   }
 
-  for (const single of graph.singleNodes) {
-    defs
+  for (const single of visibleSingles) {
+    clipDefsLayer
       .append("clipPath")
       .attr("id", `single-clip-${single.id}`)
       .append("rect")
@@ -948,11 +981,301 @@ function renderGraph() {
       .attr("ry", 14);
   }
 
+  edgeSelection = edgeLayer
+    .selectAll(".edge")
+    .data(visibleEdges, (edge) => edge.id)
+    .join("path")
+    .attr("class", (edge) => `edge edge-${edge.type}`)
+    .attr("d", edgePath);
+
+  albumSelection = albumLayer
+    .selectAll(".node-album")
+    .data(visibleAlbums, (album) => album.id)
+    .join(
+      (enter) => {
+        const group = enter
+          .append("g")
+          .attr("class", "node node-album")
+          .on("mouseenter", (event, album) => {
+            state.hoverNodeId = album.id;
+            renderState();
+            showTooltip(event, albumTooltip(album));
+          })
+          .on("mousemove", moveTooltip)
+          .on("mouseleave", () => {
+            state.hoverNodeId = null;
+            renderState();
+            hideTooltip();
+          })
+          .on("click", (event, album) => {
+            event.stopPropagation();
+            state.lastSingleTap = null;
+            setActive(album.id, { kind: "album", albumId: album.id });
+          });
+
+        group.append("rect").attr("class", "album-card-base");
+        group.append("image");
+        group.append("rect").attr("class", "album-card-sheen");
+        group.append("text").attr("class", "album-type");
+        group.append("text").attr("class", "album-date");
+        group.append("text").attr("class", "album-title");
+        group.append("text").attr("class", "track-count");
+        group.append("g").attr("class", "track-proxies");
+        return group;
+      },
+      (update) => update,
+      (exit) => exit.remove(),
+    )
+    .attr("transform", (album) => `translate(${album.x}, ${album.y})`);
+
+  albumSelection
+    .select(".album-card-base")
+    .attr("width", (album) => album.width)
+    .attr("height", (album) => album.height)
+    .attr("rx", 30)
+    .attr("ry", 30);
+
+  albumSelection
+    .select("image")
+    .attr("href", (album) => album.artworkUrl)
+    .attr("width", (album) => album.width)
+    .attr("height", 92)
+    .attr("preserveAspectRatio", "xMidYMid slice")
+    .attr("clip-path", (album) => `url(#album-clip-${album.id})`);
+
+  albumSelection
+    .select(".album-card-sheen")
+    .attr("width", (album) => album.width)
+    .attr("height", 92)
+    .attr("rx", 30)
+    .attr("ry", 30);
+
+  albumSelection
+    .select(".album-type")
+    .attr("x", 24)
+    .attr("y", 118)
+    .text((album) => ALBUM_KIND_LABELS[album.kind]);
+
+  albumSelection
+    .select(".album-date")
+    .attr("x", (album) => album.width - 24)
+    .attr("y", 118)
+    .attr("text-anchor", "end")
+    .text((album) => album.releaseDate);
+
+  albumSelection
+    .select(".album-title")
+    .attr("x", 24)
+    .attr("y", 74)
+    .text((album) => album.title);
+
+  albumSelection
+    .select(".track-count")
+    .attr("x", 24)
+    .attr("y", (album) => album.height - 16)
+    .text((album) => `${album.trackTitles.length} tracks`);
+
+  trackGroupSelection = albumSelection
+    .select(".track-proxies")
+    .selectAll(".track-proxy")
+    .data(
+      (album) =>
+        album.trackLayouts
+          .map((track) => ({
+            ...track,
+            albumId: album.id,
+            songId: songIdByMembershipKey.get(track.key) ?? null,
+          }))
+          .filter((track) => track.songId),
+      (track) => track.key,
+    )
+    .join(
+      (enter) => {
+        const trackGroup = enter
+          .append("g")
+          .attr("class", "track-proxy")
+          .on("mouseenter", (event, track) => {
+            state.hoverNodeId = track.songId;
+            renderState();
+            showTooltip(event, songTooltip(songById.get(track.songId), track.displayTitle));
+          })
+          .on("mousemove", moveTooltip)
+          .on("mouseleave", () => {
+            state.hoverNodeId = null;
+            renderState();
+            hideTooltip();
+          })
+          .on("click", (event, track) => {
+            event.stopPropagation();
+            state.lastSingleTap = null;
+            setActive(track.songId, { kind: "track", albumId: track.albumId });
+          });
+
+        trackGroup.append("rect").attr("class", "track-hit");
+        trackGroup.append("text").attr("class", "album-track-text");
+        return trackGroup;
+      },
+      (update) => update,
+      (exit) => exit.remove(),
+    )
+    .attr(
+      "transform",
+      (track) =>
+        `translate(${track.x - graph.albumLayouts.get(track.albumId).x}, ${track.y - graph.albumLayouts.get(track.albumId).y})`,
+    );
+
+  trackGroupSelection
+    .select(".track-hit")
+    .attr("width", (track) => track.width)
+    .attr("height", (track) => track.blockHeight)
+    .attr("rx", 8)
+    .attr("ry", 8)
+    .attr("y", -14);
+
+  trackGroupSelection.each(function updateTrackText(track) {
+    const text = d3.select(this).select(".album-track-text").attr("x", 0).attr("y", 0);
+    text
+      .selectAll("tspan")
+      .data(track.lines)
+      .join("tspan")
+      .attr("x", 0)
+      .attr("dy", (_, index) => (index === 0 ? 0 : 16))
+      .text((line) => line);
+  });
+
+  singleSelection = singleLayer
+    .selectAll(".node-single")
+    .data(visibleSingles, (single) => single.id)
+    .join(
+      (enter) => {
+        const group = enter
+          .append("g")
+          .attr("class", "node node-single")
+          .on("mouseenter", (event, single) => {
+            state.hoverNodeId = single.id;
+            renderState();
+            showTooltip(event, singleTooltip(single));
+          })
+          .on("mousemove", moveTooltip)
+          .on("mouseleave", () => {
+            state.hoverNodeId = null;
+            renderState();
+            hideTooltip();
+          })
+          .on("click", (event, single) => {
+            event.stopPropagation();
+            const now = Date.now();
+            const isDoubleTap =
+              state.lastSingleTap &&
+              state.lastSingleTap.id === single.id &&
+              now - state.lastSingleTap.time < SINGLE_DOUBLE_TAP_MS;
+
+            if (isDoubleTap) {
+              state.lastSingleTap = null;
+              setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
+              return;
+            }
+
+            state.lastSingleTap = { id: single.id, time: now };
+            setActive(single.id, { kind: "single", singleId: single.id });
+          })
+          .on("dblclick", (event, single) => {
+            event.stopPropagation();
+            state.lastSingleTap = null;
+            setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
+          });
+
+        group.append("rect").attr("class", "single-card-bg");
+        group.append("rect").attr("class", "single-pill");
+        group.append("image");
+        group.append("text").attr("class", "single-title");
+        group.append("title");
+        group.append("text").attr("class", "single-date");
+        return group;
+      },
+      (update) => update,
+      (exit) => exit.remove(),
+    )
+    .attr("transform", (single) => `translate(${single.x}, ${single.y - single.height / 2})`);
+
+  singleSelection
+    .select(".single-card-bg")
+    .attr("width", (single) => single.width)
+    .attr("height", (single) => single.height)
+    .attr("rx", 24)
+    .attr("ry", 24);
+
+  singleSelection
+    .select(".single-pill")
+    .attr("x", 10)
+    .attr("y", 10)
+    .attr("width", 58)
+    .attr("height", 58)
+    .attr("rx", 16)
+    .attr("ry", 16);
+
+  singleSelection
+    .select("image")
+    .attr("href", (single) => single.artworkUrl)
+    .attr("x", 12)
+    .attr("y", 12)
+    .attr("width", 54)
+    .attr("height", 54)
+    .attr("preserveAspectRatio", "xMidYMid slice")
+    .attr("clip-path", (single) => `url(#single-clip-${single.id})`);
+
+  singleSelection.select(".single-title").attr("x", 80).attr("y", 33).text((single) => single.shortLabel);
+  singleSelection.select("title").text((single) => single.title);
+  singleSelection.select(".single-date").attr("x", 80).attr("y", 56).text((single) => single.releaseDate);
+
+  renderState();
+}
+
+function scheduleViewportRender() {
+  if (pendingViewportRender) {
+    return;
+  }
+
+  pendingViewportRender = window.requestAnimationFrame(() => {
+    pendingViewportRender = 0;
+    renderVisibleGraph();
+  });
+}
+
+function renderGraph() {
+  const cacheKey = getGraphCacheKey();
+  graph = graphCache.get(cacheKey);
+  if (!graph) {
+    graph = buildGraphData();
+    graphCache.set(cacheKey, graph);
+  }
+
+  svg.selectAll("*").remove();
+  svg
+    .attr("viewBox", `${graph.fitViewBoxLeft} 0 ${graph.fitViewBoxWidth} ${HEIGHT}`)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("width", WIDTH)
+    .attr("height", HEIGHT);
+
+  defsLayer = svg.append("defs");
+  const sheenGradient = defsLayer
+    .append("linearGradient")
+    .attr("id", "albumSheenGradient")
+    .attr("x1", "0%")
+    .attr("x2", "100%")
+    .attr("y1", "0%")
+    .attr("y2", "100%");
+
+  sheenGradient.append("stop").attr("offset", "0%").attr("stop-color", "rgba(255,255,255,0.16)");
+  sheenGradient.append("stop").attr("offset", "58%").attr("stop-color", "rgba(255,255,255,0)");
+  sheenGradient.append("stop").attr("offset", "100%").attr("stop-color", "rgba(255,255,255,0.08)");
+  clipDefsLayer = defsLayer.append("g").attr("class", "clip-defs");
+
   viewport = svg.append("g").attr("class", "viewport");
-  const backgroundLayer = viewport.append("g");
-  const edgeLayer = viewport.append("g");
-  const albumLayer = viewport.append("g");
-  const singleLayer = viewport.append("g");
+  backgroundLayer = viewport.append("g");
+  edgeLayer = viewport.append("g");
+  albumLayer = viewport.append("g");
+  singleLayer = viewport.append("g");
 
   backgroundLayer
     .append("rect")
@@ -1010,230 +1333,7 @@ function renderGraph() {
         .text((lane) => lane.title);
     });
 
-  edgeSelection = edgeLayer
-    .selectAll(".edge")
-    .data(graph.edgeData)
-    .join("path")
-    .attr("class", (edge) => `edge edge-${edge.type}`)
-    .attr("d", edgePath);
-
-  albumSelection = albumLayer
-    .selectAll(".node-album")
-    .data(graph.albumNodes)
-    .join("g")
-    .attr("class", "node node-album")
-    .attr("transform", (album) => `translate(${album.x}, ${album.y})`)
-    .on("mouseenter", (event, album) => {
-      state.hoverNodeId = album.id;
-      renderState();
-      showTooltip(event, albumTooltip(album));
-    })
-    .on("mousemove", moveTooltip)
-    .on("mouseleave", () => {
-      state.hoverNodeId = null;
-      renderState();
-      hideTooltip();
-    })
-    .on("click", (event, album) => {
-      event.stopPropagation();
-      state.lastSingleTap = null;
-      setActive(album.id, { kind: "album", albumId: album.id });
-    });
-
-  albumSelection
-    .append("rect")
-    .attr("class", "album-card-base")
-    .attr("width", (album) => album.width)
-    .attr("height", (album) => album.height)
-    .attr("rx", 30)
-    .attr("ry", 30);
-
-  albumSelection
-    .append("image")
-    .attr("href", (album) => album.artworkUrl)
-    .attr("width", (album) => album.width)
-    .attr("height", 92)
-    .attr("preserveAspectRatio", "xMidYMid slice")
-    .attr("clip-path", (album) => `url(#album-clip-${album.id})`);
-
-  albumSelection
-    .append("rect")
-    .attr("class", "album-card-sheen")
-    .attr("width", (album) => album.width)
-    .attr("height", 92)
-    .attr("rx", 30)
-    .attr("ry", 30);
-
-  albumSelection
-    .append("text")
-    .attr("class", "album-type")
-    .attr("x", 24)
-    .attr("y", 118)
-    .text((album) => ALBUM_KIND_LABELS[album.kind]);
-
-  albumSelection
-    .append("text")
-    .attr("class", "album-date")
-    .attr("x", (album) => album.width - 24)
-    .attr("y", 118)
-    .attr("text-anchor", "end")
-    .text((album) => album.releaseDate);
-
-  albumSelection
-    .append("text")
-    .attr("class", "album-title")
-    .attr("x", 24)
-    .attr("y", 74)
-    .text((album) => album.title);
-
-  albumSelection
-    .append("text")
-    .attr("class", "track-count")
-    .attr("x", 24)
-    .attr("y", (album) => album.height - 16)
-    .text((album) => `${album.trackTitles.length} tracks`);
-
-  trackGroupSelection = albumSelection
-    .append("g")
-    .selectAll(".track-proxy")
-    .data((album) =>
-      album.trackLayouts
-        .map((track) => ({
-          ...track,
-          albumId: album.id,
-          songId: songIdByMembershipKey.get(track.key) ?? null,
-        }))
-        .filter((track) => track.songId),
-    )
-    .join("g")
-    .attr("class", "track-proxy")
-    .attr("transform", (track) => `translate(${track.x - graph.albumLayouts.get(track.albumId).x}, ${track.y - graph.albumLayouts.get(track.albumId).y})`)
-    .on("mouseenter", (event, track) => {
-      state.hoverNodeId = track.songId;
-      renderState();
-      showTooltip(event, songTooltip(songById.get(track.songId), track.displayTitle));
-    })
-    .on("mousemove", moveTooltip)
-    .on("mouseleave", () => {
-      state.hoverNodeId = null;
-      renderState();
-      hideTooltip();
-    })
-    .on("click", (event, track) => {
-      event.stopPropagation();
-      state.lastSingleTap = null;
-      setActive(track.songId, { kind: "track", albumId: track.albumId });
-    });
-
-  trackGroupSelection
-    .append("rect")
-    .attr("class", "track-hit")
-    .attr("width", (track) => track.width)
-    .attr("height", (track) => track.blockHeight)
-    .attr("rx", 8)
-    .attr("ry", 8)
-    .attr("y", -14);
-
-  trackGroupSelection.each(function appendTrackText(track) {
-    const text = d3
-      .select(this)
-      .append("text")
-      .attr("class", "album-track-text")
-      .attr("x", 0)
-      .attr("y", 0);
-
-    track.lines.forEach((line, index) => {
-      text
-        .append("tspan")
-        .attr("x", 0)
-        .attr("dy", index === 0 ? 0 : 16)
-        .text(line);
-    });
-  });
-
-  singleSelection = singleLayer
-    .selectAll(".node-single")
-    .data(graph.singleNodes)
-    .join("g")
-    .attr("class", "node node-single")
-    .attr("transform", (single) => `translate(${single.x}, ${single.y - single.height / 2})`)
-    .on("mouseenter", (event, single) => {
-      state.hoverNodeId = single.id;
-      renderState();
-      showTooltip(event, singleTooltip(single));
-    })
-    .on("mousemove", moveTooltip)
-    .on("mouseleave", () => {
-      state.hoverNodeId = null;
-      renderState();
-      hideTooltip();
-    })
-    .on("click", (event, single) => {
-      event.stopPropagation();
-      const now = Date.now();
-      const isDoubleTap =
-        state.lastSingleTap &&
-        state.lastSingleTap.id === single.id &&
-        now - state.lastSingleTap.time < SINGLE_DOUBLE_TAP_MS;
-
-      if (isDoubleTap) {
-        state.lastSingleTap = null;
-        setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
-        return;
-      }
-
-      state.lastSingleTap = { id: single.id, time: now };
-      setActive(single.id, { kind: "single", singleId: single.id });
-    })
-    .on("dblclick", (event, single) => {
-      event.stopPropagation();
-      state.lastSingleTap = null;
-      setActive(single.targetSongId, { kind: "single-song", singleId: single.id });
-    });
-
-  singleSelection
-    .append("rect")
-    .attr("class", "single-card-bg")
-    .attr("width", (single) => single.width)
-    .attr("height", (single) => single.height)
-    .attr("rx", 24)
-    .attr("ry", 24);
-
-  singleSelection
-    .append("rect")
-    .attr("class", "single-pill")
-    .attr("x", 10)
-    .attr("y", 10)
-    .attr("width", 58)
-    .attr("height", 58)
-    .attr("rx", 16)
-    .attr("ry", 16);
-
-  singleSelection
-    .append("image")
-    .attr("href", (single) => single.artworkUrl)
-    .attr("x", 12)
-    .attr("y", 12)
-    .attr("width", 54)
-    .attr("height", 54)
-    .attr("preserveAspectRatio", "xMidYMid slice")
-    .attr("clip-path", (single) => `url(#single-clip-${single.id})`);
-
-  singleSelection
-    .append("text")
-    .attr("class", "single-title")
-    .attr("x", 80)
-    .attr("y", 33)
-    .text((single) => single.shortLabel);
-
-  singleSelection.append("title").text((single) => single.title);
-
-  singleSelection
-    .append("text")
-    .attr("class", "single-date")
-    .attr("x", 80)
-    .attr("y", 56)
-    .text((single) => single.releaseDate);
+  renderVisibleGraph();
 }
 
 function syncFilterInputs() {
@@ -1282,3 +1382,4 @@ closeFocusDrawerButton.addEventListener("click", () => setActive(null));
 filterInputs.forEach((input) => {
   input.addEventListener("change", handleFilterChange);
 });
+stage.addEventListener("scroll", scheduleViewportRender, { passive: true });

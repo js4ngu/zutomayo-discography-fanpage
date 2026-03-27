@@ -182,7 +182,7 @@ body {
 
 .panel-logo {
   display: block;
-  width: clamp(148px, 22vw, 242px);
+  width: clamp(16px, 2.2vw, 24px);
   height: auto;
   flex: 0 0 auto;
   filter: drop-shadow(0 0 18px rgba(104, 246, 255, 0.16));
