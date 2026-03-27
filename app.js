@@ -891,8 +891,11 @@ function renderDetail(nodeId) {
       ),
       ...detailRow(
         "Albums",
-        song.albumMembership.length
-          ? song.albumMembership.map((membership) => htmlEscape(membership.albumTitle)).join("<br>")
+        song.albumMembership.filter((membership) => membership.kind !== "tour").length
+          ? song.albumMembership
+              .filter((membership) => membership.kind !== "tour")
+              .map((membership) => htmlEscape(membership.albumTitle))
+              .join("<br>")
           : "none",
       ),
     );
@@ -1022,23 +1025,22 @@ function getVisibleGraphSlice() {
   const visibleSingles = graph.singleNodes.filter(
     (single) => single.y + single.height / 2 >= windowTop && single.y - single.height / 2 <= windowBottom,
   );
-  const visibleEdges = graph.edgeData.filter((edge) => {
+  const focusedSongId = getFocusedSongId();
+  const studioEdges = graph.edgeData.filter((edge) => !isLiveEdge(edge));
+  const liveEdges = graph.edgeData.filter((edge) => {
+    if (!isLiveEdge(edge)) {
+      return false;
+    }
+
+    if (!focusedSongId || edge.songId !== focusedSongId) {
+      return false;
+    }
+
     const top = Math.min(edge.points.y1, edge.points.y2);
     const bottom = Math.max(edge.points.y1, edge.points.y2);
     return bottom >= windowTop && top <= windowBottom;
   });
-  const focusedSongId = getFocusedSongId();
-  const reducedEdges = visibleEdges.filter((edge) => {
-    if (isLiveEdge(edge)) {
-      return focusedSongId ? edge.songId === focusedSongId : false;
-    }
-
-    if (state.activeId || state.hoverNodeId) {
-      return true;
-    }
-
-    return edge.type === "release";
-  });
+  const reducedEdges = [...studioEdges, ...liveEdges];
 
   return {
     visibleAlbums,
