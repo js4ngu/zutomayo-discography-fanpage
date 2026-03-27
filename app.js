@@ -352,6 +352,11 @@ function buildGraphData() {
 
   for (const album of visibleAlbums) {
     const card = albumCardByKind[album.kind];
+    const titleMaxUnits = Math.max(
+      album.kind === "tour" ? 11.5 : 13.5,
+      Math.floor((card.width - 48) / 18),
+    );
+    const titleLines = wrapLabel(album.title, titleMaxUnits);
     const trackMaxUnits = Math.max(
       album.kind === "tour" ? 18 : 20,
       Math.floor((card.width - 48) / 16.5),
@@ -377,6 +382,7 @@ function buildGraphData() {
       height: cardHeight,
       baseCenterY: centerY,
       y: centerY - cardHeight / 2,
+      titleLines,
       rawTracks: wrappedTracks,
       trackLayouts: [],
     });
@@ -1196,8 +1202,18 @@ function renderVisibleGraph() {
   albumSelection
     .select(".album-title")
     .attr("x", 24)
-    .attr("y", 74)
-    .text((album) => album.title);
+    .attr("y", 42)
+    .classed("is-compact", (album) => album.titleLines.length > 1)
+    .each(function updateAlbumTitle(album) {
+      const text = d3.select(this);
+      text
+        .selectAll("tspan")
+        .data(album.titleLines)
+        .join("tspan")
+        .attr("x", 24)
+        .attr("dy", (_, index) => (index === 0 ? 0 : 16))
+        .text((line) => line);
+    });
 
   albumSelection
     .select(".track-count")

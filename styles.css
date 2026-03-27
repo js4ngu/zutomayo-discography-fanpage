@@ -738,6 +738,11 @@ code {
   letter-spacing: 0.02em;
 }
 
+.album-title.is-compact {
+  font-size: 17px;
+  letter-spacing: 0.015em;
+}
+
 .single-date,
 .album-date,
 .album-type,
