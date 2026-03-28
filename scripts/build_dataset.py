@@ -214,6 +214,10 @@ def upscale_art(url: str | None, size: int = 900) -> str | None:
     return re.sub(r"/\d+x\d+bb\.", f"/{size}x{size}bb.", url)
 
 
+def extract_artwork_url(item: dict[str, Any]) -> str | None:
+    return upscale_art(item.get("artworkUrl100") or item.get("artworkUrl"))
+
+
 def canonicalize_work_title(value: str) -> str:
     title = value.strip()
 
@@ -462,7 +466,7 @@ def build_manual_album_metadata(
                 song_results,
                 albums_by_title,
             )
-        artwork_url = upscale_art(picked.get("artworkUrl100"))
+        artwork_url = extract_artwork_url(picked)
 
     return {
         "id": album_def.id,
@@ -503,7 +507,7 @@ def build_dataset() -> dict[str, Any]:
             "title": album_def.title,
             "label": album_def.title,
             "releaseDate": iso_to_date(picked["releaseDate"]),
-            "artworkUrl": upscale_art(picked.get("artworkUrl100")),
+            "artworkUrl": extract_artwork_url(picked),
             "collectionName": picked.get("collectionName"),
             "order": album_def.order,
             "trackTitles": album_def.tracks,
@@ -602,7 +606,7 @@ def build_dataset() -> dict[str, Any]:
                 "title": single_title,
                 "label": single_title,
                 "releaseDate": iso_to_date(picked["releaseDate"]),
-                "artworkUrl": upscale_art(picked.get("artworkUrl100")),
+                "artworkUrl": extract_artwork_url(picked),
                 "collectionName": picked.get("collectionName", ""),
                 "metadataSource": source_kind,
                 "targetSongId": songs_by_title[target_title]["id"],
