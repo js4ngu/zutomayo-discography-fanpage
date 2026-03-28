@@ -136,11 +136,6 @@ MANUAL_ALBUM_METADATA = {
         "collectionName": "CLEANING LABO",
         "artworkSingleTitle": "お勉強しといてよ",
     },
-    "MTV Unplugged - ZUTOMAYO": {
-        "releaseDate": "2022-10-28",
-        "collectionName": "MTV Unplugged - ZUTOMAYO",
-        "artworkSingleTitle": "ばかじゃないのに",
-    },
     'ZUTOMAYO FACTORY day1 "memory_limit =1"': {
         "releaseDate": "2023-05-03",
         "collectionName": 'ZUTOMAYO FACTORY day1 "memory_limit =1"',
@@ -156,34 +151,34 @@ MANUAL_ALBUM_METADATA = {
         "collectionName": "ROAD GAME #Techno Poor",
         "artworkSingleTitle": "残機",
     },
-    "원소도로정담 투어 [도로망고]": {
+    "元素どろ団子TOUR": {
         "releaseDate": "2024-02-21",
-        "collectionName": "원소도로정담 투어 [도로망고]",
+        "collectionName": "元素どろ団子TOUR",
         "artworkSingleTitle": "不法侵入",
     },
-    "본격 중화다방·사랑의 페가수스 Blu-ray": {
+    "本格中華喫茶・愛のペガサス Blu-ray": {
         "releaseDate": "2024-09-11",
-        "collectionName": "본격 중화다방·사랑의 페가수스 Blu-ray",
+        "collectionName": "本格中華喫茶・愛のペガサス Blu-ray",
         "artworkSingleTitle": "花一匁",
     },
-    "원시 5년 순회공연 [다방·사랑의 페가수스]": {
+    "原始五年巡回公演「喫茶・愛のペガサス」": {
         "releaseDate": "2024-10-09",
-        "collectionName": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+        "collectionName": "原始五年巡回公演「喫茶・愛のペガサス」",
         "artworkSingleTitle": "花一匁",
     },
-    "아키하이킹 투어 2 Blu-ray": {
+    "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray": {
         "releaseDate": "2025-05-21",
-        "collectionName": "아키하이킹 투어 2 Blu-ray",
+        "collectionName": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
         "artworkSingleTitle": "形",
     },
-    "아키하이킹 투어 2 Live": {
+    "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live": {
         "releaseDate": "2025-09-03",
-        "collectionName": "아키하이킹 투어 2 Live",
+        "collectionName": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
         "artworkSingleTitle": "TAIDADA",
     },
-    "코즈믹도로정담 투어 [코즈단]": {
+    "コズミックどろ団子TOUR": {
         "releaseDate": "2026-02-18",
-        "collectionName": "코즈믹도로정담 투어 [코즈단]",
+        "collectionName": "コズミックどろ団子TOUR",
         "artworkSingleTitle": "Blues in the Closet",
     },
     "OMOTE EXPO 2025「名巧は愚なるが如し」": {

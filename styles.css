@@ -445,6 +445,15 @@ body {
   pointer-events: none;
 }
 
+.site-note {
+  margin: 8px 4px 0;
+  color: rgba(206, 181, 233, 0.84);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: right;
+  text-shadow: none;
+}
+
 .detail-card {
   padding: 16px 18px;
   background:
@@ -915,6 +924,12 @@ code {
 
   .info-footer {
     padding: 0 8px calc(8px + env(safe-area-inset-bottom));
+  }
+
+  .site-note {
+    margin-top: 6px;
+    font-size: 0.66rem;
+    text-align: center;
   }
 
   .focus-bar {

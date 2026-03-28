@@ -35,6 +35,15 @@ const ALBUM_KIND_DETAIL_LABELS = {
   full: "full album",
   tour: "live session",
 };
+const KR_TITLE_ALIASES = new Map([
+  ["雲丹と栗", "성계와 밤"],
+  ["元素どろ団子TOUR", "원소도로정담 투어 [도로망고]"],
+  ["本格中華喫茶・愛のペガサス Blu-ray", "본격 중화다방·사랑의 페가수스 Blu-ray"],
+  ["原始五年巡回公演「喫茶・愛のペガサス」", "원시 5년 순회공연 [다방·사랑의 페가수스]"],
+  ["やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray", "아키하이킹 투어 2 Blu-ray"],
+  ["やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live", "아키하이킹 투어 2 Live"],
+  ["コズミックどろ団子TOUR", "코즈믹도로정담 투어 [코즈단]"],
+]);
 const LANE_GAP = 44;
 const LANE_FIT_PADDING = 12;
 const ALBUM_TRACK_START_Y = 156;
@@ -813,6 +822,10 @@ function detailRow(label, value) {
   return [dt, dd];
 }
 
+function getKrAlias(title) {
+  return title ? KR_TITLE_ALIASES.get(title) ?? null : null;
+}
+
 function setDetailSubtitle(value) {
   const text = value ?? "";
   detailSubtitle.textContent = text;
@@ -889,10 +902,12 @@ function renderDetail(nodeId) {
   if (singleById.has(nodeId)) {
     const single = singleById.get(nodeId);
     const song = songById.get(single.targetSongId);
+    const krAlias = getKrAlias(single.title) ?? getKrAlias(song.title);
     detailTitle.textContent = single.title;
     setDetailSubtitle("");
     setArtwork(singleArtworkById.get(single.id), `${single.title} artwork`);
     detailList.replaceChildren(
+      ...(krAlias ? detailRow("KR Alias", htmlEscape(krAlias)) : []),
       ...detailRow("Release", single.releaseDate),
       ...detailRow("Source", htmlEscape(single.collectionName)),
       ...detailRow("Song", htmlEscape(song.title)),
@@ -920,6 +935,7 @@ function renderDetail(nodeId) {
       ? song.albumMembership.find((membership) => membership.albumId === contextAlbumId)
       : null;
     const contextDisplayTitle = contextMembership?.displayTitle ?? song.title;
+    const krAlias = getKrAlias(song.title);
     let artworkUrl =
       song.albumMembership.length > 0
         ? albumById.get(song.albumMembership[0].albumId)?.artworkUrl
@@ -935,6 +951,7 @@ function renderDetail(nodeId) {
     setDetailSubtitle("");
     setArtwork(artworkUrl ?? getFallbackArtworkUrl(song.title), `${song.title} artwork`);
     detailList.replaceChildren(
+      ...(krAlias ? detailRow("KR Alias", htmlEscape(krAlias)) : []),
       ...detailRow("First Release", song.releaseDate),
       ...detailRow("First Album", firstAlbum ? htmlEscape(firstAlbum.title) : "standalone single"),
       ...detailRow(
@@ -968,10 +985,12 @@ function renderDetail(nodeId) {
     song.albumMembership.some((membership) => membership.albumId === album.id),
   );
   const connectedSingles = connectedSongs.flatMap((song) => song.singleIds);
+  const krAlias = getKrAlias(album.title);
   detailTitle.textContent = album.title;
   setDetailSubtitle(ALBUM_KIND_DETAIL_LABELS[album.kind]);
   setArtwork(album.artworkUrl, `${album.title} artwork`);
   detailList.replaceChildren(
+    ...(krAlias ? detailRow("KR Alias", htmlEscape(krAlias)) : []),
     ...detailRow("Release", album.releaseDate),
     ...detailRow("Format", ALBUM_KIND_LABELS[album.kind]),
     ...detailRow("Tracks", `${album.trackTitles.length}`),

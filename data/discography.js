@@ -3,7 +3,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
     "artist": "ZUTOMAYO",
     "artistJa": "ずっと真夜中でいいのに。",
     "title": "ZUTOMAYO Discography Graph",
-    "generatedAt": "2026-03-27T13:45:32.756993+00:00",
+    "generatedAt": "2026-03-28T14:45:30.101647+00:00",
     "sourceFiles": [
       "data/data.uml"
     ],
@@ -177,7 +177,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "マイノリティ脈絡",
         "勘ぐれい",
         "マリンブルーの庭園",
-        "성계와 밤",
+        "雲丹と栗",
         "Ham",
         "サターン",
         "MILABO",
@@ -200,7 +200,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2022-02-16",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/7e/5b/9f7e5b57-dac7-e0a5-14af-2566bf017fc6/22UMGIM03998.rgb.jpg/900x900bb.jpg",
       "collectionName": "Nobi Shigusa Korite Itomagoi - EP",
-      "order": 13,
+      "order": 12,
       "trackTitles": [
         "違う曲にしようよ",
         "袖のキルト",
@@ -244,29 +244,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-mtv-unplugged-zutomayo",
-      "type": "album",
-      "kind": "tour",
-      "title": "MTV Unplugged - ZUTOMAYO",
-      "label": "MTV Unplugged - ZUTOMAYO",
-      "releaseDate": "2022-10-28",
-      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/30/e4/ab/30e4ab2f-cef9-c844-a6f6-b488a69bd7f8/21UMGIM55999.rgb.jpg/900x900bb.jpg",
-      "collectionName": "MTV Unplugged - ZUTOMAYO",
-      "order": 10,
-      "trackTitles": [
-        "蹴っ飛ばした毛布",
-        "ばかじゃないのに",
-        "秒針を噛む",
-        "해변색 커리, 상하이 게의 아침 (커버)",
-        "ろんりねす",
-        "マリンブルーの庭園",
-        "君がいて水になる",
-        "脳裏上のクラッカー",
-        "Dear. Mr「F」",
-        "お勉強しといてよ"
-      ]
-    },
-    {
       "id": "album-zutomayo-factory-day1-memory_limit-1",
       "type": "album",
       "kind": "tour",
@@ -275,7 +252,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2023-05-03",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/97/db/ca/97dbcacc-3e21-045e-d4ec-40469517e898/22UMGIM26951.rgb.jpg/900x900bb.jpg",
       "collectionName": "ZUTOMAYO FACTORY day1 \"memory_limit =1\"",
-      "order": 11,
+      "order": 10,
       "trackTitles": [
         "眩しいDNAだけ",
         "ヒューマノイド",
@@ -308,7 +285,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2023-05-04",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/97/db/ca/97dbcacc-3e21-045e-d4ec-40469517e898/22UMGIM26951.rgb.jpg/900x900bb.jpg",
       "collectionName": "ZUTOMAYO FACTORY day2 \"ob_start\"",
-      "order": 12,
+      "order": 11,
       "trackTitles": [
         "ばかじゃないのに",
         "低血ボルト",
@@ -341,7 +318,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2023-06-07",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
       "collectionName": "沈香学",
-      "order": 14,
+      "order": 13,
       "trackTitles": [
         "花一匁",
         "残機",
@@ -367,7 +344,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2023-10-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/67/9f/91/679f9186-53d0-7181-b5ed-a3ba8272c794/22UM1IM09345.rgb.jpg/900x900bb.jpg",
       "collectionName": "ROAD GAME #Techno Poor",
-      "order": 15,
+      "order": 14,
       "trackTitles": [
         "サターン",
         "MILABO",
@@ -377,7 +354,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         "勘ぐれい",
         "秒針を噛む",
         "勘冴えて悔しいわ",
-        "성계와 밤",
+        "雲丹と栗",
         "ばかじゃないのに",
         "Dear. Mr「F」",
         "夜中のキスミ",
@@ -393,15 +370,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-원소도로정담-투어-도로망고",
+      "id": "album-元素どろ団子tour",
       "type": "album",
       "kind": "tour",
-      "title": "원소도로정담 투어 [도로망고]",
-      "label": "원소도로정담 투어 [도로망고]",
+      "title": "元素どろ団子TOUR",
+      "label": "元素どろ団子TOUR",
       "releaseDate": "2024-02-21",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/68/22/c0/6822c00b-74df-f1e7-8f12-6e1b2a78abee/23UMGIM47310.rgb.jpg/900x900bb.jpg",
-      "collectionName": "원소도로정담 투어 [도로망고]",
-      "order": 22,
+      "collectionName": "元素どろ団子TOUR",
+      "order": 21,
       "trackTitles": [
         "グラスとラムレーズン",
         "ハゼ馳せる果てるまで",
@@ -420,15 +397,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "album",
       "kind": "tour",
-      "title": "본격 중화다방·사랑의 페가수스 Blu-ray",
-      "label": "본격 중화다방·사랑의 페가수스 Blu-ray",
+      "title": "本格中華喫茶・愛のペガサス Blu-ray",
+      "label": "本格中華喫茶・愛のペガサス Blu-ray",
       "releaseDate": "2024-09-11",
       "artworkUrl": null,
-      "collectionName": "본격 중화다방·사랑의 페가수스 Blu-ray",
-      "order": 17,
+      "collectionName": "本格中華喫茶・愛のペガサス Blu-ray",
+      "order": 16,
       "trackTitles": [
         "袖のキルト",
         "こんなこと騒動",
@@ -463,7 +440,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2024-09-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/0e/4c/680e4cc3-00ff-5373-ef07-752b40a2c3c0/24UMGIM95338.rgb.jpg/900x900bb.jpg",
       "collectionName": "AUTHENTIC CHINESE KISSA \"Ai no Pegasus\" -SPICY DRAGON OF LOVE-",
-      "order": 16,
+      "order": 15,
       "trackTitles": [
         "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
         "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
@@ -496,15 +473,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "album",
       "kind": "tour",
-      "title": "원시 5년 순회공연 [다방·사랑의 페가수스]",
-      "label": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+      "title": "原始五年巡回公演「喫茶・愛のペガサス」",
+      "label": "原始五年巡回公演「喫茶・愛のペガサス」",
       "releaseDate": "2024-10-09",
       "artworkUrl": null,
-      "collectionName": "원시 5년 순회공연 [다방·사랑의 페가수스]",
-      "order": 18,
+      "collectionName": "原始五年巡回公演「喫茶・愛のペガサス」",
+      "order": 17,
       "trackTitles": [
         "マリンブルーの庭園",
         "ミラーチューン",
@@ -529,7 +506,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2024-10-23",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
       "collectionName": "Koke no ichinen Kaiba ni takusu - EP",
-      "order": 19,
+      "order": 18,
       "trackTitles": [
         "虚仮にしてくれ",
         "TAIDADA",
@@ -540,15 +517,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-아키하이킹-투어-2-blu-ray",
+      "id": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "album",
       "kind": "tour",
-      "title": "아키하이킹 투어 2 Blu-ray",
-      "label": "아키하이킹 투어 2 Blu-ray",
+      "title": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
+      "label": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
       "releaseDate": "2025-05-21",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/9a/f6/d59af66d-c805-8137-3b10-606d850acf34/25UMGIM76056.rgb.jpg/900x900bb.jpg",
-      "collectionName": "아키하이킹 투어 2 Blu-ray",
-      "order": 23,
+      "collectionName": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
+      "order": 22,
       "trackTitles": [
         "虚仮にしてくれ",
         "嘘じゃない",
@@ -584,7 +561,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2025-09-02",
       "artworkUrl": null,
       "collectionName": "OMOTE EXPO 2025「名巧は愚なるが如し」",
-      "order": 26,
+      "order": 25,
       "trackTitles": [
         "消えてしまいそうです",
         "クズリ念(肯定)",
@@ -604,15 +581,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-아키하이킹-투어-2-live",
+      "id": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "album",
       "kind": "tour",
-      "title": "아키하이킹 투어 2 Live",
-      "label": "아키하이킹 투어 2 Live",
+      "title": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
+      "label": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
       "releaseDate": "2025-09-03",
       "artworkUrl": null,
-      "collectionName": "아키하이킹 투어 2 Live",
-      "order": 24,
+      "collectionName": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
+      "order": 23,
       "trackTitles": [
         "JK BOMBER",
         "こんなこと騒動",
@@ -646,7 +623,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2025-09-24",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fd/1c/6f/fd1c6f49-741c-61ea-585c-367162b9746f/25UM1IM24272.rgb.jpg/900x900bb.jpg",
       "collectionName": "MIDNIGHT FOREVER EXPO ‘MEIKŌ WA GUNARUGA GOTOSHI’ (Live)",
-      "order": 21,
+      "order": 20,
       "trackTitles": [
         "虚仮にしてくれ (Live)",
         "～開会起立～ (Live)",
@@ -675,15 +652,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       ]
     },
     {
-      "id": "album-코즈믹도로정담-투어-코즈단",
+      "id": "album-コズミックどろ団子tour",
       "type": "album",
       "kind": "tour",
-      "title": "코즈믹도로정담 투어 [코즈단]",
-      "label": "코즈믹도로정담 투어 [코즈단]",
+      "title": "コズミックどろ団子TOUR",
+      "label": "コズミックどろ団子TOUR",
       "releaseDate": "2026-02-18",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/2d/e3/222de3d6-7738-239c-7bb3-6b492d321c6e/24UMGIM42946.rgb.jpg/900x900bb.jpg",
-      "collectionName": "코즈믹도로정담 투어 [코즈단]",
-      "order": 25,
+      "collectionName": "コズミックどろ団子TOUR",
+      "order": 24,
       "trackTitles": [
         "サターン",
         "正しくなれない",
@@ -714,7 +691,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "releaseDate": "2026-03-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/2a/19/ad2a1985-1499-5d04-b11d-8cdf6dd6e599/26UMGIM24458.rgb.jpg/900x900bb.jpg",
       "collectionName": "KEISOUDO",
-      "order": 20,
+      "order": 19,
       "trackTitles": [
         "地球存在しない説",
         "間人間",
@@ -787,14 +764,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2022-05-25"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "秒針を噛む",
-          "order": 2,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
           "albumId": "album-zutomayo-factory-day1-memory_limit-1",
           "albumTitle": "ZUTOMAYO FACTORY day1 \"memory_limit =1\"",
           "displayTitle": "秒針を噛む",
@@ -819,16 +788,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "秒針を噛む",
           "order": 10,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "秒針を噛む",
           "order": 14,
           "kind": "tour",
@@ -843,8 +812,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "秒針を噛む",
           "order": 2,
           "kind": "tour",
@@ -859,8 +828,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "秒針を噛む",
           "order": 6,
           "kind": "tour",
@@ -913,14 +882,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2021-12-15"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "脳裏上のクラッカー",
-          "order": 7,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
           "albumId": "album-zutomayo-factory-day1-memory_limit-1",
           "albumTitle": "ZUTOMAYO FACTORY day1 \"memory_limit =1\"",
           "displayTitle": "脳裏上のクラッカー",
@@ -945,16 +906,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "脳裏上のクラッカー",
           "order": 13,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "脳裏上のクラッカー",
           "order": 5,
           "kind": "tour",
@@ -1023,8 +984,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-03"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "ヒューマノイド",
           "order": 2,
           "kind": "tour",
@@ -1085,16 +1046,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "サターン",
           "order": 9,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "サターン",
           "order": 0,
           "kind": "tour",
@@ -1129,16 +1090,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2021-02-10"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "君がいて水になる",
-          "order": 6,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "君がいて水になる",
           "order": 11,
           "kind": "tour",
@@ -1175,7 +1128,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-yaki-yaki-yankee-tour-cleaning-labo",
           "albumTitle": "YAKI YAKI YANKEE TOUR CLEANING LABO",
-          "displayTitle": "성계와 밤",
+          "displayTitle": "雲丹と栗",
           "order": 6,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
@@ -1183,7 +1136,7 @@ window.ZUTOMAYO_GRAPH_DATA = {
         {
           "albumId": "album-road-game-techno-poor",
           "albumTitle": "ROAD GAME #Techno Poor",
-          "displayTitle": "성계와 밤",
+          "displayTitle": "雲丹と栗",
           "order": 8,
           "kind": "tour",
           "albumReleaseDate": "2023-10-25"
@@ -1249,16 +1202,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-03"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "眩しいDNAだけ",
           "order": 9,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "乏しいDNAだけ(愚)",
           "order": 22,
           "kind": "tour",
@@ -1359,8 +1312,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "正義",
           "order": 18,
           "kind": "tour",
@@ -1383,8 +1336,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "正義",
           "order": 19,
           "kind": "tour",
@@ -1461,16 +1414,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "勘冴えて悔しいわ",
           "order": 3,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "勘冴えて悔しいわ",
           "order": 15,
           "kind": "tour",
@@ -1567,8 +1520,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "マイノリティ脈絡",
           "order": 13,
           "kind": "tour",
@@ -1635,8 +1588,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "彷徨い酔い温度",
           "order": 11,
           "kind": "tour",
@@ -1669,14 +1622,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 10,
           "kind": "tour",
           "albumReleaseDate": "2021-12-15"
-        },
-        {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "Dear. Mr「F」",
-          "order": 8,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
         },
         {
           "albumId": "album-zutomayo-factory-day1-memory_limit-1",
@@ -1731,8 +1676,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2021-12-15"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "こんなこと騒動",
           "order": 1,
           "kind": "tour",
@@ -1747,8 +1692,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "こんなこと騒動",
           "order": 1,
           "kind": "tour",
@@ -1775,16 +1720,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2019-10-30"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "グラスとラムレーズン",
           "order": 0,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "グラスとラムレーズン",
           "order": 4,
           "kind": "tour",
@@ -1819,16 +1764,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-03"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "ハゼ馳せる果てるまで",
           "order": 1,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "ハゼ馳せる果てるまで",
           "order": 9,
           "kind": "tour",
@@ -1863,8 +1808,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2019-10-30"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "優しくLAST SMILE",
           "order": 7,
           "kind": "tour",
@@ -1899,8 +1844,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "居眠り遠征隊(即興)",
           "order": 11,
           "kind": "tour",
@@ -1935,16 +1880,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2019-10-30"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "蹴っ飛ばした毛布",
-          "order": 0,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "蹴っ飛ばした毛布",
           "order": 3,
           "kind": "tour",
@@ -2003,14 +1940,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2022-05-25"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "お勉強しといてよ",
-          "order": 9,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
           "albumId": "album-zutomayo-factory-day1-memory_limit-1",
           "albumTitle": "ZUTOMAYO FACTORY day1 \"memory_limit =1\"",
           "displayTitle": "お勉強しといてよ",
@@ -2035,24 +1964,24 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "お勉強しといてよ",
           "order": 2,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "お勉強しといてよ",
           "order": 2,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "お勉強しといてよ",
           "order": 17,
           "kind": "tour",
@@ -2067,8 +1996,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "お勉強しといてよ",
           "order": 12,
           "kind": "tour",
@@ -2161,16 +2090,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "MILABO",
           "order": 10,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "MILABO",
           "order": 15,
           "kind": "tour",
@@ -2239,8 +2168,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "低血ボルト",
           "order": 2,
           "kind": "tour",
@@ -2293,16 +2222,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-03"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "Ham",
           "order": 3,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "Ham",
           "order": 7,
           "kind": "tour",
@@ -2317,16 +2246,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "Ham",
           "order": 7,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "Ham",
           "order": 10,
           "kind": "tour",
@@ -2369,8 +2298,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "JK BOMBER",
           "order": 0,
           "kind": "tour",
@@ -2413,24 +2342,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2021-12-15"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "マリンブルーの庭園",
-          "order": 5,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "マリンブルーの庭園",
           "order": 4,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "マリンブルーの庭園",
           "order": 10,
           "kind": "tour",
@@ -2445,8 +2366,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "マリンブルーの庭園",
           "order": 0,
           "kind": "tour",
@@ -2513,8 +2434,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "暗く黒く",
           "order": 21,
           "kind": "tour",
@@ -2529,8 +2450,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "暗く黒く(Crack Clock)",
           "order": 19,
           "kind": "tour",
@@ -2599,16 +2520,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "勘ぐれい",
           "order": 5,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "勘ぐれい(ヤンキーver.)",
           "order": 20,
           "kind": "tour",
@@ -2669,16 +2590,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-03"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "正しくなれない",
           "order": 8,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "正しくなれない",
           "order": 1,
           "kind": "tour",
@@ -2723,8 +2644,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "過眠",
           "order": 15,
           "kind": "tour",
@@ -2761,8 +2682,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2022-05-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "はゔぁ",
           "order": 3,
           "kind": "tour",
@@ -2795,14 +2716,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "order": 10,
           "kind": "tour",
           "albumReleaseDate": "2022-05-25"
-        },
-        {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "ろんりねす",
-          "order": 4,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
         }
       ],
       "releaseDate": "2021-02-10",
@@ -2897,8 +2810,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "機械油",
           "order": 12,
           "kind": "tour",
@@ -2941,8 +2854,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2022-05-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "繰り返す収穫(即興)",
           "order": 9,
           "kind": "tour",
@@ -2985,8 +2898,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "胸の煙",
           "order": 13,
           "kind": "tour",
@@ -3105,8 +3018,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "あいつら全員同窓会",
           "order": 17,
           "kind": "tour",
@@ -3121,16 +3034,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "あいつら全員同窓会",
           "order": 21,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "あいつら全員同窓会",
           "order": 14,
           "kind": "tour",
@@ -3167,14 +3080,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2022-02-16"
         },
         {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "ばかじゃないのに",
-          "order": 1,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        },
-        {
           "albumId": "album-zutomayo-factory-day2-ob_start",
           "albumTitle": "ZUTOMAYO FACTORY day2 \"ob_start\"",
           "displayTitle": "ばかじゃないのに",
@@ -3199,8 +3104,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "ばかじゃないのに",
           "order": 7,
           "kind": "tour",
@@ -3245,8 +3150,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "猫リセット",
           "order": 6,
           "kind": "tour",
@@ -3291,8 +3196,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-06-07"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "袖のキルト",
           "order": 0,
           "kind": "tour",
@@ -3307,8 +3212,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "袖のキルト",
           "order": 12,
           "kind": "tour",
@@ -3389,8 +3294,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "違う曲にしようよ",
           "order": 6,
           "kind": "tour",
@@ -3405,8 +3310,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "違う曲にしようよ",
           "order": 11,
           "kind": "tour",
@@ -3457,8 +3362,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "ミラーチューン",
           "order": 19,
           "kind": "tour",
@@ -3473,16 +3378,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "ミラーチューン",
           "order": 1,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "ミラーチューン",
           "order": 4,
           "kind": "tour",
@@ -3497,8 +3402,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "ミラーチューン",
           "order": 16,
           "kind": "tour",
@@ -3535,8 +3440,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-06-07"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "消えてしまいそうです",
           "order": 3,
           "kind": "tour",
@@ -3551,8 +3456,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "消えてしまいそうです(1970s)",
           "order": 3,
           "kind": "tour",
@@ -3635,16 +3540,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "残機",
           "order": 12,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "残機",
           "order": 15,
           "kind": "tour",
@@ -3659,8 +3564,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "残機",
           "order": 7,
           "kind": "tour",
@@ -3675,8 +3580,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "残機",
           "order": 5,
           "kind": "tour",
@@ -3695,26 +3600,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "singleIds": [
         "single-残機"
       ]
-    },
-    {
-      "id": "song-해변색-커리-상하이-게의-아침-커버",
-      "type": "song",
-      "title": "해변색 커리, 상하이 게의 아침 (커버)",
-      "label": "해변색 커리, 상하이 게의 아침 (커버)",
-      "firstAlbumId": "album-mtv-unplugged-zutomayo",
-      "firstAlbumTitle": "MTV Unplugged - ZUTOMAYO",
-      "albumMembership": [
-        {
-          "albumId": "album-mtv-unplugged-zutomayo",
-          "albumTitle": "MTV Unplugged - ZUTOMAYO",
-          "displayTitle": "해변색 커리, 상하이 게의 아침 (커버)",
-          "order": 3,
-          "kind": "tour",
-          "albumReleaseDate": "2022-10-28"
-        }
-      ],
-      "releaseDate": "2022-10-28",
-      "singleIds": []
     },
     {
       "id": "song-綺羅キラー",
@@ -3741,8 +3626,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-10-25"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "綺羅キラー (feat. Mori Calliope)",
           "order": 16,
           "kind": "tour",
@@ -3779,16 +3664,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-05-04"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "또 보자 환상",
           "order": 11,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "또 보자 환상",
           "order": 14,
           "kind": "tour",
@@ -3815,16 +3700,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-06-07"
         },
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "不法侵入",
           "order": 8,
           "kind": "tour",
           "albumReleaseDate": "2024-02-21"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "不法侵入",
           "order": 5,
           "kind": "tour",
@@ -3853,8 +3738,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-06-07"
         },
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "花一匁",
           "order": 4,
           "kind": "tour",
@@ -3869,16 +3754,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-09-25"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "花一匁",
           "order": 11,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "花一匁",
           "order": 16,
           "kind": "tour",
@@ -3907,16 +3792,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-06-07"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "上辺の私自身なんだよ",
           "order": 6,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "上辺の私自身なんだよ",
           "order": 9,
           "kind": "tour",
@@ -3951,24 +3836,24 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2023-06-07"
         },
         {
-          "albumId": "album-원시-5년-순회공연-다방-사랑의-페가수스",
-          "albumTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
+          "albumId": "album-原始五年巡回公演-喫茶-愛のペガサス",
+          "albumTitle": "原始五年巡回公演「喫茶・愛のペガサス」",
           "displayTitle": "馴れ合いサーブ",
           "order": 4,
           "kind": "tour",
           "albumReleaseDate": "2024-10-09"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "馴れ合いサーブ",
           "order": 6,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "馴れ合いサーブ",
           "order": 4,
           "kind": "tour",
@@ -3991,12 +3876,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "내가 모르는 이야기 (커버)",
       "label": "내가 모르는 이야기 (커버)",
-      "firstAlbumId": "album-원소도로정담-투어-도로망고",
-      "firstAlbumTitle": "원소도로정담 투어 [도로망고]",
+      "firstAlbumId": "album-元素どろ団子tour",
+      "firstAlbumTitle": "元素どろ団子TOUR",
       "albumMembership": [
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "내가 모르는 이야기 (커버)",
           "order": 5,
           "kind": "tour",
@@ -4011,12 +3896,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "프로토타입 메모리",
       "label": "프로토타입 메모리",
-      "firstAlbumId": "album-원소도로정담-투어-도로망고",
-      "firstAlbumTitle": "원소도로정담 투어 [도로망고]",
+      "firstAlbumId": "album-元素どろ団子tour",
+      "firstAlbumTitle": "元素どろ団子TOUR",
       "albumMembership": [
         {
-          "albumId": "album-원소도로정담-투어-도로망고",
-          "albumTitle": "원소도로정담 투어 [도로망고]",
+          "albumId": "album-元素どろ団子tour",
+          "albumTitle": "元素どろ団子TOUR",
           "displayTitle": "프로토타입 메모리",
           "order": 6,
           "kind": "tour",
@@ -4031,12 +3916,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "嘘じゃない",
       "label": "嘘じゃない",
-      "firstAlbumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-      "firstAlbumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
       "albumMembership": [
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "嘘じゃない",
           "order": 20,
           "kind": "tour",
@@ -4059,16 +3944,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-10-23"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "嘘じゃない",
           "order": 1,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "嘘じゃない",
           "order": 18,
           "kind": "tour",
@@ -4101,12 +3986,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "Blues in the Closet",
       "label": "Blues in the Closet",
-      "firstAlbumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-      "firstAlbumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+      "firstAlbumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+      "firstAlbumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
       "albumMembership": [
         {
-          "albumId": "album-본격-중화다방-사랑의-페가수스-blu-ray",
-          "albumTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
+          "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
+          "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
           "displayTitle": "Blues in the Closet",
           "order": 8,
           "kind": "tour",
@@ -4129,8 +4014,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-10-23"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "Blues in the Closet",
           "order": 5,
           "kind": "tour",
@@ -4159,8 +4044,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-10-23"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "海馬成長痛",
           "order": 14,
           "kind": "tour",
@@ -4175,8 +4060,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "海馬成長痛",
           "order": 10,
           "kind": "tour",
@@ -4341,8 +4226,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-10-23"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "TAIDADA",
           "order": 18,
           "kind": "tour",
@@ -4357,8 +4242,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "TAIDADA",
           "order": 13,
           "kind": "tour",
@@ -4373,8 +4258,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-24"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "TAIDADA",
           "order": 13,
           "kind": "tour",
@@ -4411,8 +4296,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-10-23"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "クズリ念(肯定)",
           "order": 10,
           "kind": "tour",
@@ -4427,8 +4312,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-02"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "クズリ念",
           "order": 8,
           "kind": "tour",
@@ -4443,8 +4328,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-24"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "クズリ念",
           "order": 2,
           "kind": "tour",
@@ -4481,16 +4366,16 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2024-10-23"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "虚仮にしてくれ",
           "order": 0,
           "kind": "tour",
           "albumReleaseDate": "2025-05-21"
         },
         {
-          "albumId": "album-아키하이킹-투어-2-live",
-          "albumTitle": "아키하이킹 투어 2 Live",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
           "displayTitle": "虚仮にしてくれ",
           "order": 17,
           "kind": "tour",
@@ -4513,12 +4398,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "シェードの埃は延長",
       "label": "シェードの埃は延長",
-      "firstAlbumId": "album-아키하이킹-투어-2-blu-ray",
-      "firstAlbumTitle": "아키하이킹 투어 2 Blu-ray",
+      "firstAlbumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+      "firstAlbumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
       "albumMembership": [
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "シェードの埃は延長",
           "order": 16,
           "kind": "tour",
@@ -4559,12 +4444,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "微熱魔",
       "label": "微熱魔",
-      "firstAlbumId": "album-아키하이킹-투어-2-blu-ray",
-      "firstAlbumTitle": "아키하이킹 투어 2 Blu-ray",
+      "firstAlbumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+      "firstAlbumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
       "albumMembership": [
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "微熱魔",
           "order": 12,
           "kind": "tour",
@@ -4579,8 +4464,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-24"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "微熱魔",
           "order": 7,
           "kind": "tour",
@@ -4605,12 +4490,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "クリームで会いにいけますか",
       "label": "クリームで会いにいけますか",
-      "firstAlbumId": "album-아키하이킹-투어-2-blu-ray",
-      "firstAlbumTitle": "아키하이킹 투어 2 Blu-ray",
+      "firstAlbumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+      "firstAlbumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
       "albumMembership": [
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "クリームで会いにいけますか",
           "order": 20,
           "kind": "tour",
@@ -4651,12 +4536,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "形",
       "label": "形",
-      "firstAlbumId": "album-아키하이킹-투어-2-blu-ray",
-      "firstAlbumTitle": "아키하이킹 투어 2 Blu-ray",
+      "firstAlbumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+      "firstAlbumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
       "albumMembership": [
         {
-          "albumId": "album-아키하이킹-투어-2-blu-ray",
-          "albumTitle": "아키하이킹 투어 2 Blu-ray",
+          "albumId": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
+          "albumTitle": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
           "displayTitle": "形",
           "order": 8,
           "kind": "tour",
@@ -4671,8 +4556,8 @@ window.ZUTOMAYO_GRAPH_DATA = {
           "albumReleaseDate": "2025-09-24"
         },
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "形",
           "order": 9,
           "kind": "tour",
@@ -4752,12 +4637,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "슬로우모션 (커버)",
       "label": "슬로우모션 (커버)",
-      "firstAlbumId": "album-코즈믹도로정담-투어-코즈단",
-      "firstAlbumTitle": "코즈믹도로정담 투어 [코즈단]",
+      "firstAlbumId": "album-コズミックどろ団子tour",
+      "firstAlbumTitle": "コズミックどろ団子TOUR",
       "albumMembership": [
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "슬로우모션 (커버)",
           "order": 17,
           "kind": "tour",
@@ -4772,12 +4657,12 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "song",
       "title": "크리스마스 이브 (커버)",
       "label": "크리스마스 이브 (커버)",
-      "firstAlbumId": "album-코즈믹도로정담-투어-코즈단",
-      "firstAlbumTitle": "코즈믹도로정담 투어 [코즈단]",
+      "firstAlbumId": "album-コズミックどろ団子tour",
+      "firstAlbumTitle": "コズミックどろ団子TOUR",
       "albumMembership": [
         {
-          "albumId": "album-코즈믹도로정담-투어-코즈단",
-          "albumTitle": "코즈믹도로정담 투어 [코즈단]",
+          "albumId": "album-コズミックどろ団子tour",
+          "albumTitle": "コズミックどろ団子TOUR",
           "displayTitle": "크리스마스 이브 (커버)",
           "order": 8,
           "kind": "tour",
@@ -5668,12 +5553,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-秒針を噛む-to-album-mtv-unplugged-zutomayo",
-      "source": "song-秒針を噛む",
-      "target": "album-mtv-unplugged-zutomayo",
-      "type": "included"
-    },
-    {
       "id": "edge-song-秒針を噛む-to-album-zutomayo-factory-day1-memory_limit-1",
       "source": "song-秒針を噛む",
       "target": "album-zutomayo-factory-day1-memory_limit-1",
@@ -5692,15 +5571,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-秒針を噛む-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-秒針を噛む-to-album-元素どろ団子tour",
       "source": "song-秒針を噛む",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-秒針を噛む-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-秒針を噛む-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-秒針を噛む",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -5710,9 +5589,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-秒針を噛む-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-秒針を噛む-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-秒針を噛む",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -5722,9 +5601,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-秒針を噛む-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-秒針を噛む-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-秒針を噛む",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -5752,12 +5631,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-脳裏上のクラッカー-to-album-mtv-unplugged-zutomayo",
-      "source": "song-脳裏上のクラッカー",
-      "target": "album-mtv-unplugged-zutomayo",
-      "type": "included"
-    },
-    {
       "id": "edge-song-脳裏上のクラッカー-to-album-zutomayo-factory-day1-memory_limit-1",
       "source": "song-脳裏上のクラッカー",
       "target": "album-zutomayo-factory-day1-memory_limit-1",
@@ -5776,15 +5649,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-脳裏上のクラッカー-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-脳裏上のクラッカー-to-album-元素どろ団子tour",
       "source": "song-脳裏上のクラッカー",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-脳裏上のクラッカー-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-脳裏上のクラッカー-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-脳裏上のクラッカー",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -5824,9 +5697,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ヒューマノイド-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-ヒューマノイド-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-ヒューマノイド",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -5860,15 +5733,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-サターン-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-サターン-to-album-元素どろ団子tour",
       "source": "song-サターン",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-サターン-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-サターン-to-album-コズミックどろ団子tour",
       "source": "song-サターン",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -5884,15 +5757,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-君がいて水になる-to-album-mtv-unplugged-zutomayo",
+      "id": "edge-song-君がいて水になる-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-君がいて水になる",
-      "target": "album-mtv-unplugged-zutomayo",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-君がいて水になる-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
-      "source": "song-君がいて水になる",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -5956,15 +5823,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-眩しいdnaだけ-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-眩しいdnaだけ-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-眩しいdnaだけ",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-眩しいdnaだけ-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-眩しいdnaだけ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-眩しいdnaだけ",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -6028,9 +5895,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-正義-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-正義-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-正義",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6046,9 +5913,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-正義-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-正義-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-正義",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6094,15 +5961,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-勘冴えて悔しいわ-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-勘冴えて悔しいわ-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-勘冴えて悔しいわ",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-勘冴えて悔しいわ-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-勘冴えて悔しいわ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-勘冴えて悔しいわ",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6154,9 +6021,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-マイノリティ脈絡-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-マイノリティ脈絡-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-マイノリティ脈絡",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6196,9 +6063,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-彷徨い酔い温度-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-彷徨い酔い温度-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-彷徨い酔い温度",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6211,12 +6078,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-dear-mr-f-to-album-yaki-yaki-yankee-tour-cleaning-labo",
       "source": "song-dear-mr-f",
       "target": "album-yaki-yaki-yankee-tour-cleaning-labo",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-dear-mr-f-to-album-mtv-unplugged-zutomayo",
-      "source": "song-dear-mr-f",
-      "target": "album-mtv-unplugged-zutomayo",
       "type": "included"
     },
     {
@@ -6250,9 +6111,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-こんなこと騒動-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-こんなこと騒動-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-こんなこと騒動",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6262,9 +6123,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-こんなこと騒動-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-こんなこと騒動-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-こんなこと騒動",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6274,15 +6135,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-グラスとラムレーズン-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-グラスとラムレーズン-to-album-元素どろ団子tour",
       "source": "song-グラスとラムレーズン",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-グラスとラムレーズン-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-グラスとラムレーズン-to-album-コズミックどろ団子tour",
       "source": "song-グラスとラムレーズン",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -6298,15 +6159,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ハゼ馳せる果てるまで-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-ハゼ馳せる果てるまで-to-album-元素どろ団子tour",
       "source": "song-ハゼ馳せる果てるまで",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-ハゼ馳せる果てるまで-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-ハゼ馳せる果てるまで-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-ハゼ馳せる果てるまで",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6322,9 +6183,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-優しくlast-smile-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-優しくlast-smile-to-album-元素どろ団子tour",
       "source": "song-優しくlast-smile",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
@@ -6340,9 +6201,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-居眠り遠征隊-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-居眠り遠征隊-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-居眠り遠征隊",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -6358,15 +6219,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-蹴っ飛ばした毛布-to-album-mtv-unplugged-zutomayo",
+      "id": "edge-song-蹴っ飛ばした毛布-to-album-コズミックどろ団子tour",
       "source": "song-蹴っ飛ばした毛布",
-      "target": "album-mtv-unplugged-zutomayo",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-蹴っ飛ばした毛布-to-album-코즈믹도로정담-투어-코즈단",
-      "source": "song-蹴っ飛ばした毛布",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -6400,12 +6255,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-お勉強しといてよ-to-album-mtv-unplugged-zutomayo",
-      "source": "song-お勉強しといてよ",
-      "target": "album-mtv-unplugged-zutomayo",
-      "type": "included"
-    },
-    {
       "id": "edge-song-お勉強しといてよ-to-album-zutomayo-factory-day1-memory_limit-1",
       "source": "song-お勉強しといてよ",
       "target": "album-zutomayo-factory-day1-memory_limit-1",
@@ -6424,21 +6273,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-お勉強しといてよ-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-お勉強しといてよ-to-album-元素どろ団子tour",
       "source": "song-お勉強しといてよ",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-お勉強しといてよ-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-お勉強しといてよ-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-お勉強しといてよ",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-お勉強しといてよ-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-お勉強しといてよ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-お勉強しといてよ",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -6448,9 +6297,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-お勉強しといてよ-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-お勉強しといてよ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-お勉強しといてよ",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6508,15 +6357,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-milabo-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-milabo-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-milabo",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-milabo-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-milabo-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-milabo",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -6556,9 +6405,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-低血ボルト-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-低血ボルト-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-低血ボルト",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6586,15 +6435,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ham-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-ham-to-album-元素どろ団子tour",
       "source": "song-ham",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-ham-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-ham-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-ham",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6604,15 +6453,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ham-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-ham-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-ham",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-ham-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-ham-to-album-コズミックどろ団子tour",
       "source": "song-ham",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -6634,9 +6483,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-jk-bomber-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-jk-bomber-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-jk-bomber",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6658,21 +6507,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-マリンブルーの庭園-to-album-mtv-unplugged-zutomayo",
+      "id": "edge-song-マリンブルーの庭園-to-album-元素どろ団子tour",
       "source": "song-マリンブルーの庭園",
-      "target": "album-mtv-unplugged-zutomayo",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-マリンブルーの庭園-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-マリンブルーの庭園-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-マリンブルーの庭園",
-      "target": "album-원소도로정담-투어-도로망고",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-マリンブルーの庭園-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
-      "source": "song-マリンブルーの庭園",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6682,9 +6525,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-マリンブルーの庭園-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-マリンブルーの庭園-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-マリンブルーの庭園",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
@@ -6724,9 +6567,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-暗く黒く-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-暗く黒く-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-暗く黒く",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6736,9 +6579,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-暗く黒く-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-暗く黒く-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-暗く黒く",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -6778,15 +6621,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-勘ぐれい-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-勘ぐれい-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-勘ぐれい",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
-      "id": "edge-song-勘ぐれい-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-勘ぐれい-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-勘ぐれい",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6820,15 +6663,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-正しくなれない-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-正しくなれない-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-正しくなれない",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-正しくなれない-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-正しくなれない-to-album-コズミックどろ団子tour",
       "source": "song-正しくなれない",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -6850,9 +6693,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-過眠-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-過眠-to-album-コズミックどろ団子tour",
       "source": "song-過眠",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -6868,9 +6711,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-はゔぁ-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-はゔぁ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-はゔぁ",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6883,12 +6726,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-ろんりねす-to-album-cleaning-labo",
       "source": "song-ろんりねす",
       "target": "album-cleaning-labo",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-ろんりねす-to-album-mtv-unplugged-zutomayo",
-      "source": "song-ろんりねす",
-      "target": "album-mtv-unplugged-zutomayo",
       "type": "included"
     },
     {
@@ -6934,9 +6771,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-機械油-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-機械油-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-機械油",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -6958,9 +6795,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-繰り返す収穫-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-繰り返す収穫-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-繰り返す収穫",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -6982,9 +6819,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-胸の煙-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-胸の煙-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-胸の煙",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7042,9 +6879,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-あいつら全員同窓会-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-あいつら全員同窓会-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-あいつら全員同窓会",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7054,15 +6891,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-あいつら全員同窓会-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-あいつら全員同窓会-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-あいつら全員同窓会",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
-      "id": "edge-song-あいつら全員同窓会-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-あいつら全員同窓会-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-あいつら全員同窓会",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7075,12 +6912,6 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "id": "edge-song-ばかじゃないのに-to-album-伸び仕草懲りて暇乞い",
       "source": "song-ばかじゃないのに",
       "target": "album-伸び仕草懲りて暇乞い",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-ばかじゃないのに-to-album-mtv-unplugged-zutomayo",
-      "source": "song-ばかじゃないのに",
-      "target": "album-mtv-unplugged-zutomayo",
       "type": "included"
     },
     {
@@ -7102,9 +6933,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ばかじゃないのに-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-ばかじゃないのに-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-ばかじゃないのに",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7126,9 +6957,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-猫リセット-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-猫リセット-to-album-コズミックどろ団子tour",
       "source": "song-猫リセット",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7150,9 +6981,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-袖のキルト-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-袖のキルト-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-袖のキルト",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7162,9 +6993,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-袖のキルト-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-袖のキルト-to-album-コズミックどろ団子tour",
       "source": "song-袖のキルト",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7204,9 +7035,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-違う曲にしようよ-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-違う曲にしようよ-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-違う曲にしようよ",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7216,9 +7047,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-違う曲にしようよ-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-違う曲にしようよ-to-album-コズミックどろ団子tour",
       "source": "song-違う曲にしようよ",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7246,9 +7077,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ミラーチューン-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-ミラーチューン-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-ミラーチューン",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7258,15 +7089,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ミラーチューン-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-ミラーチューン-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-ミラーチューン",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-ミラーチューン-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-ミラーチューン-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-ミラーチューン",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7276,9 +7107,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-ミラーチューン-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-ミラーチューン-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-ミラーチューン",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7294,9 +7125,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-消えてしまいそうです-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-消えてしまいそうです-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-消えてしまいそうです",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7306,9 +7137,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-消えてしまいそうです-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-消えてしまいそうです-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-消えてしまいそうです",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7348,15 +7179,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-残機-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-残機-to-album-元素どろ団子tour",
       "source": "song-残機",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-残機-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-残機-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-残機",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7366,9 +7197,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-残機-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-残機-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-残機",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7378,21 +7209,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-残機-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-残機-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-残機",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
       "id": "edge-song-残機-to-album-永遠深夜万博-名巧は愚なるが如し",
       "source": "song-残機",
       "target": "album-永遠深夜万博-名巧は愚なるが如し",
-      "type": "included"
-    },
-    {
-      "id": "edge-song-해변색-커리-상하이-게의-아침-커버-to-album-mtv-unplugged-zutomayo",
-      "source": "song-해변색-커리-상하이-게의-아침-커버",
-      "target": "album-mtv-unplugged-zutomayo",
       "type": "included"
     },
     {
@@ -7408,9 +7233,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-綺羅キラー-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-綺羅キラー-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-綺羅キラー",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7426,15 +7251,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-또-보자-환상-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-또-보자-환상-to-album-元素どろ団子tour",
       "source": "song-또-보자-환상",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-또-보자-환상-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-또-보자-환상-to-album-コズミックどろ団子tour",
       "source": "song-또-보자-환상",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7444,15 +7269,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-不法侵入-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-不法侵入-to-album-元素どろ団子tour",
       "source": "song-不法侵入",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-不法侵入-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-不法侵入-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-不法侵入",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
@@ -7462,9 +7287,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-花一匁-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-花一匁-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-花一匁",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7474,15 +7299,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-花一匁-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-花一匁-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-花一匁",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-花一匁-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-花一匁-to-album-コズミックどろ団子tour",
       "source": "song-花一匁",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7492,15 +7317,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-上辺の私自身なんだよ-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-上辺の私自身なんだよ-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-上辺の私自身なんだよ",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-上辺の私自身なんだよ-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-上辺の私自身なんだよ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-上辺の私自身なんだよ",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7516,21 +7341,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-馴れ合いサーブ-to-album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "id": "edge-song-馴れ合いサーブ-to-album-原始五年巡回公演-喫茶-愛のペガサス",
       "source": "song-馴れ合いサーブ",
-      "target": "album-원시-5년-순회공연-다방-사랑의-페가수스",
+      "target": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "type": "included"
     },
     {
-      "id": "edge-song-馴れ合いサーブ-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-馴れ合いサーブ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-馴れ合いサーブ",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
-      "id": "edge-song-馴れ合いサーブ-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-馴れ合いサーブ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-馴れ合いサーブ",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7540,21 +7365,21 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-내가-모르는-이야기-커버-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-내가-모르는-이야기-커버-to-album-元素どろ団子tour",
       "source": "song-내가-모르는-이야기-커버",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-프로토타입-메모리-to-album-원소도로정담-투어-도로망고",
+      "id": "edge-song-프로토타입-메모리-to-album-元素どろ団子tour",
       "source": "song-프로토타입-메모리",
-      "target": "album-원소도로정담-투어-도로망고",
+      "target": "album-元素どろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-嘘じゃない-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-嘘じゃない-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-嘘じゃない",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7570,15 +7395,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-嘘じゃない-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-嘘じゃない-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-嘘じゃない",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
-      "id": "edge-song-嘘じゃない-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-嘘じゃない-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-嘘じゃない",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7594,9 +7419,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-blues-in-the-closet-to-album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "id": "edge-song-blues-in-the-closet-to-album-本格中華喫茶-愛のペガサス-blu-ray",
       "source": "song-blues-in-the-closet",
-      "target": "album-본격-중화다방-사랑의-페가수스-blu-ray",
+      "target": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "type": "included"
     },
     {
@@ -7612,9 +7437,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-blues-in-the-closet-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-blues-in-the-closet-to-album-コズミックどろ団子tour",
       "source": "song-blues-in-the-closet",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7624,9 +7449,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-海馬成長痛-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-海馬成長痛-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-海馬成長痛",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7636,9 +7461,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-海馬成長痛-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-海馬成長痛-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-海馬成長痛",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7696,9 +7521,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-taidada-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-taidada-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-taidada",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7708,9 +7533,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-taidada-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-taidada-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-taidada",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7720,9 +7545,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-taidada-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-taidada-to-album-コズミックどろ団子tour",
       "source": "song-taidada",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7738,9 +7563,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-クズリ念-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-クズリ念-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-クズリ念",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7750,9 +7575,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-クズリ念-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-クズリ念-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-クズリ念",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7762,9 +7587,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-クズリ念-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-クズリ念-to-album-コズミックどろ団子tour",
       "source": "song-クズリ念",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7780,15 +7605,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-虚仮にしてくれ-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-虚仮にしてくれ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-虚仮にしてくれ",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
-      "id": "edge-song-虚仮にしてくれ-to-album-아키하이킹-투어-2-live",
+      "id": "edge-song-虚仮にしてくれ-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "source": "song-虚仮にしてくれ",
-      "target": "album-아키하이킹-투어-2-live",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "type": "included"
     },
     {
@@ -7798,9 +7623,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-シェードの埃は延長-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-シェードの埃は延長-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-シェードの埃は延長",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7822,9 +7647,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-微熱魔-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-微熱魔-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-微熱魔",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7834,9 +7659,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-微熱魔-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-微熱魔-to-album-コズミックどろ団子tour",
       "source": "song-微熱魔",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7846,9 +7671,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-クリームで会いにいけますか-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-クリームで会いにいけますか-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-クリームで会いにいけますか",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7870,9 +7695,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-形-to-album-아키하이킹-투어-2-blu-ray",
+      "id": "edge-song-形-to-album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "source": "song-形",
-      "target": "album-아키하이킹-투어-2-blu-ray",
+      "target": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "type": "included"
     },
     {
@@ -7882,9 +7707,9 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-形-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-形-to-album-コズミックどろ団子tour",
       "source": "song-形",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
@@ -7906,15 +7731,15 @@ window.ZUTOMAYO_GRAPH_DATA = {
       "type": "included"
     },
     {
-      "id": "edge-song-슬로우모션-커버-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-슬로우모션-커버-to-album-コズミックどろ団子tour",
       "source": "song-슬로우모션-커버",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {
-      "id": "edge-song-크리스마스-이브-커버-to-album-코즈믹도로정담-투어-코즈단",
+      "id": "edge-song-크리스마스-이브-커버-to-album-コズミックどろ団子tour",
       "source": "song-크리스마스-이브-커버",
-      "target": "album-코즈믹도로정담-투어-코즈단",
+      "target": "album-コズミックどろ団子tour",
       "type": "included"
     },
     {

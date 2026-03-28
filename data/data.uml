@@ -92,7 +92,7 @@ package "ARCHIVE TOUR\nYAKI YAKI YANKEE TOUR CLEANING LABO" {
   class "マイノリティ脈絡"
   class "勘ぐれい"
   class "マリンブルーの庭園"
-  class "성계와 밤"
+  class "雲丹と栗"
   class "Ham"
   class "サターン"
   class "MILABO"
@@ -127,19 +127,6 @@ package "ARCHIVE TOUR\nCLEANING LABO" {
   class "奥底に眠るルーツ"
   class "あいつら全員同窓会"
   class "MILABO"
-}
-
-package "ARCHIVE TOUR\nMTV Unplugged - ZUTOMAYO" {
-  class "蹴っ飛ばした毛布"
-  class "ばかじゃないのに"
-  class "秒針を噛む"
-  class "해변색 커리, 상하이 게의 아침 (커버)"
-  class "ろんりねす"
-  class "マリンブルーの庭園"
-  class "君がいて水になる"
-  class "脳裏上のクラッカー"
-  class "Dear. Mr「F」"
-  class "お勉強しといてよ"
 }
 
 package "ARCHIVE TOUR\nZUTOMAYO FACTORY day1 \"memory_limit =1\"" {
@@ -222,7 +209,7 @@ package "ARCHIVE TOUR\nROAD GAME #Techno Poor" {
   class "勘ぐれい"
   class "秒針を噛む"
   class "勘冴えて悔しいわ"
-  class "성계와 밤"
+  class "雲丹と栗"
   class "ばかじゃないのに"
   class "Dear. Mr「F」"
   class "夜中のキスミ"
@@ -268,7 +255,7 @@ package "1st TOUR\n本格中華喫茶・愛のペガサス ~羅武の香辛龍~"
   class "暗く黒く(強) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]"
 }
 
-package "ARCHIVE TOUR\n본격 중화다방·사랑의 페가수스 Blu-ray" {
+package "ARCHIVE TOUR\n本格中華喫茶・愛のペガサス Blu-ray" {
   class "袖のキルト"
   class "こんなこと騒動"
   class "低血ボルト"
@@ -293,7 +280,7 @@ package "ARCHIVE TOUR\n본격 중화다방·사랑의 페가수스 Blu-ray" {
   class "暗く黒く"
 }
 
-package "ARCHIVE TOUR\n원시 5년 순회공연 [다방·사랑의 페가수스]" {
+package "ARCHIVE TOUR\n原始五年巡回公演「喫茶・愛のペガサス」" {
   class "マリンブルーの庭園"
   class "ミラーチューン"
   class "お勉強しといてよ"
@@ -365,7 +352,7 @@ package "2nd TOUR\n永遠深夜万博「名巧は愚なるが如し」" {
   class "乏しいDNAだけ(愚) [Live]"
 }
 
-package "ARCHIVE TOUR\n원소도로정담 투어 [도로망고]" {
+package "ARCHIVE TOUR\n元素どろ団子TOUR" {
   class "グラスとラムレーズン"
   class "ハゼ馳せる果てるまで"
   class "お勉強しといてよ"
@@ -382,7 +369,7 @@ package "ARCHIVE TOUR\n원소도로정담 투어 [도로망고]" {
   class "脳裏上のクラッカー"
 }
 
-package "ARCHIVE TOUR\n아키하이킹 투어 2 Blu-ray" {
+package "ARCHIVE TOUR\nやきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray" {
   class "虚仮にしてくれ"
   class "嘘じゃない"
   class "秒針を噛む"
@@ -408,7 +395,7 @@ package "ARCHIVE TOUR\n아키하이킹 투어 2 Blu-ray" {
   class "乏しいDNAだけ(愚)"
 }
 
-package "ARCHIVE TOUR\n아키하이킹 투어 2 Live" {
+package "ARCHIVE TOUR\nやきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live" {
   class "JK BOMBER"
   class "こんなこと騒動"
   class "ヒューマノイド"
@@ -432,7 +419,7 @@ package "ARCHIVE TOUR\n아키하이킹 투어 2 Live" {
   class "勘ぐれい(ヤンキーver.)"
 }
 
-package "ARCHIVE TOUR\n코즈믹도로정담 투어 [코즈단]" {
+package "ARCHIVE TOUR\nコズミックどろ団子TOUR" {
   class "サターン"
   class "正しくなれない"
   class "クズリ念"
