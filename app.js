@@ -78,12 +78,17 @@ const maxDate = d3.max(
 const domainStart = d3.timeMonth.offset(minDate, -3);
 const domainEnd = d3.timeMonth.offset(maxDate, 3);
 const spanYears = Math.max(7, d3.timeYear.count(domainStart, domainEnd) + 1);
-const HEIGHT = Math.max(3400, spanYears * 420 + 520);
+const BASE_HEIGHT = Math.max(3400, spanYears * 420 + 520);
 
-const yScale = d3
-  .scaleTime()
-  .domain([domainStart, domainEnd])
-  .range([VIEW_MARGIN.top, HEIGHT - VIEW_MARGIN.bottom]);
+function createYScale(height) {
+  return d3
+    .scaleTime()
+    .domain([domainStart, domainEnd])
+    .range([VIEW_MARGIN.top, height - VIEW_MARGIN.bottom]);
+}
+
+let graphHeight = BASE_HEIGHT;
+let yScale = createYScale(graphHeight);
 
 const yearTicks = d3.timeYear.every(1).range(
   d3.timeYear.floor(domainStart),
@@ -315,6 +320,76 @@ function buildLanePanels(activeLaneKeys) {
   };
 }
 
+function getAlbumCardHeight(album, laneWidth) {
+  const titleMaxUnits = Math.max(
+    album.kind === "tour" ? 11.5 : 13.5,
+    Math.floor((laneWidth - 48) / 18),
+  );
+  const titleLines = wrapLabel(album.title, titleMaxUnits);
+  const trackMaxUnits = Math.max(
+    album.kind === "tour" ? 18 : 20,
+    Math.floor((laneWidth - 48) / 16.5),
+  );
+  const wrappedTracks = album.trackTitles.map((title, order) => {
+    const lines = wrapLabel(title, trackMaxUnits);
+    const blockHeight = lines.length * 18 + 12;
+    return { title, order, lines, blockHeight };
+  });
+
+  let cursorY = ALBUM_TRACK_START_Y;
+  wrappedTracks.forEach((track) => {
+    track.offsetY = cursorY;
+    cursorY += track.blockHeight;
+  });
+
+  return {
+    titleLines,
+    wrappedTracks,
+    cardHeight: cursorY + 26,
+  };
+}
+
+function getRequiredGraphHeight(activeLaneKeys, visibleAlbums, laneData, singleCard) {
+  let requiredHeight = BASE_HEIGHT;
+
+  if (state.filters.single && singleCard) {
+    const singlesHeight =
+      VIEW_MARGIN.top + 30 + Math.max(0, (parsedSingles.length - 1) * 98) + VIEW_MARGIN.bottom + 24 + singleCard.height / 2;
+    requiredHeight = Math.max(requiredHeight, singlesHeight);
+  }
+
+  const albumGapByKind = {
+    mini: 96,
+    full: 104,
+    tour: 116,
+  };
+
+  for (const kind of ["mini", "full", "tour"]) {
+    if (!laneData.panels[kind]) {
+      continue;
+    }
+
+    const laneAlbums = visibleAlbums.filter((album) => album.kind === kind);
+    if (!laneAlbums.length) {
+      continue;
+    }
+
+    const laneWidth = laneData.panels[kind].width - 48;
+    const laneHeights = laneAlbums.map((album) => getAlbumCardHeight(album, laneWidth).cardHeight);
+    const requiredLaneHeight =
+      VIEW_MARGIN.top +
+      22 +
+      laneHeights.reduce((sum, height) => sum + height, 0) +
+      Math.max(0, laneHeights.length - 1) * albumGapByKind[kind] +
+      VIEW_MARGIN.bottom +
+      24;
+
+    requiredHeight = Math.max(requiredHeight, requiredLaneHeight);
+  }
+
+  return requiredHeight;
+}
+
 function buildGraphData() {
   const activeLaneKeys = getActiveLaneKeys();
   const laneData = buildLanePanels(activeLaneKeys);
@@ -334,6 +409,8 @@ function buildGraphData() {
       }
     : null;
 
+  const height = getRequiredGraphHeight(activeLaneKeys, visibleAlbums, laneData, singleCard);
+  const layoutYScale = createYScale(height);
   const singleTitleMaxWidth = singleCard ? singleCard.width - 108 : 0;
   const albumCardByKind = {};
 
@@ -349,29 +426,8 @@ function buildGraphData() {
 
   for (const album of visibleAlbums) {
     const card = albumCardByKind[album.kind];
-    const titleMaxUnits = Math.max(
-      album.kind === "tour" ? 11.5 : 13.5,
-      Math.floor((card.width - 48) / 18),
-    );
-    const titleLines = wrapLabel(album.title, titleMaxUnits);
-    const trackMaxUnits = Math.max(
-      album.kind === "tour" ? 18 : 20,
-      Math.floor((card.width - 48) / 16.5),
-    );
-    const wrappedTracks = album.trackTitles.map((title, order) => {
-      const lines = wrapLabel(title, trackMaxUnits);
-      const blockHeight = lines.length * 18 + 12;
-      return { title, order, lines, blockHeight };
-    });
-
-    let cursorY = ALBUM_TRACK_START_Y;
-    wrappedTracks.forEach((track) => {
-      track.offsetY = cursorY;
-      cursorY += track.blockHeight;
-    });
-
-    const cardHeight = cursorY + 26;
-    const centerY = yScale(album.parsedDate);
+    const { titleLines, wrappedTracks, cardHeight } = getAlbumCardHeight(album, card.width);
+    const centerY = layoutYScale(album.parsedDate);
     albumLayouts.set(album.id, {
       ...album,
       x: card.x,
@@ -391,7 +447,7 @@ function buildGraphData() {
       albumNodes.filter((album) => album.kind === kind),
       albumGapByKind[kind],
       VIEW_MARGIN.top + 22,
-      HEIGHT - VIEW_MARGIN.bottom - 24,
+      height - VIEW_MARGIN.bottom - 24,
     );
   }
 
@@ -422,13 +478,13 @@ function buildGraphData() {
         height: singleCard.height,
         artworkUrl: singleArtworkById.get(single.id),
         shortLabel: truncateLabelByPixel(single.title, singleTitleMaxWidth),
-        baseY: yScale(single.parsedDate),
-        y: yScale(single.parsedDate),
+        baseY: layoutYScale(single.parsedDate),
+        y: layoutYScale(single.parsedDate),
       }))
     : [];
 
   if (state.filters.single) {
-    packNodes(singleNodes, 98, VIEW_MARGIN.top + 30, HEIGHT - VIEW_MARGIN.bottom - 24);
+    packNodes(singleNodes, 98, VIEW_MARGIN.top + 30, height - VIEW_MARGIN.bottom - 24);
   }
 
   const membershipAnchorByKey = new Map();
@@ -603,6 +659,7 @@ function buildGraphData() {
   }
 
   return {
+    height,
     activeLaneKeys,
     lanePanels: laneData.panels,
     fitViewBoxLeft: laneData.fitViewBoxLeft,
@@ -1069,12 +1126,15 @@ function renderGraph() {
     graphCache.set(cacheKey, graph);
   }
 
+  graphHeight = graph.height;
+  yScale = createYScale(graphHeight);
+
   svg.selectAll("*").remove();
   svg
-    .attr("viewBox", `${graph.fitViewBoxLeft} 0 ${graph.fitViewBoxWidth} ${HEIGHT}`)
+    .attr("viewBox", `${graph.fitViewBoxLeft} 0 ${graph.fitViewBoxWidth} ${graph.height}`)
     .attr("preserveAspectRatio", "xMinYMin meet")
     .attr("width", WIDTH)
-    .attr("height", HEIGHT);
+    .attr("height", graph.height);
 
   defsLayer = svg.append("defs");
   const sheenGradient = defsLayer
@@ -1126,7 +1186,7 @@ function renderGraph() {
     .attr("x", graph.fitViewBoxLeft)
     .attr("y", 0)
     .attr("width", graph.fitViewBoxWidth)
-    .attr("height", HEIGHT)
+    .attr("height", graph.height)
     .attr("fill", "transparent")
     .on("click", () => {
       state.lastSingleTap = null;
@@ -1141,7 +1201,7 @@ function renderGraph() {
     .attr("x", (lane) => lane.x)
     .attr("y", 62)
     .attr("width", (lane) => lane.width)
-    .attr("height", HEIGHT - 124)
+    .attr("height", graph.height - 124)
     .attr("rx", 34)
     .attr("ry", 34);
 
