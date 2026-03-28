@@ -450,8 +450,13 @@ body {
   color: rgba(206, 181, 233, 0.84);
   font-size: 0.72rem;
   line-height: 1.4;
-  text-align: right;
+  text-align: center;
   text-shadow: none;
+  white-space: normal;
+}
+
+.site-note span {
+  display: inline;
 }
 
 .detail-card {

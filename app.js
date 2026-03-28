@@ -113,7 +113,7 @@ const state = {
     single: true,
     mini: true,
     full: true,
-    tour: true,
+    tour: false,
   },
 };
 
@@ -834,7 +834,7 @@ function setDetailSubtitle(value) {
 
 function renderDefaultDetail() {
   detailTitle.textContent = data.meta.title;
-  setDetailSubtitle("필터를 켜고 끄면 숨겨진 레인은 제거되고, 남은 디스코그래피가 다시 폭을 맞춰 배치됩니다.");
+  setDetailSubtitle("Blu-ray / Live는 기본으로 꺼져 있습니다. 필터를 켜고 끄면 숨겨진 레인은 제거되고, 남은 디스코그래피가 다시 폭을 맞춰 배치됩니다.");
   detailArtwork.className = "detail-artwork detail-artwork-empty";
   detailArtwork.textContent = "ZUTOMAYO";
   detailList.replaceChildren(
