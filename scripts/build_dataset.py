@@ -18,6 +18,11 @@ ROOT = Path(__file__).resolve().parents[1]
 UML_PATH = ROOT / "data" / "data.uml"
 OUTPUT_PATH = ROOT / "data" / "discography.js"
 CACHE_PATH = ROOT / "data" / "itunes_cache.json"
+TITLE_MAP_PATH = ROOT / "data" / "title-map.json"
+SINGLE_JSON_PATH = ROOT / "data" / "single.json"
+MINI_JSON_PATH = ROOT / "data" / "mini.json"
+FULL_ALBUM_JSON_PATH = ROOT / "data" / "full-album.json"
+LIVE_JSON_PATH = ROOT / "data" / "live.json"
 
 ARTIST_NAME = "ずっと真夜中でいいのに。"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"
@@ -216,6 +221,31 @@ def upscale_art(url: str | None, size: int = 900) -> str | None:
 
 def extract_artwork_url(item: dict[str, Any]) -> str | None:
     return upscale_art(item.get("artworkUrl100") or item.get("artworkUrl"))
+
+
+def load_title_map() -> dict[str, dict[str, str]]:
+    return json.loads(TITLE_MAP_PATH.read_text())
+
+
+def flatten_title_map(title_map: dict[str, dict[str, str]]) -> dict[str, str]:
+    merged: dict[str, str] = {}
+    for group in title_map.values():
+        merged.update(group)
+    return merged
+
+
+def get_korean_title(title: str | None, title_map: dict[str, str]) -> str | None:
+    if not title:
+        return None
+    alias = title_map.get(title)
+    if alias and alias != title:
+        return alias
+    return None
+
+
+def build_artwork_path(kind: str, title: str) -> str:
+    folder = "singles" if kind == "single" else "albums"
+    return f"asset/artwork/{folder}/{slugify(title)}.jpg"
 
 
 def canonicalize_work_title(value: str) -> str:
@@ -443,6 +473,7 @@ def build_manual_album_metadata(
     album_def: AlbumDef,
     search: AppleSearch,
     albums_by_title: dict[str, dict[str, Any]],
+    korean_titles: dict[str, str],
 ) -> dict[str, Any]:
     manual = MANUAL_ALBUM_METADATA[title]
     artwork_url = None
@@ -474,17 +505,79 @@ def build_manual_album_metadata(
         "kind": album_def.kind,
         "title": album_def.title,
         "label": album_def.title,
+        "koreanTitle": get_korean_title(album_def.title, korean_titles),
         "releaseDate": manual["releaseDate"],
         "artworkUrl": artwork_url,
+        "artworkPath": build_artwork_path("album", album_def.title),
         "collectionName": manual["collectionName"],
         "order": album_def.order,
         "trackTitles": album_def.tracks,
     }
 
 
+def write_json(path: Path, payload: dict[str, Any]) -> None:
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+
+
+def build_partition_payload(
+    kind: str,
+    items: list[dict[str, Any]],
+    title_map: dict[str, str],
+    generated_at: str,
+) -> dict[str, Any]:
+    if kind == "single":
+        payload_items = []
+        for item in items:
+            payload_items.append(
+                {
+                    "id": item["id"],
+                    "title": item["title"],
+                    "koreanTitle": get_korean_title(item["title"], title_map),
+                    "releaseDate": item["releaseDate"],
+                    "artworkUrl": item["artworkUrl"],
+                    "artworkPath": item["artworkPath"],
+                    "collectionName": item["collectionName"],
+                    "targetSongId": item["targetSongId"],
+                }
+            )
+    else:
+        payload_items = []
+        for item in items:
+            payload_items.append(
+                {
+                    "id": item["id"],
+                    "title": item["title"],
+                    "koreanTitle": item.get("koreanTitle"),
+                    "kind": item["kind"],
+                    "releaseDate": item["releaseDate"],
+                    "artworkUrl": item["artworkUrl"],
+                    "artworkPath": item["artworkPath"],
+                    "tracks": [
+                        {
+                            "order": index + 1,
+                            "title": track_title,
+                            "koreanTitle": get_korean_title(track_title, title_map),
+                        }
+                        for index, track_title in enumerate(item["trackTitles"])
+                    ],
+                }
+            )
+
+    return {
+        "meta": {
+            "artist": "ZUTOMAYO",
+            "generatedAt": generated_at,
+        },
+        "items": payload_items,
+    }
+
+
 def build_dataset() -> dict[str, Any]:
     albums_raw, single_titles, release_targets = parse_uml(UML_PATH)
     search = AppleSearch(CACHE_PATH)
+    title_map_by_class = load_title_map()
+    korean_titles = flatten_title_map(title_map_by_class)
+    generated_at = datetime.now(timezone.utc).isoformat()
 
     albums_by_title: dict[str, dict[str, Any]] = {}
     for album_def in albums_raw:
@@ -494,6 +587,7 @@ def build_dataset() -> dict[str, Any]:
                 album_def,
                 search,
                 albums_by_title,
+                korean_titles,
             )
             continue
 
@@ -506,8 +600,10 @@ def build_dataset() -> dict[str, Any]:
             "kind": album_def.kind,
             "title": album_def.title,
             "label": album_def.title,
+            "koreanTitle": get_korean_title(album_def.title, korean_titles),
             "releaseDate": iso_to_date(picked["releaseDate"]),
             "artworkUrl": extract_artwork_url(picked),
+            "artworkPath": build_artwork_path("album", album_def.title),
             "collectionName": picked.get("collectionName"),
             "order": album_def.order,
             "trackTitles": album_def.tracks,
@@ -543,6 +639,7 @@ def build_dataset() -> dict[str, Any]:
                 "type": "song",
                 "title": canonical_title,
                 "label": canonical_labels[canonical_title],
+                "koreanTitle": get_korean_title(canonical_title, korean_titles),
                 "firstAlbumId": first_membership["albumId"],
                 "firstAlbumTitle": first_membership["albumTitle"],
                 "albumMembership": memberships,
@@ -589,6 +686,7 @@ def build_dataset() -> dict[str, Any]:
                     "type": "song",
                     "title": target_title,
                     "label": release_target,
+                    "koreanTitle": get_korean_title(target_title, korean_titles),
                     "firstAlbumId": None,
                     "firstAlbumTitle": None,
                     "albumMembership": [],
@@ -605,8 +703,10 @@ def build_dataset() -> dict[str, Any]:
                 "type": "single",
                 "title": single_title,
                 "label": single_title,
+                "koreanTitle": get_korean_title(single_title, korean_titles),
                 "releaseDate": iso_to_date(picked["releaseDate"]),
                 "artworkUrl": extract_artwork_url(picked),
+                "artworkPath": build_artwork_path("single", single_title),
                 "collectionName": picked.get("collectionName", ""),
                 "metadataSource": source_kind,
                 "targetSongId": songs_by_title[target_title]["id"],
@@ -644,20 +744,52 @@ def build_dataset() -> dict[str, Any]:
                 }
             )
 
-    return {
+    dataset = {
         "meta": {
             "artist": "ZUTOMAYO",
             "artistJa": ARTIST_NAME,
             "title": "ZUTOMAYO Discography Graph",
-            "generatedAt": datetime.now(timezone.utc).isoformat(),
-            "sourceFiles": [str(UML_PATH.relative_to(ROOT))],
+            "generatedAt": generated_at,
+            "sourceFiles": [str(UML_PATH.relative_to(ROOT)), str(TITLE_MAP_PATH.relative_to(ROOT))],
             "metadataSource": "Apple Music / iTunes Search API + manual Blu-ray / Live session lists",
         },
+        "titleMap": title_map_by_class,
         "albums": albums,
         "songs": songs,
         "singles": singles,
         "edges": edges,
     }
+
+    write_json(SINGLE_JSON_PATH, build_partition_payload("single", singles, korean_titles, generated_at))
+    write_json(
+        MINI_JSON_PATH,
+        build_partition_payload(
+            "mini",
+            [album for album in albums if album["kind"] == "mini"],
+            korean_titles,
+            generated_at,
+        ),
+    )
+    write_json(
+        FULL_ALBUM_JSON_PATH,
+        build_partition_payload(
+            "full",
+            [album for album in albums if album["kind"] == "full"],
+            korean_titles,
+            generated_at,
+        ),
+    )
+    write_json(
+        LIVE_JSON_PATH,
+        build_partition_payload(
+            "tour",
+            [album for album in albums if album["kind"] == "tour"],
+            korean_titles,
+            generated_at,
+        ),
+    )
+
+    return dataset
 
 
 def main() -> None:

@@ -35,7 +35,7 @@ const ALBUM_KIND_DETAIL_LABELS = {
   full: "full album",
   tour: "live session",
 };
-const KOREAN_TITLE_ALIASES = new Map([
+const LEGACY_KOREAN_TITLE_ALIASES = new Map([
   ["正しい偽りからの起床", "올바른 거짓으로부터의 기상"],
   ["今は今で誓いは笑みで", "지금은 지금대로 맹세는 미소로"],
   ["潜潜話", "소곤소곤 이야기"],
@@ -147,6 +147,15 @@ const KOREAN_TITLE_ALIASES = new Map([
   ["蟹しゃぶふぁんく", "게 샤브 펑크"],
   ["間人間", "사이인간"],
 ]);
+const KOREAN_TITLE_ALIASES = new Map(
+  Object.entries({
+    ...Object.fromEntries(LEGACY_KOREAN_TITLE_ALIASES),
+    ...(data.titleMap?.song ?? {}),
+    ...(data.titleMap?.mini ?? {}),
+    ...(data.titleMap?.full ?? {}),
+    ...(data.titleMap?.live ?? {}),
+  }),
+);
 const LANE_GAP = 44;
 const LANE_FIT_PADDING = 12;
 const ALBUM_TRACK_START_Y = 156;
