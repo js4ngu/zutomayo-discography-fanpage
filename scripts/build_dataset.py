@@ -16,13 +16,9 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 UML_PATH = ROOT / "data" / "data.uml"
-OUTPUT_PATH = ROOT / "data" / "discography.js"
+GRAPH_PATH = ROOT / "data" / "graph.json"
 CACHE_PATH = ROOT / "data" / "itunes_cache.json"
 TITLE_MAP_PATH = ROOT / "data" / "title-map.json"
-SINGLE_JSON_PATH = ROOT / "data" / "single.json"
-MINI_JSON_PATH = ROOT / "data" / "mini.json"
-FULL_ALBUM_JSON_PATH = ROOT / "data" / "full-album.json"
-LIVE_JSON_PATH = ROOT / "data" / "live.json"
 
 ARTIST_NAME = "ずっと真夜中でいいのに。"
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"
@@ -514,60 +510,6 @@ def build_manual_album_metadata(
     }
 
 
-def write_json(path: Path, payload: dict[str, Any]) -> None:
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
-
-
-def build_partition_payload(
-    kind: str,
-    items: list[dict[str, Any]],
-    title_map: dict[str, str],
-    generated_at: str,
-) -> dict[str, Any]:
-    if kind == "single":
-        payload_items = []
-        for item in items:
-            payload_items.append(
-                {
-                    "id": item["id"],
-                    "title": item["title"],
-                    "releaseDate": item["releaseDate"],
-                    "artworkUrl": item["artworkUrl"],
-                    "artworkPath": item["artworkPath"],
-                    "collectionName": item["collectionName"],
-                    "targetSongId": item["targetSongId"],
-                }
-            )
-    else:
-        payload_items = []
-        for item in items:
-            payload_items.append(
-                {
-                    "id": item["id"],
-                    "title": item["title"],
-                    "kind": item["kind"],
-                    "releaseDate": item["releaseDate"],
-                    "artworkUrl": item["artworkUrl"],
-                    "artworkPath": item["artworkPath"],
-                    "tracks": [
-                        {
-                            "order": index + 1,
-                            "title": track_title,
-                        }
-                        for index, track_title in enumerate(item["trackTitles"])
-                    ],
-                }
-            )
-
-    return {
-        "meta": {
-            "artist": "ZUTOMAYO",
-            "generatedAt": generated_at,
-        },
-        "items": payload_items,
-    }
-
-
 def build_dataset() -> dict[str, Any]:
     albums_raw, single_titles, release_targets = parse_uml(UML_PATH)
     search = AppleSearch(CACHE_PATH)
@@ -752,47 +694,18 @@ def build_dataset() -> dict[str, Any]:
         "edges": edges,
     }
 
-    write_json(SINGLE_JSON_PATH, build_partition_payload("single", singles, korean_titles, generated_at))
-    write_json(
-        MINI_JSON_PATH,
-        build_partition_payload(
-            "mini",
-            [album for album in albums if album["kind"] == "mini"],
-            korean_titles,
-            generated_at,
-        ),
-    )
-    write_json(
-        FULL_ALBUM_JSON_PATH,
-        build_partition_payload(
-            "full",
-            [album for album in albums if album["kind"] == "full"],
-            korean_titles,
-            generated_at,
-        ),
-    )
-    write_json(
-        LIVE_JSON_PATH,
-        build_partition_payload(
-            "tour",
-            [album for album in albums if album["kind"] == "tour"],
-            korean_titles,
-            generated_at,
-        ),
-    )
-
     return dataset
 
 
 def main() -> None:
     dataset = build_dataset()
-    payload = "window.ZUTOMAYO_GRAPH_DATA = " + json.dumps(
+    payload = json.dumps(
         dataset,
         ensure_ascii=False,
         indent=2,
-    ) + ";\n"
-    OUTPUT_PATH.write_text(payload)
-    print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}")
+    ) + "\n"
+    GRAPH_PATH.write_text(payload)
+    print(f"Wrote {GRAPH_PATH.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,5 @@
-const data = window.ZUTOMAYO_GRAPH_DATA;
+(async () => {
+const data = await fetchGraphData();
 
 const svg = d3.select("#graph");
 const stage = document.querySelector(".graph-stage");
@@ -1533,3 +1534,14 @@ closeFocusDrawerButton.addEventListener("click", () => setActive(null));
 filterInputs.forEach((input) => {
   input.addEventListener("change", handleFilterChange);
 });
+})().catch((error) => {
+  console.error("Failed to initialize graph", error);
+});
+
+async function fetchGraphData() {
+  const response = await fetch("./data/graph.json", { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to load graph.json: ${response.status}`);
+  }
+  return response.json();
+}
