@@ -69,6 +69,12 @@ def load_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text())
 
 
+def with_optional_artwork_url(item: dict[str, Any], artwork_url: str | None) -> dict[str, Any]:
+    if artwork_url:
+        item["artworkUrl"] = artwork_url
+    return item
+
+
 def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]], list[dict[str, Any]]]:
     title_map = load_json(TITLE_MAP_PATH)
     album_sections = [
@@ -83,19 +89,18 @@ def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]],
         for item in items:
             order += 1
             albums.append(
-                {
+                with_optional_artwork_url({
                     "id": f"album-{slugify(item['title'])}",
                     "type": "album",
                     "kind": kind,
                     "title": item["title"],
                     "label": item["title"],
                     "releaseDate": item["releaseDate"],
-                    "artworkUrl": item["artworkUrl"],
                     "artworkPath": item["artworkPath"],
                     "collectionName": item.get("collectionName", ""),
                     "order": order,
                     "trackTitles": item["trackTitles"],
-                }
+                }, item.get("artworkUrl"))
             )
 
     singles_source = load_json(SINGLE_PATH)["items"]
@@ -166,19 +171,18 @@ def build_dataset() -> dict[str, Any]:
 
         single_id = f"single-{slugify(item['title'])}"
         singles.append(
-            {
+            with_optional_artwork_url({
                 "id": single_id,
                 "type": "single",
                 "title": item["title"],
                 "label": item["title"],
                 "releaseDate": item["releaseDate"],
-                "artworkUrl": item["artworkUrl"],
                 "artworkPath": item["artworkPath"],
                 "collectionName": item.get("collectionName", ""),
                 "metadataSource": item.get("metadataSource", "source-json"),
                 "targetSongId": songs_by_title[target_title]["id"],
                 "order": order,
-            }
+            }, item.get("artworkUrl"))
         )
         songs_by_title[target_title]["singleIds"].append(single_id)
         songs_by_title[target_title]["releaseDate"] = min(

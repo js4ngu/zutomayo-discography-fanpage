@@ -168,14 +168,24 @@ function getFallbackArtworkUrl(label = "ZTMY") {
   return url;
 }
 
+function resolveArtworkUrl(item, fallbackLabel = "ZTMY") {
+  if (item?.artworkPath) {
+    return item.artworkPath;
+  }
+  if (item?.artworkUrl) {
+    return item.artworkUrl;
+  }
+  return getFallbackArtworkUrl(fallbackLabel);
+}
+
 function resolveSingleArtworkUrl(single) {
-  if (single.artworkUrl) {
-    return single.artworkUrl;
+  if (single.artworkPath || single.artworkUrl) {
+    return resolveArtworkUrl(single, single.title?.slice(0, 6) || "ZTMY");
   }
 
   const song = songById.get(single.targetSongId);
   const firstAlbumId = song?.firstAlbumId ?? song?.albumMembership?.[0]?.albumId;
-  const firstAlbumArtwork = firstAlbumId ? albumById.get(firstAlbumId)?.artworkUrl : null;
+  const firstAlbumArtwork = firstAlbumId ? resolveArtworkUrl(albumById.get(firstAlbumId)) : null;
   if (firstAlbumArtwork) {
     return firstAlbumArtwork;
   }
@@ -948,11 +958,11 @@ function renderDetail(nodeId) {
     const koreanTitle = getKoreanTitle(contextDisplayTitle) ?? getKoreanTitle(song.title);
     let artworkUrl =
       song.albumMembership.length > 0
-        ? albumById.get(song.albumMembership[0].albumId)?.artworkUrl
+        ? resolveArtworkUrl(albumById.get(song.albumMembership[0].albumId))
         : null;
 
     if (contextAlbumId && song.albumMembership.some((membership) => membership.albumId === contextAlbumId)) {
-      artworkUrl = albumById.get(contextAlbumId).artworkUrl;
+      artworkUrl = resolveArtworkUrl(albumById.get(contextAlbumId));
     } else if (contextSingleId && singleById.has(contextSingleId)) {
       artworkUrl = singleArtworkById.get(contextSingleId);
     }
@@ -992,7 +1002,7 @@ function renderDetail(nodeId) {
   const koreanTitle = getKoreanTitle(album.title);
   detailTitle.textContent = album.title;
   setDetailSubtitle(buildHeadingSubtitle(koreanTitle, ALBUM_KIND_DETAIL_LABELS[album.kind]));
-  setArtwork(album.artworkUrl, `${album.title} artwork`);
+  setArtwork(resolveArtworkUrl(album, album.title), `${album.title} artwork`);
   detailList.replaceChildren(
     ...detailRow("Release", album.releaseDate),
     ...detailRow("Format", ALBUM_KIND_LABELS[album.kind]),
@@ -1294,7 +1304,7 @@ function renderGraph() {
 
   albumSelection
     .append("image")
-    .attr("href", (album) => album.artworkUrl)
+    .attr("href", (album) => resolveArtworkUrl(album, album.title))
     .attr("width", (album) => album.width)
     .attr("height", 92)
     .attr("preserveAspectRatio", "xMidYMid slice")
@@ -1463,7 +1473,7 @@ function renderGraph() {
 
   singleSelection
     .append("image")
-    .attr("href", (single) => single.artworkUrl)
+    .attr("href", (single) => resolveArtworkUrl(single, single.title))
     .attr("x", 12)
     .attr("y", 12)
     .attr("width", 54)
