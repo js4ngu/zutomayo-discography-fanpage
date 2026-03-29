@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "artist": "ZUTOMAYO"
+  },
+  "items": [
+    {
+      "title": "正しい偽りからの起床",
+      "releaseDate": "2018-11-14",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/07/13/1907134a-ffe1-c31a-ab6b-18bba8575dd4/00602577195488.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/正しい偽りからの起床.jpg",
+      "collectionName": "Tadashii Itsuwarikarano Kishou - EP",
+      "trackTitles": [
+        "秒針を噛む",
+        "ヒューマノイド",
+        "サターン",
+        "雲丹と栗",
+        "脳裏上のクラッカー",
+        "君がいて水になる"
+      ]
+    },
+    {
+      "title": "今は今で誓いは笑みで",
+      "releaseDate": "2019-06-12",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f7/20/47/f72047ef-3944-2b5b-25b5-3979f5ac2aef/19UMGIM30912.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/今は今で誓いは笑みで.jpg",
+      "collectionName": "Imawa Imade Chikaiwa Emide - EP",
+      "trackTitles": [
+        "勘冴えて悔しいわ",
+        "正義",
+        "またね幻",
+        "マイノリティ脈絡",
+        "彷徨い酔い温度",
+        "眩しいDNAだけ"
+      ]
+    },
+    {
+      "title": "朗らかな皮膚とて不服",
+      "releaseDate": "2020-08-05",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/84/fc/8684fcc1-debe-ee04-18c8-99a111b96038/20UMGIM52165.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/朗らかな皮膚とて不服.jpg",
+      "collectionName": "Hogarakana Hifutote Fufuku - EP",
+      "trackTitles": [
+        "低血ボルト",
+        "お勉強しといてよ",
+        "Ham",
+        "JK BOMBER",
+        "マリンブルーの庭園",
+        "MILABO"
+      ]
+    },
+    {
+      "title": "伸び仕草懲りて暇乞い",
+      "releaseDate": "2022-02-16",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/7e/5b/9f7e5b57-dac7-e0a5-14af-2566bf017fc6/22UMGIM03998.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/伸び仕草懲りて暇乞い.jpg",
+      "collectionName": "Nobi Shigusa Korite Itomagoi - EP",
+      "trackTitles": [
+        "違う曲にしようよ",
+        "袖のキルト",
+        "あいつら全員同窓会",
+        "猫リセット",
+        "夜中のキスミ",
+        "ばかじゃないのに"
+      ]
+    },
+    {
+      "title": "虚仮の一念海馬に託す",
+      "releaseDate": "2024-10-23",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/虚仮の一念海馬に託す.jpg",
+      "collectionName": "Koke no ichinen Kaiba ni takusu - EP",
+      "trackTitles": [
+        "虚仮にしてくれ",
+        "TAIDADA",
+        "クズリ念",
+        "海馬成長痛",
+        "嘘じゃない",
+        "Blues in the Closet"
+      ]
+    }
+  ]
+}

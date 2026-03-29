@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "artist": "ZUTOMAYO"
+  },
+  "items": [
+    {
+      "title": "潜潜話",
+      "releaseDate": "2019-10-30",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b7/fe/4c/b7fe4cb4-fb88-578c-d58d-f650043ff298/19UMGIM82675.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/潜潜話.jpg",
+      "collectionName": "Hisohiso Banashi",
+      "trackTitles": [
+        "脳裏上のクラッカー",
+        "勘冴えて悔しいわ",
+        "居眠り遠征隊",
+        "ハゼ馳せる果てるまで",
+        "蹴っ飛ばした毛布",
+        "Dear. Mr「F」",
+        "こんなこと騒動",
+        "眩しいDNAだけ",
+        "ヒューマノイド",
+        "グラスとラムレーズン",
+        "正義",
+        "優しくLAST SMILE",
+        "秒針を噛む"
+      ]
+    },
+    {
+      "title": "ぐされ",
+      "releaseDate": "2021-02-10",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2c/26/0d/2c260db7-824c-af80-d6c1-fb30b3124a14/21UMGIM00896.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/ぐされ.jpg",
+      "collectionName": "Gusare",
+      "trackTitles": [
+        "胸の煙",
+        "正しくなれない",
+        "お勉強しといてよ",
+        "勘ぐれい",
+        "はゔぁ",
+        "機械油",
+        "暗く黒く",
+        "MILABO",
+        "ろんりねす",
+        "繰り返す収穫",
+        "過眠",
+        "低血ボルト",
+        "奥底に眠るルーツ",
+        "暗く黒く (Twin Piano Live ver.)"
+      ]
+    },
+    {
+      "title": "沈香学",
+      "releaseDate": "2023-06-07",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/沈香学.jpg",
+      "collectionName": "沈香学",
+      "trackTitles": [
+        "花一匁",
+        "残機",
+        "猫リセット",
+        "綺羅キラー (feat. Mori Calliope)",
+        "馴れ合いサーブ",
+        "あいつら全員同窓会",
+        "夏枯れ",
+        "袖のキルト",
+        "不法侵入",
+        "ばかじゃないのに",
+        "消えてしまいそうです",
+        "ミラーチューン",
+        "上辺の私自身なんだよ"
+      ]
+    },
+    {
+      "title": "形藻土",
+      "releaseDate": "2026-03-25",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/2a/19/ad2a1985-1499-5d04-b11d-8cdf6dd6e599/26UMGIM24458.rgb.jpg/900x900bb.jpg",
+      "artworkPath": "asset/artwork/albums/形藻土.jpg",
+      "collectionName": "KEISOUDO",
+      "trackTitles": [
+        "地球存在しない説",
+        "間人間",
+        "メディアノーチェ",
+        "TAIDADA",
+        "蟹しゃぶふぁんく",
+        "微熱魔",
+        "クリームで会いにいけますか (Disco Re-Edit)",
+        "またね幻 (Live in Studio_80光年先の君へ)",
+        "シェードの埃は延長",
+        "形",
+        "ultra魂",
+        "不死身の訓練",
+        "海馬成長痛",
+        "アンチモン",
+        "よもすがら",
+        "クズリ念 (Live in Studio_温蔵庫)",
+        "嘘じゃない",
+        "lowmotion algae"
+      ]
+    }
+  ]
+}
