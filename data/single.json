@@ -9,7 +9,8 @@
       "artworkPath": "asset/artwork/singles/秒針を噛む.jpg",
       "collectionName": "Byoushinwo Kamu - Single",
       "metadataSource": "album",
-      "targetTitle": "秒針を噛む"
+      "targetTitle": "秒針を噛む",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%A7%92%E9%87%9D%E3%82%92%E5%99%9B%E3%82%80%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "脳裏上のクラッカー",
@@ -17,7 +18,8 @@
       "artworkPath": "asset/artwork/singles/脳裏上のクラッカー.jpg",
       "collectionName": "Nouriueno Cracker - Single",
       "metadataSource": "album",
-      "targetTitle": "脳裏上のクラッカー"
+      "targetTitle": "脳裏上のクラッカー",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%84%B3%E8%A3%8F%E4%B8%8A%E3%81%AE%E3%82%AF%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "ヒューマノイド",
@@ -25,7 +27,8 @@
       "artworkPath": "asset/artwork/singles/ヒューマノイド.jpg",
       "collectionName": "正しい偽りからの起床 - EP",
       "metadataSource": "song",
-      "targetTitle": "ヒューマノイド"
+      "targetTitle": "ヒューマノイド",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%8E%E3%82%A4%E3%83%89%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "眩しいDNAだけ",
@@ -33,7 +36,8 @@
       "artworkPath": "asset/artwork/singles/眩しいdnaだけ.jpg",
       "collectionName": "Mabushii DNA Dake - Single",
       "metadataSource": "album",
-      "targetTitle": "眩しいDNAだけ"
+      "targetTitle": "眩しいDNAだけ",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%9C%A9%E3%81%97%E3%81%84DNA%E3%81%A0%E3%81%91%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "正義",
@@ -41,7 +45,8 @@
       "artworkPath": "asset/artwork/singles/正義.jpg",
       "collectionName": "Seigi - Single",
       "metadataSource": "album",
-      "targetTitle": "正義"
+      "targetTitle": "正義",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E7%BE%A9%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "勘冴えて悔しいわ",
@@ -49,7 +54,8 @@
       "artworkPath": "asset/artwork/singles/勘冴えて悔しいわ.jpg",
       "collectionName": "Imawa Imade Chikaiwa Emide - EP",
       "metadataSource": "album-fallback",
-      "targetTitle": "勘冴えて悔しいわ"
+      "targetTitle": "勘冴えて悔しいわ",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%8B%98%E5%86%B4%E3%81%88%E3%81%A6%E6%82%94%E3%81%97%E3%81%84%E3%82%8F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "お勉強しといてよ",
@@ -57,7 +63,8 @@
       "artworkPath": "asset/artwork/singles/お勉強しといてよ.jpg",
       "collectionName": "Obenkyou Shitoiteyo - Single",
       "metadataSource": "album",
-      "targetTitle": "お勉強しといてよ"
+      "targetTitle": "お勉強しといてよ",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%8A%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A8%E3%81%84%E3%81%A6%E3%82%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "MILABO",
@@ -65,7 +72,8 @@
       "artworkPath": "asset/artwork/singles/milabo.jpg",
       "collectionName": "朗らかな皮膚とて不服 - EP",
       "metadataSource": "song",
-      "targetTitle": "MILABO"
+      "targetTitle": "MILABO",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22MILABO%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "低血ボルト",
@@ -73,7 +81,8 @@
       "artworkPath": "asset/artwork/singles/低血ボルト.jpg",
       "collectionName": "Hogarakana Hifutote Fufuku - EP",
       "metadataSource": "album-fallback",
-      "targetTitle": "低血ボルト"
+      "targetTitle": "低血ボルト",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BD%8E%E8%A1%80%E3%83%9C%E3%83%AB%E3%83%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "暗く黒く",
@@ -81,7 +90,8 @@
       "artworkPath": "asset/artwork/singles/暗く黒く.jpg",
       "collectionName": "Darken - Single",
       "metadataSource": "album",
-      "targetTitle": "暗く黒く"
+      "targetTitle": "暗く黒く",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9A%97%E3%81%8F%E9%BB%92%E3%81%8F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "勘ぐれい",
@@ -89,7 +99,8 @@
       "artworkPath": "asset/artwork/singles/勘ぐれい.jpg",
       "collectionName": "Hunch Gray - Single",
       "metadataSource": "album",
-      "targetTitle": "勘ぐれい"
+      "targetTitle": "勘ぐれい",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%8B%98%E3%81%90%E3%82%8C%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "正しくなれない",
@@ -97,7 +108,8 @@
       "artworkPath": "asset/artwork/singles/正しくなれない.jpg",
       "collectionName": "Can't Be Right - Single",
       "metadataSource": "album",
-      "targetTitle": "正しくなれない"
+      "targetTitle": "正しくなれない",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8C%E3%81%AA%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "過眠",
@@ -105,7 +117,8 @@
       "artworkPath": "asset/artwork/singles/過眠.jpg",
       "collectionName": "Hogarakana Hifutote Fufuku - EP",
       "metadataSource": "album-fallback",
-      "targetTitle": "過眠"
+      "targetTitle": "過眠",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E9%81%8E%E7%9C%A0%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "秒針を噛む - From THE FIRST TAKE",
@@ -113,7 +126,8 @@
       "artworkPath": "asset/artwork/singles/秒針を噛む-from-the-first-take.jpg",
       "collectionName": "Byoushinwo Kamu (From The First Take) - Single",
       "metadataSource": "album",
-      "targetTitle": "秒針を噛む - From THE FIRST TAKE"
+      "targetTitle": "秒針を噛む - From THE FIRST TAKE",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%A7%92%E9%87%9D%E3%82%92%E5%99%9B%E3%82%80%20-%20From%20THE%20FIRST%20TAKE%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "正しくなれない - From THE FIRST TAKE",
@@ -121,7 +135,8 @@
       "artworkPath": "asset/artwork/singles/正しくなれない-from-the-first-take.jpg",
       "collectionName": "Can't Be Right (From The First Take) - Single",
       "metadataSource": "album",
-      "targetTitle": "正しくなれない - From THE FIRST TAKE"
+      "targetTitle": "正しくなれない - From THE FIRST TAKE",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8C%E3%81%AA%E3%81%84%20-%20From%20THE%20FIRST%20TAKE%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "あいつら全員同窓会",
@@ -129,7 +144,8 @@
       "artworkPath": "asset/artwork/singles/あいつら全員同窓会.jpg",
       "collectionName": "Inside Joke - Single",
       "metadataSource": "album",
-      "targetTitle": "あいつら全員同窓会"
+      "targetTitle": "あいつら全員同窓会",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%82%E3%81%84%E3%81%A4%E3%82%89%E5%85%A8%E5%93%A1%E5%90%8C%E7%AA%93%E4%BC%9A%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "ばかじゃないのに",
@@ -137,7 +153,8 @@
       "artworkPath": "asset/artwork/singles/ばかじゃないのに.jpg",
       "collectionName": "Stay Foolish - Single",
       "metadataSource": "album",
-      "targetTitle": "ばかじゃないのに"
+      "targetTitle": "ばかじゃないのに",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%B0%E3%81%8B%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "猫リセット",
@@ -145,7 +162,8 @@
       "artworkPath": "asset/artwork/singles/猫リセット.jpg",
       "collectionName": "Neko Reset - Single",
       "metadataSource": "album",
-      "targetTitle": "猫リセット"
+      "targetTitle": "猫リセット",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%8C%AB%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "袖のキルト",
@@ -153,7 +171,8 @@
       "artworkPath": "asset/artwork/singles/袖のキルト.jpg",
       "collectionName": "伸び仕草懲りて暇乞い - EP",
       "metadataSource": "song",
-      "targetTitle": "袖のキルト"
+      "targetTitle": "袖のキルト",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%A2%96%E3%81%AE%E3%82%AD%E3%83%AB%E3%83%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "ミラーチューン",
@@ -161,7 +180,8 @@
       "artworkPath": "asset/artwork/singles/ミラーチューン.jpg",
       "collectionName": "Mirror Tune - Single",
       "metadataSource": "album",
-      "targetTitle": "ミラーチューン"
+      "targetTitle": "ミラーチューン",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "消えてしまいそうです",
@@ -169,7 +189,8 @@
       "artworkPath": "asset/artwork/singles/消えてしまいそうです.jpg",
       "collectionName": "Blush - Single",
       "metadataSource": "album",
-      "targetTitle": "消えてしまいそうです"
+      "targetTitle": "消えてしまいそうです",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B6%88%E3%81%88%E3%81%A6%E3%81%97%E3%81%BE%E3%81%84%E3%81%9D%E3%81%86%E3%81%A7%E3%81%99%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "夏枯れ",
@@ -177,7 +198,8 @@
       "artworkPath": "asset/artwork/singles/夏枯れ.jpg",
       "collectionName": "Summer Slack - Single",
       "metadataSource": "album",
-      "targetTitle": "夏枯れ"
+      "targetTitle": "夏枯れ",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%A4%8F%E6%9E%AF%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "残機",
@@ -185,7 +207,8 @@
       "artworkPath": "asset/artwork/singles/残機.jpg",
       "collectionName": "Time Left - Single",
       "metadataSource": "album",
-      "targetTitle": "残機"
+      "targetTitle": "残機",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AE%8B%E6%A9%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "綺羅キラー",
@@ -193,7 +216,8 @@
       "artworkPath": "asset/artwork/singles/綺羅キラー.jpg",
       "collectionName": "Kira Killer (feat. Mori Calliope) - Single",
       "metadataSource": "album",
-      "targetTitle": "綺羅キラー"
+      "targetTitle": "綺羅キラー",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%B6%BA%E7%BE%85%E3%82%AD%E3%83%A9%E3%83%BC%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "不法侵入",
@@ -201,7 +225,8 @@
       "artworkPath": "asset/artwork/singles/不法侵入.jpg",
       "collectionName": "INTRUSION - Single",
       "metadataSource": "album",
-      "targetTitle": "不法侵入"
+      "targetTitle": "不法侵入",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%B8%8D%E6%B3%95%E4%BE%B5%E5%85%A5%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "花一匁",
@@ -209,7 +234,8 @@
       "artworkPath": "asset/artwork/singles/花一匁.jpg",
       "collectionName": "沈香学",
       "metadataSource": "album-fallback",
-      "targetTitle": "花一匁"
+      "targetTitle": "花一匁",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%8A%B1%E4%B8%80%E5%8C%81%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "嘘じゃない",
@@ -217,7 +243,8 @@
       "artworkPath": "asset/artwork/singles/嘘じゃない.jpg",
       "collectionName": "Truth In Lies - Single",
       "metadataSource": "album",
-      "targetTitle": "嘘じゃない"
+      "targetTitle": "嘘じゃない",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%98%98%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "Blues in the Closet",
@@ -225,7 +252,8 @@
       "artworkPath": "asset/artwork/singles/blues-in-the-closet.jpg",
       "collectionName": "Blues in the Closet - Single",
       "metadataSource": "album",
-      "targetTitle": "Blues in the Closet"
+      "targetTitle": "Blues in the Closet",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22Blues%20in%20the%20Closet%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "海馬成長痛",
@@ -233,7 +261,8 @@
       "artworkPath": "asset/artwork/singles/海馬成長痛.jpg",
       "collectionName": "Hippocampal Pain - Single",
       "metadataSource": "album",
-      "targetTitle": "海馬成長痛"
+      "targetTitle": "海馬成長痛",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B5%B7%E9%A6%AC%E6%88%90%E9%95%B7%E7%97%9B%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "TAIDADA",
@@ -241,7 +270,8 @@
       "artworkPath": "asset/artwork/singles/taidada.jpg",
       "collectionName": "Koke no ichinen Kaiba ni takusu - EP",
       "metadataSource": "album-fallback",
-      "targetTitle": "TAIDADA"
+      "targetTitle": "TAIDADA",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22TAIDADA%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "クズリ念",
@@ -249,7 +279,8 @@
       "artworkPath": "asset/artwork/singles/クズリ念.jpg",
       "collectionName": "虚仮の一念海馬に託す - EP",
       "metadataSource": "song",
-      "targetTitle": "クズリ念"
+      "targetTitle": "クズリ念",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%AF%E3%82%BA%E3%83%AA%E5%BF%B5%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "シェードの埃は延長",
@@ -257,7 +288,8 @@
       "artworkPath": "asset/artwork/singles/シェードの埃は延長.jpg",
       "collectionName": "SHADE - Single",
       "metadataSource": "album",
-      "targetTitle": "シェードの埃は延長"
+      "targetTitle": "シェードの埃は延長",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%89%E3%81%AE%E5%9F%83%E3%81%AF%E5%BB%B6%E9%95%B7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "微熱魔",
@@ -265,7 +297,8 @@
       "artworkPath": "asset/artwork/singles/微熱魔.jpg",
       "collectionName": "Warmthaholic - Single",
       "metadataSource": "album",
-      "targetTitle": "微熱魔"
+      "targetTitle": "微熱魔",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BE%AE%E7%86%B1%E9%AD%94%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "クリームで会いにいけますか",
@@ -273,7 +306,8 @@
       "artworkPath": "asset/artwork/singles/クリームで会いにいけますか.jpg",
       "collectionName": "クリームで会いにいけますか - Single",
       "metadataSource": "song",
-      "targetTitle": "クリームで会いにいけますか"
+      "targetTitle": "クリームで会いにいけますか",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%81%A7%E4%BC%9A%E3%81%84%E3%81%AB%E3%81%84%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "形",
@@ -281,7 +315,8 @@
       "artworkPath": "asset/artwork/singles/形.jpg",
       "collectionName": "Pain Give Form - Single",
       "metadataSource": "album",
-      "targetTitle": "形"
+      "targetTitle": "形",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "有心論",
@@ -289,7 +324,8 @@
       "artworkPath": "asset/artwork/singles/有心論.jpg",
       "collectionName": "Yushinron - Single",
       "metadataSource": "album",
-      "targetTitle": "有心論"
+      "targetTitle": "有心論",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%89%E5%BF%83%E8%AB%96%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "メディアノーチェ",
@@ -297,7 +333,8 @@
       "artworkPath": "asset/artwork/singles/メディアノーチェ.jpg",
       "collectionName": "Medianoche - Single",
       "metadataSource": "album",
-      "targetTitle": "メディアノーチェ"
+      "targetTitle": "メディアノーチェ",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%8E%E3%83%BC%E3%83%81%E3%82%A7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "title": "よもすがら",
@@ -305,7 +342,8 @@
       "artworkPath": "asset/artwork/singles/よもすがら.jpg",
       "collectionName": "KEISOUDO",
       "metadataSource": "album-fallback",
-      "targetTitle": "よもすがら"
+      "targetTitle": "よもすがら",
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%88%E3%82%82%E3%81%99%E3%81%8C%E3%82%89%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     }
   ]
 }
