@@ -1,13 +1,12 @@
 {
   "meta": {
     "artist": "ZUTOMAYO",
-    "generatedAt": "2026-03-29T16:13:06.940833+00:00"
+    "generatedAt": "2026-03-29T16:18:31.553964+00:00"
   },
   "items": [
     {
       "id": "album-正しい偽りからの起床",
       "title": "正しい偽りからの起床",
-      "koreanTitle": "올바른 거짓으로부터의 기상",
       "kind": "mini",
       "releaseDate": "2018-11-14",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/19/07/13/1907134a-ffe1-c31a-ab6b-18bba8575dd4/00602577195488.rgb.jpg/900x900bb.jpg",
@@ -15,40 +14,33 @@
       "tracks": [
         {
           "order": 1,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 2,
-          "title": "ヒューマノイド",
-          "koreanTitle": "휴머노이드"
+          "title": "ヒューマノイド"
         },
         {
           "order": 3,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 4,
-          "title": "雲丹と栗",
-          "koreanTitle": "성게와 밤"
+          "title": "雲丹と栗"
         },
         {
           "order": 5,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         },
         {
           "order": 6,
-          "title": "君がいて水になる",
-          "koreanTitle": "네가 있어 물이 돼"
+          "title": "君がいて水になる"
         }
       ]
     },
     {
       "id": "album-今は今で誓いは笑みで",
       "title": "今は今で誓いは笑みで",
-      "koreanTitle": "지금은 지금대로 맹세는 미소로",
       "kind": "mini",
       "releaseDate": "2019-06-12",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/f7/20/47/f72047ef-3944-2b5b-25b5-3979f5ac2aef/19UMGIM30912.rgb.jpg/900x900bb.jpg",
@@ -56,40 +48,33 @@
       "tracks": [
         {
           "order": 1,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 2,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 3,
-          "title": "またね幻",
-          "koreanTitle": "또 보자 환상"
+          "title": "またね幻"
         },
         {
           "order": 4,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 5,
-          "title": "彷徨い酔い温度",
-          "koreanTitle": "방황하고 취한 온도"
+          "title": "彷徨い酔い温度"
         },
         {
           "order": 6,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         }
       ]
     },
     {
       "id": "album-朗らかな皮膚とて不服",
       "title": "朗らかな皮膚とて不服",
-      "koreanTitle": "명랑한 피부라도 불복",
       "kind": "mini",
       "releaseDate": "2020-08-05",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/84/fc/8684fcc1-debe-ee04-18c8-99a111b96038/20UMGIM52165.rgb.jpg/900x900bb.jpg",
@@ -97,40 +82,33 @@
       "tracks": [
         {
           "order": 1,
-          "title": "低血ボルト",
-          "koreanTitle": "저혈 볼트"
+          "title": "低血ボルト"
         },
         {
           "order": 2,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 3,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 4,
-          "title": "JK BOMBER",
-          "koreanTitle": null
+          "title": "JK BOMBER"
         },
         {
           "order": 5,
-          "title": "マリンブルーの庭園",
-          "koreanTitle": "마린블루의 정원"
+          "title": "マリンブルーの庭園"
         },
         {
           "order": 6,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         }
       ]
     },
     {
       "id": "album-伸び仕草懲りて暇乞い",
       "title": "伸び仕草懲りて暇乞い",
-      "koreanTitle": "늘어나는 몸짓 질려서 작별 인사",
       "kind": "mini",
       "releaseDate": "2022-02-16",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/7e/5b/9f7e5b57-dac7-e0a5-14af-2566bf017fc6/22UMGIM03998.rgb.jpg/900x900bb.jpg",
@@ -138,40 +116,33 @@
       "tracks": [
         {
           "order": 1,
-          "title": "違う曲にしようよ",
-          "koreanTitle": "다른 노래로 하자"
+          "title": "違う曲にしようよ"
         },
         {
           "order": 2,
-          "title": "袖のキルト",
-          "koreanTitle": "소매의 퀼트"
+          "title": "袖のキルト"
         },
         {
           "order": 3,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 4,
-          "title": "猫リセット",
-          "koreanTitle": "고양이 리셋"
+          "title": "猫リセット"
         },
         {
           "order": 5,
-          "title": "夜中のキスミ",
-          "koreanTitle": "한밤중의 키스미"
+          "title": "夜中のキスミ"
         },
         {
           "order": 6,
-          "title": "ばかじゃないのに",
-          "koreanTitle": "바보가 아닌데도"
+          "title": "ばかじゃないのに"
         }
       ]
     },
     {
       "id": "album-虚仮の一念海馬に託す",
       "title": "虚仮の一念海馬に託す",
-      "koreanTitle": "허깨비의 일념, 해마에 맡기다",
       "kind": "mini",
       "releaseDate": "2024-10-23",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
@@ -179,33 +150,27 @@
       "tracks": [
         {
           "order": 1,
-          "title": "虚仮にしてくれ",
-          "koreanTitle": "허깨비로 해줘"
+          "title": "虚仮にしてくれ"
         },
         {
           "order": 2,
-          "title": "TAIDADA",
-          "koreanTitle": "타이다다"
+          "title": "TAIDADA"
         },
         {
           "order": 3,
-          "title": "クズリ念",
-          "koreanTitle": "쿠즈리념"
+          "title": "クズリ念"
         },
         {
           "order": 4,
-          "title": "海馬成長痛",
-          "koreanTitle": "해마성장통"
+          "title": "海馬成長痛"
         },
         {
           "order": 5,
-          "title": "嘘じゃない",
-          "koreanTitle": "거짓말이 아니야"
+          "title": "嘘じゃない"
         },
         {
           "order": 6,
-          "title": "Blues in the Closet",
-          "koreanTitle": "블루스 인 더 클로짓"
+          "title": "Blues in the Closet"
         }
       ]
     }

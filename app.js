@@ -1020,6 +1020,7 @@ function renderDetail(nodeId) {
     const single = singleById.get(nodeId);
     const song = songById.get(single.targetSongId);
     const koreanTitle = getKoreanTitle(single.title) ?? getKoreanTitle(song.title);
+    const studioMembership = song.albumMembership.filter((membership) => membership.kind !== "tour");
     detailTitle.textContent = single.title;
     setDetailSubtitle("");
     setArtwork(singleArtworkById.get(single.id), `${single.title} artwork`);
@@ -1030,8 +1031,8 @@ function renderDetail(nodeId) {
       ...detailRow("Song", htmlEscape(song.title)),
       ...detailRow(
         "Included In",
-        song.albumMembership.length
-          ? song.albumMembership.map((membership) => htmlEscape(membership.albumTitle)).join("<br>")
+        studioMembership.length
+          ? studioMembership.map((membership) => htmlEscape(membership.albumTitle)).join("<br>")
           : "none",
       ),
     );
@@ -1046,6 +1047,7 @@ function renderDetail(nodeId) {
   if (songById.has(nodeId)) {
     const song = songById.get(nodeId);
     const firstAlbum = song.firstAlbumId ? albumById.get(song.firstAlbumId) : null;
+    const studioMembership = song.albumMembership.filter((membership) => membership.kind !== "tour");
     const contextAlbumId = state.activeContext?.albumId;
     const contextSingleId = state.activeContext?.singleId;
     const contextMembership = contextAlbumId
@@ -1079,17 +1081,12 @@ function renderDetail(nodeId) {
       ),
       ...detailRow(
         "Albums",
-        song.albumMembership.filter((membership) => membership.kind !== "tour").length
-          ? song.albumMembership
-              .filter((membership) => membership.kind !== "tour")
-              .map((membership) => htmlEscape(membership.albumTitle))
-              .join("<br>")
+        studioMembership.length
+          ? studioMembership.map((membership) => htmlEscape(membership.albumTitle)).join("<br>")
           : "none",
       ),
     );
     detailLinks.replaceChildren(
-      ...song.singleIds.map((singleId) => makeJumpButton(singleById.get(singleId).title, singleId)),
-      ...song.albumMembership.map((membership) => makeJumpButton(membership.albumTitle, membership.albumId)),
       ...getPlatformLinks(contextDisplayTitle, { albumTitle: contextMembership?.albumTitle }).map((item) =>
         makeExternalLinkButton(item.label, item.url),
       ),

@@ -505,7 +505,6 @@ def build_manual_album_metadata(
         "kind": album_def.kind,
         "title": album_def.title,
         "label": album_def.title,
-        "koreanTitle": get_korean_title(album_def.title, korean_titles),
         "releaseDate": manual["releaseDate"],
         "artworkUrl": artwork_url,
         "artworkPath": build_artwork_path("album", album_def.title),
@@ -532,7 +531,6 @@ def build_partition_payload(
                 {
                     "id": item["id"],
                     "title": item["title"],
-                    "koreanTitle": get_korean_title(item["title"], title_map),
                     "releaseDate": item["releaseDate"],
                     "artworkUrl": item["artworkUrl"],
                     "artworkPath": item["artworkPath"],
@@ -547,7 +545,6 @@ def build_partition_payload(
                 {
                     "id": item["id"],
                     "title": item["title"],
-                    "koreanTitle": item.get("koreanTitle"),
                     "kind": item["kind"],
                     "releaseDate": item["releaseDate"],
                     "artworkUrl": item["artworkUrl"],
@@ -556,7 +553,6 @@ def build_partition_payload(
                         {
                             "order": index + 1,
                             "title": track_title,
-                            "koreanTitle": get_korean_title(track_title, title_map),
                         }
                         for index, track_title in enumerate(item["trackTitles"])
                     ],
@@ -600,7 +596,6 @@ def build_dataset() -> dict[str, Any]:
             "kind": album_def.kind,
             "title": album_def.title,
             "label": album_def.title,
-            "koreanTitle": get_korean_title(album_def.title, korean_titles),
             "releaseDate": iso_to_date(picked["releaseDate"]),
             "artworkUrl": extract_artwork_url(picked),
             "artworkPath": build_artwork_path("album", album_def.title),
@@ -639,7 +634,6 @@ def build_dataset() -> dict[str, Any]:
                 "type": "song",
                 "title": canonical_title,
                 "label": canonical_labels[canonical_title],
-                "koreanTitle": get_korean_title(canonical_title, korean_titles),
                 "firstAlbumId": first_membership["albumId"],
                 "firstAlbumTitle": first_membership["albumTitle"],
                 "albumMembership": memberships,
@@ -686,7 +680,6 @@ def build_dataset() -> dict[str, Any]:
                     "type": "song",
                     "title": target_title,
                     "label": release_target,
-                    "koreanTitle": get_korean_title(target_title, korean_titles),
                     "firstAlbumId": None,
                     "firstAlbumTitle": None,
                     "albumMembership": [],
@@ -703,7 +696,6 @@ def build_dataset() -> dict[str, Any]:
                 "type": "single",
                 "title": single_title,
                 "label": single_title,
-                "koreanTitle": get_korean_title(single_title, korean_titles),
                 "releaseDate": iso_to_date(picked["releaseDate"]),
                 "artworkUrl": extract_artwork_url(picked),
                 "artworkPath": build_artwork_path("single", single_title),

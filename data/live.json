@@ -1,13 +1,12 @@
 {
   "meta": {
     "artist": "ZUTOMAYO",
-    "generatedAt": "2026-03-29T16:13:06.940833+00:00"
+    "generatedAt": "2026-03-29T16:18:31.553964+00:00"
   },
   "items": [
     {
       "id": "album-niwa-to-nira",
       "title": "NIWA TO NIRA",
-      "koreanTitle": "니와 투 니라",
       "kind": "tour",
       "releaseDate": "2021-02-10",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/38/2c/03/382c0375-11db-242e-4bf0-4e2e31380d74/00602567952343.rgb.jpg/900x900bb.jpg",
@@ -15,70 +14,57 @@
       "tracks": [
         {
           "order": 1,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 2,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 3,
-          "title": "ヒューマノイド",
-          "koreanTitle": "휴머노이드"
+          "title": "ヒューマノイド"
         },
         {
           "order": 4,
-          "title": "マリンブルーの庭園",
-          "koreanTitle": "마린블루의 정원"
+          "title": "マリンブルーの庭園"
         },
         {
           "order": 5,
-          "title": "君がいて水になる",
-          "koreanTitle": "네가 있어 물이 돼"
+          "title": "君がいて水になる"
         },
         {
           "order": 6,
-          "title": "彷徨い酔い温度",
-          "koreanTitle": "방황하고 취한 온도"
+          "title": "彷徨い酔い温度"
         },
         {
           "order": 7,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 8,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 9,
-          "title": "低血ボルト",
-          "koreanTitle": "저혈 볼트"
+          "title": "低血ボルト"
         },
         {
           "order": 10,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 11,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 12,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         }
       ]
     },
     {
       "id": "album-the-first-take",
       "title": "THE FIRST TAKE",
-      "koreanTitle": "더 퍼스트 테이크",
       "kind": "tour",
       "releaseDate": "2021-03-05",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b7/66/ed/b766ed18-1e4d-442c-64f9-01d46e8cd2d0/21UMGIM15294.rgb.jpg/900x900bb.jpg",
@@ -86,20 +72,17 @@
       "tracks": [
         {
           "order": 1,
-          "title": "秒針を噛む - From THE FIRST TAKE",
-          "koreanTitle": "초침을 깨물다 - From THE FIRST TAKE"
+          "title": "秒針を噛む - From THE FIRST TAKE"
         },
         {
           "order": 2,
-          "title": "正しくなれない - From THE FIRST TAKE",
-          "koreanTitle": "올바르게 될 수 없어 - From THE FIRST TAKE"
+          "title": "正しくなれない - From THE FIRST TAKE"
         }
       ]
     },
     {
       "id": "album-yaki-yaki-yankee-tour-cleaning-labo",
       "title": "YAKI YAKI YANKEE TOUR CLEANING LABO",
-      "koreanTitle": "야키야키 양키 투어 클리닝 라보",
       "kind": "tour",
       "releaseDate": "2021-12-15",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/84/fc/8684fcc1-debe-ee04-18c8-99a111b96038/20UMGIM52165.rgb.jpg/900x900bb.jpg",
@@ -107,100 +90,81 @@
       "tracks": [
         {
           "order": 1,
-          "title": "JK BOMBER",
-          "koreanTitle": null
+          "title": "JK BOMBER"
         },
         {
           "order": 2,
-          "title": "こんなこと騒動",
-          "koreanTitle": "이런 일 소동"
+          "title": "こんなこと騒動"
         },
         {
           "order": 3,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 4,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 5,
-          "title": "勘ぐれい",
-          "koreanTitle": "감 그레이"
+          "title": "勘ぐれい"
         },
         {
           "order": 6,
-          "title": "マリンブルーの庭園",
-          "koreanTitle": "마린블루의 정원"
+          "title": "マリンブルーの庭園"
         },
         {
           "order": 7,
-          "title": "雲丹と栗",
-          "koreanTitle": "성게와 밤"
+          "title": "雲丹と栗"
         },
         {
           "order": 8,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 9,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 10,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 11,
-          "title": "Dear. Mr「F」",
-          "koreanTitle": "디어 미스터 F"
+          "title": "Dear. Mr「F」"
         },
         {
           "order": 12,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 13,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 14,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 15,
-          "title": "脳裏上のクラッカー (セッション紹介)",
-          "koreanTitle": "뇌리 위의 크래커 (세션 소개)"
+          "title": "脳裏上のクラッカー (セッション紹介)"
         },
         {
           "order": 16,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         },
         {
           "order": 17,
-          "title": "正しくなれない",
-          "koreanTitle": "올바르게 될 수 없어"
+          "title": "正しくなれない"
         },
         {
           "order": 18,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         }
       ]
     },
     {
       "id": "album-cleaning-labo",
       "title": "CLEANING LABO",
-      "koreanTitle": "클리닝 라보",
       "kind": "tour",
       "releaseDate": "2022-05-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ce/35/01/ce350155-d538-e9dd-c01a-3af6c1a94bfe/20UMGIM31118.rgb.jpg/900x900bb.jpg",
@@ -208,110 +172,89 @@
       "tracks": [
         {
           "order": 1,
-          "title": "胸の煙",
-          "koreanTitle": "마음의 연기"
+          "title": "胸の煙"
         },
         {
           "order": 2,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 3,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 4,
-          "title": "ヒューマノイド",
-          "koreanTitle": "휴머노이드"
+          "title": "ヒューマノイド"
         },
         {
           "order": 5,
-          "title": "はゔぁ",
-          "koreanTitle": "하바"
+          "title": "はゔぁ"
         },
         {
           "order": 6,
-          "title": "繰り返す収穫",
-          "koreanTitle": "반복되는 수확"
+          "title": "繰り返す収穫"
         },
         {
           "order": 7,
-          "title": "機械油",
-          "koreanTitle": "기계유"
+          "title": "機械油"
         },
         {
           "order": 8,
-          "title": "彷徨い酔い温度",
-          "koreanTitle": "방황하고 취한 온도"
+          "title": "彷徨い酔い温度"
         },
         {
           "order": 9,
-          "title": "勘ぐれい",
-          "koreanTitle": "감 그레이"
+          "title": "勘ぐれい"
         },
         {
           "order": 10,
-          "title": "過眠",
-          "koreanTitle": "과면"
+          "title": "過眠"
         },
         {
           "order": 11,
-          "title": "ろんりねす",
-          "koreanTitle": "론리네스"
+          "title": "ろんりねす"
         },
         {
           "order": 12,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 13,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         },
         {
           "order": 14,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 15,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 16,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 17,
-          "title": "正しくなれない",
-          "koreanTitle": "올바르게 될 수 없어"
+          "title": "正しくなれない"
         },
         {
           "order": 18,
-          "title": "奥底に眠るルーツ",
-          "koreanTitle": "밑바닥에 잠든 뿌리"
+          "title": "奥底に眠るルーツ"
         },
         {
           "order": 19,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 20,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         }
       ]
     },
     {
       "id": "album-zutomayo-factory-day1-memory_limit-1",
       "title": "ZUTOMAYO FACTORY day1 \"memory_limit =1\"",
-      "koreanTitle": "즈토마요 팩토리 day1 \"memory_limit =1\"",
       "kind": "tour",
       "releaseDate": "2023-05-03",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/97/db/ca/97dbcacc-3e21-045e-d4ec-40469517e898/22UMGIM26951.rgb.jpg/900x900bb.jpg",
@@ -319,110 +262,89 @@
       "tracks": [
         {
           "order": 1,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 2,
-          "title": "ヒューマノイド",
-          "koreanTitle": "휴머노이드"
+          "title": "ヒューマノイド"
         },
         {
           "order": 3,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 4,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 5,
-          "title": "ハゼ馳せる果てるまで",
-          "koreanTitle": "망둥어 달린다 끝까지"
+          "title": "ハゼ馳せる果てるまで"
         },
         {
           "order": 6,
-          "title": "違う曲にしようよ",
-          "koreanTitle": "다른 노래로 하자"
+          "title": "違う曲にしようよ"
         },
         {
           "order": 7,
-          "title": "機械油",
-          "koreanTitle": "기계유"
+          "title": "機械油"
         },
         {
           "order": 8,
-          "title": "彷徨い酔い温度",
-          "koreanTitle": "방황하고 취한 온도"
+          "title": "彷徨い酔い温度"
         },
         {
           "order": 9,
-          "title": "夜中のキスミ",
-          "koreanTitle": "한밤중의 키스미"
+          "title": "夜中のキスミ"
         },
         {
           "order": 10,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 11,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         },
         {
           "order": 12,
-          "title": "Dear. Mr「F」",
-          "koreanTitle": "디어 미스터 F"
+          "title": "Dear. Mr「F」"
         },
         {
           "order": 13,
-          "title": "正しくなれない",
-          "koreanTitle": "올바르게 될 수 없어"
+          "title": "正しくなれない"
         },
         {
           "order": 14,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 15,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 16,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 17,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 18,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 19,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 20,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         }
       ]
     },
     {
       "id": "album-zutomayo-factory-day2-ob_start",
       "title": "ZUTOMAYO FACTORY day2 \"ob_start\"",
-      "koreanTitle": "즈토마요 팩토리 day2 \"ob_start\"",
       "kind": "tour",
       "releaseDate": "2023-05-04",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/97/db/ca/97dbcacc-3e21-045e-d4ec-40469517e898/22UMGIM26951.rgb.jpg/900x900bb.jpg",
@@ -430,110 +352,89 @@
       "tracks": [
         {
           "order": 1,
-          "title": "ばかじゃないのに",
-          "koreanTitle": "바보가 아닌데도"
+          "title": "ばかじゃないのに"
         },
         {
           "order": 2,
-          "title": "低血ボルト",
-          "koreanTitle": "저혈 볼트"
+          "title": "低血ボルト"
         },
         {
           "order": 3,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 4,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 5,
-          "title": "JK BOMBER",
-          "koreanTitle": null
+          "title": "JK BOMBER"
         },
         {
           "order": 6,
-          "title": "違う曲にしようよ",
-          "koreanTitle": "다른 노래로 하자"
+          "title": "違う曲にしようよ"
         },
         {
           "order": 7,
-          "title": "機械油",
-          "koreanTitle": "기계유"
+          "title": "機械油"
         },
         {
           "order": 8,
-          "title": "彷徨い酔い温度",
-          "koreanTitle": "방황하고 취한 온도"
+          "title": "彷徨い酔い温度"
         },
         {
           "order": 9,
-          "title": "袖のキルト",
-          "koreanTitle": "소매의 퀼트"
+          "title": "袖のキルト"
         },
         {
           "order": 10,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 11,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         },
         {
           "order": 12,
-          "title": "Dear. Mr「F」",
-          "koreanTitle": "디어 미스터 F"
+          "title": "Dear. Mr「F」"
         },
         {
           "order": 13,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         },
         {
           "order": 14,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 15,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 16,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 17,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 18,
-          "title": "또 보자 환상",
-          "koreanTitle": null
+          "title": "또 보자 환상"
         },
         {
           "order": 19,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 20,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         }
       ]
     },
     {
       "id": "album-road-game-techno-poor",
       "title": "ROAD GAME #Techno Poor",
-      "koreanTitle": "로드 게임 #테크노 푸어",
       "kind": "tour",
       "releaseDate": "2023-10-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/67/9f/91/679f9186-53d0-7181-b5ed-a3ba8272c794/22UM1IM09345.rgb.jpg/900x900bb.jpg",
@@ -541,115 +442,93 @@
       "tracks": [
         {
           "order": 1,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 2,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 3,
-          "title": "居眠り遠征隊",
-          "koreanTitle": "졸제비 이넘"
+          "title": "居眠り遠征隊"
         },
         {
           "order": 4,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 5,
-          "title": "猫リセット",
-          "koreanTitle": "고양이 리셋"
+          "title": "猫リセット"
         },
         {
           "order": 6,
-          "title": "勘ぐれい",
-          "koreanTitle": "감 그레이"
+          "title": "勘ぐれい"
         },
         {
           "order": 7,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 8,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 9,
-          "title": "雲丹と栗",
-          "koreanTitle": "성게와 밤"
+          "title": "雲丹と栗"
         },
         {
           "order": 10,
-          "title": "ばかじゃないのに",
-          "koreanTitle": "바보가 아닌데도"
+          "title": "ばかじゃないのに"
         },
         {
           "order": 11,
-          "title": "Dear. Mr「F」",
-          "koreanTitle": "디어 미스터 F"
+          "title": "Dear. Mr「F」"
         },
         {
           "order": 12,
-          "title": "夜中のキスミ",
-          "koreanTitle": "한밤중의 키스미"
+          "title": "夜中のキスミ"
         },
         {
           "order": 13,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         },
         {
           "order": 14,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         },
         {
           "order": 15,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 16,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 17,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 18,
-          "title": "胸の煙",
-          "koreanTitle": "마음의 연기"
+          "title": "胸の煙"
         },
         {
           "order": 19,
-          "title": "過眠",
-          "koreanTitle": "과면"
+          "title": "過眠"
         },
         {
           "order": 20,
-          "title": "綺羅キラー (feat. Mori Calliope)",
-          "koreanTitle": "키라 킬러"
+          "title": "綺羅キラー (feat. Mori Calliope)"
         },
         {
           "order": 21,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         }
       ]
     },
     {
       "id": "album-元素どろ団子tour",
       "title": "元素どろ団子TOUR",
-      "koreanTitle": "원소도로정담 투어 [도로망고]",
       "kind": "tour",
       "releaseDate": "2024-02-21",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/68/22/c0/6822c00b-74df-f1e7-8f12-6e1b2a78abee/23UMGIM47310.rgb.jpg/900x900bb.jpg",
@@ -657,80 +536,65 @@
       "tracks": [
         {
           "order": 1,
-          "title": "グラスとラムレーズン",
-          "koreanTitle": "글라스와 럼레이즌"
+          "title": "グラスとラムレーズン"
         },
         {
           "order": 2,
-          "title": "ハゼ馳せる果てるまで",
-          "koreanTitle": "망둥어 달린다 끝까지"
+          "title": "ハゼ馳せる果てるまで"
         },
         {
           "order": 3,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 4,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 5,
-          "title": "マリンブルーの庭園",
-          "koreanTitle": "마린블루의 정원"
+          "title": "マリンブルーの庭園"
         },
         {
           "order": 6,
-          "title": "내가 모르는 이야기 (커버)",
-          "koreanTitle": null
+          "title": "내가 모르는 이야기 (커버)"
         },
         {
           "order": 7,
-          "title": "프로토타입 메모리",
-          "koreanTitle": null
+          "title": "프로토타입 메모리"
         },
         {
           "order": 8,
-          "title": "優しくLAST SMILE",
-          "koreanTitle": "상냥하게 LAST SMILE"
+          "title": "優しくLAST SMILE"
         },
         {
           "order": 9,
-          "title": "不法侵入",
-          "koreanTitle": "불법침입"
+          "title": "不法侵入"
         },
         {
           "order": 10,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 11,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 12,
-          "title": "또 보자 환상",
-          "koreanTitle": null
+          "title": "또 보자 환상"
         },
         {
           "order": 13,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 14,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         }
       ]
     },
     {
       "id": "album-本格中華喫茶-愛のペガサス-blu-ray",
       "title": "本格中華喫茶・愛のペガサス Blu-ray",
-      "koreanTitle": "본격 중화다방·사랑의 페가수스 Blu-ray",
       "kind": "tour",
       "releaseDate": "2024-09-11",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
@@ -738,120 +602,97 @@
       "tracks": [
         {
           "order": 1,
-          "title": "袖のキルト",
-          "koreanTitle": "소매의 퀼트"
+          "title": "袖のキルト"
         },
         {
           "order": 2,
-          "title": "こんなこと騒動",
-          "koreanTitle": "이런 일 소동"
+          "title": "こんなこと騒動"
         },
         {
           "order": 3,
-          "title": "低血ボルト",
-          "koreanTitle": "저혈 볼트"
+          "title": "低血ボルト"
         },
         {
           "order": 4,
-          "title": "消えてしまいそうです",
-          "koreanTitle": "사라져 버릴 것 같아요"
+          "title": "消えてしまいそうです"
         },
         {
           "order": 5,
-          "title": "花一匁",
-          "koreanTitle": "하나이치몬메"
+          "title": "花一匁"
         },
         {
           "order": 6,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         },
         {
           "order": 7,
-          "title": "違う曲にしようよ",
-          "koreanTitle": "다른 노래로 하자"
+          "title": "違う曲にしようよ"
         },
         {
           "order": 8,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 9,
-          "title": "Blues in the Closet",
-          "koreanTitle": "블루스 인 더 클로짓"
+          "title": "Blues in the Closet"
         },
         {
           "order": 10,
-          "title": "ハゼ馳せる果てるまで",
-          "koreanTitle": "망둥어 달린다 끝까지"
+          "title": "ハゼ馳せる果てるまで"
         },
         {
           "order": 11,
-          "title": "マリンブルーの庭園",
-          "koreanTitle": "마린블루의 정원"
+          "title": "マリンブルーの庭園"
         },
         {
           "order": 12,
-          "title": "君がいて水になる",
-          "koreanTitle": "네가 있어 물이 돼"
+          "title": "君がいて水になる"
         },
         {
           "order": 13,
-          "title": "機械油",
-          "koreanTitle": "기계유"
+          "title": "機械油"
         },
         {
           "order": 14,
-          "title": "マイノリティ脈絡",
-          "koreanTitle": "마이너리티 맥락"
+          "title": "マイノリティ脈絡"
         },
         {
           "order": 15,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 16,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 17,
-          "title": "綺羅キラー (feat. Mori Calliope)",
-          "koreanTitle": "키라 킬러"
+          "title": "綺羅キラー (feat. Mori Calliope)"
         },
         {
           "order": 18,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 19,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 20,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 21,
-          "title": "嘘じゃない",
-          "koreanTitle": "거짓말이 아니야"
+          "title": "嘘じゃない"
         },
         {
           "order": 22,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         }
       ]
     },
     {
       "id": "album-本格中華喫茶-愛のペガサス-羅武の香辛龍",
       "title": "本格中華喫茶・愛のペガサス ~羅武の香辛龍~",
-      "koreanTitle": "본격 중화다방·사랑의 페가수스 ~라무의 향신룡~",
       "kind": "tour",
       "releaseDate": "2024-09-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/0e/4c/680e4cc3-00ff-5373-ef07-752b40a2c3c0/24UMGIM95338.rgb.jpg/900x900bb.jpg",
@@ -859,150 +700,121 @@
       "tracks": [
         {
           "order": 1,
-          "title": "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "Open ~本格中華始めました~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 2,
-          "title": "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "袖のキルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 3,
-          "title": "こんなこと騒動 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "こんなこと騒動 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 4,
-          "title": "低血ボルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "低血ボルト (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 5,
-          "title": "消えてしまいそうです (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "消えてしまいそうです (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 6,
-          "title": "花一匁 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "花一匁 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 7,
-          "title": "脳裏上のクラッカー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "脳裏上のクラッカー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 8,
-          "title": "違う曲にしようよ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "違う曲にしようよ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 9,
-          "title": "Ham (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "Ham (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 10,
-          "title": "Blues in the Closet (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "Blues in the Closet (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 11,
-          "title": "ハゼ馳せる果てるまで(抗いハゼフライ定食) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]",
-          "koreanTitle": null
+          "title": "ハゼ馳せる果てるまで(抗いハゼフライ定食) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]"
         },
         {
           "order": 12,
-          "title": "~80光年の旅~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "~80光年の旅~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 13,
-          "title": "マリンブルーの庭園 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "マリンブルーの庭園 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 14,
-          "title": "君がいて水になる (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "君がいて水になる (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 15,
-          "title": "NEO炒飯 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "NEO炒飯 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 16,
-          "title": "機械油 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "機械油 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 17,
-          "title": "幻の五香粉 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "幻の五香粉 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 18,
-          "title": "~土星を経由して~ (Short ver. / 本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "~土星を経由して~ (Short ver. / 本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 19,
-          "title": "~夜のピークタイム~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "~夜のピークタイム~ (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 20,
-          "title": "マイノリティ脈絡 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "マイノリティ脈絡 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 21,
-          "title": "秒針を噛む (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "秒針を噛む (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 22,
-          "title": "残機 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "残機 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 23,
-          "title": "綺羅キラー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "綺羅キラー (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 24,
-          "title": "あいつら全員同窓会 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "あいつら全員同窓会 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 25,
-          "title": "正義 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "正義 (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 26,
-          "title": "ミラーチューン (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "ミラーチューン (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 27,
-          "title": "嘘じゃない (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)",
-          "koreanTitle": null
+          "title": "嘘じゃない (本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE)"
         },
         {
           "order": 28,
-          "title": "暗く黒く(強) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]",
-          "koreanTitle": null
+          "title": "暗く黒く(強) [本格中華喫茶・愛のペガサス ~羅武の香辛龍~ 2024 / LIVE]"
         }
       ]
     },
     {
       "id": "album-原始五年巡回公演-喫茶-愛のペガサス",
       "title": "原始五年巡回公演「喫茶・愛のペガサス」",
-      "koreanTitle": "원시 5년 순회공연 [다방·사랑의 페가수스]",
       "kind": "tour",
       "releaseDate": "2024-10-09",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
@@ -1010,70 +822,57 @@
       "tracks": [
         {
           "order": 1,
-          "title": "マリンブルーの庭園",
-          "koreanTitle": "마린블루의 정원"
+          "title": "マリンブルーの庭園"
         },
         {
           "order": 2,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 3,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 4,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 5,
-          "title": "馴れ合いサーブ",
-          "koreanTitle": "짜고 치는 서브"
+          "title": "馴れ合いサーブ"
         },
         {
           "order": 6,
-          "title": "不法侵入",
-          "koreanTitle": "불법침입"
+          "title": "不法侵入"
         },
         {
           "order": 7,
-          "title": "上辺の私自身なんだよ",
-          "koreanTitle": "겉보기의 나 자신이야"
+          "title": "上辺の私自身なんだよ"
         },
         {
           "order": 8,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 9,
-          "title": "正しくなれない",
-          "koreanTitle": "올바르게 될 수 없어"
+          "title": "正しくなれない"
         },
         {
           "order": 10,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 11,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 12,
-          "title": "花一匁",
-          "koreanTitle": "하나이치몬메"
+          "title": "花一匁"
         }
       ]
     },
     {
       "id": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-blu-ray",
       "title": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray",
-      "koreanTitle": "아키하이킹 투어 2 Blu-ray",
       "kind": "tour",
       "releaseDate": "2025-05-21",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/9a/f6/d59af66d-c805-8137-3b10-606d850acf34/25UMGIM76056.rgb.jpg/900x900bb.jpg",
@@ -1081,125 +880,101 @@
       "tracks": [
         {
           "order": 1,
-          "title": "虚仮にしてくれ",
-          "koreanTitle": "허깨비로 해줘"
+          "title": "虚仮にしてくれ"
         },
         {
           "order": 2,
-          "title": "嘘じゃない",
-          "koreanTitle": "거짓말이 아니야"
+          "title": "嘘じゃない"
         },
         {
           "order": 3,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 4,
-          "title": "消えてしまいそうです(1970s)",
-          "koreanTitle": null
+          "title": "消えてしまいそうです(1970s)"
         },
         {
           "order": 5,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 6,
-          "title": "勘ぐれい",
-          "koreanTitle": "감 그레이"
+          "title": "勘ぐれい"
         },
         {
           "order": 7,
-          "title": "馴れ合いサーブ",
-          "koreanTitle": "짜고 치는 서브"
+          "title": "馴れ合いサーブ"
         },
         {
           "order": 8,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 9,
-          "title": "形",
-          "koreanTitle": "형태"
+          "title": "形"
         },
         {
           "order": 10,
-          "title": "上辺の私自身なんだよ",
-          "koreanTitle": "겉보기의 나 자신이야"
+          "title": "上辺の私自身なんだよ"
         },
         {
           "order": 11,
-          "title": "クズリ念(肯定)",
-          "koreanTitle": null
+          "title": "クズリ念(肯定)"
         },
         {
           "order": 12,
-          "title": "居眠り遠征隊(即興)",
-          "koreanTitle": null
+          "title": "居眠り遠征隊(即興)"
         },
         {
           "order": 13,
-          "title": "微熱魔",
-          "koreanTitle": "미열마"
+          "title": "微熱魔"
         },
         {
           "order": 14,
-          "title": "胸の煙",
-          "koreanTitle": "마음의 연기"
+          "title": "胸の煙"
         },
         {
           "order": 15,
-          "title": "海馬成長痛",
-          "koreanTitle": "해마성장통"
+          "title": "海馬成長痛"
         },
         {
           "order": 16,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 17,
-          "title": "シェードの埃は延長",
-          "koreanTitle": "셰이드 커튼 위 먼지는 쌓이는 중"
+          "title": "シェードの埃は延長"
         },
         {
           "order": 18,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 19,
-          "title": "TAIDADA",
-          "koreanTitle": "타이다다"
+          "title": "TAIDADA"
         },
         {
           "order": 20,
-          "title": "暗く黒く(Crack Clock)",
-          "koreanTitle": null
+          "title": "暗く黒く(Crack Clock)"
         },
         {
           "order": 21,
-          "title": "クリームで会いにいけますか",
-          "koreanTitle": "크림으로 만나러 갈 수 있나요"
+          "title": "クリームで会いにいけますか"
         },
         {
           "order": 22,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 23,
-          "title": "乏しいDNAだけ(愚)",
-          "koreanTitle": null
+          "title": "乏しいDNAだけ(愚)"
         }
       ]
     },
     {
       "id": "album-omote-expo-2025-名巧は愚なるが如し",
       "title": "OMOTE EXPO 2025「名巧は愚なるが如し」",
-      "koreanTitle": "OMOTE EXPO 2025 [명교는 우인과 같다]",
       "kind": "tour",
       "releaseDate": "2025-09-02",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
@@ -1207,85 +982,69 @@
       "tracks": [
         {
           "order": 1,
-          "title": "消えてしまいそうです",
-          "koreanTitle": "사라져 버릴 것 같아요"
+          "title": "消えてしまいそうです"
         },
         {
           "order": 2,
-          "title": "クズリ念(肯定)",
-          "koreanTitle": null
+          "title": "クズリ念(肯定)"
         },
         {
           "order": 3,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 4,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 5,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 6,
-          "title": "クリームで会いにいけますか",
-          "koreanTitle": "크림으로 만나러 갈 수 있나요"
+          "title": "クリームで会いにいけますか"
         },
         {
           "order": 7,
-          "title": "夏枯れ",
-          "koreanTitle": "여름철"
+          "title": "夏枯れ"
         },
         {
           "order": 8,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 9,
-          "title": "海馬成長痛",
-          "koreanTitle": "해마성장통"
+          "title": "海馬成長痛"
         },
         {
           "order": 10,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 11,
-          "title": "シェードの埃は延長",
-          "koreanTitle": "셰이드 커튼 위 먼지는 쌓이는 중"
+          "title": "シェードの埃は延長"
         },
         {
           "order": 12,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 13,
-          "title": "TAIDADA",
-          "koreanTitle": "타이다다"
+          "title": "TAIDADA"
         },
         {
           "order": 14,
-          "title": "暗く黒く(Crack Clock)",
-          "koreanTitle": null
+          "title": "暗く黒く(Crack Clock)"
         },
         {
           "order": 15,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         }
       ]
     },
     {
       "id": "album-やきやきヤンキーツアー2-スナネコ建設の磨き仕上げ-live",
       "title": "やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live",
-      "koreanTitle": "아키하이킹 투어 2 Live",
       "kind": "tour",
       "releaseDate": "2025-09-03",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/86/f9/1e86f9db-204f-d5dc-04a9-c456df0b6a89/24UM1IM02203.rgb.jpg/900x900bb.jpg",
@@ -1293,115 +1052,93 @@
       "tracks": [
         {
           "order": 1,
-          "title": "JK BOMBER",
-          "koreanTitle": null
+          "title": "JK BOMBER"
         },
         {
           "order": 2,
-          "title": "こんなこと騒動",
-          "koreanTitle": "이런 일 소동"
+          "title": "こんなこと騒動"
         },
         {
           "order": 3,
-          "title": "ヒューマノイド",
-          "koreanTitle": "휴머노이드"
+          "title": "ヒューマノイド"
         },
         {
           "order": 4,
-          "title": "はゔぁ",
-          "koreanTitle": "하바"
+          "title": "はゔぁ"
         },
         {
           "order": 5,
-          "title": "馴れ合いサーブ",
-          "koreanTitle": "짜고 치는 서브"
+          "title": "馴れ合いサーブ"
         },
         {
           "order": 6,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 7,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         },
         {
           "order": 8,
-          "title": "ばかじゃないのに",
-          "koreanTitle": "바보가 아닌데도"
+          "title": "ばかじゃないのに"
         },
         {
           "order": 9,
-          "title": "クズリ念",
-          "koreanTitle": "쿠즈리념"
+          "title": "クズリ念"
         },
         {
           "order": 10,
-          "title": "繰り返す収穫(即興)",
-          "koreanTitle": "반복되는 수확 (즉흥)"
+          "title": "繰り返す収穫(即興)"
         },
         {
           "order": 11,
-          "title": "海馬成長痛",
-          "koreanTitle": "해마성장통"
+          "title": "海馬成長痛"
         },
         {
           "order": 12,
-          "title": "彷徨い酔い温度",
-          "koreanTitle": "방황하고 취한 온도"
+          "title": "彷徨い酔い温度"
         },
         {
           "order": 13,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 14,
-          "title": "TAIDADA",
-          "koreanTitle": "타이다다"
+          "title": "TAIDADA"
         },
         {
           "order": 15,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 16,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 17,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 18,
-          "title": "虚仮にしてくれ",
-          "koreanTitle": "허깨비로 해줘"
+          "title": "虚仮にしてくれ"
         },
         {
           "order": 19,
-          "title": "嘘じゃない",
-          "koreanTitle": "거짓말이 아니야"
+          "title": "嘘じゃない"
         },
         {
           "order": 20,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 21,
-          "title": "勘ぐれい(ヤンキーver.)",
-          "koreanTitle": null
+          "title": "勘ぐれい(ヤンキーver.)"
         }
       ]
     },
     {
       "id": "album-永遠深夜万博-名巧は愚なるが如し",
       "title": "永遠深夜万博「名巧は愚なるが如し」",
-      "koreanTitle": "영원심야만박 [명교는 우인과 같다]",
       "kind": "tour",
       "releaseDate": "2025-09-24",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fd/1c/6f/fd1c6f49-741c-61ea-585c-367162b9746f/25UM1IM24272.rgb.jpg/900x900bb.jpg",
@@ -1409,130 +1146,105 @@
       "tracks": [
         {
           "order": 1,
-          "title": "虚仮にしてくれ (Live)",
-          "koreanTitle": null
+          "title": "虚仮にしてくれ (Live)"
         },
         {
           "order": 2,
-          "title": "～開会起立～ (Live)",
-          "koreanTitle": null
+          "title": "～開会起立～ (Live)"
         },
         {
           "order": 3,
-          "title": "嘘じゃない (Live)",
-          "koreanTitle": null
+          "title": "嘘じゃない (Live)"
         },
         {
           "order": 4,
-          "title": "秒針を噛む (Live)",
-          "koreanTitle": null
+          "title": "秒針を噛む (Live)"
         },
         {
           "order": 5,
-          "title": "消えてしまいそうです(1970s) [Live]",
-          "koreanTitle": "사라져 버릴 것 같아요 (1970s) [Live]"
+          "title": "消えてしまいそうです(1970s) [Live]"
         },
         {
           "order": 6,
-          "title": "ミラーチューン (Live)",
-          "koreanTitle": null
+          "title": "ミラーチューン (Live)"
         },
         {
           "order": 7,
-          "title": "勘ぐれい (Live)",
-          "koreanTitle": null
+          "title": "勘ぐれい (Live)"
         },
         {
           "order": 8,
-          "title": "馴れ合いサーブ (Live)",
-          "koreanTitle": null
+          "title": "馴れ合いサーブ (Live)"
         },
         {
           "order": 9,
-          "title": "残機 (Live)",
-          "koreanTitle": null
+          "title": "残機 (Live)"
         },
         {
           "order": 10,
-          "title": "形 (Live)",
-          "koreanTitle": null
+          "title": "形 (Live)"
         },
         {
           "order": 11,
-          "title": "上辺の私自身なんだよ (Live)",
-          "koreanTitle": null
+          "title": "上辺の私自身なんだよ (Live)"
         },
         {
           "order": 12,
-          "title": "クズリ念(肯定) [Live]",
-          "koreanTitle": "쿠즈리념(긍정) [Live]"
+          "title": "クズリ念(肯定) [Live]"
         },
         {
           "order": 13,
-          "title": "居眠り遠征隊(即興) [Live]",
-          "koreanTitle": null
+          "title": "居眠り遠征隊(即興) [Live]"
         },
         {
           "order": 14,
-          "title": "微熱魔 (Live)",
-          "koreanTitle": null
+          "title": "微熱魔 (Live)"
         },
         {
           "order": 15,
-          "title": "胸の煙 (Live)",
-          "koreanTitle": null
+          "title": "胸の煙 (Live)"
         },
         {
           "order": 16,
-          "title": "海馬成長痛 (Live)",
-          "koreanTitle": null
+          "title": "海馬成長痛 (Live)"
         },
         {
           "order": 17,
-          "title": "MILABO (Live)",
-          "koreanTitle": null
+          "title": "MILABO (Live)"
         },
         {
           "order": 18,
-          "title": "シェードの埃は延長 (Live)",
-          "koreanTitle": null
+          "title": "シェードの埃は延長 (Live)"
         },
         {
           "order": 19,
-          "title": "お勉強しといてよ (Live)",
-          "koreanTitle": null
+          "title": "お勉強しといてよ (Live)"
         },
         {
           "order": 20,
-          "title": "TAIDADA (Live)",
-          "koreanTitle": null
+          "title": "TAIDADA (Live)"
         },
         {
           "order": 21,
-          "title": "暗く黒く(Crack Clock) [Live]",
-          "koreanTitle": null
+          "title": "暗く黒く(Crack Clock) [Live]"
         },
         {
           "order": 22,
-          "title": "クリームで会いにいけますか (Live)",
-          "koreanTitle": null
+          "title": "クリームで会いにいけますか (Live)"
         },
         {
           "order": 23,
-          "title": "あいつら全員同窓会 (Live)",
-          "koreanTitle": null
+          "title": "あいつら全員同窓会 (Live)"
         },
         {
           "order": 24,
-          "title": "乏しいDNAだけ(愚) [Live]",
-          "koreanTitle": null
+          "title": "乏しいDNAだけ(愚) [Live]"
         }
       ]
     },
     {
       "id": "album-コズミックどろ団子tour",
       "title": "コズミックどろ団子TOUR",
-      "koreanTitle": "코즈믹도로정담 투어 [코즈단]",
       "kind": "tour",
       "releaseDate": "2026-02-18",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/22/2d/e3/222de3d6-7738-239c-7bb3-6b492d321c6e/24UMGIM42946.rgb.jpg/900x900bb.jpg",
@@ -1540,93 +1252,75 @@
       "tracks": [
         {
           "order": 1,
-          "title": "サターン",
-          "koreanTitle": "새턴"
+          "title": "サターン"
         },
         {
           "order": 2,
-          "title": "正しくなれない",
-          "koreanTitle": "올바르게 될 수 없어"
+          "title": "正しくなれない"
         },
         {
           "order": 3,
-          "title": "クズリ念",
-          "koreanTitle": "쿠즈리념"
+          "title": "クズリ念"
         },
         {
           "order": 4,
-          "title": "蹴っ飛ばした毛布",
-          "koreanTitle": "걷어차버린 담요"
+          "title": "蹴っ飛ばした毛布"
         },
         {
           "order": 5,
-          "title": "グラスとラムレーズン",
-          "koreanTitle": "글라스와 럼레이즌"
+          "title": "グラスとラムレーズン"
         },
         {
           "order": 6,
-          "title": "Blues in the Closet",
-          "koreanTitle": "블루스 인 더 클로짓"
+          "title": "Blues in the Closet"
         },
         {
           "order": 7,
-          "title": "猫リセット",
-          "koreanTitle": "고양이 리셋"
+          "title": "猫リセット"
         },
         {
           "order": 8,
-          "title": "微熱魔",
-          "koreanTitle": "미열마"
+          "title": "微熱魔"
         },
         {
           "order": 9,
-          "title": "크리스마스 이브 (커버)",
-          "koreanTitle": null
+          "title": "크리스마스 이브 (커버)"
         },
         {
           "order": 10,
-          "title": "形",
-          "koreanTitle": "형태"
+          "title": "形"
         },
         {
           "order": 11,
-          "title": "Ham",
-          "koreanTitle": "함"
+          "title": "Ham"
         },
         {
           "order": 12,
-          "title": "違う曲にしようよ",
-          "koreanTitle": "다른 노래로 하자"
+          "title": "違う曲にしようよ"
         },
         {
           "order": 13,
-          "title": "袖のキルト",
-          "koreanTitle": "소매의 퀼트"
+          "title": "袖のキルト"
         },
         {
           "order": 14,
-          "title": "TAIDADA",
-          "koreanTitle": "타이다다"
+          "title": "TAIDADA"
         },
         {
           "order": 15,
-          "title": "또 보자 환상",
-          "koreanTitle": null
+          "title": "또 보자 환상"
         },
         {
           "order": 16,
-          "title": "過眠",
-          "koreanTitle": "과면"
+          "title": "過眠"
         },
         {
           "order": 17,
-          "title": "花一匁",
-          "koreanTitle": "하나이치몬메"
+          "title": "花一匁"
         },
         {
           "order": 18,
-          "title": "슬로우모션 (커버)",
-          "koreanTitle": null
+          "title": "슬로우모션 (커버)"
         }
       ]
     }

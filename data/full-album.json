@@ -1,13 +1,12 @@
 {
   "meta": {
     "artist": "ZUTOMAYO",
-    "generatedAt": "2026-03-29T16:13:06.940833+00:00"
+    "generatedAt": "2026-03-29T16:18:31.553964+00:00"
   },
   "items": [
     {
       "id": "album-潜潜話",
       "title": "潜潜話",
-      "koreanTitle": "소곤소곤 이야기",
       "kind": "full",
       "releaseDate": "2019-10-30",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b7/fe/4c/b7fe4cb4-fb88-578c-d58d-f650043ff298/19UMGIM82675.rgb.jpg/900x900bb.jpg",
@@ -15,75 +14,61 @@
       "tracks": [
         {
           "order": 1,
-          "title": "脳裏上のクラッカー",
-          "koreanTitle": "뇌리 위의 크래커"
+          "title": "脳裏上のクラッカー"
         },
         {
           "order": 2,
-          "title": "勘冴えて悔しいわ",
-          "koreanTitle": "감이 좋아서 분해"
+          "title": "勘冴えて悔しいわ"
         },
         {
           "order": 3,
-          "title": "居眠り遠征隊",
-          "koreanTitle": "졸제비 이넘"
+          "title": "居眠り遠征隊"
         },
         {
           "order": 4,
-          "title": "ハゼ馳せる果てるまで",
-          "koreanTitle": "망둥어 달린다 끝까지"
+          "title": "ハゼ馳せる果てるまで"
         },
         {
           "order": 5,
-          "title": "蹴っ飛ばした毛布",
-          "koreanTitle": "걷어차버린 담요"
+          "title": "蹴っ飛ばした毛布"
         },
         {
           "order": 6,
-          "title": "Dear. Mr「F」",
-          "koreanTitle": "디어 미스터 F"
+          "title": "Dear. Mr「F」"
         },
         {
           "order": 7,
-          "title": "こんなこと騒動",
-          "koreanTitle": "이런 일 소동"
+          "title": "こんなこと騒動"
         },
         {
           "order": 8,
-          "title": "眩しいDNAだけ",
-          "koreanTitle": "눈부신 DNA뿐"
+          "title": "眩しいDNAだけ"
         },
         {
           "order": 9,
-          "title": "ヒューマノイド",
-          "koreanTitle": "휴머노이드"
+          "title": "ヒューマノイド"
         },
         {
           "order": 10,
-          "title": "グラスとラムレーズン",
-          "koreanTitle": "글라스와 럼레이즌"
+          "title": "グラスとラムレーズン"
         },
         {
           "order": 11,
-          "title": "正義",
-          "koreanTitle": "정의"
+          "title": "正義"
         },
         {
           "order": 12,
-          "title": "優しくLAST SMILE",
-          "koreanTitle": "상냥하게 LAST SMILE"
+          "title": "優しくLAST SMILE"
         },
         {
           "order": 13,
-          "title": "秒針を噛む",
-          "koreanTitle": "초침을 깨물다"
+          "title": "秒針を噛む"
         }
       ]
     },
     {
       "id": "album-ぐされ",
       "title": "ぐされ",
-      "koreanTitle": "구사레",
       "kind": "full",
       "releaseDate": "2021-02-10",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2c/26/0d/2c260db7-824c-af80-d6c1-fb30b3124a14/21UMGIM00896.rgb.jpg/900x900bb.jpg",
@@ -91,80 +76,65 @@
       "tracks": [
         {
           "order": 1,
-          "title": "胸の煙",
-          "koreanTitle": "마음의 연기"
+          "title": "胸の煙"
         },
         {
           "order": 2,
-          "title": "正しくなれない",
-          "koreanTitle": "올바르게 될 수 없어"
+          "title": "正しくなれない"
         },
         {
           "order": 3,
-          "title": "お勉強しといてよ",
-          "koreanTitle": "공부해 뒤"
+          "title": "お勉強しといてよ"
         },
         {
           "order": 4,
-          "title": "勘ぐれい",
-          "koreanTitle": "감 그레이"
+          "title": "勘ぐれい"
         },
         {
           "order": 5,
-          "title": "はゔぁ",
-          "koreanTitle": "하바"
+          "title": "はゔぁ"
         },
         {
           "order": 6,
-          "title": "機械油",
-          "koreanTitle": "기계유"
+          "title": "機械油"
         },
         {
           "order": 7,
-          "title": "暗く黒く",
-          "koreanTitle": "어둡게 검게"
+          "title": "暗く黒く"
         },
         {
           "order": 8,
-          "title": "MILABO",
-          "koreanTitle": "밀라보"
+          "title": "MILABO"
         },
         {
           "order": 9,
-          "title": "ろんりねす",
-          "koreanTitle": "론리네스"
+          "title": "ろんりねす"
         },
         {
           "order": 10,
-          "title": "繰り返す収穫",
-          "koreanTitle": "반복되는 수확"
+          "title": "繰り返す収穫"
         },
         {
           "order": 11,
-          "title": "過眠",
-          "koreanTitle": "과면"
+          "title": "過眠"
         },
         {
           "order": 12,
-          "title": "低血ボルト",
-          "koreanTitle": "저혈 볼트"
+          "title": "低血ボルト"
         },
         {
           "order": 13,
-          "title": "奥底に眠るルーツ",
-          "koreanTitle": "밑바닥에 잠든 뿌리"
+          "title": "奥底に眠るルーツ"
         },
         {
           "order": 14,
-          "title": "暗く黒く (Twin Piano Live ver.)",
-          "koreanTitle": "어둡게 검게 (Twin Piano Live ver.)"
+          "title": "暗く黒く (Twin Piano Live ver.)"
         }
       ]
     },
     {
       "id": "album-沈香学",
       "title": "沈香学",
-      "koreanTitle": "침향학",
       "kind": "full",
       "releaseDate": "2023-06-07",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/94/5b/c5/945bc557-1eb6-bb02-900b-7a7b6e93aa9d/23UMGIM47498.rgb.jpg/900x900bb.jpg",
@@ -172,75 +142,61 @@
       "tracks": [
         {
           "order": 1,
-          "title": "花一匁",
-          "koreanTitle": "하나이치몬메"
+          "title": "花一匁"
         },
         {
           "order": 2,
-          "title": "残機",
-          "koreanTitle": "잔기"
+          "title": "残機"
         },
         {
           "order": 3,
-          "title": "猫リセット",
-          "koreanTitle": "고양이 리셋"
+          "title": "猫リセット"
         },
         {
           "order": 4,
-          "title": "綺羅キラー (feat. Mori Calliope)",
-          "koreanTitle": "키라 킬러"
+          "title": "綺羅キラー (feat. Mori Calliope)"
         },
         {
           "order": 5,
-          "title": "馴れ合いサーブ",
-          "koreanTitle": "짜고 치는 서브"
+          "title": "馴れ合いサーブ"
         },
         {
           "order": 6,
-          "title": "あいつら全員同窓会",
-          "koreanTitle": "저 녀석들 전원 동창회"
+          "title": "あいつら全員同窓会"
         },
         {
           "order": 7,
-          "title": "夏枯れ",
-          "koreanTitle": "여름철"
+          "title": "夏枯れ"
         },
         {
           "order": 8,
-          "title": "袖のキルト",
-          "koreanTitle": "소매의 퀼트"
+          "title": "袖のキルト"
         },
         {
           "order": 9,
-          "title": "不法侵入",
-          "koreanTitle": "불법침입"
+          "title": "不法侵入"
         },
         {
           "order": 10,
-          "title": "ばかじゃないのに",
-          "koreanTitle": "바보가 아닌데도"
+          "title": "ばかじゃないのに"
         },
         {
           "order": 11,
-          "title": "消えてしまいそうです",
-          "koreanTitle": "사라져 버릴 것 같아요"
+          "title": "消えてしまいそうです"
         },
         {
           "order": 12,
-          "title": "ミラーチューン",
-          "koreanTitle": "미러튠"
+          "title": "ミラーチューン"
         },
         {
           "order": 13,
-          "title": "上辺の私自身なんだよ",
-          "koreanTitle": "겉보기의 나 자신이야"
+          "title": "上辺の私自身なんだよ"
         }
       ]
     },
     {
       "id": "album-形藻土",
       "title": "形藻土",
-      "koreanTitle": "형조토",
       "kind": "full",
       "releaseDate": "2026-03-25",
       "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ad/2a/19/ad2a1985-1499-5d04-b11d-8cdf6dd6e599/26UMGIM24458.rgb.jpg/900x900bb.jpg",
@@ -248,93 +204,75 @@
       "tracks": [
         {
           "order": 1,
-          "title": "地球存在しない説",
-          "koreanTitle": "지구는 존재하지 않는다는 설"
+          "title": "地球存在しない説"
         },
         {
           "order": 2,
-          "title": "間人間",
-          "koreanTitle": "사이인간"
+          "title": "間人間"
         },
         {
           "order": 3,
-          "title": "メディアノーチェ",
-          "koreanTitle": "메디아노체"
+          "title": "メディアノーチェ"
         },
         {
           "order": 4,
-          "title": "TAIDADA",
-          "koreanTitle": "타이다다"
+          "title": "TAIDADA"
         },
         {
           "order": 5,
-          "title": "蟹しゃぶふぁんく",
-          "koreanTitle": "게 샤브 펑크"
+          "title": "蟹しゃぶふぁんく"
         },
         {
           "order": 6,
-          "title": "微熱魔",
-          "koreanTitle": "미열마"
+          "title": "微熱魔"
         },
         {
           "order": 7,
-          "title": "クリームで会いにいけますか (Disco Re-Edit)",
-          "koreanTitle": null
+          "title": "クリームで会いにいけますか (Disco Re-Edit)"
         },
         {
           "order": 8,
-          "title": "またね幻 (Live in Studio_80光年先の君へ)",
-          "koreanTitle": null
+          "title": "またね幻 (Live in Studio_80光年先の君へ)"
         },
         {
           "order": 9,
-          "title": "シェードの埃は延長",
-          "koreanTitle": "셰이드 커튼 위 먼지는 쌓이는 중"
+          "title": "シェードの埃は延長"
         },
         {
           "order": 10,
-          "title": "形",
-          "koreanTitle": "형태"
+          "title": "形"
         },
         {
           "order": 11,
-          "title": "ultra魂",
-          "koreanTitle": "울트라 혼"
+          "title": "ultra魂"
         },
         {
           "order": 12,
-          "title": "不死身の訓練",
-          "koreanTitle": "불사신의 훈련"
+          "title": "不死身の訓練"
         },
         {
           "order": 13,
-          "title": "海馬成長痛",
-          "koreanTitle": "해마성장통"
+          "title": "海馬成長痛"
         },
         {
           "order": 14,
-          "title": "アンチモン",
-          "koreanTitle": "안티몬"
+          "title": "アンチモン"
         },
         {
           "order": 15,
-          "title": "よもすがら",
-          "koreanTitle": "밤새도록"
+          "title": "よもすがら"
         },
         {
           "order": 16,
-          "title": "クズリ念 (Live in Studio_温蔵庫)",
-          "koreanTitle": "쿠즈리념 (Live in Studio_온장고)"
+          "title": "クズリ念 (Live in Studio_温蔵庫)"
         },
         {
           "order": 17,
-          "title": "嘘じゃない",
-          "koreanTitle": "거짓말이 아니야"
+          "title": "嘘じゃない"
         },
         {
           "order": 18,
-          "title": "lowmotion algae",
-          "koreanTitle": "로우모션 앨지"
+          "title": "lowmotion algae"
         }
       ]
     }
