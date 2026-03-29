@@ -903,8 +903,7 @@ function buildSearchQuery(title, options = {}) {
 function getPlatformLinks(title, options = {}) {
   const query = encodeURIComponent(buildSearchQuery(title, options));
   return [
-    { label: "YouTube", url: `https://www.youtube.com/results?search_query=${query}` },
-    { label: "YT Music", url: `https://music.youtube.com/search?q=${query}` },
+    { label: "YouTube", url: options.youtubeUrl || `https://www.youtube.com/results?search_query=${query}` },
     { label: "Apple Music", url: `https://music.apple.com/jp/search?term=${query}` },
     { label: "Spotify", url: `https://open.spotify.com/search/${query}` },
   ];
@@ -940,7 +939,9 @@ function renderDetail(nodeId) {
       ),
     );
     detailLinks.replaceChildren(
-      ...getPlatformLinks(single.title).map((item) => makeExternalLinkButton(item.label, item.url)),
+      ...getPlatformLinks(single.title, { youtubeUrl: single.youtubeUrl }).map((item) =>
+        makeExternalLinkButton(item.label, item.url),
+      ),
     );
     return;
   }
@@ -956,6 +957,8 @@ function renderDetail(nodeId) {
       : null;
     const contextDisplayTitle = contextMembership?.displayTitle ?? song.title;
     const koreanTitle = getKoreanTitle(contextDisplayTitle) ?? getKoreanTitle(song.title);
+    const contextAlbum = contextAlbumId ? albumById.get(contextAlbumId) : null;
+    const contextSingle = contextSingleId ? singleById.get(contextSingleId) : null;
     let artworkUrl =
       song.albumMembership.length > 0
         ? resolveArtworkUrl(albumById.get(song.albumMembership[0].albumId))
@@ -987,7 +990,10 @@ function renderDetail(nodeId) {
       ),
     );
     detailLinks.replaceChildren(
-      ...getPlatformLinks(contextDisplayTitle, { albumTitle: contextMembership?.albumTitle }).map((item) =>
+      ...getPlatformLinks(contextDisplayTitle, {
+        albumTitle: contextMembership?.albumTitle,
+        youtubeUrl: contextSingle?.youtubeUrl || contextAlbum?.youtubeUrl || firstAlbum?.youtubeUrl,
+      }).map((item) =>
         makeExternalLinkButton(item.label, item.url),
       ),
     );
@@ -1011,7 +1017,9 @@ function renderDetail(nodeId) {
     ...detailRow("Linked Singles", `${connectedSingles.length}`),
   );
   detailLinks.replaceChildren(
-    ...getPlatformLinks(album.title).map((item) => makeExternalLinkButton(item.label, item.url)),
+    ...getPlatformLinks(album.title, { youtubeUrl: album.youtubeUrl }).map((item) =>
+      makeExternalLinkButton(item.label, item.url),
+    ),
   );
 }
 

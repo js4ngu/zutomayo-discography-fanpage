@@ -55,12 +55,13 @@ GA4를 붙일 수 있게 기본 코드가 들어 있습니다.
 곡/앨범/라이브 세션을 추가할 때는 `graph.json`을 직접 수정하지 말고 원본 JSON 파일을 수정해야 합니다.
 
 1. 곡이 싱글이라면 `data/single.json`에 항목을 추가합니다.
-   - 필수값: `title`, `releaseDate`, `artworkUrl`, `artworkPath`, `targetTitle`
-   - 선택값: `collectionName`, `metadataSource`
+   - 필수값: `title`, `releaseDate`, `artworkPath`, `targetTitle`
+   - 선택값: `collectionName`, `metadataSource`, `youtubeUrl`
 2. 곡이 미니/정규/라이브 세션 수록곡이라면 해당 파일에 앨범 항목 또는 `trackTitles`를 수정합니다.
    - 미니: `data/mini.json`
    - 정규: `data/full-album.json`
    - 라이브/블루레이: `data/live.json`
+   - 선택값: `collectionName`, `artworkPath`, `youtubeUrl`
 3. 국문명이 필요하면 `data/title-map.json`에 추가합니다.
    - 곡명은 `song`
    - 미니는 `mini`
@@ -86,10 +87,10 @@ python3 -m http.server 4173
 {
   "title": "곡명",
   "releaseDate": "2026-03-30",
-  "artworkUrl": "https://example.com/art.jpg",
   "artworkPath": "asset/artwork/singles/song-slug.jpg",
   "collectionName": "Single Name - Single",
   "metadataSource": "manual",
+  "youtubeUrl": "https://www.youtube.com/watch?v=example",
   "targetTitle": "곡명"
 }
 ```
@@ -98,18 +99,13 @@ python3 -m http.server 4173
 
 ## 앨범아트 로드맵
 
-현재는 원본 JSON 안의 `artworkUrl`을 사용해서 웹 이미지를 표시하고 있습니다.  
-최종 목표는 로컬에 저장한 이미지를 `artworkPath` 기준으로 우선 사용하고, 필요할 때만 웹 URL을 fallback으로 쓰는 구조입니다.
+현재는 로컬에 저장한 이미지를 `artworkPath` 기준으로 우선 사용합니다.
 
-권장 전환 순서는 아래와 같습니다.
+- 싱글: `asset/artwork/singles`
+- 미니/정규: `asset/artwork/albums`
+- 라이브/블루레이: `asset/artwork/live`
 
-1. `asset/artwork/singles`, `asset/artwork/albums` 폴더를 실제 운영 폴더로 사용합니다.
-2. 각 원본 JSON의 `artworkPath` 경로에 맞춰 이미지를 직접 저장합니다.
-3. `app.js`에서 렌더 시 `artworkPath`를 먼저 시도하고, 없으면 `artworkUrl`을 fallback으로 쓰게 바꿉니다.
-4. 이미지가 충분히 채워지면 `artworkUrl`은 보조값으로만 유지하거나 제거합니다.
-5. 필요하면 추후 `artwork-manifest.json` 같은 파일로 로컬 이미지 존재 여부를 검증하는 스크립트를 추가합니다.
-
-즉, 지금은 `온라인 URL 기반 + 오프라인 경로 병기` 단계이고, 다음 단계는 `오프라인 우선 로드`입니다.
+필요하면 원본 JSON에 `artworkUrl`을 임시 fallback 값으로 넣을 수 있지만, 기본 운영 기준은 로컬 이미지입니다.
 
 ## 배포
 

@@ -75,6 +75,12 @@ def with_optional_artwork_url(item: dict[str, Any], artwork_url: str | None) -> 
     return item
 
 
+def with_optional_string(item: dict[str, Any], key: str, value: str | None) -> dict[str, Any]:
+    if value:
+        item[key] = value
+    return item
+
+
 def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]], list[dict[str, Any]]]:
     title_map = load_json(TITLE_MAP_PATH)
     album_sections = [
@@ -88,8 +94,7 @@ def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]],
     for kind, items in album_sections:
         for item in items:
             order += 1
-            albums.append(
-                with_optional_artwork_url({
+            album = with_optional_artwork_url({
                     "id": f"album-{slugify(item['title'])}",
                     "type": "album",
                     "kind": kind,
@@ -101,7 +106,7 @@ def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]],
                     "order": order,
                     "trackTitles": item["trackTitles"],
                 }, item.get("artworkUrl"))
-            )
+            albums.append(with_optional_string(album, "youtubeUrl", item.get("youtubeUrl")))
 
     singles_source = load_json(SINGLE_PATH)["items"]
     return title_map, albums, singles_source
@@ -170,8 +175,7 @@ def build_dataset() -> dict[str, Any]:
             songs.append(songs_by_title[target_title])
 
         single_id = f"single-{slugify(item['title'])}"
-        singles.append(
-            with_optional_artwork_url({
+        single = with_optional_artwork_url({
                 "id": single_id,
                 "type": "single",
                 "title": item["title"],
@@ -183,7 +187,7 @@ def build_dataset() -> dict[str, Any]:
                 "targetSongId": songs_by_title[target_title]["id"],
                 "order": order,
             }, item.get("artworkUrl"))
-        )
+        singles.append(with_optional_string(single, "youtubeUrl", item.get("youtubeUrl")))
         songs_by_title[target_title]["singleIds"].append(single_id)
         songs_by_title[target_title]["releaseDate"] = min(
             songs_by_title[target_title]["releaseDate"],
