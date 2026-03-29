@@ -45,6 +45,7 @@ GA4를 붙일 수 있게 기본 코드가 들어 있습니다.
   - `data/full-album.json`
   - `data/live.json`
   - `data/title-map.json`
+  - `data/work-aliases.json`
 - 배포용 그래프 데이터: `data/graph.json`
 - 생성 스크립트: `scripts/build_dataset.py`
 
@@ -67,13 +68,15 @@ GA4를 붙일 수 있게 기본 코드가 들어 있습니다.
    - 미니는 `mini`
    - 정규는 `full`
    - 라이브/블루레이는 `live`
-4. 수정 후 아래 명령으로 `graph.json`을 다시 생성합니다.
+4. 같은 곡의 표기 변형을 하나로 묶어야 하면 `data/work-aliases.json`에 추가합니다.
+   - 예: 라이브 표기, 즉흥 표기, 커뮤니티 별칭
+5. 수정 후 아래 명령으로 `graph.json`을 다시 생성합니다.
 
 ```bash
 python3 scripts/build_dataset.py
 ```
 
-5. 필요하면 로컬 서버에서 확인합니다.
+6. 필요하면 로컬 서버에서 확인합니다.
 
 ```bash
 python3 -m http.server 4173

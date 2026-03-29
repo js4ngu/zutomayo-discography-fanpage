@@ -13,30 +13,11 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 GRAPH_PATH = ROOT / "data" / "graph.json"
 TITLE_MAP_PATH = ROOT / "data" / "title-map.json"
+WORK_ALIASES_PATH = ROOT / "data" / "work-aliases.json"
 SINGLE_PATH = ROOT / "data" / "single.json"
 MINI_PATH = ROOT / "data" / "mini.json"
 FULL_ALBUM_PATH = ROOT / "data" / "full-album.json"
 LIVE_PATH = ROOT / "data" / "live.json"
-
-WORK_ALIASES = {
-    "Dear. Mr「F」": "Dear Mr F",
-    "성계와 밤": "雲丹と栗",
-    "綺羅キラー (feat. Mori Calliope)": "綺羅キラー",
-    "またね幻 (Live in Studio_80光年先の君へ)": "またね幻",
-    "クリームで会いにいけますか (Disco Re-Edit)": "クリームで会いにいけますか",
-    "クズリ念 (Live in Studio_ 温蔵庫)": "クズリ念",
-    "クズリ念 (Live in Studio_温蔵庫)": "クズリ念",
-    "ハゼ馳せる果てるまで(抗いハゼフライ定食)": "ハゼ馳せる果てるまで",
-    "暗く黒く(強)": "暗く黒く",
-    "消えてしまいそうです(1970s)": "消えてしまいそうです",
-    "クズリ念(肯定)": "クズリ念",
-    "暗く黒く(Crack Clock)": "暗く黒く",
-    "乏しいDNAだけ(愚)": "眩しいDNAだけ",
-    "居眠り遠征隊(即興)": "居眠り遠征隊",
-    "繰り返す収穫(即興)": "繰り返す収穫",
-    "勘ぐれい(ヤンキーver.)": "勘ぐれい",
-    "脳裏上のクラッカー (セッション紹介)": "脳裏上のクラッカー",
-}
 
 LIVE_SUFFIX_PATTERNS = [
     re.compile(r" \((?:Live|Live in Studio_.+?)\)$"),
@@ -53,16 +34,16 @@ def slugify(value: str) -> str:
     return normalized or "item"
 
 
-def canonicalize_work_title(value: str) -> str:
+def canonicalize_work_title(value: str, work_aliases: dict[str, str]) -> str:
     title = value.strip()
-    if title in WORK_ALIASES:
-        return WORK_ALIASES[title]
+    if title in work_aliases:
+        return work_aliases[title]
 
     normalized = title
     for pattern in LIVE_SUFFIX_PATTERNS:
         normalized = pattern.sub("", normalized)
 
-    return WORK_ALIASES.get(normalized, normalized)
+    return work_aliases.get(normalized, normalized)
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -81,8 +62,9 @@ def with_optional_string(item: dict[str, Any], key: str, value: str | None) -> d
     return item
 
 
-def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]], list[dict[str, Any]]]:
+def load_source_data() -> tuple[dict[str, dict[str, str]], dict[str, str], list[dict[str, Any]], list[dict[str, Any]]]:
     title_map = load_json(TITLE_MAP_PATH)
+    work_aliases = load_json(WORK_ALIASES_PATH)
     album_sections = [
         ("mini", load_json(MINI_PATH)["items"]),
         ("full", load_json(FULL_ALBUM_PATH)["items"]),
@@ -109,11 +91,11 @@ def load_source_data() -> tuple[dict[str, dict[str, str]], list[dict[str, Any]],
             albums.append(with_optional_string(album, "youtubeUrl", item.get("youtubeUrl")))
 
     singles_source = load_json(SINGLE_PATH)["items"]
-    return title_map, albums, singles_source
+    return title_map, work_aliases, albums, singles_source
 
 
 def build_dataset() -> dict[str, Any]:
-    title_map_by_class, albums, singles_source = load_source_data()
+    title_map_by_class, work_aliases, albums, singles_source = load_source_data()
     generated_at = datetime.now(timezone.utc).isoformat()
 
     albums.sort(key=lambda item: (item["releaseDate"], item["order"]))
@@ -124,7 +106,7 @@ def build_dataset() -> dict[str, Any]:
 
     for album in albums:
         for order, track_title in enumerate(album["trackTitles"]):
-            canonical = canonicalize_work_title(track_title)
+            canonical = canonicalize_work_title(track_title, work_aliases)
             canonical_labels.setdefault(canonical, canonical)
             song_membership.setdefault(canonical, []).append(
                 {
@@ -159,7 +141,7 @@ def build_dataset() -> dict[str, Any]:
 
     singles: list[dict[str, Any]] = []
     for order, item in enumerate(singles_source):
-        target_title = canonicalize_work_title(item["targetTitle"])
+        target_title = canonicalize_work_title(item["targetTitle"], work_aliases)
         if target_title not in songs_by_title:
             songs_by_title[target_title] = {
                 "id": f"song-{slugify(target_title)}",
@@ -231,6 +213,7 @@ def build_dataset() -> dict[str, Any]:
                 str(FULL_ALBUM_PATH.relative_to(ROOT)),
                 str(LIVE_PATH.relative_to(ROOT)),
                 str(TITLE_MAP_PATH.relative_to(ROOT)),
+                str(WORK_ALIASES_PATH.relative_to(ROOT)),
             ],
             "metadataSource": "Managed source JSON files",
         },
