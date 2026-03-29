@@ -481,6 +481,7 @@ body {
   margin: 10px 0 0;
   color: var(--muted);
   line-height: 1.58;
+  white-space: pre-line;
 }
 
 .detail-artwork {

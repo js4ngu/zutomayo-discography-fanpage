@@ -35,121 +35,8 @@ const ALBUM_KIND_DETAIL_LABELS = {
   full: "full album",
   tour: "live session",
 };
-const LEGACY_KOREAN_TITLE_ALIASES = new Map([
-  ["正しい偽りからの起床", "올바른 거짓으로부터의 기상"],
-  ["今は今で誓いは笑みで", "지금은 지금대로 맹세는 미소로"],
-  ["潜潜話", "소곤소곤 이야기"],
-  ["朗らかな皮膚とて不服", "명랑한 피부라도 불복"],
-  ["ぐされ", "구사레"],
-  ["NIWA TO NIRA", "니와 투 니라"],
-  ["THE FIRST TAKE", "더 퍼스트 테이크"],
-  ["YAKI YAKI YANKEE TOUR CLEANING LABO", "야키야키 양키 투어 클리닝 라보"],
-  ["伸び仕草懲りて暇乞い", "늘어나는 몸짓 질려서 작별 인사"],
-  ["CLEANING LABO", "클리닝 라보"],
-  ['ZUTOMAYO FACTORY day1 "memory_limit =1"', '즈토마요 팩토리 day1 "memory_limit =1"'],
-  ['ZUTOMAYO FACTORY day2 "ob_start"', '즈토마요 팩토리 day2 "ob_start"'],
-  ["沈香学", "침향학"],
-  ["ROAD GAME #Techno Poor", "로드 게임 #테크노 푸어"],
-  ["元素どろ団子TOUR", "원소도로정담 투어 [도로망고]"],
-  ["本格中華喫茶・愛のペガサス Blu-ray", "본격 중화다방·사랑의 페가수스 Blu-ray"],
-  ["本格中華喫茶・愛のペガサス ~羅武の香辛龍~", "본격 중화다방·사랑의 페가수스 ~라무의 향신룡~"],
-  ["原始五年巡回公演「喫茶・愛のペガサス」", "원시 5년 순회공연 [다방·사랑의 페가수스]"],
-  ["虚仮の一念海馬に託す", "허깨비의 일념, 해마에 맡기다"],
-  ["やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Blu-ray", "아키하이킹 투어 2 Blu-ray"],
-  ["OMOTE EXPO 2025「名巧は愚なるが如し」", "OMOTE EXPO 2025 [명교는 우인과 같다]"],
-  ["やきやきヤンキーツアー2 〜スナネコ建設の磨き仕上げ〜 Live", "아키하이킹 투어 2 Live"],
-  ["永遠深夜万博「名巧は愚なるが如し」", "영원심야만박 [명교는 우인과 같다]"],
-  ["コズミックどろ団子TOUR", "코즈믹도로정담 투어 [코즈단]"],
-  ["形藻土", "형조토"],
-  ["秒針を噛む", "초침을 깨물다"],
-  ["脳裏上のクラッカー", "뇌리 위의 크래커"],
-  ["脳裏上のクラッカー (セッション紹介)", "뇌리 위의 크래커 (세션 소개)"],
-  ["ヒューマノイド", "휴머노이드"],
-  ["サターン", "새턴"],
-  ["君がいて水になる", "네가 있어 물이 돼"],
-  ["雲丹と栗", "성게와 밤"],
-  ["眩しいDNAだけ", "눈부신 DNA뿐"],
-  ["正義", "정의"],
-  ["正義 (セッション紹介)", "정의 (세션 소개)"],
-  ["勘冴えて悔しいわ", "감이 좋아서 분해"],
-  ["またね幻", "또 보자 환상"],
-  ["マイノリティ脈絡", "마이너리티 맥락"],
-  ["彷徨い酔い温度", "방황하고 취한 온도"],
-  ["Dear Mr F", "디어 미스터 F"],
-  ["Dear. Mr「F」", "디어 미스터 F"],
-  ["こんなこと騒動", "이런 일 소동"],
-  ["グラスとラムレーズン", "글라스와 럼레이즌"],
-  ["ハゼ馳せる果てるまで", "망둥어 달린다 끝까지"],
-  ["優しくLAST SMILE", "상냥하게 LAST SMILE"],
-  ["居眠り遠征隊", "졸제비 이넘"],
-  ["蹴っ飛ばした毛布", "걷어차버린 담요"],
-  ["お勉強しといてよ", "공부해 뒤"],
-  ["MILABO", "밀라보"],
-  ["低血ボルト", "저혈 볼트"],
-  ["Ham", "함"],
-  ["JK BOMBER", "JK BOMBER"],
-  ["マリンブルーの庭園", "마린블루의 정원"],
-  ["暗く黒く", "어둡게 검게"],
-  ["暗く黒く (Twin Piano Live ver.)", "어둡게 검게 (Twin Piano Live ver.)"],
-  ["勘ぐれい", "감 그레이"],
-  ["正しくなれない", "올바르게 될 수 없어"],
-  ["過眠", "과면"],
-  ["はゔぁ", "하바"],
-  ["ろんりねす", "론리네스"],
-  ["奥底に眠るルーツ", "밑바닥에 잠든 뿌리"],
-  ["機械油", "기계유"],
-  ["繰り返す収穫", "반복되는 수확"],
-  ["繰り返す収穫(即興)", "반복되는 수확 (즉흥)"],
-  ["胸の煙", "마음의 연기"],
-  ["正しくなれない - From THE FIRST TAKE", "올바르게 될 수 없어 - From THE FIRST TAKE"],
-  ["秒針を噛む - From THE FIRST TAKE", "초침을 깨물다 - From THE FIRST TAKE"],
-  ["あいつら全員同窓会", "저 녀석들 전원 동창회"],
-  ["ばかじゃないのに", "바보가 아닌데도"],
-  ["猫リセット", "고양이 리셋"],
-  ["袖のキルト", "소매의 퀼트"],
-  ["夜中のキスミ", "한밤중의 키스미"],
-  ["違う曲にしようよ", "다른 노래로 하자"],
-  ["ミラーチューン", "미러튠"],
-  ["消えてしまいそうです", "사라져 버릴 것 같아요"],
-  ["夏枯れ", "여름철"],
-  ["残機", "잔기"],
-  ["綺羅キラー", "키라 킬러"],
-  ["綺羅キラー (feat. Mori Calliope)", "키라 킬러"],
-  ["不法侵入", "불법침입"],
-  ["花一匁", "하나이치몬메"],
-  ["上辺の私自身なんだよ", "겉보기의 나 자신이야"],
-  ["馴れ合いサーブ", "짜고 치는 서브"],
-  ["嘘じゃない", "거짓말이 아니야"],
-  ["Blues in the Closet", "블루스 인 더 클로짓"],
-  ["海馬成長痛", "해마성장통"],
-  ["NEO炒飯", "NEO 볶음밥"],
-  ["Open ~本格中華始めました~", "Open ~본격 중화 시작했습니다~"],
-  ["~80光年の旅~", "~80광년의 여행~"],
-  ["~土星を経由して~", "~토성을 경유해서~"],
-  ["~夜のピークタイム~", "~밤의 피크타임~"],
-  ["幻の五香粉", "환상의 오향분"],
-  ["TAIDADA", "타이다다"],
-  ["クズリ念", "쿠즈리념"],
-  ["虚仮にしてくれ", "허깨비로 해줘"],
-  ["シェードの埃は延長", "셰이드 커튼 위 먼지는 쌓이는 중"],
-  ["微熱魔", "미열마"],
-  ["クリームで会いにいけますか", "크림으로 만나러 갈 수 있나요"],
-  ["形", "형태"],
-  ["～開会起立～", "~개회 기립~"],
-  ["有心論", "유심론"],
-  ["メディアノーチェ", "메디아노체"],
-  ["よもすがら", "밤새도록"],
-  ["lowmotion algae", "로우모션 앨지"],
-  ["ultra魂", "울트라 혼"],
-  ["アンチモン", "안티몬"],
-  ["不死身の訓練", "불사신의 훈련"],
-  ["地球存在しない説", "지구는 존재하지 않는다는 설"],
-  ["蟹しゃぶふぁんく", "게 샤브 펑크"],
-  ["間人間", "사이인간"],
-]);
 const KOREAN_TITLE_ALIASES = new Map(
   Object.entries({
-    ...Object.fromEntries(LEGACY_KOREAN_TITLE_ALIASES),
     ...(data.titleMap?.song ?? {}),
     ...(data.titleMap?.mini ?? {}),
     ...(data.titleMap?.full ?? {}),
@@ -949,6 +836,13 @@ function setDetailSubtitle(value) {
   detailSubtitle.hidden = !text;
 }
 
+function buildHeadingSubtitle(...lines) {
+  return lines
+    .map((line) => (line ?? "").trim())
+    .filter(Boolean)
+    .join("\n");
+}
+
 function renderDefaultDetail() {
   detailTitle.textContent = data.meta.title;
   setDetailSubtitle("Blu-ray / Live는 기본으로 꺼져 있습니다. 필터를 켜고 끄면 숨겨진 레인은 제거되고, 남은 디스코그래피가 다시 폭을 맞춰 배치됩니다.");
@@ -1022,23 +916,19 @@ function renderDetail(nodeId) {
     const koreanTitle = getKoreanTitle(single.title) ?? getKoreanTitle(song.title);
     const studioMembership = song.albumMembership.filter((membership) => membership.kind !== "tour");
     detailTitle.textContent = single.title;
-    setDetailSubtitle("");
+    setDetailSubtitle(buildHeadingSubtitle(koreanTitle));
     setArtwork(singleArtworkById.get(single.id), `${single.title} artwork`);
     detailList.replaceChildren(
-      ...(koreanTitle ? detailRow("국문명", htmlEscape(koreanTitle)) : []),
       ...detailRow("Release", single.releaseDate),
-      ...detailRow("Source", htmlEscape(single.collectionName)),
       ...detailRow("Song", htmlEscape(song.title)),
       ...detailRow(
-        "Included In",
+        "Studio Release",
         studioMembership.length
           ? studioMembership.map((membership) => htmlEscape(membership.albumTitle)).join("<br>")
           : "none",
       ),
     );
     detailLinks.replaceChildren(
-      makeJumpButton("Open Song", song.id),
-      ...song.albumMembership.map((membership) => makeJumpButton(membership.albumTitle, membership.albumId)),
       ...getPlatformLinks(single.title).map((item) => makeExternalLinkButton(item.label, item.url)),
     );
     return;
@@ -1067,10 +957,9 @@ function renderDetail(nodeId) {
     }
 
     detailTitle.textContent = contextDisplayTitle;
-    setDetailSubtitle("");
+    setDetailSubtitle(buildHeadingSubtitle(koreanTitle));
     setArtwork(artworkUrl ?? getFallbackArtworkUrl(song.title), `${song.title} artwork`);
     detailList.replaceChildren(
-      ...(koreanTitle ? detailRow("국문명", htmlEscape(koreanTitle)) : []),
       ...detailRow("First Release", song.releaseDate),
       ...detailRow("First Album", firstAlbum ? htmlEscape(firstAlbum.title) : "standalone single"),
       ...detailRow(
@@ -1101,10 +990,9 @@ function renderDetail(nodeId) {
   const connectedSingles = connectedSongs.flatMap((song) => song.singleIds);
   const koreanTitle = getKoreanTitle(album.title);
   detailTitle.textContent = album.title;
-  setDetailSubtitle(ALBUM_KIND_DETAIL_LABELS[album.kind]);
+  setDetailSubtitle(buildHeadingSubtitle(koreanTitle, ALBUM_KIND_DETAIL_LABELS[album.kind]));
   setArtwork(album.artworkUrl, `${album.title} artwork`);
   detailList.replaceChildren(
-    ...(koreanTitle ? detailRow("국문명", htmlEscape(koreanTitle)) : []),
     ...detailRow("Release", album.releaseDate),
     ...detailRow("Format", ALBUM_KIND_LABELS[album.kind]),
     ...detailRow("Tracks", `${album.trackTitles.length}`),
