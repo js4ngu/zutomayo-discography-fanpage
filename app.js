@@ -992,7 +992,11 @@ function renderDetail(nodeId) {
     detailLinks.replaceChildren(
       ...getPlatformLinks(contextDisplayTitle, {
         albumTitle: contextMembership?.albumTitle,
-        youtubeUrl: contextSingle?.youtubeUrl || contextAlbum?.youtubeUrl || firstAlbum?.youtubeUrl,
+        youtubeUrl:
+          contextSingle?.youtubeUrl ||
+          (contextAlbum?.kind !== "tour" ? contextAlbum?.youtubeUrl : null) ||
+          song.youtubeUrl ||
+          firstAlbum?.youtubeUrl,
       }).map((item) =>
         makeExternalLinkButton(item.label, item.url),
       ),

@@ -62,6 +62,31 @@ def with_optional_string(item: dict[str, Any], key: str, value: str | None) -> d
     return item
 
 
+def resolve_song_youtube_url(
+    song: dict[str, Any],
+    singles_by_id: dict[str, dict[str, Any]],
+    albums_by_id: dict[str, dict[str, Any]],
+) -> str | None:
+    for single_id in song["singleIds"]:
+        single = singles_by_id.get(single_id)
+        if single and single.get("youtubeUrl"):
+            return single["youtubeUrl"]
+
+    for membership in song["albumMembership"]:
+        if membership["kind"] == "tour":
+            continue
+        album = albums_by_id.get(membership["albumId"])
+        if album and album.get("youtubeUrl"):
+            return album["youtubeUrl"]
+
+    for membership in song["albumMembership"]:
+        album = albums_by_id.get(membership["albumId"])
+        if album and album.get("youtubeUrl"):
+            return album["youtubeUrl"]
+
+    return None
+
+
 def load_source_data() -> tuple[dict[str, dict[str, str]], dict[str, str], list[dict[str, Any]], list[dict[str, Any]]]:
     title_map = load_json(TITLE_MAP_PATH)
     work_aliases = load_json(WORK_ALIASES_PATH)
@@ -99,7 +124,7 @@ def build_dataset() -> dict[str, Any]:
     generated_at = datetime.now(timezone.utc).isoformat()
 
     albums.sort(key=lambda item: (item["releaseDate"], item["order"]))
-    albums_by_title = {album["title"]: album for album in albums}
+    albums_by_id = {album["id"]: album for album in albums}
 
     song_membership: dict[str, list[dict[str, Any]]] = {}
     canonical_labels: dict[str, str] = {}
@@ -178,6 +203,12 @@ def build_dataset() -> dict[str, Any]:
 
     songs.sort(key=lambda item: (item["releaseDate"], item["title"]))
     singles.sort(key=lambda item: (item["releaseDate"], item["order"]))
+    singles_by_id = {single["id"]: single for single in singles}
+
+    for song in songs:
+        song_youtube_url = resolve_song_youtube_url(song, singles_by_id, albums_by_id)
+        if song_youtube_url:
+            song["youtubeUrl"] = song_youtube_url
 
     edges: list[dict[str, str]] = []
     for single in singles:

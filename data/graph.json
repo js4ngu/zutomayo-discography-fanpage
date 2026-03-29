@@ -3,7 +3,7 @@
     "artist": "ZUTOMAYO",
     "artistJa": "ずっと真夜中でいいのに。",
     "title": "ZUTOMAYO Discography Graph",
-    "generatedAt": "2026-03-29T17:01:00.703196+00:00",
+    "generatedAt": "2026-03-29T17:06:11.842606+00:00",
     "sourceFiles": [
       "data/single.json",
       "data/mini.json",
@@ -1000,7 +1000,8 @@
       "releaseDate": "2018-08-30",
       "singleIds": [
         "single-秒針を噛む"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%A7%92%E9%87%9D%E3%82%92%E5%99%9B%E3%82%80%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-脳裏上のクラッカー",
@@ -1086,7 +1087,8 @@
       "releaseDate": "2018-10-02",
       "singleIds": [
         "single-脳裏上のクラッカー"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%84%B3%E8%A3%8F%E4%B8%8A%E3%81%AE%E3%82%AF%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ヒューマノイド",
@@ -1148,7 +1150,8 @@
       "releaseDate": "2018-11-07",
       "singleIds": [
         "single-ヒューマノイド"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%83%92%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%8E%E3%82%A4%E3%83%89%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-サターン",
@@ -1216,7 +1219,8 @@
         }
       ],
       "releaseDate": "2018-11-14",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%84%E5%81%BD%E3%82%8A%E3%81%8B%E3%82%89%E3%81%AE%E8%B5%B7%E5%BA%8A%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-君がいて水になる",
@@ -1260,7 +1264,8 @@
         }
       ],
       "releaseDate": "2018-11-14",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%84%E5%81%BD%E3%82%8A%E3%81%8B%E3%82%89%E3%81%AE%E8%B5%B7%E5%BA%8A%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-雲丹と栗",
@@ -1296,7 +1301,8 @@
         }
       ],
       "releaseDate": "2018-11-14",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%84%E5%81%BD%E3%82%8A%E3%81%8B%E3%82%89%E3%81%AE%E8%B5%B7%E5%BA%8A%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-眩しいdnaだけ",
@@ -1390,7 +1396,8 @@
       "releaseDate": "2019-02-27",
       "singleIds": [
         "single-眩しいdnaだけ"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%9C%A9%E3%81%97%E3%81%84DNA%E3%81%A0%E3%81%91%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-正義",
@@ -1500,7 +1507,8 @@
       "releaseDate": "2019-05-22",
       "singleIds": [
         "single-正義"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E7%BE%A9%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-勘冴えて悔しいわ",
@@ -1586,7 +1594,8 @@
       "releaseDate": "2019-06-05",
       "singleIds": [
         "single-勘冴えて悔しいわ"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%8B%98%E5%86%B4%E3%81%88%E3%81%A6%E6%82%94%E3%81%97%E3%81%84%E3%82%8F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-またね幻",
@@ -1614,7 +1623,8 @@
         }
       ],
       "releaseDate": "2019-06-12",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BB%8A%E3%81%AF%E4%BB%8A%E3%81%A7%E8%AA%93%E3%81%84%E3%81%AF%E7%AC%91%E3%81%BF%E3%81%A7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-マイノリティ脈絡",
@@ -1690,7 +1700,8 @@
         }
       ],
       "releaseDate": "2019-06-12",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BB%8A%E3%81%AF%E4%BB%8A%E3%81%A7%E8%AA%93%E3%81%84%E3%81%AF%E7%AC%91%E3%81%BF%E3%81%A7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-彷徨い酔い温度",
@@ -1750,7 +1761,8 @@
         }
       ],
       "releaseDate": "2019-06-12",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BB%8A%E3%81%AF%E4%BB%8A%E3%81%A7%E8%AA%93%E3%81%84%E3%81%AF%E7%AC%91%E3%81%BF%E3%81%A7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-dear-mr-f",
@@ -1802,7 +1814,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-こんなこと騒動",
@@ -1854,7 +1867,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-グラスとラムレーズン",
@@ -1890,7 +1904,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ハゼ馳せる果てるまで",
@@ -1942,7 +1957,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-優しくlast-smile",
@@ -1970,7 +1986,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-居眠り遠征隊",
@@ -2014,7 +2031,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-蹴っ飛ばした毛布",
@@ -2042,7 +2060,8 @@
         }
       ],
       "releaseDate": "2019-10-30",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%BD%9C%E6%BD%9C%E8%A9%B1%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-お勉強しといてよ",
@@ -2168,7 +2187,8 @@
       "releaseDate": "2020-05-15",
       "singleIds": [
         "single-お勉強しといてよ"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%8A%E5%8B%89%E5%BC%B7%E3%81%97%E3%81%A8%E3%81%84%E3%81%A6%E3%82%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-milabo",
@@ -2278,7 +2298,8 @@
       "releaseDate": "2020-07-13",
       "singleIds": [
         "single-milabo"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22MILABO%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-低血ボルト",
@@ -2340,7 +2361,8 @@
       "releaseDate": "2020-07-23",
       "singleIds": [
         "single-低血ボルト"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BD%8E%E8%A1%80%E3%83%9C%E3%83%AB%E3%83%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ham",
@@ -2416,7 +2438,8 @@
         }
       ],
       "releaseDate": "2020-08-05",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%97%E3%82%89%E3%81%8B%E3%81%AA%E7%9A%AE%E8%86%9A%E3%81%A8%E3%81%A6%E4%B8%8D%E6%9C%8D%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-jk-bomber",
@@ -2460,7 +2483,8 @@
         }
       ],
       "releaseDate": "2020-08-05",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%97%E3%82%89%E3%81%8B%E3%81%AA%E7%9A%AE%E8%86%9A%E3%81%A8%E3%81%A6%E4%B8%8D%E6%9C%8D%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-マリンブルーの庭園",
@@ -2528,7 +2552,8 @@
         }
       ],
       "releaseDate": "2020-08-05",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%97%E3%82%89%E3%81%8B%E3%81%AA%E7%9A%AE%E8%86%9A%E3%81%A8%E3%81%A6%E4%B8%8D%E6%9C%8D%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-暗く黒く",
@@ -2630,7 +2655,8 @@
       "releaseDate": "2020-11-03",
       "singleIds": [
         "single-暗く黒く"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9A%97%E3%81%8F%E9%BB%92%E3%81%8F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-勘ぐれい",
@@ -2700,7 +2726,8 @@
       "releaseDate": "2020-11-27",
       "singleIds": [
         "single-勘ぐれい"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%8B%98%E3%81%90%E3%82%8C%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-正しくなれない",
@@ -2762,7 +2789,8 @@
       "releaseDate": "2020-12-17",
       "singleIds": [
         "single-正しくなれない"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8C%E3%81%AA%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-過眠",
@@ -2808,7 +2836,8 @@
       "releaseDate": "2021-01-23",
       "singleIds": [
         "single-過眠"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E9%81%8E%E7%9C%A0%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-はゔぁ",
@@ -2844,7 +2873,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ろんりねす",
@@ -2872,7 +2902,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-奥底に眠るルーツ",
@@ -2900,7 +2931,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-暗く黒く-twin-piano-live-ver",
@@ -2920,7 +2952,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-機械油",
@@ -2980,7 +3013,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-繰り返す収穫",
@@ -3016,7 +3050,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-胸の煙",
@@ -3068,7 +3103,8 @@
         }
       ],
       "releaseDate": "2021-02-10",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%90%E3%81%95%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-正しくなれない-from-the-first-take",
@@ -3090,7 +3126,8 @@
       "releaseDate": "2021-03-05",
       "singleIds": [
         "single-正しくなれない-from-the-first-take"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AD%A3%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8C%E3%81%AA%E3%81%84%20-%20From%20THE%20FIRST%20TAKE%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-秒針を噛む-from-the-first-take",
@@ -3112,7 +3149,8 @@
       "releaseDate": "2021-03-05",
       "singleIds": [
         "single-秒針を噛む-from-the-first-take"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%A7%92%E9%87%9D%E3%82%92%E5%99%9B%E3%82%80%20-%20From%20THE%20FIRST%20TAKE%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-あいつら全員同窓会",
@@ -3214,7 +3252,8 @@
       "releaseDate": "2021-06-18",
       "singleIds": [
         "single-あいつら全員同窓会"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%82%E3%81%84%E3%81%A4%E3%82%89%E5%85%A8%E5%93%A1%E5%90%8C%E7%AA%93%E4%BC%9A%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ばかじゃないのに",
@@ -3268,7 +3307,8 @@
       "releaseDate": "2021-07-04",
       "singleIds": [
         "single-ばかじゃないのに"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%81%B0%E3%81%8B%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%E3%81%AE%E3%81%AB%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-猫リセット",
@@ -3314,7 +3354,8 @@
       "releaseDate": "2021-12-02",
       "singleIds": [
         "single-猫リセット"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%8C%AB%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-袖のキルト",
@@ -3376,7 +3417,8 @@
       "releaseDate": "2022-02-12",
       "singleIds": [
         "single-袖のキルト"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%A2%96%E3%81%AE%E3%82%AD%E3%83%AB%E3%83%88%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-夜中のキスミ",
@@ -3412,7 +3454,8 @@
         }
       ],
       "releaseDate": "2022-02-16",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BC%B8%E3%81%B3%E4%BB%95%E8%8D%89%E6%87%B2%E3%82%8A%E3%81%A6%E6%9A%87%E4%B9%9E%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-違う曲にしようよ",
@@ -3472,7 +3515,8 @@
         }
       ],
       "releaseDate": "2022-02-16",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%BC%B8%E3%81%B3%E4%BB%95%E8%8D%89%E6%87%B2%E3%82%8A%E3%81%A6%E6%9A%87%E4%B9%9E%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ミラーチューン",
@@ -3574,7 +3618,8 @@
       "releaseDate": "2022-04-07",
       "singleIds": [
         "single-ミラーチューン"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-消えてしまいそうです",
@@ -3636,7 +3681,8 @@
       "releaseDate": "2022-09-08",
       "singleIds": [
         "single-消えてしまいそうです"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B6%88%E3%81%88%E3%81%A6%E3%81%97%E3%81%BE%E3%81%84%E3%81%9D%E3%81%86%E3%81%A7%E3%81%99%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-夏枯れ",
@@ -3666,7 +3712,8 @@
       "releaseDate": "2022-09-15",
       "singleIds": [
         "single-夏枯れ"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%A4%8F%E6%9E%AF%E3%82%8C%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-残機",
@@ -3752,7 +3799,8 @@
       "releaseDate": "2022-10-19",
       "singleIds": [
         "single-残機"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%AE%8B%E6%A9%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-綺羅キラー",
@@ -3798,7 +3846,8 @@
       "releaseDate": "2022-12-15",
       "singleIds": [
         "single-綺羅キラー"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E7%B6%BA%E7%BE%85%E3%82%AD%E3%83%A9%E3%83%BC%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-또-보자-환상",
@@ -3834,7 +3883,8 @@
         }
       ],
       "releaseDate": "2023-05-04",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22ZUTOMAYO%20FACTORY%20day2%20%22ob_start%22%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-不法侵入",
@@ -3872,7 +3922,8 @@
       "releaseDate": "2023-05-15",
       "singleIds": [
         "single-不法侵入"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E4%B8%8D%E6%B3%95%E4%BE%B5%E5%85%A5%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-花一匁",
@@ -3926,7 +3977,8 @@
       "releaseDate": "2023-06-06",
       "singleIds": [
         "single-花一匁"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%8A%B1%E4%B8%80%E5%8C%81%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-上辺の私自身なんだよ",
@@ -3970,7 +4022,8 @@
         }
       ],
       "releaseDate": "2023-06-07",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B2%88%E9%A6%99%E5%AD%A6%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-馴れ合いサーブ",
@@ -4022,7 +4075,8 @@
         }
       ],
       "releaseDate": "2023-06-07",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B2%88%E9%A6%99%E5%AD%A6%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-내가-모르는-이야기-커버",
@@ -4042,7 +4096,8 @@
         }
       ],
       "releaseDate": "2024-02-21",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%85%83%E7%B4%A0%E3%81%A9%E3%82%8D%E5%9B%A3%E5%AD%90TOUR%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-프로토타입-메모리",
@@ -4062,7 +4117,8 @@
         }
       ],
       "releaseDate": "2024-02-21",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%85%83%E7%B4%A0%E3%81%A9%E3%82%8D%E5%9B%A3%E5%AD%90TOUR%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-嘘じゃない",
@@ -4132,7 +4188,8 @@
       "releaseDate": "2024-05-23",
       "singleIds": [
         "single-嘘じゃない"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%98%98%E3%81%98%E3%82%83%E3%81%AA%E3%81%84%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-blues-in-the-closet",
@@ -4178,7 +4235,8 @@
       "releaseDate": "2024-06-06",
       "singleIds": [
         "single-blues-in-the-closet"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22Blues%20in%20the%20Closet%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-海馬成長痛",
@@ -4240,7 +4298,8 @@
       "releaseDate": "2024-08-29",
       "singleIds": [
         "single-海馬成長痛"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B5%B7%E9%A6%AC%E6%88%90%E9%95%B7%E7%97%9B%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-neo炒飯",
@@ -4260,7 +4319,8 @@
         }
       ],
       "releaseDate": "2024-09-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%AC%E6%A0%BC%E4%B8%AD%E8%8F%AF%E5%96%AB%E8%8C%B6%E3%83%BB%E6%84%9B%E3%81%AE%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20~%E7%BE%85%E6%AD%A6%E3%81%AE%E9%A6%99%E8%BE%9B%E9%BE%8D~%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-open-本格中華始めました",
@@ -4280,7 +4340,8 @@
         }
       ],
       "releaseDate": "2024-09-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%AC%E6%A0%BC%E4%B8%AD%E8%8F%AF%E5%96%AB%E8%8C%B6%E3%83%BB%E6%84%9B%E3%81%AE%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20~%E7%BE%85%E6%AD%A6%E3%81%AE%E9%A6%99%E8%BE%9B%E9%BE%8D~%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-80光年の旅",
@@ -4300,7 +4361,8 @@
         }
       ],
       "releaseDate": "2024-09-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%AC%E6%A0%BC%E4%B8%AD%E8%8F%AF%E5%96%AB%E8%8C%B6%E3%83%BB%E6%84%9B%E3%81%AE%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20~%E7%BE%85%E6%AD%A6%E3%81%AE%E9%A6%99%E8%BE%9B%E9%BE%8D~%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-土星を経由して",
@@ -4320,7 +4382,8 @@
         }
       ],
       "releaseDate": "2024-09-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%AC%E6%A0%BC%E4%B8%AD%E8%8F%AF%E5%96%AB%E8%8C%B6%E3%83%BB%E6%84%9B%E3%81%AE%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20~%E7%BE%85%E6%AD%A6%E3%81%AE%E9%A6%99%E8%BE%9B%E9%BE%8D~%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-夜のピークタイム",
@@ -4340,7 +4403,8 @@
         }
       ],
       "releaseDate": "2024-09-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%AC%E6%A0%BC%E4%B8%AD%E8%8F%AF%E5%96%AB%E8%8C%B6%E3%83%BB%E6%84%9B%E3%81%AE%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20~%E7%BE%85%E6%AD%A6%E3%81%AE%E9%A6%99%E8%BE%9B%E9%BE%8D~%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-幻の五香粉",
@@ -4360,7 +4424,8 @@
         }
       ],
       "releaseDate": "2024-09-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%AC%E6%A0%BC%E4%B8%AD%E8%8F%AF%E5%96%AB%E8%8C%B6%E3%83%BB%E6%84%9B%E3%81%AE%E3%83%9A%E3%82%AC%E3%82%B5%E3%82%B9%20~%E7%BE%85%E6%AD%A6%E3%81%AE%E9%A6%99%E8%BE%9B%E9%BE%8D~%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-taidada",
@@ -4430,7 +4495,8 @@
       "releaseDate": "2024-10-05",
       "singleIds": [
         "single-taidada"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22TAIDADA%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-クズリ念",
@@ -4500,7 +4566,8 @@
       "releaseDate": "2024-10-23",
       "singleIds": [
         "single-クズリ念"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%AF%E3%82%BA%E3%83%AA%E5%BF%B5%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-虚仮にしてくれ",
@@ -4544,7 +4611,8 @@
         }
       ],
       "releaseDate": "2024-10-23",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E8%99%9A%E4%BB%AE%E3%81%AE%E4%B8%80%E5%BF%B5%E6%B5%B7%E9%A6%AC%E3%81%AB%E8%A8%97%E3%81%99%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-シェードの埃は延長",
@@ -4590,7 +4658,8 @@
       "releaseDate": "2025-01-21",
       "singleIds": [
         "single-シェードの埃は延長"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%B7%E3%82%A7%E3%83%BC%E3%83%89%E3%81%AE%E5%9F%83%E3%81%AF%E5%BB%B6%E9%95%B7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-微熱魔",
@@ -4636,7 +4705,8 @@
       "releaseDate": "2025-04-18",
       "singleIds": [
         "single-微熱魔"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BE%AE%E7%86%B1%E9%AD%94%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-クリームで会いにいけますか",
@@ -4682,7 +4752,8 @@
       "releaseDate": "2025-05-21",
       "singleIds": [
         "single-クリームで会いにいけますか"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%A0%E3%81%A7%E4%BC%9A%E3%81%84%E3%81%AB%E3%81%84%E3%81%91%E3%81%BE%E3%81%99%E3%81%8B%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-形",
@@ -4728,7 +4799,8 @@
       "releaseDate": "2025-05-21",
       "singleIds": [
         "single-形"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-開会起立",
@@ -4748,7 +4820,8 @@
         }
       ],
       "releaseDate": "2025-09-24",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%B0%B8%E9%81%A0%E6%B7%B1%E5%A4%9C%E4%B8%87%E5%8D%9A%E3%80%8C%E5%90%8D%E5%B7%A7%E3%81%AF%E6%84%9A%E3%81%AA%E3%82%8B%E3%81%8C%E5%A6%82%E3%81%97%E3%80%8D%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-有心論",
@@ -4761,7 +4834,8 @@
       "releaseDate": "2025-11-19",
       "singleIds": [
         "single-有心論"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E6%9C%89%E5%BF%83%E8%AB%96%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-メディアノーチェ",
@@ -4783,7 +4857,8 @@
       "releaseDate": "2026-01-29",
       "singleIds": [
         "single-メディアノーチェ"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%83%8E%E3%83%BC%E3%83%81%E3%82%A7%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-슬로우모션-커버",
@@ -4803,7 +4878,8 @@
         }
       ],
       "releaseDate": "2026-02-18",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%B3%E3%82%BA%E3%83%9F%E3%83%83%E3%82%AF%E3%81%A9%E3%82%8D%E5%9B%A3%E5%AD%90TOUR%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-크리스마스-이브-커버",
@@ -4823,7 +4899,8 @@
         }
       ],
       "releaseDate": "2026-02-18",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%B3%E3%82%BA%E3%83%9F%E3%83%83%E3%82%AF%E3%81%A9%E3%82%8D%E5%9B%A3%E5%AD%90TOUR%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-よもすがら",
@@ -4845,7 +4922,8 @@
       "releaseDate": "2026-03-07",
       "singleIds": [
         "single-よもすがら"
-      ]
+      ],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E3%82%88%E3%82%82%E3%81%99%E3%81%8C%E3%82%89%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-lowmotion-algae",
@@ -4865,7 +4943,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-ultra魂",
@@ -4885,7 +4964,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-アンチモン",
@@ -4905,7 +4985,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-不死身の訓練",
@@ -4925,7 +5006,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-地球存在しない説",
@@ -4945,7 +5027,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-蟹しゃぶふぁんく",
@@ -4965,7 +5048,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
     {
       "id": "song-間人間",
@@ -4985,7 +5069,8 @@
         }
       ],
       "releaseDate": "2026-03-25",
-      "singleIds": []
+      "singleIds": [],
+      "youtubeUrl": "https://www.youtube.com/results?search_query=%22%E5%BD%A2%E8%97%BB%E5%9C%9F%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     }
   ],
   "singles": [
