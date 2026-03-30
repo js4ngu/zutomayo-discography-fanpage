@@ -453,10 +453,23 @@ body {
   text-align: center;
   text-shadow: none;
   white-space: normal;
+  pointer-events: auto;
 }
 
 .site-note span {
   display: inline;
+}
+
+.site-note-link {
+  color: rgba(120, 244, 255, 0.96);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(120, 244, 255, 0.42);
+}
+
+.site-note-link:hover,
+.site-note-link:focus-visible {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.78);
 }
 
 .detail-card {
