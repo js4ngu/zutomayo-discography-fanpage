@@ -30,7 +30,7 @@
       "またね幻": "또 보자 환상",
       "マイノリティ脈絡": "마이너리티 맥락",
       "彷徨い酔い温度": "방황하고 취한 온도",
-      "Dear Mr F": "디어 미스터 F",
+      "Dear. Mr「F」": "디어 미스터 F",
       "Dear. Mr「F」": "디어 미스터 F",
       "こんなこと騒動": "이런 일 소동",
       "グラスとラムレーズン": "글라스와 럼레이즌",
@@ -56,8 +56,8 @@
       "繰り返す収穫": "반복되는 수확",
       "繰り返す収穫(即興)": "반복되는 수확 (즉흥)",
       "胸の煙": "마음의 연기",
-      "正しくなれない - From THE FIRST TAKE": "올바르게 될 수 없어 - From THE FIRST TAKE",
-      "秒針を噛む - From THE FIRST TAKE": "초침을 깨물다 - From THE FIRST TAKE",
+      "正しくなれない": "올바르게 될 수 없어 - From THE FIRST TAKE",
+      "秒針を噛む": "초침을 깨물다 - From THE FIRST TAKE",
       "あいつら全員同窓会": "저 녀석들 전원 동창회",
       "ばかじゃないのに": "바보가 아닌데도",
       "猫リセット": "고양이 리셋",
@@ -70,7 +70,7 @@
       "夏枯れ": "여름철",
       "残機": "잔기",
       "綺羅キラー": "키라 킬러",
-      "綺羅キラー (feat. Mori Calliope)": "키라 킬러",
+      "綺羅キラー": "키라 킬러",
       "不法侵入": "불법침입",
       "花一匁": "하나이치몬메",
       "上辺の私自身なんだよ": "겉보기의 나 자신이야",
@@ -85,9 +85,9 @@
       "~夜のピークタイム~": "~밤의 피크타임~",
       "幻の五香粉": "환상의 오향분",
       "TAIDADA": "타이다다",
-      "クズリ念": "쿠즈리념",
-      "クズリ念(肯定) [Live]": "쿠즈리념(긍정) [Live]",
-      "クズリ念 (Live in Studio_温蔵庫)": "쿠즈리념 (Live in Studio_온장고)",
+      "クズリ念": "족제비 이념",
+      "クズリ念(肯定) [Live]": "족제비 이념(긍정) [Live]",
+      "クズリ念 (Live in Studio_温蔵庫)": "족제비 이념 (Live in Studio_온장고)",
       "虚仮にしてくれ": "허깨비로 해줘",
       "シェードの埃は延長": "셰이드 커튼 위 먼지는 쌓이는 중",
       "微熱魔": "미열마",
@@ -290,8 +290,8 @@
       "collectionName": "THE FIRST TAKE",
       "order": 11,
       "trackTitles": [
-        "秒針を噛む - From THE FIRST TAKE",
-        "正しくなれない - From THE FIRST TAKE"
+        "秒針を噛む",
+        "正しくなれない"
       ],
       "youtubeUrl": "https://www.youtube.com/results?search_query=%22THE%20FIRST%20TAKE%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
     },
@@ -463,7 +463,7 @@
         "花一匁",
         "残機",
         "猫リセット",
-        "綺羅キラー (feat. Mori Calliope)",
+        "綺羅キラー",
         "馴れ合いサーブ",
         "あいつら全員同窓会",
         "夏枯れ",
@@ -506,7 +506,7 @@
         "残機",
         "胸の煙",
         "過眠",
-        "綺羅キラー (feat. Mori Calliope)",
+        "綺羅キラー",
         "あいつら全員同窓会"
       ],
       "youtubeUrl": "https://www.youtube.com/results?search_query=%22ROAD%20GAME%20%23Techno%20Poor%22%20%E3%81%9A%E3%81%A3%E3%81%A8%E7%9C%9F%E5%A4%9C%E4%B8%AD%E3%81%A7%E3%81%84%E3%81%84%E3%81%AE%E3%81%AB%E3%80%82%20ZUTOMAYO"
@@ -566,7 +566,7 @@
         "マイノリティ脈絡",
         "秒針を噛む",
         "残機",
-        "綺羅キラー (feat. Mori Calliope)",
+        "綺羅キラー",
         "あいつら全員同窓会",
         "正義",
         "ミラーチューン",
@@ -1767,8 +1767,8 @@
     {
       "id": "song-dear-mr-f",
       "type": "song",
-      "title": "Dear Mr F",
-      "label": "Dear Mr F",
+      "title": "Dear. Mr「F」",
+      "label": "Dear. Mr「F」",
       "firstAlbumId": "album-潜潜話",
       "firstAlbumTitle": "潜潜話",
       "albumMembership": [
@@ -3109,15 +3109,15 @@
     {
       "id": "song-正しくなれない-from-the-first-take",
       "type": "song",
-      "title": "正しくなれない - From THE FIRST TAKE",
-      "label": "正しくなれない - From THE FIRST TAKE",
+      "title": "正しくなれない",
+      "label": "正しくなれない",
       "firstAlbumId": "album-the-first-take",
       "firstAlbumTitle": "THE FIRST TAKE",
       "albumMembership": [
         {
           "albumId": "album-the-first-take",
           "albumTitle": "THE FIRST TAKE",
-          "displayTitle": "正しくなれない - From THE FIRST TAKE",
+          "displayTitle": "正しくなれない",
           "order": 1,
           "kind": "tour",
           "albumReleaseDate": "2021-03-05"
@@ -3132,15 +3132,15 @@
     {
       "id": "song-秒針を噛む-from-the-first-take",
       "type": "song",
-      "title": "秒針を噛む - From THE FIRST TAKE",
-      "label": "秒針を噛む - From THE FIRST TAKE",
+      "title": "秒針を噛む",
+      "label": "秒針を噛む",
       "firstAlbumId": "album-the-first-take",
       "firstAlbumTitle": "THE FIRST TAKE",
       "albumMembership": [
         {
           "albumId": "album-the-first-take",
           "albumTitle": "THE FIRST TAKE",
-          "displayTitle": "秒針を噛む - From THE FIRST TAKE",
+          "displayTitle": "秒針を噛む",
           "order": 0,
           "kind": "tour",
           "albumReleaseDate": "2021-03-05"
@@ -3813,7 +3813,7 @@
         {
           "albumId": "album-沈香学",
           "albumTitle": "沈香学",
-          "displayTitle": "綺羅キラー (feat. Mori Calliope)",
+          "displayTitle": "綺羅キラー",
           "order": 3,
           "kind": "full",
           "albumReleaseDate": "2023-06-07"
@@ -3821,7 +3821,7 @@
         {
           "albumId": "album-road-game-techno-poor",
           "albumTitle": "ROAD GAME #Techno Poor",
-          "displayTitle": "綺羅キラー (feat. Mori Calliope)",
+          "displayTitle": "綺羅キラー",
           "order": 19,
           "kind": "tour",
           "albumReleaseDate": "2023-10-25"
@@ -3829,7 +3829,7 @@
         {
           "albumId": "album-本格中華喫茶-愛のペガサス-blu-ray",
           "albumTitle": "本格中華喫茶・愛のペガサス Blu-ray",
-          "displayTitle": "綺羅キラー (feat. Mori Calliope)",
+          "displayTitle": "綺羅キラー",
           "order": 16,
           "kind": "tour",
           "albumReleaseDate": "2024-09-11"
@@ -5246,8 +5246,8 @@
     {
       "id": "single-秒針を噛む-from-the-first-take",
       "type": "single",
-      "title": "秒針を噛む - From THE FIRST TAKE",
-      "label": "秒針を噛む - From THE FIRST TAKE",
+      "title": "秒針を噛む",
+      "label": "秒針を噛む",
       "releaseDate": "2021-03-05",
       "artworkPath": "asset/artwork/singles/秒針を噛む-from-the-first-take.jpg",
       "collectionName": "Byoushinwo Kamu (From The First Take) - Single",
@@ -5259,8 +5259,8 @@
     {
       "id": "single-正しくなれない-from-the-first-take",
       "type": "single",
-      "title": "正しくなれない - From THE FIRST TAKE",
-      "label": "正しくなれない - From THE FIRST TAKE",
+      "title": "正しくなれない",
+      "label": "正しくなれない",
       "releaseDate": "2021-03-17",
       "artworkPath": "asset/artwork/singles/正しくなれない-from-the-first-take.jpg",
       "collectionName": "Can't Be Right (From The First Take) - Single",

@@ -66,8 +66,8 @@ package "2nd FULL\nぐされ" {
 }
 
 package "SPECIAL TOUR\nTHE FIRST TAKE" {
-  class "秒針を噛む - From THE FIRST TAKE"
-  class "正しくなれない - From THE FIRST TAKE"
+  class "秒針を噛む"
+  class "正しくなれない"
 }
 
 package "ARCHIVE TOUR\nNIWA TO NIRA" {
@@ -188,7 +188,7 @@ package "3rd FULL\n沈香学" {
   class "花一匁"
   class "残機"
   class "猫リセット"
-  class "綺羅キラー (feat. Mori Calliope)"
+  class "綺羅キラー"
   class "馴れ合いサーブ"
   class "あいつら全員同窓会"
   class "夏枯れ"
@@ -220,7 +220,7 @@ package "ARCHIVE TOUR\nROAD GAME #Techno Poor" {
   class "残機"
   class "胸の煙"
   class "過眠"
-  class "綺羅キラー (feat. Mori Calliope)"
+  class "綺羅キラー"
   class "あいつら全員同窓会"
 }
 
@@ -272,7 +272,7 @@ package "ARCHIVE TOUR\n本格中華喫茶・愛のペガサス Blu-ray" {
   class "マイノリティ脈絡"
   class "秒針を噛む"
   class "残機"
-  class "綺羅キラー (feat. Mori Calliope)"
+  class "綺羅キラー"
   class "あいつら全員同窓会"
   class "正義"
   class "ミラーチューン"
@@ -476,8 +476,8 @@ class "暗く黒く(S)"
 class "勘ぐれい(S)"
 class "過眠(S)"
 class "正しくなれない(S)"
-class "秒針を噛む - From THE FIRST TAKE(S)"
-class "正しくなれない - From THE FIRST TAKE(S)"
+class "秒針を噛む(S)"
+class "正しくなれない(S)"
 
 class "あいつら全員同窓会(S)"
 class "ばかじゃないのに(S)"
@@ -522,8 +522,8 @@ class "有心論(S)"
 "勘ぐれい(S)" --> "勘ぐれい"
 "過眠(S)" --> "過眠"
 "正しくなれない(S)" --> "正しくなれない"
-"秒針を噛む - From THE FIRST TAKE(S)" --> "秒針を噛む - From THE FIRST TAKE"
-"正しくなれない - From THE FIRST TAKE(S)" --> "正しくなれない - From THE FIRST TAKE"
+"秒針を噛む(S)" --> "秒針を噛む"
+"正しくなれない(S)" --> "正しくなれない"
 
 "あいつら全員同窓会(S)" --> "あいつら全員同窓会"
 "ばかじゃないのに(S)" --> "ばかじゃないのに"
@@ -533,7 +533,7 @@ class "有心論(S)"
 "消えてしまいそうです(S)" --> "消えてしまいそうです"
 "夏枯れ(S)" --> "夏枯れ"
 "残機(S)" --> "残機"
-"綺羅キラー(S)" --> "綺羅キラー (feat. Mori Calliope)"
+"綺羅キラー(S)" --> "綺羅キラー"
 "不法侵入(S)" --> "不法侵入"
 "花一匁(S)" --> "花一匁"
 
